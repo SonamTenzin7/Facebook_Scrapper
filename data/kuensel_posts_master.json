@@ -1,6 +1,4 @@
 {
-  "success": true,
-  "total_posts": 3,
   "scraping_session": {
     "timestamp": "2025-08-19T16:23:13.005740",
     "total_posts": 3,
@@ -59,6 +57,5 @@
       "createdAt": "2025-08-19T16:22:57.532984",
       "publishAt": "2025-08-19T16:22:57.532986"
     }
-  ],
-  "generated_at": "2025-08-19T16:24:13.858451"
+  ]
 }

@@ -1,11 +1,7 @@
 {
-  "success": true,
-  "total_posts": 3,
   "scraping_session": {
-    "timestamp": "2025-08-19T16:23:13.005740",
+    "timestamp": "2025-08-19T16:17:31.749014",
     "total_posts": 3,
-    "new_posts_this_session": 3,
-    "existing_posts": 0,
     "status": "completed"
   },
   "posts": [
@@ -19,13 +15,13 @@
       "AuthorName": "Kuensel",
       "attachment": {
         "images": [
-          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/533588457_1173387131491322_1906411937000890316_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_42ZXdDkrMUQ7kNvwFHcIVI&_nc_oc=AdnZjv7q3SWX66sInXfu-FP020_pXwiHkbx-ONVj9qKN8vP2vwj8i28xbf6zlQrZjYA&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=X-2xRWILooKUl5rDiUFjxg&oh=00_AfVWKAofXH_5NTRf2qt4tGfMXhYYBkmZ_fAJupydIa1XyQ&oe=68AA289F"
+          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/533588457_1173387131491322_1906411937000890316_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_42ZXdDkrMUQ7kNvwFHcIVI&_nc_oc=AdnZjv7q3SWX66sInXfu-FP020_pXwiHkbx-ONVj9qKN8vP2vwj8i28xbf6zlQrZjYA&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=-CGiHVg8g8h0FlEOUUXHyw&oh=00_AfVZB2bu_8hjQDvZoRDUCJ9XdStYNcG33Nj7kI8VY3bCcw&oe=68AA289F"
         ],
         "videos": [],
         "links": []
       },
-      "createdAt": "2025-08-19T16:22:57.519812",
-      "publishAt": "2025-08-19T16:22:57.519817"
+      "createdAt": "2025-08-19T16:17:19.262377",
+      "publishAt": "2025-08-19T16:17:19.262387"
     },
     {
       "id": "70a09ca7025a56fc",
@@ -40,8 +36,8 @@
         "videos": [],
         "links": []
       },
-      "createdAt": "2025-08-19T16:22:57.521508",
-      "publishAt": "2025-08-19T16:22:57.521510"
+      "createdAt": "2025-08-19T16:17:19.264158",
+      "publishAt": "2025-08-19T16:17:19.264159"
     },
     {
       "id": "1cad35d4b3b9f624",
@@ -56,9 +52,8 @@
         "videos": [],
         "links": []
       },
-      "createdAt": "2025-08-19T16:22:57.532984",
-      "publishAt": "2025-08-19T16:22:57.532986"
+      "createdAt": "2025-08-19T16:17:19.275268",
+      "publishAt": "2025-08-19T16:17:19.275268"
     }
-  ],
-  "generated_at": "2025-08-19T16:24:13.858451"
+  ]
 }

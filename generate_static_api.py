@@ -11,8 +11,14 @@ def generate_static_api():
     # Create output directory
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     
-    def get_latest_data_file():
-        """Get the most recent JSON data file"""
+    def get_data_file():
+        """Get the master data file or fallback to latest individual file"""
+        # First try the master file
+        master_file = os.path.join(DATA_FOLDER, "kuensel_posts_master.json")
+        if os.path.exists(master_file):
+            return master_file
+            
+        # Fallback to latest individual file
         pattern = os.path.join(DATA_FOLDER, "kuensel_posts_*.json")
         files = glob.glob(pattern)
         if not files:
@@ -27,13 +33,13 @@ def generate_static_api():
         except Exception as e:
             return {"error": str(e)}
     
-    # Get latest data
-    latest_file = get_latest_data_file()
-    if not latest_file:
+    # Get data (prefer master file)
+    data_file = get_data_file()
+    if not data_file:
         print("No data files found")
         return
     
-    data = load_data_file(latest_file)
+    data = load_data_file(data_file)
     if "error" in data:
         print(f"Error loading data: {data['error']}")
         return

@@ -606,6 +606,62 @@ class FacebookScraper:
             os.makedirs(folder)
             print(f"Created directory: {folder}")
 
+    def save_posts_consolidated(self, new_posts):
+        """Save posts to a single consolidated file, adding only new ones"""
+        consolidated_file = "data/kuensel_posts_master.json"
+        
+        # Load existing posts if file exists
+        existing_posts = []
+        existing_ids = set()
+        
+        if os.path.exists(consolidated_file):
+            try:
+                with open(consolidated_file, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    existing_posts = existing_data.get("posts", [])
+                    existing_ids = {post.get("id") for post in existing_posts if post.get("id")}
+                print(f"Loaded {len(existing_posts)} existing posts from master file")
+            except (json.JSONDecodeError, FileNotFoundError):
+                print("No existing master file found or file corrupted, starting fresh")
+        
+        # Filter new posts (only add posts that don't exist)
+        truly_new_posts = []
+        for post in new_posts:
+            if post.get("id") not in existing_ids:
+                truly_new_posts.append(post)
+        
+        if not truly_new_posts:
+            print("No new posts to add to master file")
+            return consolidated_file
+        
+        # Combine posts (new posts first to maintain chronological order)
+        all_posts = truly_new_posts + existing_posts
+        
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(consolidated_file), exist_ok=True)
+        
+        # Create final data structure
+        final_data = {
+            "scraping_session": {
+                "timestamp": datetime.now().isoformat(),
+                "total_posts": len(all_posts),
+                "new_posts_this_session": len(truly_new_posts),
+                "existing_posts": len(existing_posts),
+                "status": "completed"
+            },
+            "posts": all_posts
+        }
+        
+        # Save consolidated file
+        with open(consolidated_file, 'w', encoding='utf-8') as f:
+            json.dump(final_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"Consolidated data saved to {consolidated_file}")
+        print(f"Added {len(truly_new_posts)} new posts to master file")
+        print(f"Total posts in master file: {len(all_posts)}")
+        
+        return consolidated_file
+
     def save_posts(self, posts, filename=None):
         """Save posts to JSON file"""
         if not filename:
@@ -678,6 +734,8 @@ class FacebookScraper:
 
 
 def main():
+    import os  # Ensure os is available in main scope
+    
     # Check if we've already scraped recently
     last_run_file = "data/last_run.txt"
     current_time = datetime.now()
@@ -688,7 +746,7 @@ def main():
             time_diff = (current_time - last_run).total_seconds()
             
             # If less than 30 minutes since last run, skip
-            if time_diff < 1800:  # 1800 seconds = 30 minutes
+            if time_diff < 1800:  
                 print(f"Last run was only {time_diff} seconds ago. Skipping...")
                 return
     except FileNotFoundError:
@@ -736,8 +794,11 @@ def main():
         # Download images (False for now)
         scraper.download_images(formatted_data)
 
-        # Save to JSON
-        filename = scraper.save_posts(formatted_data)
+        # Save to consolidated master file (single growing file)
+        master_filename = scraper.save_posts_consolidated(formatted_data)
+        
+        # Also save session backup (for debugging)
+        session_filename = scraper.save_posts(formatted_data)
 
         # Generate static API files
         from generate_static_api import generate_static_api
@@ -764,7 +825,8 @@ def main():
         # Print summary
         print(f"\n=== Scraping Summary ===")
         print(f"Total posts scraped: {len(formatted_data)}")
-        print(f"Data saved to: {filename}")
+        print(f"Master data saved to: {master_filename}")
+        print(f"Session backup saved to: {session_filename}")
 
         # Print sample data
         if len(formatted_data) > 0:
