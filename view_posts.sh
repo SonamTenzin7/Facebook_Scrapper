@@ -1,8 +1,3 @@
-#!/bin/bash
-
-# Simple launcher to view Kuensel posts
-# This script starts a local web server and opens the browser
-
 PORT=8080
 URL="http://localhost:$PORT/frontend.html"
 
