@@ -4,7 +4,7 @@ A free, public API providing real-time access to Kuensel (Bhutan's national news
 
 ## 🌐 Base URL
 ```
-https://SONAMTENZIN7.github.io/Facebook_Scrapper/static_api/
+https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/
 ```
 
 ## 📋 Endpoints
@@ -79,7 +79,7 @@ Returns only posts from the "general" category.
 ### JavaScript/TypeScript
 ```javascript
 // Fetch all posts
-const posts = await fetch('https://SONAMTENZIN7.github.io/Facebook_Scrapper/static_api/posts.json')
+const posts = await fetch('https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json')
   .then(res => res.json());
 
 console.log(posts.posts); // Array of post objects
@@ -90,7 +90,7 @@ console.log(posts.posts); // Array of post objects
 import requests
 
 # Get latest posts
-response = requests.get('https://SONAMTENZIN7.github.io/Facebook_Scrapper/static_api/posts.json')
+response = requests.get('https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json')
 data = response.json()
 
 for post in data['posts']:
@@ -102,7 +102,7 @@ for post in data['posts']:
 ### cURL
 ```bash
 # Get posts via command line
-curl -s https://SONAMTENZIN7.github.io/Facebook_Scrapper/static_api/posts.json | jq '.posts[0]'
+curl -s https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json | jq '.posts[0]'
 ```
 
 ## 📊 Data Fields

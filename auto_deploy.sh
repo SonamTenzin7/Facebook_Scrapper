@@ -1,8 +1,3 @@
-#!/bin/bash
-
-# Auto-commit and push updated static API files to GitHub
-# This script is called after successful scraping
-
 cd "$(dirname "$0")"
 
 # Check if we're in a git repository
