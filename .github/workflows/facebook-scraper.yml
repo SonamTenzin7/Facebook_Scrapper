@@ -27,7 +27,7 @@ jobs:
     - name: Install Chrome and ChromeDriver
       run: |
         sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
+        sudo apt-get install -y google-chrome-stable xvfb
         
     - name: Create config file
       run: |
@@ -36,7 +36,8 @@ jobs:
     - name: Run Facebook scraper
       run: |
         export DISPLAY=:99
-        Xvfb :99 -ac -screen 0 1280x1024x8 &
+        Xvfb :99 -ac -screen 0 1280x1024x24 &
+        sleep 3
         python facebook_scrapper.py
         
     - name: Commit and push changes
