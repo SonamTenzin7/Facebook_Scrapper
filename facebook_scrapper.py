@@ -107,6 +107,68 @@ class FacebookScraper:
 
         return True
 
+    def expand_see_more_links(self):
+        """Expand all 'See more' links to get full content"""
+        try:
+            # Common selectors for "See more" links
+            see_more_selectors = [
+                "[role='button'][tabindex='0']",  # Generic clickable elements
+                "div[role='button']:has-text('See more')",
+                "span[role='button']:has-text('See more')",
+                "[aria-label*='See more']",
+                "div[tabindex='0']:has-text('See more')",
+                "span:has-text('See more')",
+                "div:has-text('See more')"
+            ]
+            
+            expanded_count = 0
+            
+            # Find and click all "See more" elements using Selenium
+            from selenium.webdriver.common.by import By
+            from selenium.webdriver.support.ui import WebDriverWait
+            from selenium.webdriver.support import expected_conditions as EC
+            from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
+            
+            # Look for elements containing "See more" text
+            try:
+                see_more_elements = self.driver.find_elements(By.XPATH, 
+                    "//div[contains(text(), 'See more')] | //span[contains(text(), 'See more')] | //*[@aria-label[contains(., 'See more')]]")
+                
+                print(f"Found {len(see_more_elements)} 'See more' elements")
+                
+                for element in see_more_elements:
+                    try:
+                        # Scroll element into view
+                        self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
+                        time.sleep(0.5)
+                        
+                        # Try to click the element
+                        if element.is_displayed() and element.is_enabled():
+                            element.click()
+                            expanded_count += 1
+                            time.sleep(1)  # Wait for content to expand
+                            print(f"Expanded content #{expanded_count}")
+                    except (ElementClickInterceptedException, Exception) as e:
+                        # Try JavaScript click as fallback
+                        try:
+                            self.driver.execute_script("arguments[0].click();", element)
+                            expanded_count += 1
+                            time.sleep(1)
+                            print(f"Expanded content #{expanded_count} (JS click)")
+                        except Exception as js_e:
+                            print(f"Could not click 'See more' element: {js_e}")
+                            continue
+                            
+            except Exception as e:
+                print(f"Error finding 'See more' elements: {e}")
+            
+            print(f"Successfully expanded {expanded_count} 'See more' links")
+            return expanded_count
+            
+        except Exception as e:
+            print(f"Error in expand_see_more_links: {e}")
+            return 0
+
     def get_page_html(self):
         """Get current page HTML"""
         return self.driver.page_source
@@ -532,6 +594,13 @@ class FacebookScraper:
             # 1: Use Selenium to scroll down a little and load new posts
             print(f"Scroll #{scrolls + 1}...")
             self.scroll_page()
+
+            # 1.5: Expand "See more" links to get full content
+            if scrolls % 2 == 0:  # Expand every 2nd scroll to avoid too many clicks
+                print("Expanding 'See more' links...")
+                expanded = self.expand_see_more_links()
+                if expanded > 0:
+                    time.sleep(2)  # Wait for content to fully load after expansion
 
             # 2: Extract the HTML of the current page
             html_content = self.get_page_html()
