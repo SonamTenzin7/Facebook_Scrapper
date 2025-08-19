@@ -9,6 +9,10 @@ https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/
 
 ## 📋 Endpoints
 
+https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json     
+https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/categories.json 
+https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/stats.json      
+https://sonamtenzin7.github.io/Facebook_Scrapper/frontend.html  
 ### GET `/posts.json`
 Returns all posts with complete metadata.
 
