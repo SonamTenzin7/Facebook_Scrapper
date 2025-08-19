@@ -796,9 +796,6 @@ def main():
 
         # Save to consolidated master file (single growing file)
         master_filename = scraper.save_posts_consolidated(formatted_data)
-        
-        # Also save session backup (for debugging)
-        session_filename = scraper.save_posts(formatted_data)
 
         # Generate static API files
         from generate_static_api import generate_static_api
@@ -826,7 +823,6 @@ def main():
         print(f"\n=== Scraping Summary ===")
         print(f"Total posts scraped: {len(formatted_data)}")
         print(f"Master data saved to: {master_filename}")
-        print(f"Session backup saved to: {session_filename}")
 
         # Print sample data
         if len(formatted_data) > 0:
