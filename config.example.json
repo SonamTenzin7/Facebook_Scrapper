@@ -1,7 +1,7 @@
 {
   "credentials": {
-    "email": "sonamtenzey0@gmail.com",
-    "password": "Sonampsty@81"
+    "email": "YOUR_EMAIL_HERE",
+    "password": "YOUR_PASSWORD_HERE"
   },
   "scraping": {
     "headless": true,

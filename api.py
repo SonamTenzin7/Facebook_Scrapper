@@ -6,7 +6,7 @@ import glob
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for frontend access
+CORS(app)  
 
 DATA_FOLDER = "data"
 

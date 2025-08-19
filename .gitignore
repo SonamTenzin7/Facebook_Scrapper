@@ -39,6 +39,7 @@ geckodriver
 # data/kuensel_posts_*.json
 
 # Personal configuration (if you add any sensitive config)
+config.json
 config_local.json
 .env
 
