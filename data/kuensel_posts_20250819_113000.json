@@ -1,0 +1,62 @@
+{
+  "scraping_session": {
+    "timestamp": "2025-08-19T11:30:00.091754",
+    "total_posts": 3,
+    "status": "completed"
+  },
+  "posts": [
+    {
+      "id": "df627838e724c067",
+      "title": "(FOR SALE) 1",
+      "description": ". 100-decimal land with an attached one-story traditional house in Pemagatshel Pangthang, just 1 km from the old Dzong. The land is cultivated with cardamom and various fruit trees, generating good annual income. 2. 14.3-decimal land for sale in Mongar, under Changshingpeg Lap UV1, with a transferable loan.  See more",
+      "content": "(FOR SALE) 1. 100-decimal land with an attached one-story traditional house in Pemagatshel Pangthang, just 1 km from the old Dzong. The land is cultivated with cardamom and various fruit trees, generating good annual income. 2. 14.3-decimal land for sale in Mongar, under Changshingpeg Lap UV1, with a transferable loan.  See more",
+      "categoryID": "advertisement",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534648111_1173287454834623_5196524218448399772_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=w-GJeXjUQicQ7kNvwGkP_19&_nc_oc=Adm_1dM8i8VhS2z-KagohuOx_tFd67ScetinOJpvi4TfvxE1LyWx6MxDZuEuUWboz18&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=lXTxAhSPL-7GUo8dL5QCBQ&oh=00_AfWakUKU4A2KI0ipLpu1ffhHpM3kPGj17iY543-IiVBEww&oe=68A9E408",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/534551647_1173287114834657_2776278469334767571_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DTIa7eNI2pYQ7kNvwFRMktk&_nc_oc=Admk7L_FVmgUOoKZwp5VtmDK1MeXinHFDGlYG66BRhvl3meTVO_bPiYE6HI4dfFQtdM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=lXTxAhSPL-7GUo8dL5QCBQ&oh=00_AfWAjnG9zVe0tnTg3ZMslyPI1CRWO1X2373paNk5fSXNIQ&oe=68A9D665",
+          "https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/535875335_1173287451501290_5611029088502567624_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=I_vGTjsF5KgQ7kNvwGgMp58&_nc_oc=AdlYT88GZbQ5UQP3aEXMIrfxgN92bNSaM2F90vRSWN5k5LJBmDBaqKrlzB84GJThWe0&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=lXTxAhSPL-7GUo8dL5QCBQ&oh=00_AfWErHLA9gmWbF0_guRaERjzky5o-SOOdvo87EDrvgOP4w&oe=68A9E2AD",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535465376_1173287174834651_822409838339311277_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JxIWbhB2xgUQ7kNvwE0WH6Y&_nc_oc=AdltvNQ15hSf-QpCoUFnifiknRiImuJH4Bh4H_Ttkv2dblrPKdbll6dJai8l0Bn2a54&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=lXTxAhSPL-7GUo8dL5QCBQ&oh=00_AfUrljqCoMRl6jmrxGVZooE7ehnyGw-iuy0dMCmeg_-D3A&oe=68A9F438"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T11:29:47.582324",
+      "publishAt": "2025-08-19T11:29:47.582330"
+    },
+    {
+      "id": "12611550d20516e8",
+      "title": "Rinchen Thinley",
+      "description": "",
+      "content": "Rinchen Thinley",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T11:29:47.584094",
+      "publishAt": "2025-08-19T11:29:47.584095"
+    },
+    {
+      "id": "1cad35d4b3b9f624",
+      "title": "Intro",
+      "description": "",
+      "content": "Intro",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T11:29:47.596879",
+      "publishAt": "2025-08-19T11:29:47.596880"
+    }
+  ]
+}

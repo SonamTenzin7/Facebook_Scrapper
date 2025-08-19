@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+log/*.log
+*.log
+
+# Chrome driver
+chromedriver
+geckodriver
+
+# Large data files (optional - uncomment if you don't want to commit raw data)
+# data/kuensel_posts_*.json
+
+# Personal configuration (if you add any sensitive config)
+config_local.json
+.env
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

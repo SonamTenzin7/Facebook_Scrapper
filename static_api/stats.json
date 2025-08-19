@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "stats": {
+    "total_posts": 2,
+    "categories": {
+      "general": 2
+    },
+    "total_images": 1,
+    "total_videos": 0,
+    "last_updated": "2025-08-19T14:08:02.403400"
+  },
+  "generated_at": "2025-08-19T14:17:00.802474"
+}

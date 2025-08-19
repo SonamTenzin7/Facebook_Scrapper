@@ -1,0 +1,43 @@
+{
+  "scraping_session": {
+    "timestamp": "2025-08-19T12:46:33.701325",
+    "total_posts": 2,
+    "status": "completed"
+  },
+  "posts": [
+    {
+      "id": "f06f3c0e49282687",
+      "title": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s m...",
+      "description": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s most sacred sites at Rajgir, Bihar, India, the Royal Bhutan Temple will be consecrated on September 4. His Holiness the Je Khenpo will preside over the consecration ceremony, which will be attended by senior Indian leaders, including the Chief Minister of Bihar and ministers of parliamentary and minority affairs. https:  kuenselonline.com ... royal-bhutan-temple-in...   See more",
+      "content": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s most sacred sites at Rajgir, Bihar, India, the Royal Bhutan Temple will be consecrated on September 4. His Holiness the Je Khenpo will preside over the consecration ceremony, which will be attended by senior Indian leaders, including the Chief Minister of Bihar and ministers of parliamentary and minority affairs. https:  kuenselonline.com ... royal-bhutan-temple-in...   See more",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/10899379996765372353?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2FRBT.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75_tt6&_nc_gid=0sc0XYyeP6BIo1-vtl3Vzw&_nc_oc=AdmlCrhgljTmKjkPkg88Q0HdpLNRDdnCqiQB3rXCCk2q_zVwpV_t-2KWKZ2gOKEzcTU&ccb=13-1&oh=06_Q3-2AYnYAcxA6WgK5JRmtSg-Q91xfqoKidMm-3Ckq0m5jyZp&oe=68A5F3B6&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T12:46:20.885737",
+      "publishAt": "2025-08-19T12:46:20.885743"
+    },
+    {
+      "id": "1cad35d4b3b9f624",
+      "title": "Intro",
+      "description": "",
+      "content": "Intro",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T12:46:20.896665",
+      "publishAt": "2025-08-19T12:46:20.896666"
+    }
+  ]
+}

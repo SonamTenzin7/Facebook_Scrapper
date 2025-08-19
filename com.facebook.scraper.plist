@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.facebook.scraper</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/sonamtenzin/.pyenv/versions/3.10.13/bin/python3</string>
+        <string>/Users/sonamtenzin/Desktop/AI_ML/Facebook_Scrapper/facebook_scrapper.py</string>
+    </array>
+    
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    
+    <key>RunAtLoad</key>
+    <false/>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/sonamtenzin/Desktop/AI_ML/Facebook_Scrapper/log/launchd.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/sonamtenzin/Desktop/AI_ML/Facebook_Scrapper/log/launchd_error.log</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/sonamtenzin/.pyenv/versions/3.10.13/bin</string>
+        <key>HOME</key>
+        <string>/Users/sonamtenzin</string>
+        <key>PYTHONUNBUFFERED</key>
+        <string>1</string>
+    </dict>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/sonamtenzin/Desktop/AI_ML/Facebook_Scrapper</string>
+</dict>
+</plist>

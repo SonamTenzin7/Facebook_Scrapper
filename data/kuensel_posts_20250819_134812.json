@@ -1,0 +1,59 @@
+{
+  "scraping_session": {
+    "timestamp": "2025-08-19T13:48:12.382745",
+    "total_posts": 3,
+    "status": "completed"
+  },
+  "posts": [
+    {
+      "id": "a7bce4181b881dea",
+      "title": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal impo...",
+      "description": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal imports and ensure timely access to agricultural inputs, the National Seed Centre, Ministry of Agriculture and Livestock (MoAL) signed an agreement with Brahmaputra Valley Fertilizer Corporation Limited (BVFCL) yesterday to import 5,000 metric tonnes of fertilisers annually. https:  kuenselonline.com ... bhutan-to-import-5000mt... #fertilisers #agriculture #import #Bhutan",
+      "content": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal imports and ensure timely access to agricultural inputs, the National Seed Centre, Ministry of Agriculture and Livestock (MoAL) signed an agreement with Brahmaputra Valley Fertilizer Corporation Limited (BVFCL) yesterday to import 5,000 metric tonnes of fertilisers annually. https:  kuenselonline.com ... bhutan-to-import-5000mt... #fertilisers #agriculture #import #Bhutan",
+      "categoryID": "culture",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/988547214374678415?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Ffertilisers.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75_tt6&_nc_gid=oa9pS7qseEkVx7fiVQsVnA&_nc_oc=AdmwnYYRIfcU5xH5IPgEkSw47Nf5ZSxBhUu7SSQmwlvwemtQ3P2v9Dh9qJsyll0COPM&ccb=13-1&oh=06_Q3-2ARdqSsg9d1L2MsmWP_gKd9lvJR_GMEyprts5a2e9aX1r&oe=68A6008B&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T13:32:56.347252",
+      "publishAt": "2025-08-19T13:32:56.347261"
+    },
+    {
+      "id": "ea82ce802860c73b",
+      "title": "Chemical, inorganic",
+      "description": "",
+      "content": "Chemical, inorganic",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T13:32:56.348549",
+      "publishAt": "2025-08-19T13:32:56.348550"
+    },
+    {
+      "id": "1cad35d4b3b9f624",
+      "title": "Intro",
+      "description": "",
+      "content": "Intro",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T13:32:56.362312",
+      "publishAt": "2025-08-19T13:32:56.362313"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "credentials": {
+    "email": "sonamtenzey0@gmail.com",
+    "password": "Sonampsty@81"
+  },
+  "scraping": {
+    "headless": true,
+    "max_scrolls": 15,
+    "scroll_pause": 3,
+    "target_count": 25
+  },
+  "output": {
+    "folder": "data/",
+    "filename_prefix": "kuensel_posts"
+  },
+  "download_images": false
+}
