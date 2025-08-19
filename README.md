@@ -3,7 +3,7 @@
 An automated Facebook scraper that collects posts from Kuensel's Facebook page and presents them in a clean, filterable web interface.
 
 ## 🌐 Live Demo
-View the latest posts: [https://sonamtenzin.github.io/Facebook_Scrapper/](https://yourusername.github.io/Facebook_Scrapper/)
+View the latest posts: [https://sonamtenzin7.github.io/Facebook_Scrapper/](https://sonamtenzin7.github.io/Facebook_Scrapper/)
 
 ## Features
 - ✅ Automated scraping every hour via macOS launch agent
