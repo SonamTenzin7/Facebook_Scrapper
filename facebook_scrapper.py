@@ -1138,8 +1138,6 @@ class FacebookScraper:
 
 
 def main():
-    import os  # Ensure os is available in main scope
-    
     # Check if we've already scraped recently
     last_run_file = "data/last_run.txt"
     current_time = datetime.now()
