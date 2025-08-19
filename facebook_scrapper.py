@@ -464,7 +464,7 @@ class FacebookScraper:
         media = {"images": [], "videos": []}
 
         try:
-            # Extract images
+            # Method 1: Extract images from img tags
             img_elements = post_element.find_all('img')
             for img in img_elements:
                 src = img.get('src', '')
@@ -475,29 +475,95 @@ class FacebookScraper:
                         if src not in media["images"]:
                             media["images"].append(src)
 
-            # Extract videos
-            video_elements = post_element.find_all('video')
-            for video in video_elements:
-                src = video.get('src', '')
-                if src and src not in media["videos"]:
-                    media["videos"].append(src)
+            # Method 2: Extract from data attributes (multiple variants)
+            data_attrs = [
+                'data-imgurl', 'data-src', 'data-original', 'data-lazy-src',
+                'data-img-src', 'data-background-image', 'data-image-url'
+            ]
+            
+            for attr in data_attrs:
+                elements_with_data = post_element.find_all(attrs={attr: True})
+                for elem in elements_with_data:
+                    img_url = elem.get(attr, '')
+                    if self.is_valid_image_url(img_url) and img_url not in media["images"]:
+                        media["images"].append(img_url)
 
-            # Extract image URLs from style attributes
-            div_elements = post_element.find_all('div')
-            for div in div_elements:
-                style = div.get('style', '')
+            # Method 3: Extract image URLs from style attributes
+            style_elements = post_element.find_all(attrs={'style': True})
+            for elem in style_elements:
+                style = elem.get('style', '')
                 # Look for background-image URLs
                 bg_image_matches = re.findall(r'background-image:\s*url\(["\']?(.*?)["\']?\)', style)
                 for url in bg_image_matches:
                     if self.is_valid_image_url(url) and url not in media["images"]:
                         media["images"].append(url)
 
-            # Extract from data attributes
-            elements_with_data = post_element.find_all(attrs={"data-imgurl": True})
-            for elem in elements_with_data:
-                img_url = elem.get('data-imgurl', '')
-                if self.is_valid_image_url(img_url) and img_url not in media["images"]:
-                    media["images"].append(img_url)
+            # Method 4: Extract from srcset attributes (responsive images)
+            srcset_elements = post_element.find_all(attrs={'srcset': True})
+            for elem in srcset_elements:
+                srcset = elem.get('srcset', '')
+                # Parse srcset format: "url1 1x, url2 2x" or "url1 100w, url2 200w"
+                urls = re.findall(r'(https?://[^\s,]+)', srcset)
+                for url in urls:
+                    if self.is_valid_image_url(url) and url not in media["images"]:
+                        media["images"].append(url)
+
+            # Method 5: Look for specific Facebook image classes/patterns
+            fb_image_selectors = [
+                'img[class*="scaledImageFitWidth"]',
+                'img[class*="scaledImageFitHeight"]', 
+                'img[class*="_46-i"]',
+                'img[class*="fb_feed_image"]',
+                'div[style*="background-image"]',
+                'a[href*="/photo/"]',
+                '[data-testid="photo"]'
+            ]
+            
+            for selector in fb_image_selectors:
+                try:
+                    elements = post_element.select(selector)
+                    for elem in elements:
+                        # For img tags
+                        if elem.name == 'img':
+                            src = elem.get('src', '')
+                            if src and self.is_valid_image_url(src) and src not in media["images"]:
+                                media["images"].append(src)
+                        # For div with background-image
+                        elif elem.name == 'div':
+                            style = elem.get('style', '')
+                            bg_matches = re.findall(r'background-image:\s*url\(["\']?(.*?)["\']?\)', style)
+                            for url in bg_matches:
+                                if self.is_valid_image_url(url) and url not in media["images"]:
+                                    media["images"].append(url)
+                        # For links to photos
+                        elif elem.name == 'a':
+                            href = elem.get('href', '')
+                            # Extract image URL from Facebook photo links
+                            if '/photo/' in href:
+                                # Look for image inside the link
+                                img_in_link = elem.find('img')
+                                if img_in_link:
+                                    src = img_in_link.get('src', '')
+                                    if src and self.is_valid_image_url(src) and src not in media["images"]:
+                                        media["images"].append(src)
+                except Exception as e:
+                    print(f"Error with selector {selector}: {e}")
+
+            # Method 6: Extract videos
+            video_elements = post_element.find_all('video')
+            for video in video_elements:
+                src = video.get('src', '')
+                if src and src not in media["videos"]:
+                    media["videos"].append(src)
+                    
+            # Also check for video data attributes
+            video_data_elements = post_element.find_all(attrs={"data-video-url": True})
+            for elem in video_data_elements:
+                video_url = elem.get('data-video-url', '')
+                if video_url and video_url not in media["videos"]:
+                    media["videos"].append(video_url)
+
+            print(f"Extracted {len(media['images'])} images, {len(media['videos'])} videos")
 
         except Exception as e:
             print(f"Error extracting media: {e}")
@@ -601,21 +667,53 @@ class FacebookScraper:
         if not url:
             return False
 
-        # Ignore Facebook static resources
+        # Ignore Facebook static resources and UI elements
         ignore_patterns = [
             'rsrc.php',
-            'static.xx.fbcdn.net',
+            'static.xx.fbcdn.net/rsrc.php',
             'emoji.php',
             'spacer.gif',
-            'transparent.gif'
+            'transparent.gif',
+            '/rsrc.php',
+            'blank.gif',
+            'spinner',
+            'loading'
         ]
 
         if any(pattern in url for pattern in ignore_patterns):
             return False
 
         # Check if it looks like an image URL
-        image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp']
-        return url.startswith(('http://', 'https://')) and any(ext in url.lower() for ext in image_extensions)
+        # Include Facebook CDN patterns and common image extensions
+        valid_patterns = [
+            'fbcdn.net',
+            'facebook.com',
+            'cdninstagram.com'
+        ]
+        
+        image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp']
+        
+        # Must start with http/https
+        if not url.startswith(('http://', 'https://')):
+            return False
+            
+        # Must have valid domain or extension
+        has_valid_domain = any(pattern in url for pattern in valid_patterns)
+        has_image_extension = any(ext in url.lower() for ext in image_extensions)
+        
+        # Facebook images often don't have extensions but are on fbcdn.net
+        # Also check for common Facebook image URL patterns
+        fb_image_patterns = [
+            'scontent',
+            'fbcdn.net/v/t',
+            'graph.facebook.com',
+            '/photos/',
+            '/photo.php'
+        ]
+        
+        has_fb_pattern = any(pattern in url for pattern in fb_image_patterns)
+        
+        return has_valid_domain or has_image_extension or has_fb_pattern
 
     def clean_text(self, text):
         """Clean and preprocess text"""
@@ -653,11 +751,50 @@ class FacebookScraper:
     def is_valid_post(self, post_data):
         """Check if post has meaningful content"""
         content = post_data.get('content', '')
-        # raw_length = post_data.get('raw_content_length', 0) # Not used
-
-        # Require at least 5 characters of meaningful content (relaxed requirement)
-        is_valid = len(content.strip()) >= 5 if content else False
-        return is_valid
+        title = post_data.get('title', '')
+        description = post_data.get('description', '')
+        
+        # Filter out posts with no meaningful content
+        if not content or len(content.strip()) < 10:
+            return False
+            
+        # Filter out posts with only dots or minimal content
+        content_clean = content.strip()
+        if content_clean in ['', '.', '..', '...', '....', '.....']:
+            return False
+            
+        # Filter out posts that are just the title repeated
+        if content_clean == title.strip():
+            return False
+            
+        # Filter out very short posts that are likely incomplete
+        if len(content_clean) < 15 and not any(char.isalnum() for char in content_clean):
+            return False
+            
+        # Filter out posts with suspiciously generic content
+        generic_patterns = [
+            'shame for a leader',
+            'untitled post',
+            'loading...',
+            'error',
+            'failed to load'
+        ]
+        
+        content_lower = content_clean.lower()
+        if any(pattern in content_lower for pattern in generic_patterns):
+            return False
+            
+        # Require at least some meaningful text (letters or numbers)
+        if not any(char.isalnum() for char in content_clean):
+            return False
+            
+        # Additional check: if description is just dots, it's likely incomplete
+        if description and description.strip() in ['', '.', '..', '...', '....', '.....']:
+            # Unless the content is substantial
+            if len(content_clean) < 50:
+                return False
+        
+        return True
 
     def create_post_hash(self, post_data):
         """Create hash to identify duplicate posts"""
