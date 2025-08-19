@@ -299,6 +299,15 @@ class FacebookScraper:
             # Extract media
             media = self.extract_media_from_post(post_element)
 
+            # Extract additional images from Facebook photo links
+            photo_images = self.extract_images_from_facebook_photo_links(links)
+            if photo_images:
+                print(f"Found {len(photo_images)} additional images from photo links")
+                # Add to existing media images, avoiding duplicates
+                for img_url in photo_images:
+                    if img_url not in media["images"]:
+                        media["images"].append(img_url)
+
             # Fetch full article content if Kuensel links are found
             article_content, article_title = self.fetch_full_article_content(links)
 
@@ -422,6 +431,8 @@ class FacebookScraper:
     def extract_links_from_post(self, post_element):
         """Extract all links from a post"""
         links = []
+        photo_links = []
+        
         try:
             link_elements = post_element.find_all('a', href=True)
             base_url = "https://www.facebook.com"
@@ -429,18 +440,26 @@ class FacebookScraper:
             for link in link_elements:
                 href = link.get('href', '')
                 if href:
-                
                     if href.startswith('/'):
                         href = urljoin(base_url, href)
 
-                    # Filter out Facebook internal links
-                    if self.is_external_link(href) or '/permalink.php' in href or '/photos/' in href:
+                    # Collect Facebook photo links separately 
+                    if '/photo?' in href or '/photos/' in href or 'fbid=' in href:
+                        if href not in photo_links:
+                            photo_links.append(href)
+                            print(f"Found Facebook photo link: {href}")
+                    
+                    # Filter out Facebook internal links for regular links
+                    elif self.is_external_link(href) or '/permalink.php' in href:
                         if href not in links:
                             links.append(href)
+                            
         except Exception as e:
             print(f"Error extracting links: {e}")
 
-        return links
+        # Store photo links in the links array with a special marker
+        all_links = links + photo_links
+        return all_links
 
     def is_external_link(self, url):
         """Check if URL is external (not Facebook internal)"""
@@ -569,6 +588,77 @@ class FacebookScraper:
             print(f"Error extracting media: {e}")
 
         return media
+
+    def extract_images_from_facebook_photo_links(self, links):
+        """Extract actual image URLs from Facebook photo links"""
+        image_urls = []
+        
+        try:
+            for link in links:
+                if '/photo?' in link or 'fbid=' in link:
+                    print(f"Processing Facebook photo link: {link}")
+                    
+                    try:
+                        # Navigate to the photo page
+                        self.driver.execute_script(f"window.open('{link}', '_blank');")
+                        self.driver.switch_to.window(self.driver.window_handles[-1])
+                        time.sleep(3)  # Wait for page to load
+                        
+                        # Get page source and parse with BeautifulSoup
+                        photo_page_html = self.driver.page_source
+                        soup = BeautifulSoup(photo_page_html, 'html.parser')
+                        
+                        # Look for the main photo image with multiple selectors
+                        photo_selectors = [
+                            'img[data-pagelet="MediaViewerPhoto"]',
+                            'img[class*="spotlight"]',
+                            'img[style*="max-height"]',
+                            'img[src*="fbcdn.net"][src*="scontent"]',
+                            '.spotlight img',
+                            '[data-testid="photo-viewer"] img',
+                            '.photoContainer img',
+                            'img[class*="scaledImageFit"]'
+                        ]
+                        
+                        found_image = False
+                        for selector in photo_selectors:
+                            try:
+                                img_elements = soup.select(selector)
+                                for img in img_elements:
+                                    src = img.get('src', '')
+                                    if src and self.is_valid_image_url(src):
+                                        # Check if it's a high-quality image (not thumbnail)
+                                        if 'scontent' in src and len(src) > 50:
+                                            image_urls.append(src)
+                                            print(f"Extracted image from photo page: {src[:100]}...")
+                                            found_image = True
+                                            break
+                                if found_image:
+                                    break
+                            except Exception as sel_e:
+                                continue
+                                
+                        # Close the photo page tab
+                        self.driver.close()
+                        self.driver.switch_to.window(self.driver.window_handles[0])
+                        
+                        if not found_image:
+                            print(f"Could not extract image from photo page: {link}")
+                            
+                    except Exception as e:
+                        print(f"Error processing photo link {link}: {e}")
+                        # Make sure we're back on main window
+                        try:
+                            if len(self.driver.window_handles) > 1:
+                                self.driver.close()
+                                self.driver.switch_to.window(self.driver.window_handles[0])
+                        except:
+                            pass
+                        
+        except Exception as e:
+            print(f"Error extracting images from photo links: {e}")
+            
+        return image_urls
 
     def fetch_full_article_content(self, links):
         """Fetch full article content from Kuensel links"""
@@ -1060,7 +1150,7 @@ def main():
             time_diff = (current_time - last_run).total_seconds()
             
             # If less than 30 minutes since last run, skip
-            if time_diff < 1800:  
+            if time_diff < 1800:  # 30 minutes = 1800 seconds
                 print(f"Last run was only {time_diff} seconds ago. Skipping...")
                 return
     except FileNotFoundError:
