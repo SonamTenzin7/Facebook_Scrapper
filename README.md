@@ -12,9 +12,16 @@ View the latest posts: [https://sonamtenzin7.github.io/Facebook_Scrapper/](https
 - 📱 Responsive design for mobile and desktop
 - 🖼️ Image gallery with click-to-expand
 - ⚡ Static file generation for fast loading
-- 🔄 Auto-refresh every 5 minutes
+- 🔄 Auto-refresh every 60 minutes
 
 ## Quick Start
+
+### Setup Configuration
+```bash
+# Copy the example config and add your credentials
+cp config.example.json config.json
+# Edit config.json with your Facebook credentials (never commit this file!)
+```
 
 ### View Posts Locally
 ```bash
@@ -61,3 +68,8 @@ This repository is configured to automatically deploy to GitHub Pages, updating 
 ```bash
 pip install -r requirements.txt
 ```
+
+## 🔒 Security Notice
+- `config.json` contains sensitive credentials and is excluded from the repository
+- Copy `config.example.json` to `config.json` and add your credentials
+- Never commit `config.json` to version control
