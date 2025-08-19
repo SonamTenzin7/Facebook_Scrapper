@@ -306,14 +306,14 @@ class FacebookScraper:
         else:
             remaining_content = content
 
-        # Get first paragraph or next 200 characters
+        # Get first paragraph or next 9000 characters
         paragraphs = [p.strip() for p in remaining_content.split('\n') if p.strip()]
         if paragraphs:
             description = paragraphs[0]
         else:
             description = remaining_content[:9000].strip()
 
-        # Limit description length
+        # Limit description length to 9000 characters
         if len(description) > 9000:
             description = description[:8997] + "..."
 
@@ -811,16 +811,16 @@ def main():
             script_dir = os.path.dirname(os.path.abspath(__file__))
             deploy_script = os.path.join(script_dir, 'auto_deploy.sh')
             if os.path.exists(deploy_script):
-                print("🚀 Auto-deploying to GitHub Pages...")
+                print("Auto-deploying to GitHub Pages...")
                 result = subprocess.run([deploy_script], capture_output=True, text=True, cwd=script_dir)
                 if result.returncode == 0:
-                    print("✅ GitHub Pages deployment initiated")
+                    print("GitHub Pages deployment initiated")
                 else:
-                    print(f"⚠️  Deployment script output: {result.stdout}")
+                    print(f"Deployment script output: {result.stdout}")
                     if result.stderr:
-                        print(f"⚠️  Deployment error: {result.stderr}")
+                        print(f" Deployment error: {result.stderr}")
         except Exception as e:
-            print(f"⚠️  Auto-deployment failed: {e}")
+            print(f"Auto-deployment failed: {e}")
 
         # Print summary
         print(f"\n=== Scraping Summary ===")
