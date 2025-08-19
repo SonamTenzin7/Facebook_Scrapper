@@ -36,7 +36,7 @@ python3 facebook_scrapper.py
 ## How It Works
 1. **Automation**: macOS launch agent runs the scraper every hour
 2. **Data Collection**: Selenium WebDriver scrapes Kuensel's Facebook page
-3. **Processing**: Posts are categorized and processed into JSON files
+3. **Smart Storage**: New posts are added to a single master file (no duplicates)
 4. **Static Generation**: JSON API files are created in `static_api/` directory
 5. **Display**: Frontend loads data from static files for fast, serverless operation
 
@@ -52,8 +52,9 @@ python3 facebook_scrapper.py
 │   ├── categories.json
 │   ├── stats.json
 │   └── posts_general.json
-└── data/                     # Raw scraped data
-    └── kuensel_posts_*.json
+└── data/                     # Scraped data storage
+    ├── kuensel_posts_master.json  # Master file with all posts
+    └── last_run.txt              # Tracks last scraping time
 ```
 
 ## GitHub Pages Setup

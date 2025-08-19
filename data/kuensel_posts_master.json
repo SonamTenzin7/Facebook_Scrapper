@@ -1,12 +1,30 @@
 {
   "scraping_session": {
-    "timestamp": "2025-08-19T16:23:13.005740",
-    "total_posts": 3,
-    "new_posts_this_session": 3,
-    "existing_posts": 0,
+    "timestamp": "2025-08-19T17:05:57.302858",
+    "total_posts": 4,
+    "new_posts_this_session": 1,
+    "existing_posts": 3,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "cadd91a5d4c5a944",
+      "title": "Editorial: 𝗔 𝗺𝗶𝗹𝗲𝘀𝘁𝗼𝗻𝗲, 𝘄𝗶𝘁𝗵 𝘀𝗵𝗮𝗱𝗼𝘄𝘀 𝘁𝗼 𝘄𝗮𝘁𝗰𝗵",
+      "description": "? The salang tendrel for the Jamjee Solar Project is more than a ritual blessing. It is our bold leap into a new era of renewable energy. For decades, we have relied almost entirely on hydropower to light our homes and run our industries. But rivers shrink in winter, and with them, our electricity supply. Each cold season, households endure power cuts, factories slow down, and we import electricity from India an uneasy dependence that chips away at the idea of true energy self-reliance. Solar, at last, offers a way to plug that gap. https:  kuenselonline.com ... a-milestone-with-shadows-to... #solar #renewable #energy #hydropoer #windmill #Bhutan",
+      "content": "Editorial: 𝗔 𝗺𝗶𝗹𝗲𝘀𝘁𝗼𝗻𝗲, 𝘄𝗶𝘁𝗵 𝘀𝗵𝗮𝗱𝗼𝘄𝘀 𝘁𝗼 𝘄𝗮𝘁𝗰𝗵? The salang tendrel for the Jamjee Solar Project is more than a ritual blessing. It is our bold leap into a new era of renewable energy. For decades, we have relied almost entirely on hydropower to light our homes and run our industries. But rivers shrink in winter, and with them, our electricity supply. Each cold season, households endure power cuts, factories slow down, and we import electricity from India an uneasy dependence that chips away at the idea of true energy self-reliance. Solar, at last, offers a way to plug that gap. https:  kuenselonline.com ... a-milestone-with-shadows-to... #solar #renewable #energy #hydropoer #windmill #Bhutan",
+      "categoryID": "advertisement",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/533588457_1173387131491322_1906411937000890316_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_42ZXdDkrMUQ7kNvwFHcIVI&_nc_oc=AdnZjv7q3SWX66sInXfu-FP020_pXwiHkbx-ONVj9qKN8vP2vwj8i28xbf6zlQrZjYA&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=DSfa-KB8D24ER12L6YAWxg&oh=00_AfWsvM5QiB9wfUlhhkRFMkNfh_xiwguhpTCmbYe-BeY87w&oe=68AA289F"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-19T17:05:37.715683",
+      "publishAt": "2025-08-19T17:05:37.715688"
+    },
     {
       "id": "5962bb1e4b4e81b3",
       "title": "Editorial: 𝗔 𝗺𝗶𝗹𝗲𝘀𝘁𝗼𝗻𝗲, 𝘄𝗶𝘁𝗵 𝘀𝗵𝗮𝗱𝗼𝘄𝘀 𝘁𝗼 𝘄𝗮𝘁𝗰𝗵",
