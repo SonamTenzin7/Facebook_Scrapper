@@ -1,0 +1,54 @@
+name: Facebook Scraper Automation
+
+on:
+  schedule:
+    # Run every hour at 5 minutes past the hour
+    - cron: '5 * * * *'
+  workflow_dispatch: # Allow manual triggering
+  
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Install Chrome and ChromeDriver
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        
+    - name: Create config file
+      run: |
+        echo '${{ secrets.FACEBOOK_CONFIG }}' > config.json
+        
+    - name: Run Facebook scraper
+      run: |
+        export DISPLAY=:99
+        Xvfb :99 -ac -screen 0 1280x1024x8 &
+        python facebook_scrapper.py
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
