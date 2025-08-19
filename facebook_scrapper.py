@@ -299,23 +299,38 @@ class FacebookScraper:
             # Extract media
             media = self.extract_media_from_post(post_element)
 
+            # Fetch full article content if Kuensel links are found
+            article_content, article_title = self.fetch_full_article_content(links)
+
             # Create proper title, description, and content
             clean_content = self.clean_text(content)
 
-            # For title, use first sentence or first 100 characters
-            title = self.extract_title_from_content(clean_content)
+            # Use article content if available, otherwise use Facebook post content
+            if article_content and len(article_content) > len(clean_content):
+                final_content = article_content
+                print(f"Using full article content ({len(article_content)} chars)")
+            else:
+                final_content = clean_content
+                print(f"Using Facebook post content ({len(clean_content)} chars)")
 
-            # For description, use first paragraph or next 200 characters
-            description = self.extract_description_from_content(clean_content, title)
+            # For title, use article title if available, otherwise extract from content
+            if article_title and len(article_title) > 10:
+                title = article_title
+                print(f"Using article title: {title[:50]}...")
+            else:
+                title = self.extract_title_from_content(final_content)
+
+            # For description, use first paragraph or next 9000 characters
+            description = self.extract_description_from_content(final_content, title)
 
             # Category based on content analysis
-            category_id = self.determine_category(clean_content)
+            category_id = self.determine_category(final_content)
 
             post_data = {
-                "id": hashlib.md5((content + str(timestamp)).encode()).hexdigest()[:16] if content else f"post_{index}",
+                "id": hashlib.md5((final_content + str(timestamp)).encode()).hexdigest()[:16] if final_content else f"post_{index}",
                 "title": title,
                 "description": description,
-                "content": clean_content,
+                "content": final_content,
                 "categoryID": category_id,
                 "authorId": author_id,
                 "authorName": author,
@@ -326,7 +341,8 @@ class FacebookScraper:
                 },
                 "createdAt": datetime.now().isoformat(),
                 "publishAt": timestamp if timestamp else datetime.now().isoformat(),
-                "raw_content_length": len(content)
+                "raw_content_length": len(final_content),
+                "article_source": "full_article" if article_content else "facebook_post"
             }
 
             return post_data
@@ -487,6 +503,98 @@ class FacebookScraper:
             print(f"Error extracting media: {e}")
 
         return media
+
+    def fetch_full_article_content(self, links):
+        """Fetch full article content from Kuensel links"""
+        full_content = ""
+        full_title = ""
+        
+        try:
+            # Look for Kuensel links
+            kuensel_links = [link for link in links if 'kuenselonline.com' in link or 'kuensel.bt' in link]
+            
+            if not kuensel_links:
+                return full_content, full_title
+            
+            # Take the first Kuensel link
+            article_url = kuensel_links[0]
+            print(f"Fetching full article from: {article_url}")
+            
+            # Set headers to mimic a browser
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+            }
+            
+            # Fetch the article
+            response = requests.get(article_url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                # Parse the HTML content
+                soup = BeautifulSoup(response.content, 'html.parser')
+                
+                # Extract title from various possible selectors
+                title_selectors = [
+                    'h1.entry-title',
+                    'h1.post-title', 
+                    'h1.article-title',
+                    '.title h1',
+                    'h1',
+                    'title'
+                ]
+                
+                for selector in title_selectors:
+                    title_elem = soup.select_one(selector)
+                    if title_elem and title_elem.get_text(strip=True):
+                        full_title = title_elem.get_text(strip=True)
+                        break
+                
+                # Extract content from various possible selectors
+                content_selectors = [
+                    '.entry-content',
+                    '.post-content',
+                    '.article-content',
+                    '.content',
+                    'article',
+                    '.main-content p',
+                    '.post-body',
+                    '.entry-body'
+                ]
+                
+                for selector in content_selectors:
+                    content_elem = soup.select_one(selector)
+                    if content_elem:
+                        # Get all paragraphs within the content
+                        paragraphs = content_elem.find_all('p')
+                        if paragraphs:
+                            content_text = '\n\n'.join([p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True)])
+                            if len(content_text) > len(full_content):
+                                full_content = content_text
+                        else:
+                            # If no paragraphs, get all text
+                            text = content_elem.get_text(strip=True)
+                            if len(text) > len(full_content):
+                                full_content = text
+                
+                # Clean up the content
+                if full_content:
+                    # Remove extra whitespace and newlines
+                    full_content = re.sub(r'\n+', '\n\n', full_content)
+                    full_content = re.sub(r'\s+', ' ', full_content)
+                    full_content = full_content.strip()
+                    
+                print(f"Successfully fetched article content: {len(full_content)} characters")
+                
+            else:
+                print(f"Failed to fetch article: HTTP {response.status_code}")
+                
+        except Exception as e:
+            print(f"Error fetching article content: {e}")
+            
+        return full_content, full_title
 
     def is_valid_image_url(self, url):
         """Check if URL is a valid image URL"""
