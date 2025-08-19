@@ -311,11 +311,11 @@ class FacebookScraper:
         if paragraphs:
             description = paragraphs[0]
         else:
-            description = remaining_content[:2000].strip()
+            description = remaining_content[:9000].strip()
 
         # Limit description length
-        if len(description) > 2000:
-            description = description[:1997] + "..."
+        if len(description) > 9000:
+            description = description[:8997] + "..."
 
         return description
 
