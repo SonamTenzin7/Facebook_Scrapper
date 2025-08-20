@@ -1,13 +1,7 @@
 {
   "success": true,
-  "total_posts": 2,
-  "scraping_session": {
-    "timestamp": "2025-08-20T09:59:45.833348",
-    "total_posts": 2,
-    "new_posts_this_session": 1,
-    "existing_posts": 1,
-    "status": "completed"
-  },
+  "category": "event",
+  "total_posts": 1,
   "posts": [
     {
       "id": "bdd3fb92747bf9e4",
@@ -41,28 +35,7 @@
       },
       "createdAt": "2025-08-20T09:56:28.276488",
       "publishAt": "2025-08-20T09:56:28.276502"
-    },
-    {
-      "id": "540bd49da09991ef",
-      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a ...",
-      "description": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three years and four months in prison. The verdict was passed today. The former MP Tashi Dorji of Nubi_Tangsibji consituency in Trongsa was charged for molesting a child in 2022. The incident occurred when he was serving as a Gewog Administrative Officer. The case was filed in court in October last year.",
-      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three years and four months in prison. The verdict was passed today. The former MP Tashi Dorji of Nubi_Tangsibji consituency in Trongsa was charged for molesting a child in 2022. The incident occurred when he was serving as a Gewog Administrative Officer. The case was filed in court in October last year.",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/535171289_1173573024806066_7537124039496390448_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SvgZlh8izl0Q7kNvwGIXPT7&_nc_oc=AdnV_lQjQ9CHf9XaGlgS-1ElAA6hMwNiIalBSYO731M25hVclc6aLS1z78FibT71SA4&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=KYIi4VrKoYN0g-uWKHlz2A&oh=00_AfWVl6h3_DeiXdr28TItZwYDrgI7pLsKTE9AoA7Px2dVrA&oe=68AA37B4",
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/535171289_1173573024806066_7537124039496390448_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SvgZlh8izl0Q7kNvwGIXPT7&_nc_oc=AdnV_lQjQ9CHf9XaGlgS-1ElAA6hMwNiIalBSYO731M25hVclc6aLS1z78FibT71SA4&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=0ArmjGfENxy9UkQBZlFCgQ&oh=00_AfVsd0Kqji6HMB7oBQ_ufmrkEvQgXk_aP0ynPVgQ5tUf8A&oe=68AA37B4"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1173573021472733&set=a.470097558486953&__cft__[0]=AZWLy8ltyfZP6k7aeYpM1aEd-BGi4e4p_eDeXGKq75XBe0IsLtg-RnWHTlS9DvtkUfPBguuM683hDKo3O_lnKZgV7d5HepqsXvZ3N1HzGRCgENBlEXrFH5S3gOOi5djEgSvyBPzINOktBTjF-at5O_j350lorGA6WtHZ3RClTnhUAq1T0DCWPK_fqy9ARr_IPHE&__tn__=EH-R"
-        ]
-      },
-      "createdAt": "2025-08-19T17:33:21.317816",
-      "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-20T10:02:39.561583"
+  "generated_at": "2025-08-20T10:02:39.561978"
 }
