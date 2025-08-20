@@ -1,8 +1,28 @@
 {
   "success": true,
   "category": "news",
-  "total_posts": 2,
+  "total_posts": 3,
   "posts": [
+    {
+      "id": "eaa93840f009228b",
+      "title": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our co...",
+      "description": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "content": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536280014_1174194861410549_2889287880813172835_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zgTDJaM7HpYQ7kNvwHVQlMz&_nc_oc=AdlaySzNIR9WJnFRm3UCVmiIEeNh9Nr77XXm0mmZcJG0Qaw1iCuwEcOdJ8pNXYgWlTQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=CpgN5pSrGP3ZfwUnwMsyKQ&oh=00_AfVl3zesIxBIKO_8PDz7xpXyDJ8bQ_Zwnso7Z9JZWJwuCQ&oe=68AB5A74"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1174272764736092&set=a.470097558486953&__cft__[0]=AZVFaFkOP3yH4OaL7pKzUh8EogSSc_LikbHlmy0yhzTRockeziCLbB7nPPKHukwHInwgHeA2f-naIvq1qT6zJz-gI_VTe0UlOTCPm8OPR0btgLBneX_8YnfeSFQVKtb-lUpMDg4ocZwozLOUl0kp7Nu1O3hAJOl99PNvDUCapujUJaPOVAj3qKWEKYLcFrY9Fyk&__tn__=EH-R"
+        ]
+      },
+      "createdAt": "2025-08-20T08:35:44.689652",
+      "publishAt": "2025-08-20T08:35:44.689659"
+    },
     {
       "id": "6b3865228a59ee6b",
       "title": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to gree...",
@@ -42,5 +62,5 @@
       "publishAt": "2025-08-20T04:24:21.658876"
     }
   ],
-  "generated_at": "2025-08-20T07:09:52.593761"
+  "generated_at": "2025-08-20T08:36:39.060308"
 }

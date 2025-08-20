@@ -1,8 +1,24 @@
 {
   "success": true,
   "category": "general",
-  "total_posts": 1,
+  "total_posts": 2,
   "posts": [
+    {
+      "id": "7e8dba361bb97fc1",
+      "title": "How about closing AWP",
+      "description": "?",
+      "content": "How about closing AWP?",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-20T08:35:44.696506",
+      "publishAt": "2025-08-20T08:35:44.696511"
+    },
     {
       "id": "540bd49da09991ef",
       "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a ...",
@@ -25,5 +41,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-20T07:09:52.594019"
+  "generated_at": "2025-08-20T08:36:39.060502"
 }

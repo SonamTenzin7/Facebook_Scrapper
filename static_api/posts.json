@@ -1,14 +1,50 @@
 {
   "success": true,
-  "total_posts": 6,
+  "total_posts": 8,
   "scraping_session": {
-    "timestamp": "2025-08-20T07:09:52.590195",
-    "total_posts": 6,
-    "new_posts_this_session": 1,
-    "existing_posts": 5,
+    "timestamp": "2025-08-20T08:36:39.056914",
+    "total_posts": 8,
+    "new_posts_this_session": 2,
+    "existing_posts": 6,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "eaa93840f009228b",
+      "title": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our co...",
+      "description": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "content": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536280014_1174194861410549_2889287880813172835_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zgTDJaM7HpYQ7kNvwHVQlMz&_nc_oc=AdlaySzNIR9WJnFRm3UCVmiIEeNh9Nr77XXm0mmZcJG0Qaw1iCuwEcOdJ8pNXYgWlTQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=CpgN5pSrGP3ZfwUnwMsyKQ&oh=00_AfVl3zesIxBIKO_8PDz7xpXyDJ8bQ_Zwnso7Z9JZWJwuCQ&oe=68AB5A74"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1174272764736092&set=a.470097558486953&__cft__[0]=AZVFaFkOP3yH4OaL7pKzUh8EogSSc_LikbHlmy0yhzTRockeziCLbB7nPPKHukwHInwgHeA2f-naIvq1qT6zJz-gI_VTe0UlOTCPm8OPR0btgLBneX_8YnfeSFQVKtb-lUpMDg4ocZwozLOUl0kp7Nu1O3hAJOl99PNvDUCapujUJaPOVAj3qKWEKYLcFrY9Fyk&__tn__=EH-R"
+        ]
+      },
+      "createdAt": "2025-08-20T08:35:44.689652",
+      "publishAt": "2025-08-20T08:35:44.689659"
+    },
+    {
+      "id": "7e8dba361bb97fc1",
+      "title": "How about closing AWP",
+      "description": "?",
+      "content": "How about closing AWP?",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-20T08:35:44.696506",
+      "publishAt": "2025-08-20T08:35:44.696511"
+    },
     {
       "id": "6306e23537a64363",
       "title": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A rec...",
@@ -150,5 +186,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-20T07:09:52.592796"
+  "generated_at": "2025-08-20T08:36:39.059276"
 }
