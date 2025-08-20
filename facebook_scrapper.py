@@ -416,13 +416,21 @@ class FacebookScraper:
         content_lower = content.lower()
 
         categories = {
-            "news": ["breaking", "news", "update", "latest", "report"],
-            "event": ["event", "festival", "celebration", "observe", "foundation day", "ceremony"],
-            "culture": ["tradition", "culture", "heritage", "festival", "dzong", "sacred"],
-            "politics": ["minister", "government", "policy", "election", "parliament"],
-            "sports": ["match", "game", "tournament", "score", "team", "player"],
+            "news": ["breaking", "news", "update", "latest", "report", "tourism", "hotel", "green hotel", "industry", "policy", "standard"],
+            "event": ["event", "festival", "celebration", "observe", "foundation day", "ceremony", "state visit", "majesty", "king", "president"],
+            "culture": ["tradition", "culture", "heritage", "festival", "dzong", "sacred", "temple", "pagoda"],
+            "politics": ["minister", "government", "policy", "election", "parliament", "supreme court", "conviction", "sentence"],
+            "sports": ["match", "game", "tournament", "score", "team", "player", "championship", "football", "cricket", "archery"],
             "advertisement": ["available", "shop", "buy", "offer", "discount", "for sale","vacancy", "job", "recruitment"],
         }
+
+        # Prioritize specific matches first
+        if any(phrase in content_lower for phrase in ["green hotel", "tourism industry", "hospitality sector"]):
+            return "news"
+        if any(phrase in content_lower for phrase in ["state visit", "his majesty", "her majesty"]):
+            return "event"
+        if any(phrase in content_lower for phrase in ["supreme court", "conviction", "sentence"]):
+            return "politics"
 
         for category, keywords in categories.items():
             if any(keyword in content_lower for keyword in keywords):
