@@ -243,12 +243,43 @@ class FacebookScraper:
                 "div > div > span"
             ]
 
+            # Selectors to exclude (comments and reactions)
+            exclude_selectors = [
+                "[data-testid='comment']",
+                "[role='article'] [role='article']",  # Nested articles (comments)
+                ".comment",
+                "[data-testid='UFI2Comment/root']",
+                "[aria-label*='comment']",
+                "[aria-label*='Comment']",
+                "div[aria-label*='reaction']",
+                "div[aria-label*='like']",
+                "[data-testid='reactions-section']",
+                "[data-testid='social-context']"
+            ]
+
             for selector in content_selectors:
                 content_elem = post_element.select_one(selector)
                 if content_elem:
-                    temp_content = content_elem.get_text(strip=True, separator=' ')
-                    if len(temp_content) > len(content) and len(temp_content) > 3:
-                        content = temp_content
+                    # Check if this element contains excluded content
+                    is_excluded = False
+                    for exclude_selector in exclude_selectors:
+                        # Check if element contains excluded elements
+                        if content_elem.select(exclude_selector):
+                            is_excluded = True
+                            break
+                        # Check if element itself matches excluded selector (basic check)
+                        if any(cls in exclude_selector for cls in ['comment', 'Comment', 'reaction', 'like']):
+                            elem_text = content_elem.get_text().lower()
+                            if any(word in elem_text for word in ['comment', 'reply', 'like', 'share']):
+                                is_excluded = True
+                                break
+                    
+                    if not is_excluded:
+                        temp_content = content_elem.get_text(strip=True, separator=' ')
+                        # Additional filtering for comment-like patterns
+                        temp_content = self.filter_comments_from_content(temp_content)
+                        if len(temp_content) > len(content) and len(temp_content) > 3:
+                            content = temp_content
 
             # Extract timestamp
             timestamp = ""
@@ -831,6 +862,48 @@ class FacebookScraper:
 
         return text.strip()
 
+    def filter_comments_from_content(self, text):
+        """Filter out comments and user interactions from content"""
+        if not text:
+            return ""
+        
+        # Split into lines to analyze each part
+        lines = text.split('\n')
+        filtered_lines = []
+        
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+                
+            # Skip lines that look like comments or user interactions
+            comment_patterns = [
+                r'^[A-Za-z\s]+ commented:',  # "User Name commented:"
+                r'^\d+\s*(like|comment|share|react)',  # "5 likes", "10 comments"
+                r'^(Like|Comment|Share|Reply)$',  # Individual reaction words
+                r'^[A-Za-z\s]+ replied:',  # "User Name replied:"
+                r'^[A-Za-z\s]+ reacted',  # "User Name reacted"
+                r'^\d+\s*(min|hr|day|week|month|year)s?\s+ago',  # Time stamps like "5 min ago"
+                r'^(Most relevant|Top comments|All comments|View \d+ replies?)',  # Comment section headers
+                r'^Write a comment',  # Comment prompt
+                r'^[A-Za-z\s]+ and \d+ others? (like|comment|react)',  # "John and 5 others liked this"
+                r'^How about',  # Questions like "How about closing AWP?"
+                r'^What about',  # Questions like "What about this?"
+                r'^Why not',    # Questions like "Why not do this?"
+                r'^\w+\?$',     # Single word questions like "Really?", "True?"
+            ]
+            
+            is_comment = False
+            for pattern in comment_patterns:
+                if re.search(pattern, line, re.IGNORECASE):
+                    is_comment = True
+                    break
+            
+            if not is_comment:
+                filtered_lines.append(line)
+        
+        return '\n'.join(filtered_lines).strip()
+
     def parse_count(self, count_str):
         """Parse count strings like '1.2K', '5M'"""
         if not count_str:
@@ -882,6 +955,30 @@ class FacebookScraper:
         
         content_lower = content_clean.lower()
         if any(pattern in content_lower for pattern in generic_patterns):
+            return False
+        
+        # Filter out comment-like posts (short questions/statements)
+        comment_patterns = [
+            r'^how about.{1,30}\?*$',        # "How about closing AWP?"
+            r'^what about.{1,30}\?*$',       # "What about this?"
+            r'^why not.{1,30}\?*$',          # "Why not do this?"
+            r'^[a-zA-Z\s]{1,20}\?+$',        # Short questions like "Really???"
+            r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad)[\.\!\?]*$',  # Single word responses
+            r'^\w{1,10}[\.\!\?]+$',          # Very short exclamations
+        ]
+        
+        for pattern in comment_patterns:
+            if re.search(pattern, content_lower.strip()):
+                print(f"Filtering out comment-like content: '{content_clean[:50]}'")
+                return False
+            
+        # Require substantial content OR media attachments
+        has_media = bool(post_data.get('attachment', {}).get('images') or 
+                        post_data.get('attachment', {}).get('videos') or
+                        post_data.get('attachment', {}).get('links'))
+        
+        if len(content_clean) < 25 and not has_media:
+            print(f"Filtering out short post without media: '{content_clean[:30]}'")
             return False
             
         # Require at least some meaningful text (letters or numbers)
@@ -1079,8 +1176,33 @@ class FacebookScraper:
             print("No new posts to add to master file")
             return consolidated_file
         
-        # Combine posts (new posts first to maintain chronological order)
+        # Combine all posts
         all_posts = truly_new_posts + existing_posts
+        
+        # Sort posts by publishAt timestamp (newest first)
+        def get_publish_time(post):
+            try:
+                publish_at = post.get("publishAt", "")
+                if publish_at:
+                    # Handle both ISO format and other date formats
+                    if 'T' in publish_at:
+                        return datetime.fromisoformat(publish_at.replace('Z', '+00:00'))
+                    else:
+                        # Fallback for other formats
+                        return datetime.now()
+                return datetime.now()
+            except:
+                return datetime.now()
+        
+        all_posts.sort(key=get_publish_time, reverse=True)
+        print(f"Posts sorted by publish time (newest first)")
+        
+        # Debug: Show post ordering
+        print("Post order after sorting:")
+        for i, post in enumerate(all_posts[:3]):  # Show first 3 posts
+            pub_time = post.get("publishAt", "N/A")
+            title_preview = post.get("title", "No title")[:50]
+            print(f"  {i+1}. {pub_time} - {title_preview}...")
         
         # Ensure directory exists
         os.makedirs(os.path.dirname(consolidated_file), exist_ok=True)

@@ -1,15 +1,15 @@
 {
   "success": true,
   "stats": {
-    "total_posts": 5,
+    "total_posts": 7,
     "categories": {
-      "news": 2,
-      "event": 2,
-      "general": 1
+      "news": 3,
+      "general": 2,
+      "event": 2
     },
-    "total_images": 19,
+    "total_images": 23,
     "total_videos": 0,
-    "last_updated": "2025-08-20T06:43:52.734922"
+    "last_updated": "2025-08-20T14:05:29.879942"
   },
-  "generated_at": "2025-08-20T13:04:48.786560"
+  "generated_at": "2025-08-20T14:48:16.763183"
 }
