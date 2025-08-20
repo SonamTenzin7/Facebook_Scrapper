@@ -1,10 +1,10 @@
 {
   "success": true,
   "categories": [
-    "news",
-    "general",
     "event",
-    "sports"
+    "news",
+    "sports",
+    "general"
   ],
-  "generated_at": "2025-08-20T12:48:02.828445"
+  "generated_at": "2025-08-20T06:43:52.737643"
 }
