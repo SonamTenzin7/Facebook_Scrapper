@@ -926,12 +926,13 @@ class FacebookScraper:
         consecutive_empty_scrapes = 0
         consecutive_old_posts = 0  # Track how many already-scraped posts we encounter
         max_consecutive_empty = 3
-        max_consecutive_old = 5  # Stop if we see 5+ already-scraped posts in a row
+        max_consecutive_old = 8  # Increased from 5 to 8 - scroll more before stopping
+        min_scrolls_before_old_check = 3  # Don't check for old posts until we've scrolled at least 3 times
 
         # Cycle until required number of posts
         while len(self.posts_data) < target_count and scrolls < max_scrolls:
             # 1: Use Selenium to scroll down a little and load new posts
-            print(f"Scroll #{scrolls + 1}...")
+            print(f"Scroll #{scrolls + 1}... (Found {len(self.posts_data)} new posts so far)")
             self.scroll_page()
 
             # 1.5: Expand "See more" links to get full content
@@ -977,11 +978,15 @@ class FacebookScraper:
             print(f"Found {valid_posts_count} valid posts in this scroll. Total unique posts: {new_count}")
 
             # Track consecutive old posts to detect when we've reached older content
+            # But only after we've scrolled enough to capture recent posts
             if already_scraped_count > 0 and valid_posts_count == 0:
                 consecutive_old_posts += 1
-                if consecutive_old_posts >= max_consecutive_old:
-                    print(f"Encountered {consecutive_old_posts} scrolls with only already-scraped posts. Likely reached old content. Stopping...")
+                # Only stop if we've scrolled enough AND seen many consecutive old posts
+                if scrolls >= min_scrolls_before_old_check and consecutive_old_posts >= max_consecutive_old:
+                    print(f"Encountered {consecutive_old_posts} scrolls with only already-scraped posts after {scrolls} scrolls. Likely reached old content. Stopping...")
                     break
+                elif scrolls < min_scrolls_before_old_check:
+                    print(f"Found {already_scraped_count} old posts, but only scrolled {scrolls} times. Continuing to check for newer posts...")
             else:
                 consecutive_old_posts = 0  # Reset if we find new posts
 
@@ -1004,6 +1009,10 @@ class FacebookScraper:
             time.sleep(1)
 
         print(f"Scraping complete. Found {len(self.posts_data)} unique posts.")
+        if len(self.posts_data) > 0:
+            print(f"New posts found this session:")
+            for i, post in enumerate(self.posts_data[:3], 1):  # Show first 3 posts
+                print(f"  {i}. {post.get('title', 'No title')[:60]}...")
         return self.posts_data
 
     def format_for_output(self):
