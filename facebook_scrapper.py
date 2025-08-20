@@ -1205,7 +1205,6 @@ def main():
 
         # Auto-deploy to GitHub Pages
         import subprocess
-        import os
         try:
             script_dir = os.path.dirname(os.path.abspath(__file__))
             deploy_script = os.path.join(script_dir, 'auto_deploy.sh')
