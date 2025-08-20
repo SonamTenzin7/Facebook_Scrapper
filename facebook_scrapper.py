@@ -18,6 +18,8 @@ class FacebookScraper:
         self.driver = None
         self.posts_data = []
         self.seen_post_hashes = set()
+        self.existing_post_ids = set()  # Store existing post IDs
+        self.load_existing_posts()  # Load existing posts at initialization
         self.setup_driver()
 
     def load_config(self, config_file):
@@ -922,7 +924,9 @@ class FacebookScraper:
 
         scrolls = 0
         consecutive_empty_scrapes = 0
+        consecutive_old_posts = 0  # Track how many already-scraped posts we encounter
         max_consecutive_empty = 3
+        max_consecutive_old = 5  # Stop if we see 5+ already-scraped posts in a row
 
         # Cycle until required number of posts
         while len(self.posts_data) < target_count and scrolls < max_scrolls:
@@ -947,8 +951,17 @@ class FacebookScraper:
             # 4: Store the extracted data in a list (after validation)
             old_count = len(self.posts_data)
             valid_posts_count = 0
+            already_scraped_count = 0  # Track how many posts were already scraped
 
             for post in new_posts:
+                post_id = post.get("id", "")
+                
+                # Skip if post already exists in master file
+                if post_id and self.is_post_already_scraped(post_id):
+                    print(f"Skipping already scraped post: {post.get('title', '')[:50]}...")
+                    already_scraped_count += 1
+                    continue
+                
                 post_hash = self.create_post_hash(post)
                 if post_hash not in self.seen_post_hashes:
                     if self.is_valid_post(post):  
@@ -957,9 +970,20 @@ class FacebookScraper:
                         valid_posts_count += 1
                     else:
                         print(f"Post rejected as invalid: {post.get('title', '')[:30] if post.get('title') else 'No title'}")
+                else:
+                    print(f"Skipping duplicate post in this session: {post.get('title', '')[:50]}...")
 
             new_count = len(self.posts_data)
             print(f"Found {valid_posts_count} valid posts in this scroll. Total unique posts: {new_count}")
+
+            # Track consecutive old posts to detect when we've reached older content
+            if already_scraped_count > 0 and valid_posts_count == 0:
+                consecutive_old_posts += 1
+                if consecutive_old_posts >= max_consecutive_old:
+                    print(f"Encountered {consecutive_old_posts} scrolls with only already-scraped posts. Likely reached old content. Stopping...")
+                    break
+            else:
+                consecutive_old_posts = 0  # Reset if we find new posts
 
             # Check if we're getting new content
             if new_count == old_count:
@@ -1135,6 +1159,27 @@ class FacebookScraper:
         if self.driver:
             self.driver.quit()
             print("WebDriver closed")
+
+    def load_existing_posts(self):
+        """Load existing post IDs from master file to avoid re-scraping"""
+        consolidated_file = "data/kuensel_posts_master.json"
+        self.existing_post_ids = set()
+        
+        if os.path.exists(consolidated_file):
+            try:
+                with open(consolidated_file, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    existing_posts = existing_data.get("posts", [])
+                    self.existing_post_ids = {post.get("id") for post in existing_posts if post.get("id")}
+                print(f"Loaded {len(self.existing_post_ids)} existing post IDs to avoid re-scraping")
+            except (json.JSONDecodeError, FileNotFoundError) as e:
+                print(f"Could not load existing posts: {e}")
+        else:
+            print("No existing master file found, will scrape all posts")
+
+    def is_post_already_scraped(self, post_id):
+        """Check if a post has already been scraped"""
+        return post_id in self.existing_post_ids
 
 
 def main():
