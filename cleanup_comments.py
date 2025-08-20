@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Comment Cleanup Script for Facebook Scraper
 Removes comment-like posts from scraped data
@@ -83,7 +82,7 @@ def cleanup_comments(file_path):
         removed_count = len(removed_posts)
         final_count = len(cleaned_posts)
         
-        print(f"✅ Cleanup complete:")
+        print(f"Cleanup complete:")
         print(f"   Original posts: {original_count}")
         print(f"   Removed comments: {removed_count}")
         print(f"   Final posts: {final_count}")
@@ -91,7 +90,7 @@ def cleanup_comments(file_path):
         return removed_count > 0
         
     except Exception as e:
-        print(f"❌ Error cleaning comments: {e}")
+        print(f" Error cleaning comments: {e}")
         return False
 
 if __name__ == "__main__":
@@ -102,10 +101,10 @@ if __name__ == "__main__":
         changed = cleanup_comments(master_file)
         
         if changed:
-            print("📊 Regenerating static API files...")
+            print(" Regenerating static API files...")
             os.system("python generate_static_api.py")
-            print("✅ Cleanup completed!")
+            print("Cleanup completed!")
         else:
-            print("✅ No comments found to remove.")
+            print(" No comments found to remove.")
     else:
-        print(f"❌ Master file not found: {master_file}")
+        print(f"Master file not found: {master_file}")

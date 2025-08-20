@@ -91,6 +91,18 @@ class FacebookScraper:
             self.driver.get(page_url)
             time.sleep(3)
             print(f"Navigated to: {page_url}")
+            
+            # Try to access different feed views to catch more posts
+            try:
+                # Look for "Posts" tab for comprehensive coverage
+                posts_tab = self.driver.find_elements(By.XPATH, "//a[@role='tab' and contains(text(), 'Posts')]")
+                if posts_tab:
+                    self.driver.execute_script("arguments[0].click();", posts_tab[0])
+                    time.sleep(2)
+                    print("✅ Clicked Posts tab for better coverage")
+            except Exception as e:
+                pass  # Continue if not found
+            
             return True
         except Exception as e:
             print(f"Failed to navigate to page: {e}")
@@ -1044,6 +1056,8 @@ class FacebookScraper:
             print(f"✅ Removed {removed_count} comment-like posts from final data")
         
         return data
+    
+    def create_post_hash(self, post_data):
         """Create hash to identify duplicate posts"""
         content = post_data.get('content', '')
         title = post_data.get('title', '')

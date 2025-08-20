@@ -1,14 +1,30 @@
 {
   "success": true,
-  "total_posts": 7,
+  "total_posts": 8,
   "scraping_session": {
-    "timestamp": "2025-08-20T14:52:04.645445",
-    "total_posts": 7,
-    "new_posts_this_session": 1,
+    "timestamp": "2025-08-20T15:07:59.083255",
+    "total_posts": 8,
+    "new_posts_this_session": 2,
     "existing_posts": 6,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "983f21e1741bc4f1",
+      "title": "𝗡𝗼𝗻-𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘀𝗵𝗼𝘄 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗶𝗻 𝗻𝘂𝗿𝘀𝗶𝗻𝗴 Neten Dorji While nursing has been viewed as a profession best suited to students from science ba...",
+      "description": "𝗡𝗼𝗻-𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘀𝗵𝗼𝘄 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗶𝗻 𝗻𝘂𝗿𝘀𝗶𝗻𝗴 Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. #nursing #education #healthcare #Bhutan",
+      "content": "𝗡𝗼𝗻-𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘀𝗵𝗼𝘄 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗶𝗻 𝗻𝘂𝗿𝘀𝗶𝗻𝗴 Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices.",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-20T15:07:59.083234",
+      "publishAt": "2025-08-20T15:07:59.083237"
+    },
     {
       "id": "eaa93840f009228b",
       "title": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our co...",
@@ -170,5 +186,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-20T14:52:57.615766"
+  "generated_at": "2025-08-20T15:07:59.098662"
 }
