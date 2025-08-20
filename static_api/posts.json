@@ -1,10 +1,10 @@
 {
   "success": true,
-  "total_posts": 8,
+  "total_posts": 7,
   "scraping_session": {
-    "timestamp": "2025-08-20T08:36:39.056914",
-    "total_posts": 8,
-    "new_posts_this_session": 2,
+    "timestamp": "2025-08-20T14:52:04.645445",
+    "total_posts": 7,
+    "new_posts_this_session": 1,
     "existing_posts": 6,
     "status": "completed"
   },
@@ -28,22 +28,6 @@
       },
       "createdAt": "2025-08-20T08:35:44.689652",
       "publishAt": "2025-08-20T08:35:44.689659"
-    },
-    {
-      "id": "7e8dba361bb97fc1",
-      "title": "How about closing AWP",
-      "description": "?",
-      "content": "How about closing AWP?",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-20T08:35:44.696506",
-      "publishAt": "2025-08-20T08:35:44.696511"
     },
     {
       "id": "6306e23537a64363",
@@ -186,5 +170,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-20T08:36:39.059276"
+  "generated_at": "2025-08-20T14:52:57.615766"
 }

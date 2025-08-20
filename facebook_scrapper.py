@@ -993,7 +993,57 @@ class FacebookScraper:
         
         return True
 
-    def create_post_hash(self, post_data):
+    def cleanup_comment_posts(self, data):
+        """Remove comment-like posts from the final data"""
+        original_posts = data.get('posts', [])
+        cleaned_posts = []
+        removed_count = 0
+        
+        for post in original_posts:
+            content = post.get('content', '').strip()
+            
+            # Enhanced comment detection patterns
+            comment_patterns = [
+                r'^how about.{1,30}\?*$',        # "How about closing AWP?"
+                r'^what about.{1,30}\?*$',       # "What about this?"
+                r'^why not.{1,30}\?*$',          # "Why not do this?"
+                r'^[a-zA-Z\s]{1,20}\?+$',        # Short questions like "Really???"
+                r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad)[\.\!\?]*$',  # Single word responses
+                r'^\w{1,10}[\.\!\?]+$',          # Very short exclamations
+            ]
+            
+            is_comment = False
+            for pattern in comment_patterns:
+                if re.search(pattern, content.lower()):
+                    is_comment = True
+                    print(f"🗑️  Removing comment-like post: '{content[:50]}'")
+                    removed_count += 1
+                    break
+            
+            # Also check for very short posts without media
+            if not is_comment:
+                attachments = post.get('attachment', {})
+                has_media = bool(attachments.get('images') or 
+                               attachments.get('videos') or 
+                               attachments.get('links'))
+                
+                if len(content) < 25 and not has_media:
+                    is_comment = True
+                    print(f"🗑️  Removing short post without media: '{content[:50]}'")
+                    removed_count += 1
+            
+            if not is_comment:
+                cleaned_posts.append(post)
+        
+        # Update the data
+        data['posts'] = cleaned_posts
+        if 'scraping_session' in data:
+            data['scraping_session']['total_posts'] = len(cleaned_posts)
+        
+        if removed_count > 0:
+            print(f"✅ Removed {removed_count} comment-like posts from final data")
+        
+        return data
         """Create hash to identify duplicate posts"""
         content = post_data.get('content', '')
         title = post_data.get('title', '')
@@ -1223,9 +1273,16 @@ class FacebookScraper:
         with open(consolidated_file, 'w', encoding='utf-8') as f:
             json.dump(final_data, f, indent=2, ensure_ascii=False)
         
+        # Clean up any comment-like posts that might have slipped through
+        self.cleanup_comment_posts(final_data)
+        
+        # Re-save after cleanup
+        with open(consolidated_file, 'w', encoding='utf-8') as f:
+            json.dump(final_data, f, indent=2, ensure_ascii=False)
+        
         print(f"Consolidated data saved to {consolidated_file}")
         print(f"Added {len(truly_new_posts)} new posts to master file")
-        print(f"Total posts in master file: {len(all_posts)}")
+        print(f"Total posts in master file: {len(final_data['posts'])}")
         
         return consolidated_file
 
