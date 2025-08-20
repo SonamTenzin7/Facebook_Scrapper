@@ -38,6 +38,8 @@ jobs:
         export DISPLAY=:99
         Xvfb :99 -ac -screen 0 1280x1024x24 &
         sleep 3
+        # Remove cooldown check for GitHub Actions by deleting last_run.txt
+        rm -f data/last_run.txt
         python facebook_scrapper.py
         
     - name: Commit and push changes
