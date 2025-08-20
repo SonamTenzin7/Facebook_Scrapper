@@ -1,4 +1,4 @@
-# 📰 Kuensel Posts API Documentation
+# Kuensel Posts API Documentation
 
 A free, public API providing real-time access to Kuensel (Bhutan's national newspaper) Facebook posts. Updated automatically every hour.
 
@@ -7,7 +7,7 @@ A free, public API providing real-time access to Kuensel (Bhutan's national news
 https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/
 ```
 
-## 📋 Endpoints
+## Endpoints
 
 https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json     
 https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/categories.json 
@@ -78,7 +78,7 @@ Returns statistics about the collected data.
 ### GET `/posts_general.json`
 Returns only posts from the "general" category.
 
-## 🔧 Usage Examples
+## Usage Examples
 
 ### JavaScript/TypeScript
 ```javascript
@@ -109,7 +109,7 @@ for post in data['posts']:
 curl -s https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json | jq '.posts[0]'
 ```
 
-## 📊 Data Fields
+##  Data Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -133,7 +133,7 @@ curl -s https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json |
 - ✅ **Well-Structured**: Consistent JSON format
 - ✅ **Rich Metadata**: Images, links, categories, timestamps
 
-## 🚀 Rate Limits & Fair Use
+##  Rate Limits & Fair Use
 
 - No rate limits (it's static files!)
 - Please cache responses appropriately
@@ -144,7 +144,7 @@ curl -s https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json |
 
 This API is automatically generated from Kuensel's Facebook page. For issues or questions, please open an issue on the [GitHub repository](https://github.com/SONAMTENZIN7/Facebook_Scrapper).
 
-## 📄 License
+## License
 
 Public domain. Use freely for any purpose.
 
