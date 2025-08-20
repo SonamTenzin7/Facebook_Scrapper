@@ -2,8 +2,10 @@ name: Facebook Scraper Automation
 
 on:
   schedule:
-    # Run every hour at 5 minutes past the hour
-    - cron: '5 * * * *'
+    # Run every 30 minutes for better coverage
+    - cron: '5,35 * * * *'
+
+    - cron: '15,45 3-12 * * *'
   workflow_dispatch: # Allow manual triggering
 
 permissions:

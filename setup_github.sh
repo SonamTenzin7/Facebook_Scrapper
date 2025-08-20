@@ -1,8 +1,5 @@
-#!/bin/bash
 
-# Quick setup script after creating GitHub repository
-
-echo "🚀 Setting up GitHub repository..."
+echo "Setting up GitHub repository..."
 
 # Add all files
 git add .
@@ -18,23 +15,23 @@ Features:
 - Auto-deployment after each scrape"
 
 # Push to GitHub
-echo "📤 Pushing to GitHub..."
+echo "Pushing to GitHub..."
 git push -u origin main
 
 if [ $? -eq 0 ]; then
-    echo "✅ Successfully pushed to GitHub!"
+    echo "Successfully pushed to GitHub!"
     echo ""
-    echo "🌐 Your repository: https://github.com/SONAMTENZIN7/Facebook_Scrapper"
-    echo "📋 Next steps:"
+    echo "repository: https://github.com/SONAMTENZIN7/Facebook_Scrapper"
+    echo "Next steps:"
     echo "   1. Go to your repository settings"
     echo "   2. Scroll to 'Pages' section"
     echo "   3. Source: Deploy from a branch"
     echo "   4. Branch: main / (root)"
     echo "   5. Save"
     echo ""
-    echo "🎉 Your live site will be at:"
+    echo "Your live site will be at:"
     echo "   https://sonamtenzin7.github.io/Facebook_Scrapper/"
 else
-    echo "❌ Failed to push to GitHub"
-    echo "💡 Make sure you've created the repository on GitHub first"
+    echo "Failed to push to GitHub"
+    echo "Make sure you've created the repository on GitHub first"
 fi

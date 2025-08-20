@@ -11,6 +11,52 @@ import re
 import os
 import requests
 from urllib.parse import urljoin, urlparse
+from notification_system import NotificationSystem
+
+def get_adaptive_wait_time(current_time, last_run_time=None):
+    """
+    Calculate adaptive wait time based on:
+    - Time of day (more frequent during business hours)
+    - Recent activity (shorter wait if new posts were found)
+    - Day of week (more frequent on weekdays)
+    """
+    
+    # Base wait times (in seconds)
+    PEAK_HOURS_WAIT = 900      # 15 minutes during peak hours (9 AM - 6 PM Bhutan time)
+    NORMAL_HOURS_WAIT = 1800   # 30 minutes during normal hours
+    LOW_ACTIVITY_WAIT = 3600   # 1 hour during low activity (late night)
+    
+    # Convert to Bhutan time (UTC+6)
+    bhutan_time = current_time.replace(tzinfo=None)  # Assuming input is already in local time
+    hour = bhutan_time.hour
+    weekday = bhutan_time.weekday()  # 0 = Monday, 6 = Sunday
+    
+    # Determine wait time based on time of day
+    if 9 <= hour <= 18:  # Business hours (9 AM - 6 PM)
+        base_wait = PEAK_HOURS_WAIT
+    elif 6 <= hour <= 22:  # Extended hours (6 AM - 10 PM)
+        base_wait = NORMAL_HOURS_WAIT
+    else:  # Late night/early morning (10 PM - 6 AM)
+        base_wait = LOW_ACTIVITY_WAIT
+    
+    # Reduce wait time on weekdays when more content is typically posted
+    if weekday < 5:  # Monday to Friday
+        base_wait = int(base_wait * 0.8)
+    
+    # Check recent activity to adjust timing
+    try:
+        with open('data/kuensel_posts_master.json', 'r') as f:
+            data = json.load(f)
+            session_info = data.get('scraping_session', {})
+            
+            # If new posts were found in the last session, reduce wait time
+            if session_info.get('new_posts_this_session', 0) > 0:
+                base_wait = int(base_wait * 0.7)
+                print(f"🚀 Recent activity detected, reducing wait time to {base_wait} seconds")
+    except:
+        pass  # Continue with base wait time
+    
+    return base_wait
 
 class FacebookScraper:
     def __init__(self, config_file="config.json"):
@@ -1393,7 +1439,11 @@ class FacebookScraper:
 
 
 def main():
-    # Check if we've already scraped recently
+    # Initialize notification system
+    notifier = NotificationSystem()
+    start_time = datetime.now()
+    
+    # Check if we've already scraped recently with adaptive timing
     last_run_file = "data/last_run.txt"
     current_time = datetime.now()
     
@@ -1402,21 +1452,35 @@ def main():
             last_run = datetime.fromisoformat(f.read().strip())
             time_diff = (current_time - last_run).total_seconds()
             
-            # If less than 30 minutes since last run, skip
-            if time_diff < 1800:  # 30 minutes = 1800 seconds
-                print(f"Last run was only {time_diff} seconds ago. Skipping...")
+            # Adaptive rate limiting based on time of day and recent activity
+            min_wait_time = get_adaptive_wait_time(current_time, last_run)
+            
+            if time_diff < min_wait_time:
+                print(f"Last run was only {time_diff:.1f} seconds ago. Minimum wait time is {min_wait_time} seconds. Skipping...")
                 return
     except FileNotFoundError:
         pass  # First run, continue
 
     # Initialize scraper
     scraper = FacebookScraper()
+    initial_post_count = 0
+
+    # Get initial post count for comparison
+    try:
+        with open('data/kuensel_posts_master.json', 'r') as f:
+            data = json.load(f)
+            initial_post_count = len(data.get('posts', []))
+    except FileNotFoundError:
+        initial_post_count = 0
 
     try:
+        print("🚀 Starting Kuensel Facebook scraper...")
+        
         # Login to Facebook
-        print("Logging in to Facebook...")
+        print("🔐 Logging in to Facebook...")
         if not scraper.login():
-            print("Failed to login.")
+            print("❌ Failed to login.")
+            notifier.notify_scraper_completed(success=False, errors="Login failed")
             return
             
         # Update last run time
@@ -1425,12 +1489,12 @@ def main():
             f.write(current_time.isoformat())
 
         # Scrape posts from Kuensel page
-        print("Starting to scrape Kuensel Facebook page...")
+        print("📄 Starting to scrape Kuensel Facebook page...")
         # Fixed URL (removed extra spaces)
         posts = scraper.scrape_posts("https://www.facebook.com/Kuensel")
 
         if not posts:
-            print("No posts were scraped.")
+            print("⚠️  No posts were scraped.")
             # Save raw data for debugging
             raw_data = {
                 "scraping_session": {
@@ -1441,11 +1505,11 @@ def main():
                 },
                 "posts": []
             }
-            # scraper.save_posts(raw_data, "debug_no_posts.json")
+            notifier.notify_scraper_completed(success=False, errors="No posts found")
             return
 
         # Formating data with required fields
-        print("Formatting data with required fields...")
+        print("📋 Formatting data with required fields...")
         formatted_data = scraper.format_for_output()
 
         # Download images (False for now)
@@ -1455,6 +1519,7 @@ def main():
         master_filename = scraper.save_posts_consolidated(formatted_data)
 
         # Generate static API files
+        print("🏗️  Generating static API files...")
         from generate_static_api import generate_static_api
         generate_static_api()
 
@@ -1464,21 +1529,40 @@ def main():
             script_dir = os.path.dirname(os.path.abspath(__file__))
             deploy_script = os.path.join(script_dir, 'auto_deploy.sh')
             if os.path.exists(deploy_script):
-                print("Auto-deploying to GitHub Pages...")
+                print("🚀 Auto-deploying to GitHub Pages...")
                 result = subprocess.run([deploy_script], capture_output=True, text=True, cwd=script_dir)
                 if result.returncode == 0:
-                    print("GitHub Pages deployment initiated")
+                    print("✅ GitHub Pages deployment initiated")
                 else:
-                    print(f"Deployment script output: {result.stdout}")
+                    print(f"⚠️  Deployment script output: {result.stdout}")
                     if result.stderr:
-                        print(f" Deployment error: {result.stderr}")
+                        print(f"❌ Deployment error: {result.stderr}")
         except Exception as e:
-            print(f"Auto-deployment failed: {e}")
+            print(f"❌ Auto-deployment failed: {e}")
 
+        # Calculate new posts found
+        final_post_count = len(formatted_data)
+        new_posts = final_post_count - initial_post_count
+        
+        # Send success notification
+        if new_posts > 0:
+            print(f"🆕 Found {new_posts} new posts!")
+            notifier.notify_new_posts_detected(new_posts)
+        
         # Print summary
-        print(f"\n=== Scraping Summary ===")
-        print(f"Total posts scraped: {len(formatted_data)}")
-        print(f"Master data saved to: {master_filename}")
+        print(f"\n📊 === Scraping Summary ===")
+        print(f"✅ Total posts in database: {final_post_count}")
+        if new_posts > 0:
+            print(f"🆕 New posts found: {new_posts}")
+        else:
+            print("ℹ️  No new posts found this run")
+        print(f"💾 Master data saved to: {master_filename}")
+        
+        # Send completion notification
+        notifier.notify_scraper_completed(
+            success=True, 
+            posts_found=final_post_count
+        )
 
         # Print sample data
         if len(formatted_data) > 0:
@@ -1504,12 +1588,23 @@ def main():
             print("No valid posts found after formatting.")
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        error_msg = str(e)
+        print(f"❌ An error occurred: {error_msg}")
+        
+        # Send failure notification
+        notifier.notify_scraper_completed(
+            success=False, 
+            errors=error_msg
+        )
+        
         import traceback
         traceback.print_exc()
 
     finally:
         scraper.close()
+        end_time = datetime.now()
+        duration = (end_time - start_time).total_seconds()
+        print(f"⏱️  Scraping completed in {duration:.1f} seconds")
 
 
 if __name__ == "__main__":
