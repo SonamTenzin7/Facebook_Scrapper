@@ -1,9 +1,9 @@
 {
   "success": true,
   "categories": [
+    "general",
     "news",
-    "event",
-    "general"
+    "event"
   ],
-  "generated_at": "2025-08-20T10:31:45.621559"
+  "generated_at": "2025-08-21T03:49:43.358232"
 }
