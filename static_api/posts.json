@@ -1,14 +1,32 @@
 {
   "success": true,
-  "total_posts": 14,
+  "total_posts": 15,
   "scraping_session": {
-    "timestamp": "2025-08-21T07:43:45.639259",
-    "total_posts": 14,
+    "timestamp": "2025-08-21T08:35:18.860427",
+    "total_posts": 15,
     "new_posts_this_session": 1,
-    "existing_posts": 13,
+    "existing_posts": 14,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "6261033761db1fe0",
+      "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",
+      "description": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
+      "content": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://external-sea5-1.xx.fbcdn.net/emg1/v/t13/6757268679376797768?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fparoairpot.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75_tt6&_nc_gid=aXJNVO2CBLBfqxYvVqZd4g&_nc_oc=AdlhBxFubtidp8JBUgNFtwNz0YVMtrrICiQUB5-16TQG5OogkX21YA6ovRZDN3OYpCQ&ccb=13-1&oh=06_Q3-2AdEGKGcSZa0JwbcifyLeMb9sSsKFQgRzgkuX2JKhiNAk&oe=68A8C7EF&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T08:34:58.395162",
+      "publishAt": "2025-08-21T08:34:58.395171"
+    },
     {
       "id": "7d46daa0e4e1e6eb",
       "title": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiar...",
@@ -314,5 +332,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-21T07:43:45.645725"
+  "generated_at": "2025-08-21T08:35:18.864680"
 }
