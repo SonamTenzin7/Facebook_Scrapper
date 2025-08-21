@@ -1,19 +1,13 @@
 {
   "success": true,
-  "total_posts": 52,
-  "scraping_session": {
-    "timestamp": "2025-08-21T15:55:10.760064",
-    "total_posts": 52,
-    "new_posts_this_session": 1,
-    "existing_posts": 51,
-    "status": "completed"
-  },
+  "total_posts": 24,
+  "scraping_session": {},
   "posts": [
     {
       "id": "79a0e6602bd312d5",
-      "title": "-       Neten Dorji While nursing has been viewed as a profession best suited to students from sc...",
-      "description": "-       Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https://kuenselonline.com/.../non-science-students-show... #nursing #GNM #Bhutan",
-      "content": "-       Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https://kuenselonline.com/.../non-science-students-show... #nursing #GNM #Bhutan",
+      "title": "Neten Dorji While nursing has been viewed as a profession best suited to students from sc...",
+      "description": "Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https://kuenselonline.com/.../non-science-students-show... #nursing #GNM #Bhutan",
+      "content": "Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https://kuenselonline.com/.../non-science-students-show... #nursing #GNM #Bhutan",
       "categoryID": "general",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -27,9 +21,9 @@
     },
     {
       "id": "92872b48b48fdfbb",
-      "title": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji ...",
-      "description": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https://kuenselonline.com/.../only-bsb-certified-products... #BSB #Bhutan",
-      "content": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https://kuenselonline.com/.../only-bsb-certified-products... #BSB #Bhutan",
+      "title": "Foreign manufacturers face fees, inspections under the strict certification regime Dorji ...",
+      "description": "Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https://kuenselonline.com/.../only-bsb-certified-products... #BSB #Bhutan",
+      "content": "Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https://kuenselonline.com/.../only-bsb-certified-products... #BSB #Bhutan",
       "categoryID": "news",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -43,9 +37,9 @@
     },
     {
       "id": "5ba20caf43ac82ee",
-      "title": "Editorial:       Alcohol remains one of the biggest social problems in our country",
-      "description": ". Solutions are rare, even though this substance has long been identified as a root cause of many evils—including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https://kuenselonline.com/news/a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
-      "content": "Editorial:       Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils—including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https://kuenselonline.com/news/a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "title": "Editorial: Alcohol remains one of the biggest social problems in our country",
+      "description": "Solutions are rare, even though this substance has long been identified as a root cause of many evils—including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https://kuenselonline.com/news/a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "content": "Editorial: Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils—including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https://kuenselonline.com/news/a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
       "categoryID": "news",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -72,70 +66,6 @@
       },
       "createdAt": "2025-08-21T15:28:30.919747",
       "publishAt": "2025-08-21T15:28:30.919752"
-    },
-    {
-      "id": "34110bfb8ae462fa",
-      "title": "‘               ’ Our vision is to make Paro FC synonymous with excellence in Bhutanese football",
-      "description": ". We… See more",
-      "content": "‘               ’ Our vision is to make Paro FC synonymous with excellence in Bhutanese football. We… See more",
-      "categoryID": "sports",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T15:27:52.980318",
-      "publishAt": "2025-08-21T15:27:52.980318"
-    },
-    {
-      "id": "10b1f0885a8d4ef9",
-      "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
-      "description": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty–the valle… See more",
-      "content": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty–the valle… See more",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T15:27:52.978679",
-      "publishAt": "2025-08-21T15:27:52.978680"
-    },
-    {
-      "id": "69d09ec5f898b05a",
-      "title": "Outdated news",
-      "description": "...that bridge was completed months ago...",
-      "content": "Outdated news...that bridge was completed months ago...",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T15:27:52.959588",
-      "publishAt": "2025-08-21T15:27:52.959590"
-    },
-    {
-      "id": "64b89a5e2b7aa579",
-      "title": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 1...",
-      "description": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 18 to 22 at the invitatio… See more",
-      "content": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 18 to 22 at the invitatio… See more",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T15:27:42.797437",
-      "publishAt": "2025-08-21T15:27:42.797439"
     },
     {
       "id": "aa03f030f75258f9",
@@ -344,22 +274,6 @@
       "publishAt": "2025-08-21T12:01:19.668736"
     },
     {
-      "id": "5aa04c2d221bf572",
-      "title": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji ...",
-      "description": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next… See more",
-      "content": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next… See more",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T12:00:48.757860",
-      "publishAt": "2025-08-21T12:00:48.757861"
-    },
-    {
       "id": "a6f314850566b413",
       "title": "Perspective:         It is unfortunate that the media has to engage in clarifying each other’s st...",
       "description": "Perspective:         It is unfortunate that the media has to engage in clarifying each other’s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https://kuenselonline.com/news/it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
@@ -374,54 +288,6 @@
       },
       "createdAt": "2025-08-21T12:00:38.092783",
       "publishAt": "2025-08-21T12:00:38.092785"
-    },
-    {
-      "id": "69bf0ff5edb9e174",
-      "title": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s m...",
-      "description": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s most sacred   See more",
-      "content": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s most sacred   See more",
-      "categoryID": "culture",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:37:42.381236",
-      "publishAt": "2025-08-21T11:37:42.381237"
-    },
-    {
-      "id": "73c297118847258a",
-      "title": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗵𝗼𝘀𝘁 𝗚𝗹𝗼𝗯𝗮𝗹 𝗣𝗲𝗮𝗰𝗲 𝗣𝗿𝗮𝘆𝗲𝗿 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 Staff reporter Bhutan will host the Global Peace Pr  ...",
-      "description": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗵𝗼𝘀𝘁 𝗚𝗹𝗼𝗯𝗮𝗹 𝗣𝗲𝗮𝗰𝗲 𝗣𝗿𝗮𝘆𝗲𝗿 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 Staff reporter Bhutan will host the Global Peace Pr  See more",
-      "content": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗵𝗼𝘀𝘁 𝗚𝗹𝗼𝗯𝗮𝗹 𝗣𝗲𝗮𝗰𝗲 𝗣𝗿𝗮𝘆𝗲𝗿 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 Staff reporter Bhutan will host the Global Peace Pr  See more",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:37:42.379542",
-      "publishAt": "2025-08-21T11:37:42.379543"
-    },
-    {
-      "id": "c2d12bbe3a272025",
-      "title": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal impo...",
-      "description": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal imports and ensure ti  See more",
-      "content": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal imports and ensure ti  See more",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:37:42.377848",
-      "publishAt": "2025-08-21T11:37:42.377849"
     },
     {
       "id": "4f816c5b72c3913d",
@@ -440,22 +306,6 @@
       "publishAt": "2025-08-21T11:37:42.376148"
     },
     {
-      "id": "13a2441ac243515f",
-      "title": "𝗦𝗔𝗙𝗙 𝗨-𝟭𝟳 𝗪𝗼𝗺𝗲𝗻 𝘀 𝗖𝗵𝗮𝗺𝗽𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝗸𝗶𝗰𝗸𝘀 𝗼𝗳𝗳 𝘁𝗼𝗱𝗮𝘆 Thinley Namgay The seventh edition of the South As...",
-      "description": "𝗦𝗔𝗙𝗙 𝗨-𝟭𝟳 𝗪𝗼𝗺𝗲𝗻 𝘀 𝗖𝗵𝗮𝗺𝗽𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝗸𝗶𝗰𝗸𝘀 𝗼𝗳𝗳 𝘁𝗼𝗱𝗮𝘆 Thinley Namgay The seventh edition of the South Asia  See more",
-      "content": "𝗦𝗔𝗙𝗙 𝗨-𝟭𝟳 𝗪𝗼𝗺𝗲𝗻 𝘀 𝗖𝗵𝗮𝗺𝗽𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝗸𝗶𝗰𝗸𝘀 𝗼𝗳𝗳 𝘁𝗼𝗱𝗮𝘆 Thinley Namgay The seventh edition of the South Asia  See more",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:37:42.371245",
-      "publishAt": "2025-08-21T11:37:42.371246"
-    },
-    {
       "id": "3d001b8783e9ae7f",
       "title": "Update: With the support of Varja Builders Private Limited, the Gelephu Central Regional Referral...",
       "description": "Update: With the support of Varja Builders Private Limited, the Gelephu Central Regional Referral Hospital (CRRH) initiated the improvement of basic amenities at the Se  See more",
@@ -470,150 +320,6 @@
       },
       "createdAt": "2025-08-21T11:37:42.369553",
       "publishAt": "2025-08-21T11:37:42.369554"
-    },
-    {
-      "id": "725ce27d95f39045",
-      "title": "Passa Peceey Dorjee interest halam hay nii may",
-      "description": "...bdbl na tsu zha wa chin",
-      "content": "Passa Peceey Dorjee interest halam hay nii may ...bdbl na tsu zha wa chin",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:37:42.343442",
-      "publishAt": "2025-08-21T11:37:42.343443"
-    },
-    {
-      "id": "2c53292dee71d642",
-      "title": "𝗡𝗼𝗻-𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘀𝗵𝗼𝘄 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗶𝗻 𝗻𝘂𝗿𝘀𝗶𝗻𝗴 Neten Dorji While nursing has been viewe...",
-      "description": "𝗡𝗼𝗻-𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘀𝗵𝗼𝘄 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗶𝗻 𝗻𝘂𝗿𝘀𝗶𝗻𝗴 Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https:  kuenselonline.com ... non-science-students-show... #nursing #GNM #Bhutan",
-      "content": "𝗡𝗼𝗻-𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘀𝗵𝗼𝘄 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗶𝗻 𝗻𝘂𝗿𝘀𝗶𝗻𝗴 Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https:  kuenselonline.com ... non-science-students-show... #nursing #GNM #Bhutan",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:36:50.247596",
-      "publishAt": "2025-08-21T11:36:50.247599"
-    },
-    {
-      "id": "c6c9b55649c9d752",
-      "title": "𝗢𝗻𝗹𝘆 𝗕𝗦𝗕-𝗰𝗲𝗿𝘁𝗶𝗳𝗶𝗲𝗱 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝘀 𝗮𝗹𝗹𝗼𝘄𝗲𝗱 𝗶𝗻𝘁𝗼 𝗕𝗵𝘂𝘁𝗮𝗻 𝗳𝗿𝗼𝗺 𝟮𝟬𝟮𝟲 Foreign manufacturers face fees, inspec...",
-      "description": "𝗢𝗻𝗹𝘆 𝗕𝗦𝗕-𝗰𝗲𝗿𝘁𝗶𝗳𝗶𝗲𝗱 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝘀 𝗮𝗹𝗹𝗼𝘄𝗲𝗱 𝗶𝗻𝘁𝗼 𝗕𝗵𝘂𝘁𝗮𝗻 𝗳𝗿𝗼𝗺 𝟮𝟬𝟮𝟲 Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https:  kuenselonline.com ... only-bsb-certified-products... #BSB #Bhutan",
-      "content": "𝗢𝗻𝗹𝘆 𝗕𝗦𝗕-𝗰𝗲𝗿𝘁𝗶𝗳𝗶𝗲𝗱 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝘀 𝗮𝗹𝗹𝗼𝘄𝗲𝗱 𝗶𝗻𝘁𝗼 𝗕𝗵𝘂𝘁𝗮𝗻 𝗳𝗿𝗼𝗺 𝟮𝟬𝟮𝟲 Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https:  kuenselonline.com ... only-bsb-certified-products... #BSB #Bhutan",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:36:50.243348",
-      "publishAt": "2025-08-21T11:36:50.243349"
-    },
-    {
-      "id": "2e378ba2b05d3a97",
-      "title": "From 2010 till now nothing was certified than",
-      "description": "??? A big gap with rule and implementation",
-      "content": "From 2010 till now nothing was certified than ??? A big gap with rule and implementation",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:36:50.219393",
-      "publishAt": "2025-08-21T11:36:50.219394"
-    },
-    {
-      "id": "c93f671087e2e1d2",
-      "title": "𝗥𝗲𝘃𝗶𝘃𝗶𝗻𝗴 𝘆𝗮𝗸-𝗿𝗲𝗮𝗿𝗶𝗻𝗴 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘄𝗼𝗼𝗹, 𝗿𝗮𝗻𝗴𝗲𝗹𝗮𝗻𝗱 𝗮𝗻𝗱 𝗺𝗮𝗿𝗸𝗲𝘁 𝗮𝗰𝗰𝗲𝘀𝘀 YK Poudel Bhutan s highland commun...",
-      "description": "𝗥𝗲𝘃𝗶𝘃𝗶𝗻𝗴 𝘆𝗮𝗸-𝗿𝗲𝗮𝗿𝗶𝗻𝗴 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘄𝗼𝗼𝗹, 𝗿𝗮𝗻𝗴𝗲𝗹𝗮𝗻𝗱 𝗮𝗻𝗱 𝗺𝗮𝗿𝗸𝗲𝘁 𝗮𝗰𝗰𝗲𝘀𝘀 YK Poudel Bhutan s highland communities are set to benefit from new initiatives aimed at revitalising yak-rearing by promoting fibre production, rangeland development, and global market access. Officials say the move is designed to offer sustainable livelihoods, preserve cultural traditions, and unlock the economic potential of high-value yak wool exports. https:  kuenselonline.com ... reviving-yak-rearing... #yak #wool #highland #fibre #culture #traition #export #Bhutan",
-      "content": "𝗥𝗲𝘃𝗶𝘃𝗶𝗻𝗴 𝘆𝗮𝗸-𝗿𝗲𝗮𝗿𝗶𝗻𝗴 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘄𝗼𝗼𝗹, 𝗿𝗮𝗻𝗴𝗲𝗹𝗮𝗻𝗱 𝗮𝗻𝗱 𝗺𝗮𝗿𝗸𝗲𝘁 𝗮𝗰𝗰𝗲𝘀𝘀 YK Poudel Bhutan s highland communities are set to benefit from new initiatives aimed at revitalising yak-rearing by promoting fibre production, rangeland development, and global market access. Officials say the move is designed to offer sustainable livelihoods, preserve cultural traditions, and unlock the economic potential of high-value yak wool exports. https:  kuenselonline.com ... reviving-yak-rearing... #yak #wool #highland #fibre #culture #traition #export #Bhutan",
-      "categoryID": "culture",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:19:23.402578",
-      "publishAt": "2025-08-21T11:19:23.402579"
-    },
-    {
-      "id": "1257feb14f0aed52",
-      "title": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s m...",
-      "description": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s most sacred sites at Rajgir, Bihar, India, the Royal Bhutan Temple will be consecrated on September 4. His Holiness the Je Khenpo will preside over the consecration ceremony, which will be attended by senior Indian leaders, including the Chief Minister of Bihar and ministers of parliamentary and minority affairs. https:  kuenselonline.com ... royal-bhutan-temple-in... #Temple #Rajgir #sacred #Bhutan #India",
-      "content": "𝗥𝗼𝘆𝗮𝗹 𝗕𝗵𝘂𝘁𝗮𝗻 𝗧𝗲𝗺𝗽𝗹𝗲 𝗶𝗻 𝗥𝗮𝗷𝗴𝗶𝗿 𝘁𝗼 𝗼𝗽𝗲𝗻 𝘁𝗵𝗶𝘀 𝗦𝗲𝗽𝘁𝗲𝗺𝗯𝗲𝗿 Ugyen Dorji Located amid one of Buddhism s most sacred sites at Rajgir, Bihar, India, the Royal Bhutan Temple will be consecrated on September 4. His Holiness the Je Khenpo will preside over the consecration ceremony, which will be attended by senior Indian leaders, including the Chief Minister of Bihar and ministers of parliamentary and minority affairs. https:  kuenselonline.com ... royal-bhutan-temple-in... #Temple #Rajgir #sacred #Bhutan #India",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:19:23.396131",
-      "publishAt": "2025-08-21T11:19:23.396132"
-    },
-    {
-      "id": "3e06666549352a41",
-      "title": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗵𝗼𝘀𝘁 𝗚𝗹𝗼𝗯𝗮𝗹 𝗣𝗲𝗮𝗰𝗲 𝗣𝗿𝗮𝘆𝗲𝗿 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 Staff reporter Bhutan will host the Global Peace Pray...",
-      "description": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗵𝗼𝘀𝘁 𝗚𝗹𝗼𝗯𝗮𝗹 𝗣𝗲𝗮𝗰𝗲 𝗣𝗿𝗮𝘆𝗲𝗿 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 Staff reporter Bhutan will host the Global Peace Prayer Festival in Thimphu from November 4 to 17, an event of a scale never seen before in the country, the Prime Minister s Office (PMO) announced yesterday. https:  kuenselonline.com ... bhutan-to-host-global-peace... #Global #Peace #Prayer #Thimphu #Bhutan",
-      "content": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗵𝗼𝘀𝘁 𝗚𝗹𝗼𝗯𝗮𝗹 𝗣𝗲𝗮𝗰𝗲 𝗣𝗿𝗮𝘆𝗲𝗿 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 Staff reporter Bhutan will host the Global Peace Prayer Festival in Thimphu from November 4 to 17, an event of a scale never seen before in the country, the Prime Minister s Office (PMO) announced yesterday. https:  kuenselonline.com ... bhutan-to-host-global-peace... #Global #Peace #Prayer #Thimphu #Bhutan",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:19:23.391085",
-      "publishAt": "2025-08-21T11:19:23.391085"
-    },
-    {
-      "id": "554f641389534f7f",
-      "title": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal impo...",
-      "description": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal imports and ensure timely access to agricultural inputs, the National Seed Centre, Ministry of Agriculture and Livestock (MoAL) signed an agreement with Brahmaputra Valley Fertilizer Corporation Limited (BVFCL) yesterday to import 5,000 metric tonnes of fertilisers annually. https:  kuenselonline.com ... bhutan-to-import-5000mt... #fertilisers #agriculture #import #Bhutan",
-      "content": "𝗕𝗵𝘂𝘁𝗮𝗻 𝘁𝗼 𝗶𝗺𝗽𝗼𝗿𝘁 𝟱,𝟬𝟬𝟬𝗠𝗧 𝗳𝗲𝗿𝘁𝗶𝗹𝗶𝘀𝗲𝗿𝘀 𝗮𝗻𝗻𝘂𝗮𝗹𝗹𝘆 𝗳𝗿𝗼𝗺 𝗜𝗻𝗱𝗶𝗮 YK Poudel In a move to curb illegal imports and ensure timely access to agricultural inputs, the National Seed Centre, Ministry of Agriculture and Livestock (MoAL) signed an agreement with Brahmaputra Valley Fertilizer Corporation Limited (BVFCL) yesterday to import 5,000 metric tonnes of fertilisers annually. https:  kuenselonline.com ... bhutan-to-import-5000mt... #fertilisers #agriculture #import #Bhutan",
-      "categoryID": "culture",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:19:23.386180",
-      "publishAt": "2025-08-21T11:19:23.386181"
-    },
-    {
-      "id": "7cf25ef80caddc92",
-      "title": "MoAL psycho jow drea meana mo",
-      "description": "!",
-      "content": "MoAL psycho jow drea meana mo !",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:19:23.379466",
-      "publishAt": "2025-08-21T11:19:23.379471"
     },
     {
       "id": "73d871ea54a59300",
@@ -646,88 +352,6 @@
       },
       "createdAt": "2025-08-21T11:18:42.704394",
       "publishAt": "2025-08-21T11:18:42.704395"
-    },
-    {
-      "id": "c6c3545e5187acc4",
-      "title": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 p...",
-      "description": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry  See more",
-      "content": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry  See more",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:18:22.739963",
-      "publishAt": "2025-08-21T11:18:22.739964"
-    },
-    {
-      "id": "ad7f5f7f31368631",
-      "title": "(WORLD ENTREPRENEURS' DAY) - Ministry of Industry, Commerce and Employment, Royal Government of B...",
-      "description": "(WORLD ENTREPRENEURS' DAY) - Ministry of Industry, Commerce and Employment, Royal Government of Bhutan",
-      "content": "(WORLD ENTREPRENEURS' DAY) - Ministry of Industry, Commerce and Employment, Royal Government of Bhutan",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:18:22.738338",
-      "publishAt": "2025-08-21T11:18:22.738339"
-    },
-    {
-      "id": "915f90393442eee7",
-      "title": "𝗗𝗲𝗰𝗹𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗘𝘅𝗮𝗺𝗶𝗻𝗮𝘁𝗶𝗼𝗻 (𝗣𝗘) 𝗥𝗲𝘀𝘂𝗹𝘁 𝗳𝗼𝗿 𝗕𝗖𝗦𝗘 𝟮𝟬𝟮𝟱 The result of the Preliminary Ex...",
-      "description": "𝗗𝗲𝗰𝗹𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗘𝘅𝗮𝗺𝗶𝗻𝗮𝘁𝗶𝗼𝗻 (𝗣𝗘) 𝗥𝗲𝘀𝘂𝗹𝘁 𝗳𝗼𝗿 𝗕𝗖𝗦𝗘 𝟮𝟬𝟮𝟱 The result of the Preliminary Examination (PE) of the   See more",
-      "content": "𝗗𝗲𝗰𝗹𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗘𝘅𝗮𝗺𝗶𝗻𝗮𝘁𝗶𝗼𝗻 (𝗣𝗘) 𝗥𝗲𝘀𝘂𝗹𝘁 𝗳𝗼𝗿 𝗕𝗖𝗦𝗘 𝟮𝟬𝟮𝟱 The result of the Preliminary Examination (PE) of the   See more",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:18:22.736056",
-      "publishAt": "2025-08-21T11:18:22.736057"
-    },
-    {
-      "id": "a701363c89d9b2b0",
-      "title": "Perspective: 𝗜𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗯𝗼𝘂𝘁 𝗞𝘂𝗲𝗻𝘀𝗲𝗹 𝘃𝘀 𝗧𝗵𝗲 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 It is unfortunate that the media has to eng...",
-      "description": "Perspective: 𝗜𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗯𝗼𝘂𝘁 𝗞𝘂𝗲𝗻𝘀𝗲𝗹 𝘃𝘀 𝗧𝗵𝗲 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 It is unfortunate that the media has to engage in clarifying each other s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https:  kuenselonline.com news it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
-      "content": "Perspective: 𝗜𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗯𝗼𝘂𝘁 𝗞𝘂𝗲𝗻𝘀𝗲𝗹 𝘃𝘀 𝗧𝗵𝗲 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 It is unfortunate that the media has to engage in clarifying each other s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https:  kuenselonline.com news it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:18:22.734276",
-      "publishAt": "2025-08-21T11:18:22.734277"
-    },
-    {
-      "id": "839eccab0600b641",
-      "title": "𝗗𝗲𝗰𝗹𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗘𝘅𝗮𝗺𝗶𝗻𝗮𝘁𝗶𝗼𝗻 (𝗣𝗘) 𝗥𝗲𝘀𝘂𝗹𝘁 𝗳𝗼𝗿 𝗕𝗖𝗦𝗘 𝟮𝟬𝟮𝟱 The result of the Preliminary Ex...",
-      "description": "𝗗𝗲𝗰𝗹𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗘𝘅𝗮𝗺𝗶𝗻𝗮𝘁𝗶𝗼𝗻 (𝗣𝗘) 𝗥𝗲𝘀𝘂𝗹𝘁 𝗳𝗼𝗿 𝗕𝗖𝗦𝗘 𝟮𝟬𝟮𝟱 The result of the Preliminary Examination (PE) of the Bhutan Civil Service Examination 2025 is hereby declared. In line with 𝐒𝐞𝐜𝐭𝐢𝐨𝐧 𝟓.𝟑.𝟏.𝟒 of the 𝐁𝐂𝐒𝐑 𝟐𝟎𝟐𝟑, the Commission decided to set the passing cut-off mark of the 𝐏𝐫𝐞𝐥𝐢𝐦𝐢𝐧𝐚𝐫𝐲 𝐄𝐱𝐚𝐦𝐢𝐧𝐚𝐭𝐢𝐨𝐧 (𝐏𝐄) at 𝟱𝟱. Those who scored 55 and above in PE will be eligible to sit for the main Examination. A total of 1726 graduates who have scored above the cut-off mark in PE, and 698 graduates who were waived from the requirement to appear PE will sit for the Main Examination (ME) scheduled to be held on 9, 10, and 11th, October 2025. In line with section 5.8.2 of BCSR 2023, candidates will be allowed to appeal for a recount. Candidates are required to submit the application form requesting the recounting of the PE score within 5 working days from August 21   27, 2025, and submit it to the Exam Office behind Drukair Office, Chubachu, Thimphu, or email it to bcse@rcsc.gov.bt Download Appeal recounting form : click here https:  shorturl.at BrHgZ 𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 𝐅𝐎𝐑 𝐁𝐂𝐒𝐄 - 𝟐𝟎𝟐𝟓 The next step for the BCSE 2025 is  document verification . The verification of documents will be held as follows: Date : August 25 - September 3, 2025 Venue : Hotel Dorji Element (Opposite to Tarayana Centre, Lower Chubachu) Schedule: Day-wise schedule as per the categories click here https:  shorturl.at QJcU0 to check the schedule Documents required : Click here https:  shorturl.at xIkUn All Graduates, including graduates with PGDNL aspiring to join the civil service, are required to report in person for document verification to sign the letter of undertaking on the academic score of the Bachelor's Degree during the time of verification. Graduates are requested to follow the schedule as far as possible. Click here for the result: https:  bcse.rcsc.gov.bt Login",
-      "content": "𝗗𝗲𝗰𝗹𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗘𝘅𝗮𝗺𝗶𝗻𝗮𝘁𝗶𝗼𝗻 (𝗣𝗘) 𝗥𝗲𝘀𝘂𝗹𝘁 𝗳𝗼𝗿 𝗕𝗖𝗦𝗘 𝟮𝟬𝟮𝟱 The result of the Preliminary Examination (PE) of the Bhutan Civil Service Examination 2025 is hereby declared. In line with 𝐒𝐞𝐜𝐭𝐢𝐨𝐧 𝟓.𝟑.𝟏.𝟒 of the 𝐁𝐂𝐒𝐑 𝟐𝟎𝟐𝟑, the Commission decided to set the passing cut-off mark of the 𝐏𝐫𝐞𝐥𝐢𝐦𝐢𝐧𝐚𝐫𝐲 𝐄𝐱𝐚𝐦𝐢𝐧𝐚𝐭𝐢𝐨𝐧 (𝐏𝐄) at 𝟱𝟱. Those who scored 55 and above in PE will be eligible to sit for the main Examination. A total of 1726 graduates who have scored above the cut-off mark in PE, and 698 graduates who were waived from the requirement to appear PE will sit for the Main Examination (ME) scheduled to be held on 9, 10, and 11th, October 2025. In line with section 5.8.2 of BCSR 2023, candidates will be allowed to appeal for a recount. Candidates are required to submit the application form requesting the recounting of the PE score within 5 working days from August 21   27, 2025, and submit it to the Exam Office behind Drukair Office, Chubachu, Thimphu, or email it to bcse@rcsc.gov.bt Download Appeal recounting form : click here https:  shorturl.at BrHgZ 𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 𝐅𝐎𝐑 𝐁𝐂𝐒𝐄 - 𝟐𝟎𝟐𝟓 The next step for the BCSE 2025 is  document verification . The verification of documents will be held as follows: Date : August 25 - September 3, 2025 Venue : Hotel Dorji Element (Opposite to Tarayana Centre, Lower Chubachu) Schedule: Day-wise schedule as per the categories click here https:  shorturl.at QJcU0 to check the schedule Documents required : Click here https:  shorturl.at xIkUn All Graduates, including graduates with PGDNL aspiring to join the civil service, are required to report in person for document verification to sign the letter of undertaking on the academic score of the Bachelor's Degree during the time of verification. Graduates are requested to follow the schedule as far as possible. Click here for the result: https:  bcse.rcsc.gov.bt Login",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/5442000980162332732?url=https%3A%2F%2Fbcse.rcsc.gov.bt%2Fimages%2Frcsc_logo.jpg&fb_obo=1&utld=gov.bt&stp=c0.5000x0.5000f_dst-jpg_flffffff_p278x278_q75_tt6&_nc_gid=oXMzo4Cu8cGPcr6r6HuGrA&_nc_oc=AdnfqicJAczo0fkQAoDZ2wQrdQ3gvaZ81K-ZSI0NdgJJWUJIsXpTpFhgz5SzYWnTld8&ccb=13-1&oh=06_Q3-2AVdoys1Rp3U9G-ObWaaRzrC7YEGQJRYuRN1xBEIqCRhM&oe=68A888D3&_nc_sid=e17101"
-        ],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-21T11:09:30.522484",
-      "publishAt": "2025-08-21T11:09:30.522492"
     },
     {
       "id": "0a5366f69ad731e6",
@@ -790,92 +414,6 @@
       "publishAt": "2025-08-20T09:56:28.276502"
     },
     {
-      "id": "eaa93840f009228b",
-      "title": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our co...",
-      "description": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
-      "content": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536280014_1174194861410549_2889287880813172835_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zgTDJaM7HpYQ7kNvwHVQlMz&_nc_oc=AdlaySzNIR9WJnFRm3UCVmiIEeNh9Nr77XXm0mmZcJG0Qaw1iCuwEcOdJ8pNXYgWlTQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=CpgN5pSrGP3ZfwUnwMsyKQ&oh=00_AfVl3zesIxBIKO_8PDz7xpXyDJ8bQ_Zwnso7Z9JZWJwuCQ&oe=68AB5A74"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1174272764736092&set=a.470097558486953&__cft__[0]=AZVFaFkOP3yH4OaL7pKzUh8EogSSc_LikbHlmy0yhzTRockeziCLbB7nPPKHukwHInwgHeA2f-naIvq1qT6zJz-gI_VTe0UlOTCPm8OPR0btgLBneX_8YnfeSFQVKtb-lUpMDg4ocZwozLOUl0kp7Nu1O3hAJOl99PNvDUCapujUJaPOVAj3qKWEKYLcFrY9Fyk&__tn__=EH-R"
-        ]
-      },
-      "createdAt": "2025-08-20T08:35:44.689652",
-      "publishAt": "2025-08-20T08:35:44.689659"
-    },
-    {
-      "id": "6306e23537a64363",
-      "title": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A rec...",
-      "description": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A recent survey conducted by the Journalists  Association of Bhutan (JAB) has revealed the profound and multifaceted influence of media on Bhutanese society. The Media Perception Index (MIL): Bhutan s First Citizen Survey 2025 found that an overwhelming 92 percent of respondents believe media influences their thinking and attitudes. https:  kuenselonline.com ... over-90-percent-of... #JAB #survey #media #Bhutan",
-      "content": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A recent survey conducted by the Journalists  Association of Bhutan (JAB) has revealed the profound and multifaceted influence of media on Bhutanese society. The Media Perception Index (MIL): Bhutan s First Citizen Survey 2025 found that an overwhelming 92 percent of respondents believe media influences their thinking and attitudes. https:  kuenselonline.com ... over-90-percent-of... #JAB #survey #media #Bhutan",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/536289310_1174190654744303_8581687444364103581_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=m3NtS5mGxFsQ7kNvwEzLkPo&_nc_oc=AdkCXMuKqAMYyhV6gbqYaMwFYl2PWSNOfDT4u-gz9Gh3j8CnULINrRcP6Ofayc9dBQQ&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=QoBBNLmAugth4NSVVMQpDQ&oh=00_AfWxJnvhnuLaMx2jRP30uhwY3X4nlg8_8jZ5LWLnjthVJw&oe=68AB38E9"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1174241761405859&set=a.470097558486953&__cft__[0]=AZUG4SvXCaO9YIIKc6QO8XemgyS0QDG4TQ0fDqnhD7SJQGBlZbr3xQzHdvvx5qV6LBi2TsMK6-e7FSQgT_zNSPWYqmtSAgGuVJP_JEkF932rbCLLodwQumWuS8lwvuWAciBPxu4_DsNRYOV7GsmJYg4HJMq3u_EC42-KoW-gTI0rLRY4VOCo_fSYxzdOQoi2l3c&__tn__=EH-R"
-        ]
-      },
-      "createdAt": "2025-08-20T07:08:58.099042",
-      "publishAt": "2025-08-20T07:08:58.099051"
-    },
-    {
-      "id": "6b3865228a59ee6b",
-      "title": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to gree...",
-      "description": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to green its tourism industry has met its first real test: only five hotels all of them five-star properties have qualified under the country s newly launched Green Hotel Standard. The result underscores both the promise and the pressing challenges of aligning the hospitality sector with Bhutan s carbon-negative image. https:  kuenselonline.com ... green-hotel-drive-only-five... #hotel #Bhutan",
-      "content": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to green its tourism industry has met its first real test: only five hotels all of them five-star properties have qualified under the country s newly launched Green Hotel Standard. The result underscores both the promise and the pressing challenges of aligning the hospitality sector with Bhutan s carbon-negative image. https:  kuenselonline.com ... green-hotel-drive-only-five... #hotel #Bhutan",
-      "categoryID": "news",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://external-fra5-1.xx.fbcdn.net/emg1/v/t13/15134498895550215689?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fhotel-1.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75_tt6&_nc_gid=l0Aignid-_sbvZn8CIh4ig&_nc_oc=AdmIx72FCxkz8BCF06f9BkVokqgZ0T-prfCkXBFcYqTJ9RHZg9b233uJt0sD13p_51A&ccb=13-1&oh=06_Q3-2AQetAqPSW60_mfZOrqU2CN48i_NA2pdsOPwce1TFRVqj&oe=68A74C58&_nc_sid=e17101"
-        ],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-08-20T06:43:32.612415",
-      "publishAt": "2025-08-20T06:43:32.612423"
-    },
-    {
-      "id": "b462471063cdab71",
-      "title": "𝗥𝗲𝘁𝗶𝗿𝗲𝗱 𝗵𝗲𝗮𝗹𝘁𝗵 𝘄𝗼𝗿𝗸𝗲𝗿 𝘁𝘂𝗿𝗻𝘀 𝘁𝗼 𝗳𝗮𝗿𝗺𝗶𝗻𝗴 𝘁𝗼 𝗽𝗿𝗼𝗺𝗼𝘁𝗲 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗶𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗰𝗮𝗿𝗲 KP Sharma Phuentsholing I...",
-      "description": "𝗥𝗲𝘁𝗶𝗿𝗲𝗱 𝗵𝗲𝗮𝗹𝘁𝗵 𝘄𝗼𝗿𝗸𝗲𝗿 𝘁𝘂𝗿𝗻𝘀 𝘁𝗼 𝗳𝗮𝗿𝗺𝗶𝗻𝗴 𝘁𝗼 𝗽𝗿𝗼𝗺𝗼𝘁𝗲 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗶𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗰𝗮𝗿𝗲 KP Sharma Phuentsholing In an age when farming is often seen as burdensome, Sanjeev Subba, a 60-year-old retired health assistant, has transformed it into a platform to advocate the importance of primary health care through preventive and promotive practices. https:  kuenselonline.com ... retired-health-worker-turns... #profile #healthcare #Bhutan",
-      "content": "𝗥𝗲𝘁𝗶𝗿𝗲𝗱 𝗵𝗲𝗮𝗹𝘁𝗵 𝘄𝗼𝗿𝗸𝗲𝗿 𝘁𝘂𝗿𝗻𝘀 𝘁𝗼 𝗳𝗮𝗿𝗺𝗶𝗻𝗴 𝘁𝗼 𝗽𝗿𝗼𝗺𝗼𝘁𝗲 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗶𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗰𝗮𝗿𝗲 KP Sharma Phuentsholing In an age when farming is often seen as burdensome, Sanjeev Subba, a 60-year-old retired health assistant, has transformed it into a platform to advocate the importance of primary health care through preventive and promotive practices. https:  kuenselonline.com ... retired-health-worker-turns... #profile #healthcare #Bhutan",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536283606_1174187614744607_2914910495827744329_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=s6q0g0El1NQQ7kNvwGGisfI&_nc_oc=AdlVCKgCydwAxN5NexU_64ry7mc0bxGzoinLKmaQVOFT_3VCu6E-iGC_syFiCgMO5E0&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=87slgGECy1F4zcOFE6V7ww&oh=00_AfW5MBr25Uhzfp0zV6aS5A0KQRclWSTn_U90V0nYYKSuUg&oe=68AB41F7",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537187906_1174187618077940_7760931724831207941_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aigi74HCjWQQ7kNvwEGBv_R&_nc_oc=AdkvjO059RIkAkPmwWfJGe6uY2yOjgGqXHP8-C5oifoKu_mvVt7Qf6XC4-hKV9pUh4g&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=87slgGECy1F4zcOFE6V7ww&oh=00_AfUEHaLcPGi7Pg4QwfQAptW1HQmuXwMAvxe737f_fO4cfw&oe=68AB310F",
-          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537500473_1174187628077939_2437970213909218903_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=E0rY6tgcx_UQ7kNvwEeRIGJ&_nc_oc=AdkKpFV_QxS1xnjWka6oEOmxNg_H3s9n5fVUoEb1IZ32-CnUPrmN-A2_aPWqqvgp9VI&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=87slgGECy1F4zcOFE6V7ww&oh=00_AfXT0B7rXz3Nur69RNN94l_mVERX0XS-xnR5gryRGEfMTA&oe=68AB3B9E",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/537313408_1174187661411269_2208306399982351609_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nsXDojWWWTQQ7kNvwF-A4X-&_nc_oc=AdkzJ6pzuivhDTxzbNERTQdp2NKSCG_2XOZyN_i0zmTD6dsdKtKnCmJuLNwuhIRcHkQ&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=87slgGECy1F4zcOFE6V7ww&oh=00_AfWosdHc1HMM7_T6CX_N6lXuZFCdlVyEn1Jt9mK9nh2vXg&oe=68AB28E7",
-          "https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/536279022_1174187671411268_4040179861232418154_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PfbTSX_L-I0Q7kNvwEsSk_A&_nc_oc=AdkfgkQhhg285JsbqQLtp4xTBMECZ7rDYxHPWm0zsBkHLiNheOs0MaGBCRS-2xgBVN4&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=87slgGECy1F4zcOFE6V7ww&oh=00_AfXEqytVbM2mLc1q1qXA3Hdv2KM4HeTSzFheTSVVa8l6XA&oe=68AB30CE"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1174221134741255&set=pcb.1174221241407911&__cft__[0]=AZVJJiD72boiVQbAVl-RQlvtf_GpFncEp61H7Li513oKgG0Gb8knwCx5pYDY1gcBQuMLEibyuZfBPH8TiBzraFmgx8r__cDlrE14uORiXfMFr8OxyccLMKGaz6870IEwkfCPXkeNbWMwPIMojUZEmD-AE8sXrpnfyQCchceKWLxGOO_OKE2RqOoCxpx36-A7nsU&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1174221144741254&set=pcb.1174221241407911&__cft__[0]=AZVJJiD72boiVQbAVl-RQlvtf_GpFncEp61H7Li513oKgG0Gb8knwCx5pYDY1gcBQuMLEibyuZfBPH8TiBzraFmgx8r__cDlrE14uORiXfMFr8OxyccLMKGaz6870IEwkfCPXkeNbWMwPIMojUZEmD-AE8sXrpnfyQCchceKWLxGOO_OKE2RqOoCxpx36-A7nsU&__tn__=*b1H-R",
-          "https://www.facebook.com/photo/?fbid=1174221138074588&set=pcb.1174221241407911&__cft__[0]=AZVJJiD72boiVQbAVl-RQlvtf_GpFncEp61H7Li513oKgG0Gb8knwCx5pYDY1gcBQuMLEibyuZfBPH8TiBzraFmgx8r__cDlrE14uORiXfMFr8OxyccLMKGaz6870IEwkfCPXkeNbWMwPIMojUZEmD-AE8sXrpnfyQCchceKWLxGOO_OKE2RqOoCxpx36-A7nsU&__tn__=*b2H-R",
-          "https://www.facebook.com/photo/?fbid=1174221141407921&set=pcb.1174221241407911&__cft__[0]=AZVJJiD72boiVQbAVl-RQlvtf_GpFncEp61H7Li513oKgG0Gb8knwCx5pYDY1gcBQuMLEibyuZfBPH8TiBzraFmgx8r__cDlrE14uORiXfMFr8OxyccLMKGaz6870IEwkfCPXkeNbWMwPIMojUZEmD-AE8sXrpnfyQCchceKWLxGOO_OKE2RqOoCxpx36-A7nsU&__tn__=*b3H-R",
-          "https://www.facebook.com/photo/?fbid=1174221131407922&set=pcb.1174221241407911&__cft__[0]=AZVJJiD72boiVQbAVl-RQlvtf_GpFncEp61H7Li513oKgG0Gb8knwCx5pYDY1gcBQuMLEibyuZfBPH8TiBzraFmgx8r__cDlrE14uORiXfMFr8OxyccLMKGaz6870IEwkfCPXkeNbWMwPIMojUZEmD-AE8sXrpnfyQCchceKWLxGOO_OKE2RqOoCxpx36-A7nsU&__tn__=*b4H-R"
-        ]
-      },
-      "createdAt": "2025-08-20T06:31:14.355887",
-      "publishAt": "2025-08-20T06:31:14.355896"
-    },
-    {
       "id": "0d43a7822ae31923",
       "title": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Servic...",
       "description": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infrastructure and Transport, Bhutan and the Civil Aviation Authority, Ministry of Construction, The Government of the Socialist Republic of Viet Nam in the presence of His Majesty The King and the President of Viet Nam. The objective of the MoU is to promote aeronautical relations in a spirit of cooperation and understanding for the benefit of both countries. #Update #energy #Aviation",
@@ -917,5 +455,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-21T15:55:10.763113"
+  "generated_at": "2025-08-21T17:46:02.951338"
 }
