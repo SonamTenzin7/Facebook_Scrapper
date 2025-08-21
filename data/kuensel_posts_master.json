@@ -1,12 +1,34 @@
 {
   "scraping_session": {
-    "timestamp": "2025-08-21T06:50:06.972654",
-    "total_posts": 12,
+    "timestamp": "2025-08-21T07:29:29.958641",
+    "total_posts": 13,
     "new_posts_this_session": 1,
-    "existing_posts": 11,
+    "existing_posts": 12,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "021f188ad79925cb",
+      "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
+      "description": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan’s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
+      "content": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan’s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFnqDyE&_nc_oc=AdlhUY6Pxzz7HoVtfVSvbjkn-9q8R6aMr-penZT74E90H71i-_MA24uOd0jjHAVucWQ&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=JqzoQo3qQWdosG0-4zwvxA&oh=00_AfXzzveFxKBYqLln8bgtPX5P_QBg2iarEiTXyRq1jFBV0g&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwEdWICn&_nc_oc=AdkdDij7B_CilW0XuVwEHiJvi79KpAwDKIvfxpKoIJoYrPM95YTX-Vg5ZAauITq_wCY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=JqzoQo3qQWdosG0-4zwvxA&oh=00_AfVFavr2LL0WEQZ2lmD1ZDwjwQCeN1ocLwYWWMK7z0Xfjw&oe=68AC86AC"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175076354655733&set=pcb.1175076387989063&__cft__[0]=AZWL1_k9qwVieaHaB8VZVlqRNcdR69sMGbsYBJVLllOK7wgJA_sFIoMA1qvPJuUt_3BvmnZZE4OHH3K6KhTvWBCe3dFaGLzmvyIyTlRZwgjScdd_Mst9ymm8XOrTySuTAEkrAx6GUjfxy3geFwYGDMsULICqFYn9UHzZcTq1by2WHMv5I1-dqkjx0UZ9S1DHyEw&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175076357989066&set=pcb.1175076387989063&__cft__[0]=AZWL1_k9qwVieaHaB8VZVlqRNcdR69sMGbsYBJVLllOK7wgJA_sFIoMA1qvPJuUt_3BvmnZZE4OHH3K6KhTvWBCe3dFaGLzmvyIyTlRZwgjScdd_Mst9ymm8XOrTySuTAEkrAx6GUjfxy3geFwYGDMsULICqFYn9UHzZcTq1by2WHMv5I1-dqkjx0UZ9S1DHyEw&__tn__=*b1H-R"
+        ]
+      },
+      "createdAt": "2025-08-21T07:28:01.436867",
+      "publishAt": "2025-08-21T07:28:01.436874"
+    },
     {
       "id": "fcc88c21bb977700",
       "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
