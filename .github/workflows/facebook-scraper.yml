@@ -2,8 +2,17 @@ name: Facebook Scraper - Cloud Automation
 
 on:
   schedule:
-    # Run every 4 hours for optimal balance
-    - cron: '0 */4 * * *'
+    # Morning peak (8:30 AM - maximum activity)
+    - cron: '30 2 * * *'   # 8:30 AM Bhutan Time (UTC+6)
+    - cron: '30 4 * * *'   # 10:30 AM Bhutan Time
+    - cron: '30 6 * * *'   # 12:30 PM Bhutan Time
+    - cron: '30 8 * * *'   # 2:30 PM Bhutan Time
+    - cron: '30 10 * * *'  # 4:30 PM Bhutan Time
+    - cron: '30 12 * * *'  # 6:30 PM Bhutan Time
+    # Evening (moderate activity)
+    - cron: '30 16 * * *'  # 10:30 PM Bhutan Time
+    # Night (minimal activity)
+    - cron: '30 20 * * *'  # 2:30 AM Bhutan Time
   workflow_dispatch: # Allow manual triggering from GitHub UI
 
 permissions:
@@ -121,9 +130,14 @@ jobs:
         echo "🎯 Automation Summary:"
         echo "========================"
         echo "✅ Scraper: Completed successfully"
-        echo "✅ API: Static files generated" 
+        echo "✅ API: Static files generated (images only)" 
         echo "✅ Git: Changes committed and pushed"
         echo "✅ Cleanup: Old workflow runs removed"
         echo ""
-        echo "🔄 Next run: In 4 hours"
+        echo "⏰ Smart Schedule Active:"
+        echo "   🌅 Morning (8:30AM-6:30PM): 6 runs/day"
+        echo "   🌆 Evening (10:30PM): 1 run/day" 
+        echo "   🌙 Night (2:30AM): 1 run/day"
+        echo ""
+        echo "📸 Filter: Only posts with images included"
         echo "🌐 View results: https://${{ github.repository_owner }}.github.io/Facebook_Scrapper"
