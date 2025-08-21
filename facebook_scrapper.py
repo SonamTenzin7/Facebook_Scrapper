@@ -145,7 +145,7 @@ class FacebookScraper:
                 if posts_tab:
                     self.driver.execute_script("arguments[0].click();", posts_tab[0])
                     time.sleep(2)
-                    print("✅ Clicked Posts tab for better coverage")
+                    print("Clicked Posts tab for better coverage")
             except Exception as e:
                 pass  # Continue if not found
             
@@ -915,8 +915,12 @@ class FacebookScraper:
         # Remove extra whitespace
         text = re.sub(r'\s+', ' ', text).strip()
 
-        # Remove excessive special characters by keeping basic punctuation
-        text = re.sub(r'[^\w\s.,!?;:()\-\'\"#@]', ' ', text)
+        # Remove only null bytes, control characters, and excessive Unicode symbols
+        text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)  # Remove control characters
+        text = re.sub(r'[^\x20-\x7E\u00A0-\uFFFF]', '', text)  # Keep printable ASCII and Unicode
+        
+        # Remove excessive repeated punctuation (3 or more in a row)
+        text = re.sub(r'([.!?]){3,}', r'\1\1\1', text)
 
         return text.strip()
 
@@ -1099,7 +1103,7 @@ class FacebookScraper:
             data['scraping_session']['total_posts'] = len(cleaned_posts)
         
         if removed_count > 0:
-            print(f"✅ Removed {removed_count} comment-like posts from final data")
+            print(f"Removed {removed_count} comment-like posts from final data")
         
         return data
     
@@ -1474,12 +1478,12 @@ def main():
         initial_post_count = 0
 
     try:
-        print("🚀 Starting Kuensel Facebook scraper...")
+        print("Starting Kuensel Facebook scraper...")
         
         # Login to Facebook
         print("🔐 Logging in to Facebook...")
         if not scraper.login():
-            print("❌ Failed to login.")
+            print("Failed to login.")
             notifier.notify_scraper_completed(success=False, errors="Login failed")
             return
             
@@ -1489,12 +1493,12 @@ def main():
             f.write(current_time.isoformat())
 
         # Scrape posts from Kuensel page
-        print("📄 Starting to scrape Kuensel Facebook page...")
+        print("Starting to scrape Kuensel Facebook page...")
         # Fixed URL (removed extra spaces)
         posts = scraper.scrape_posts("https://www.facebook.com/Kuensel")
 
         if not posts:
-            print("⚠️  No posts were scraped.")
+            print("No posts were scraped.")
             # Save raw data for debugging
             raw_data = {
                 "scraping_session": {
@@ -1509,7 +1513,7 @@ def main():
             return
 
         # Formating data with required fields
-        print("📋 Formatting data with required fields...")
+        print("Formatting data with required fields...")
         formatted_data = scraper.format_for_output()
 
         # Download images (False for now)
@@ -1519,7 +1523,7 @@ def main():
         master_filename = scraper.save_posts_consolidated(formatted_data)
 
         # Generate static API files
-        print("🏗️  Generating static API files...")
+        print("Generating static API files...")
         from generate_static_api import generate_static_api
         generate_static_api()
 
@@ -1529,16 +1533,16 @@ def main():
             script_dir = os.path.dirname(os.path.abspath(__file__))
             deploy_script = os.path.join(script_dir, 'auto_deploy.sh')
             if os.path.exists(deploy_script):
-                print("🚀 Auto-deploying to GitHub Pages...")
+                print("Auto-deploying to GitHub Pages...")
                 result = subprocess.run([deploy_script], capture_output=True, text=True, cwd=script_dir)
                 if result.returncode == 0:
-                    print("✅ GitHub Pages deployment initiated")
+                    print("GitHub Pages deployment initiated")
                 else:
-                    print(f"⚠️  Deployment script output: {result.stdout}")
+                    print(f"Deployment script output: {result.stdout}")
                     if result.stderr:
-                        print(f"❌ Deployment error: {result.stderr}")
+                        print(f"Deployment error: {result.stderr}")
         except Exception as e:
-            print(f"❌ Auto-deployment failed: {e}")
+            print(f"Auto-deployment failed: {e}")
 
         # Calculate new posts found
         final_post_count = len(formatted_data)
@@ -1550,13 +1554,13 @@ def main():
             notifier.notify_new_posts_detected(new_posts)
         
         # Print summary
-        print(f"\n📊 === Scraping Summary ===")
-        print(f"✅ Total posts in database: {final_post_count}")
+        print(f"\n === Scraping Summary ===")
+        print(f" Total posts in database: {final_post_count}")
         if new_posts > 0:
-            print(f"🆕 New posts found: {new_posts}")
+            print(f" New posts found: {new_posts}")
         else:
-            print("ℹ️  No new posts found this run")
-        print(f"💾 Master data saved to: {master_filename}")
+            print(" No new posts found this run")
+        print(f" Master data saved to: {master_filename}")
         
         # Send completion notification
         notifier.notify_scraper_completed(
@@ -1589,7 +1593,7 @@ def main():
 
     except Exception as e:
         error_msg = str(e)
-        print(f"❌ An error occurred: {error_msg}")
+        print(f"An error occurred: {error_msg}")
         
         # Send failure notification
         notifier.notify_scraper_completed(
