@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "category": "politics",
+  "total_posts": 2,
+  "posts": [
+    {
+      "id": "c27f5396b2ff8e28",
+      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji’s conviction for a ...",
+      "description": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji’s conviction for a fourth-degree felony and affirming the High Court’s sentence of three y… See more",
+      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji’s conviction for a fourth-degree felony and affirming the High Court’s sentence of three y… See more",
+      "categoryID": "politics",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:01:19.678730",
+      "publishAt": "2025-08-21T12:01:19.678731"
+    },
+    {
+      "id": "4f816c5b72c3913d",
+      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a ...",
+      "description": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three y  See more",
+      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three y  See more",
+      "categoryID": "politics",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.376147",
+      "publishAt": "2025-08-21T11:37:42.376148"
+    }
+  ],
+  "generated_at": "2025-08-21T15:55:10.764268"
+}

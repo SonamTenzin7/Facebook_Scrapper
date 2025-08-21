@@ -2,8 +2,11 @@
   "success": true,
   "categories": [
     "event",
-    "news",
-    "general"
+    "politics",
+    "general",
+    "culture",
+    "sports",
+    "news"
   ],
-  "generated_at": "2025-08-20T15:07:59.099001"
+  "generated_at": "2025-08-21T15:55:10.763857"
 }

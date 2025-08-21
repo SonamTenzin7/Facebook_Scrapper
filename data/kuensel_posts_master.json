@@ -1,17 +1,755 @@
 {
   "scraping_session": {
-    "timestamp": "2025-08-20T14:52:04.645445",
-    "total_posts": 7,
-    "new_posts_this_session": 1,
-    "existing_posts": 6,
-    "status": "completed"
+    "timestamp": "2025-08-21T15:55:10.760064",
+    "total_posts": 48,
+    "new_posts_this_session": 0,
+    "existing_posts": 51,
+    "status": "completed - comment post removed",
+    "cleanup_note": "Removed 3 comment posts - enhanced validation active",
+    "removed_comments": [
+      "Outdated news...that bridge was completed months a",
+      "Passa Peceey Dorjee interest halam hay nii may ...",
+      "From 2010 till now nothing was certified than ??? "
+    ]
   },
   "posts": [
     {
+      "id": "79a0e6602bd312d5",
+      "title": "Neten Dorji While nursing has been viewed as a profession best suited to students from sc...",
+      "description": "Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https://kuenselonline.com/.../non-science-students-show... #nursing #GNM #Bhutan",
+      "content": "Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https://kuenselonline.com/.../non-science-students-show... #nursing #GNM #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:28:30.931480",
+      "publishAt": "2025-08-21T15:28:30.931481"
+    },
+    {
+      "id": "92872b48b48fdfbb",
+      "title": "Foreign manufacturers face fees, inspections under the strict certification regime Dorji ...",
+      "description": "Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https://kuenselonline.com/.../only-bsb-certified-products... #BSB #Bhutan",
+      "content": "Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https://kuenselonline.com/.../only-bsb-certified-products... #BSB #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:28:30.927358",
+      "publishAt": "2025-08-21T15:28:30.927359"
+    },
+    {
+      "id": "5ba20caf43ac82ee",
+      "title": "Editorial: Alcohol remains one of the biggest social problems in our country",
+      "description": "Solutions are rare, even though this substance has long been identified as a root cause of many evils\u2014including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https://kuenselonline.com/news/a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "content": "Editorial: Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils\u2014including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https://kuenselonline.com/news/a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:28:30.923687",
+      "publishAt": "2025-08-21T15:28:30.923689"
+    },
+    {
+      "id": "a6a76cb56f4b58c4",
+      "title": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 p...",
+      "description": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry of Health, WHO Bhutan, Dratshang Lhentshog, and Civil Society Organisations. Delivering the keynote address, Health Minister Lyonpo Tandin Wangchuk stressed that \u201ca resilient and equitable health system is not built by health professionals alone, but by a society that is informed, engaged, and empowered.\u201d He emphasized the media\u2019s vital role in bridging science and society, countering misinformation, and shaping healthier communities. Bhupinder Kaur Aulakh (PhD), WHO Representative to Bhutan, in her remarks today highlighted the crucial role of media in driving advocacy, awareness, and behavior change in public health. Source: WHO Bhutan #HealthForAll #MediaWorkshop2025 #Bhutan #HealthCommunication #ResilientSystems #PartnershipsForHealth",
+      "content": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry of Health, WHO Bhutan, Dratshang Lhentshog, and Civil Society Organisations. Delivering the keynote address, Health Minister Lyonpo Tandin Wangchuk stressed that \u201ca resilient and equitable health system is not built by health professionals alone, but by a society that is informed, engaged, and empowered.\u201d He emphasized the media\u2019s vital role in bridging science and society, countering misinformation, and shaping healthier communities. Bhupinder Kaur Aulakh (PhD), WHO Representative to Bhutan, in her remarks today highlighted the crucial role of media in driving advocacy, awareness, and behavior change in public health. Source: WHO Bhutan #HealthForAll #MediaWorkshop2025 #Bhutan #HealthCommunication #ResilientSystems #PartnershipsForHealth",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:28:30.919747",
+      "publishAt": "2025-08-21T15:28:30.919752"
+    },
+    {
+      "id": "34110bfb8ae462fa",
+      "title": "\u2018               \u2019 Our vision is to make Paro FC synonymous with excellence in Bhutanese football",
+      "description": ". We\u2026 See more",
+      "content": "\u2018               \u2019 Our vision is to make Paro FC synonymous with excellence in Bhutanese football. We\u2026 See more",
+      "categoryID": "sports",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:27:52.980318",
+      "publishAt": "2025-08-21T15:27:52.980318"
+    },
+    {
+      "id": "10b1f0885a8d4ef9",
+      "title": "Perspective: \u2019       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
+      "description": "Perspective: \u2019       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty\u2013the valle\u2026 See more",
+      "content": "Perspective: \u2019       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty\u2013the valle\u2026 See more",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:27:52.978679",
+      "publishAt": "2025-08-21T15:27:52.978680"
+    },
+    {
+      "id": "64b89a5e2b7aa579",
+      "title": "Editorial:     \u2013  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 1...",
+      "description": "Editorial:     \u2013  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 18 to 22 at the invitatio\u2026 See more",
+      "content": "Editorial:     \u2013  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 18 to 22 at the invitatio\u2026 See more",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:27:42.797437",
+      "publishAt": "2025-08-21T15:27:42.797439"
+    },
+    {
+      "id": "aa03f030f75258f9",
+      "title": "Breaking: AFC Challenge League Group Stage to be held in Bhutan as Paro FC advances The Asian Foo...",
+      "description": "Breaking: AFC Challenge League Group Stage to be held in Bhutan as Paro FC advances The Asian Football Confederation (AFC) has confirmed that Bhutan will host the group stage of the AFC Challenge League in Thimphu, following Paro FC\u2019s emphatic victory over Abu Muslim in the preliminary round. The win propels Paro FC into history once again, as the club becomes the first Bhutanese team to host an AFC League fixture in the capital for the second time. The official fixture draw is scheduled for August 28, 2025, when Paro FC will learn their next opponent. Match dates and kick-off times will be announced after the draw.",
+      "content": "Breaking: AFC Challenge League Group Stage to be held in Bhutan as Paro FC advances The Asian Football Confederation (AFC) has confirmed that Bhutan will host the group stage of the AFC Challenge League in Thimphu, following Paro FC\u2019s emphatic victory over Abu Muslim in the preliminary round. The win propels Paro FC into history once again, as the club becomes the first Bhutanese team to host an AFC League fixture in the capital for the second time. The official fixture draw is scheduled for August 28, 2025, when Paro FC will learn their next opponent. Match dates and kick-off times will be announced after the draw.",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T15:27:42.793853",
+      "publishAt": "2025-08-21T15:27:42.793855"
+    },
+    {
+      "id": "6261033761db1fe0",
+      "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",
+      "description": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
+      "content": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/6757268679376797768?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fparoairpot.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&_nc_gid=STOdJ-bLd-ocsbrSP5qphg&_nc_oc=Adn7pKt0phR-MrgmX3vouVhBCreFF4zCYf1l4Bo_dMKTAq7KBZtPoRrhN_GHllcLuqo&ccb=13-1&oh=06_Q3-2AfE1eEDyljWP3Q8RP1P2LB4fcZNoT4wYhO93KK5nHwMx&oe=68A8C7EF&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T14:20:50.791652",
+      "publishAt": "2025-08-21T14:20:50.791663"
+    },
+    {
+      "id": "b26f9fdaf2b9d974",
+      "title": "\u2019     , , ,    Dorji Choden A new investment strategy, aimed at achieving Bhutan\u2019s ambitious 10X ...",
+      "description": "\u2019     , , ,    Dorji Choden A new investment strategy, aimed at achieving Bhutan\u2019s ambitious 10X economic aspiration, serves as a core pillar of the Druk Holding and Investment (DHI) Group\u2019s newly launched roadmap. https://kuenselonline.com/.../dhi-groups-10x-roadmap... #DHI #Economy #roadmap #Bhutan",
+      "content": "\u2019     , , ,    Dorji Choden A new investment strategy, aimed at achieving Bhutan\u2019s ambitious 10X economic aspiration, serves as a core pillar of the Druk Holding and Investment (DHI) Group\u2019s newly launched roadmap. https://kuenselonline.com/.../dhi-groups-10x-roadmap... #DHI #Economy #roadmap #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535777902_1175039707992731_66961070621326522_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8NIOVgTfIq8Q7kNvwFx5f1j&_nc_oc=AdmUUE5PYw11SkuJMNMJPwAuY3nh09AeZ3dR9AhKr35WWx9UR7boqPg_FbxUeQJIOQY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=d7woAcEaLjALyXtw3dfTHg&oh=00_AfVbqnPo3AC2ynEESpIwwZTDAX5cEviHX3tmHiKVu4aULw&oe=68AC8F81",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535777902_1175039707992731_66961070621326522_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8NIOVgTfIq8Q7kNvwFx5f1j&_nc_oc=AdmUUE5PYw11SkuJMNMJPwAuY3nh09AeZ3dR9AhKr35WWx9UR7boqPg_FbxUeQJIOQY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=bEm_GIK1tTbetX8bXvSFTA&oh=00_AfXQ913WDcNU1KVn1VhtOhdZQviKGlps5-CcdVPibizlkw&oe=68AC8F81"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175098704653498&set=a.470097558486953&__cft__[0]=AZWbR2vjVoK41qpKiw7PcYJPclx4pt6B2k3aKGlK2YZDI10pqcUPc7zBVwx8VRyNjUiFz-t0ocUmmS0dhKw9BBMjvdeKs2SWsRfWGlX46YVvBV8H2A8khK9kEucIbRUHUnmJdSFadT_-F4s6aeFOaKC-z2uPLuvGVCzErscS45UfqoE3jC6c6-fW3lvUz-imBbk&__tn__=EH-R"
+        ]
+      },
+      "createdAt": "2025-08-21T14:03:56.868740",
+      "publishAt": "2025-08-21T14:03:56.868747"
+    },
+    {
+      "id": "7d46daa0e4e1e6eb",
+      "title": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiar...",
+      "description": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiarisation (FAM) trip. They were granted a Sustainable Development Fee (SDF) waiver. https://kuenselonline.com/.../dubai-tour-operators... #Dubai #tourism #SDF #Bhutan #DoT #Bhutan",
+      "content": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiarisation (FAM) trip. They were granted a Sustainable Development Fee (SDF) waiver. https://kuenselonline.com/.../dubai-tour-operators... #Dubai #tourism #SDF #Bhutan #DoT #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=UCYOkJh8j92xK3Sm3ZTTow&oh=00_AfWaGo2NUPbdJkFtby9Ae3F915hrTVKiGOroqwaZ4mm1Rg&oe=68AC9DFA",
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=dlR-brDDiFfF8zWZeIYRpQ&oh=00_AfXzKiuVjaVbKnBeHtvJVAJafXS67Z_UXWsu53Rx6Jz79A&oe=68AC9DFA"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175087657987936&set=a.470097558486953&__cft__[0]=AZUqvcJCEV7neCOlYdPCEmtKYpUFDxrKMP4_S5zh2dA8E6chhsETTpwL_rUSn420At0t2HzvV33HzDNgh0OVoAtW0RNXfnZyOSUwi2Nl59w3XHplz4k0AXSJIjmYSH2aFQZN7gAHZie2HPQt6LU_ItCAlChxDYKhQNIeMmDSRX1rC4cXyF-fuclGTYuj_N4__Fo&__tn__=EH-R"
+        ]
+      },
+      "createdAt": "2025-08-21T13:55:27.158729",
+      "publishAt": "2025-08-21T13:55:27.158739"
+    },
+    {
+      "id": "021f188ad79925cb",
+      "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
+      "description": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan\u2019s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
+      "content": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan\u2019s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfVTYwp1IYU6fzskQwy5BcPTfNBxzaZqaaX0_pxKU-Tcng&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfX94mpmVvyVsHaPRA-UTJ2DXtOLEQfZhSsB_PT4KSPUSg&oe=68AC86AC",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=Ciq21074n3ujszgX9bTfPg&oh=00_AfU6I059gyHp6RYWsfTWBNa0sJzv61qGmIYvVDEkQdL8pQ&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=BACWFIIE8DORfbTpmfWA2w&oh=00_AfUM9rNFeKyZ-VAXV1vXdw6jCJz7Vw4IB7u6605TCZKWAw&oe=68AC86AC"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175076354655733&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175076357989066&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b1H-R"
+        ]
+      },
+      "createdAt": "2025-08-21T13:37:12.558810",
+      "publishAt": "2025-08-21T13:37:12.558821"
+    },
+    {
+      "id": "fcc88c21bb977700",
+      "title": "Perspective: \u2019       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
+      "description": "Perspective: \u2019       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty\u2013the valleys, the mountains, the wind-tossed prayer flags. What I found was a deeper national treasure: a culture where kindness is instinct, and strangers become friends before you know their names. https://kuenselonline.com/.../bhutans-bold-step-toward... #GMC #GNH #GDP #Bhutan",
+      "content": "Perspective: \u2019       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty\u2013the valleys, the mountains, the wind-tossed prayer flags. What I found was a deeper national treasure: a culture where kindness is instinct, and strangers become friends before you know their names. https://kuenselonline.com/.../bhutans-bold-step-toward... #GMC #GNH #GDP #Bhutan",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/2029737833369075710?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fgmc-14.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p720x376_q75_tt6&_nc_gid=DeF5iWpO48ZQxeSxtammzg&_nc_oc=Adl_lkcCD_BFTfW1LSyfckk0B0KG2ZD0NfAiZCgoR_wov5KZr5QIHvEdkW2ZHs6fNYc&ccb=13-1&oh=06_Q3-2ASaI5-c88vZkrgOkE2-xrlFYNf-_ZYHKFEmPqu1OUlo5&oe=68A8895F&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:45:30.531688",
+      "publishAt": "2025-08-21T12:45:30.531697"
+    },
+    {
+      "id": "94a2c686168fcc5d",
+      "title": "\u2018               \u2019 Our vision is to make Paro FC synonymous with excellence in Bhutanese football",
+      "description": ". We aspire to be a club that consistently represents Bhutan at the AFC level and competes against some of the best teams in Asia. Beyond football results, we want to create a professionally managed, financially sustainable club with modern infrastructure and strong governance. A key part of this vision is to establish a high-standard academy that nurtures local players into future national stars. At the same time, we aim to build a passionate and loyal fan base, making Paro FC a benchmark for professional football in Bhutan. https://kuenselonline.com/.../our-vision-is-to-show... #sports #ParoFC #football #Bhutan",
+      "content": "\u2018               \u2019 Our vision is to make Paro FC synonymous with excellence in Bhutanese football. We aspire to be a club that consistently represents Bhutan at the AFC level and competes against some of the best teams in Asia. Beyond football results, we want to create a professionally managed, financially sustainable club with modern infrastructure and strong governance. A key part of this vision is to establish a high-standard academy that nurtures local players into future national stars. At the same time, we aim to build a passionate and loyal fan base, making Paro FC a benchmark for professional football in Bhutan. https://kuenselonline.com/.../our-vision-is-to-show... #sports #ParoFC #football #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/537869167_1175034017993300_6862710839697049236_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gUwEJAoR0tMQ7kNvwGju24a&_nc_oc=AdkuSPB7oZl2ROdP3aE7DTO8TGz1ReviXFEFwhiVE405IJZ3eYYXA49G0D-lliKG5hE&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=OY7WbvuPH5HZKGm0IxWFfg&oh=00_AfXj2uQaWsXTwpTobmVIU9_hKdTTIkjT4jVkp5p00QDkCw&oe=68AC9BBE",
+          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536275391_1175034197993282_2931272429517491550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cELcT1-zTuAQ7kNvwGcWmQW&_nc_oc=AdkHAJhiALcoCHFUBGob3iGcpcClYmRYegr6BpZwbay7cpZGTw3HYLaq3lE6c01G2vI&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=OY7WbvuPH5HZKGm0IxWFfg&oh=00_AfXKKIXurmzatoXvwcq7kymY_tRWinMDJdt9C5GE5B9KTQ&oe=68AC7A6F",
+          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/537869167_1175034017993300_6862710839697049236_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gUwEJAoR0tMQ7kNvwGju24a&_nc_oc=AdkuSPB7oZl2ROdP3aE7DTO8TGz1ReviXFEFwhiVE405IJZ3eYYXA49G0D-lliKG5hE&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=8DUhGzzhuToiN8BLwOTjjg&oh=00_AfUzPOMA0Hn7IgadBwuCbUVPa_PZdcEeMODcb7i-zG_ZnA&oe=68AC9BBE",
+          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536275391_1175034197993282_2931272429517491550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cELcT1-zTuAQ7kNvwGcWmQW&_nc_oc=AdkHAJhiALcoCHFUBGob3iGcpcClYmRYegr6BpZwbay7cpZGTw3HYLaq3lE6c01G2vI&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=3Ki7HmZYuT9tO8xvXOrApg&oh=00_AfUCwn7uIE8zgvHsIPDkfDK-L7jjI4XsyvmUVM2f_wE6Xw&oe=68AC7A6F"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175044804658888&set=pcb.1175044854658883&__cft__[0]=AZVk_QRxonQyAMv-z99vS5Dkb4kglEYVS6jRJuUzFaKPZ61SvAl577s9vkj4U_5DdTAEwJVOig6h4ZvMNfeI3_Qfxa8bs0S-JgWmg2gz5X_G2ic1UifhbP-NnQvBhIXbkLjtuSBY2zOaJ3L3xozcCUEBUt1zdgH95WuQmKHh18avX_CDy0M0Jmkh_p7l3jSGSt4&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175044801325555&set=pcb.1175044854658883&__cft__[0]=AZVk_QRxonQyAMv-z99vS5Dkb4kglEYVS6jRJuUzFaKPZ61SvAl577s9vkj4U_5DdTAEwJVOig6h4ZvMNfeI3_Qfxa8bs0S-JgWmg2gz5X_G2ic1UifhbP-NnQvBhIXbkLjtuSBY2zOaJ3L3xozcCUEBUt1zdgH95WuQmKHh18avX_CDy0M0Jmkh_p7l3jSGSt4&__tn__=*b1H-R"
+        ]
+      },
+      "createdAt": "2025-08-21T12:27:43.529166",
+      "publishAt": "2025-08-21T12:27:43.529173"
+    },
+    {
+      "id": "c27f5396b2ff8e28",
+      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji\u2019s conviction for a ...",
+      "description": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji\u2019s conviction for a fourth-degree felony and affirming the High Court\u2019s sentence of three y\u2026 See more",
+      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji\u2019s conviction for a fourth-degree felony and affirming the High Court\u2019s sentence of three y\u2026 See more",
+      "categoryID": "politics",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:01:19.678730",
+      "publishAt": "2025-08-21T12:01:19.678731"
+    },
+    {
+      "id": "2f4eff4a245975f3",
+      "title": "August 19, 2025: On Their Majesties\u2019 ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and He...",
+      "description": "August 19, 2025: On Their Majesties\u2019 ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President H\u1ed3 Ch\u00ed Minh \u2014 the founder of modern Vi\u1ec7t Nam, and to the nation\u2019s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Vi\u1ec7t Nam\u2019s fallen heroes, and the H\u1ed3 Ch\u00ed Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President L\u01b0\u01a1ng C\u01b0\u1eddng and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Vi\u1ec7t Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Vi\u1ec7t Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Vi\u1ec7t Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t visited Tr\u1ea5n Qu\u1ed1c Pagoda, the oldest Buddhist temple in H\u00e0 N\u1ed9i. Her Majesty and the First Lady were received by the abbot, Most Venerable Th\u00edch Thanh Nh\u00e3, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Vi\u1ec7t Nam T\u00f4 L\u00e2m, Prime Minister Ph\u1ea1m Minh Ch\u00ednh, and Chairman of the National Assembly Tr\u1ea7n Thanh M\u1eabn. In the evening, the President and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
+      "content": "August 19, 2025: On Their Majesties\u2019 ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President H\u1ed3 Ch\u00ed Minh \u2014 the founder of modern Vi\u1ec7t Nam, and to the nation\u2019s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Vi\u1ec7t Nam\u2019s fallen heroes, and the H\u1ed3 Ch\u00ed Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President L\u01b0\u01a1ng C\u01b0\u1eddng and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Vi\u1ec7t Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Vi\u1ec7t Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Vi\u1ec7t Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t visited Tr\u1ea5n Qu\u1ed1c Pagoda, the oldest Buddhist temple in H\u00e0 N\u1ed9i. Her Majesty and the First Lady were received by the abbot, Most Venerable Th\u00edch Thanh Nh\u00e3, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Vi\u1ec7t Nam T\u00f4 L\u00e2m, Prime Minister Ph\u1ea1m Minh Ch\u00ednh, and Chairman of the National Assembly Tr\u1ea7n Thanh M\u1eabn. In the evening, the President and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:01:19.677105",
+      "publishAt": "2025-08-21T12:01:19.677106"
+    },
+    {
+      "id": "63242ba6e8ca0455",
+      "title": "Update of His Majesty\u2019s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Servic...",
+      "description": "Update of His Majesty\u2019s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infrastructure and Transport, Bhutan and the Civil Aviation Authority, Ministry of Construction, The Government of the Socialist Republic of Viet Nam in the presence of His Majesty The King and the President of Viet Nam. The objective of the MoU is to promote aeronautical relations in a spirit of cooperation and understanding for the benefit of both countries. #Update #energy #Aviation",
+      "content": "Update of His Majesty\u2019s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infrastructure and Transport, Bhutan and the Civil Aviation Authority, Ministry of Construction, The Government of the Socialist Republic of Viet Nam in the presence of His Majesty The King and the President of Viet Nam. The objective of the MoU is to promote aeronautical relations in a spirit of cooperation and understanding for the benefit of both countries. #Update #energy #Aviation",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:01:19.672522",
+      "publishAt": "2025-08-21T12:01:19.672523"
+    },
+    {
+      "id": "2daba4eebbbfae44",
+      "title": "- \u2019     Thinley Namgay The seventh edition of the South Asian Football Federation\u2019s (SAFF) Under ...",
+      "description": "- \u2019     Thinley Namgay The seventh edition of the South Asian Football Federation\u2019s (SAFF) Under (U)-17 Women\u2019s Championship 2025 is scheduled to begin today at the Changlimithang Stadium in Thimphu. In the opening match, Bhutan\u2019s national team will face Bangladesh at 6pm, following an earlier game between India and Nepal at 2pm. https://kuenselonline.com/.../saff-u-17-womens... #SAFF #U17 #football #Bhutan",
+      "content": "- \u2019     Thinley Namgay The seventh edition of the South Asian Football Federation\u2019s (SAFF) Under (U)-17 Women\u2019s Championship 2025 is scheduled to begin today at the Changlimithang Stadium in Thimphu. In the opening match, Bhutan\u2019s national team will face Bangladesh at 6pm, following an earlier game between India and Nepal at 2pm. https://kuenselonline.com/.../saff-u-17-womens... #SAFF #U17 #football #Bhutan",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:01:19.668735",
+      "publishAt": "2025-08-21T12:01:19.668736"
+    },
+    {
+      "id": "5aa04c2d221bf572",
+      "title": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji ...",
+      "description": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next\u2026 See more",
+      "content": "-       Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next\u2026 See more",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:00:48.757860",
+      "publishAt": "2025-08-21T12:00:48.757861"
+    },
+    {
+      "id": "a6f314850566b413",
+      "title": "Perspective:         It is unfortunate that the media has to engage in clarifying each other\u2019s st...",
+      "description": "Perspective:         It is unfortunate that the media has to engage in clarifying each other\u2019s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https://kuenselonline.com/news/it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
+      "content": "Perspective:         It is unfortunate that the media has to engage in clarifying each other\u2019s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https://kuenselonline.com/news/it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T12:00:38.092783",
+      "publishAt": "2025-08-21T12:00:38.092785"
+    },
+    {
+      "id": "69bf0ff5edb9e174",
+      "title": "\ud835\udde5\ud835\uddfc\ud835\ude06\ud835\uddee\ud835\uddf9 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\udde7\ud835\uddf2\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\uddf6\ud835\uddfb \ud835\udde5\ud835\uddee\ud835\uddf7\ud835\uddf4\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddfc \ud835\uddfc\ud835\uddfd\ud835\uddf2\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde6\ud835\uddf2\ud835\uddfd\ud835\ude01\ud835\uddf2\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff Ugyen Dorji Located amid one of Buddhism s m...",
+      "description": "\ud835\udde5\ud835\uddfc\ud835\ude06\ud835\uddee\ud835\uddf9 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\udde7\ud835\uddf2\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\uddf6\ud835\uddfb \ud835\udde5\ud835\uddee\ud835\uddf7\ud835\uddf4\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddfc \ud835\uddfc\ud835\uddfd\ud835\uddf2\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde6\ud835\uddf2\ud835\uddfd\ud835\ude01\ud835\uddf2\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff Ugyen Dorji Located amid one of Buddhism s most sacred   See more",
+      "content": "\ud835\udde5\ud835\uddfc\ud835\ude06\ud835\uddee\ud835\uddf9 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\udde7\ud835\uddf2\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\uddf6\ud835\uddfb \ud835\udde5\ud835\uddee\ud835\uddf7\ud835\uddf4\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddfc \ud835\uddfc\ud835\uddfd\ud835\uddf2\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde6\ud835\uddf2\ud835\uddfd\ud835\ude01\ud835\uddf2\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff Ugyen Dorji Located amid one of Buddhism s most sacred   See more",
+      "categoryID": "culture",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.381236",
+      "publishAt": "2025-08-21T11:37:42.381237"
+    },
+    {
+      "id": "73c297118847258a",
+      "title": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf5\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde3\ud835\uddf2\ud835\uddee\ud835\uddf0\ud835\uddf2 \ud835\udde3\ud835\uddff\ud835\uddee\ud835\ude06\ud835\uddf2\ud835\uddff \ud835\uddd9\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\uddf9 Staff reporter Bhutan will host the Global Peace Pr  ...",
+      "description": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf5\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde3\ud835\uddf2\ud835\uddee\ud835\uddf0\ud835\uddf2 \ud835\udde3\ud835\uddff\ud835\uddee\ud835\ude06\ud835\uddf2\ud835\uddff \ud835\uddd9\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\uddf9 Staff reporter Bhutan will host the Global Peace Pr  See more",
+      "content": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf5\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde3\ud835\uddf2\ud835\uddee\ud835\uddf0\ud835\uddf2 \ud835\udde3\ud835\uddff\ud835\uddee\ud835\ude06\ud835\uddf2\ud835\uddff \ud835\uddd9\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\uddf9 Staff reporter Bhutan will host the Global Peace Pr  See more",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.379542",
+      "publishAt": "2025-08-21T11:37:42.379543"
+    },
+    {
+      "id": "c2d12bbe3a272025",
+      "title": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01 \ud835\udff1,\ud835\udfec\ud835\udfec\ud835\udfec\ud835\udde0\ud835\udde7 \ud835\uddf3\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude00\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddee YK Poudel In a move to curb illegal impo...",
+      "description": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01 \ud835\udff1,\ud835\udfec\ud835\udfec\ud835\udfec\ud835\udde0\ud835\udde7 \ud835\uddf3\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude00\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddee YK Poudel In a move to curb illegal imports and ensure ti  See more",
+      "content": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01 \ud835\udff1,\ud835\udfec\ud835\udfec\ud835\udfec\ud835\udde0\ud835\udde7 \ud835\uddf3\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude00\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddee YK Poudel In a move to curb illegal imports and ensure ti  See more",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.377848",
+      "publishAt": "2025-08-21T11:37:42.377849"
+    },
+    {
+      "id": "4f816c5b72c3913d",
+      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a ...",
+      "description": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three y  See more",
+      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three y  See more",
+      "categoryID": "politics",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.376147",
+      "publishAt": "2025-08-21T11:37:42.376148"
+    },
+    {
+      "id": "13a2441ac243515f",
+      "title": "\ud835\udde6\ud835\uddd4\ud835\uddd9\ud835\uddd9 \ud835\udde8-\ud835\udfed\ud835\udff3 \ud835\uddea\ud835\uddfc\ud835\uddfa\ud835\uddf2\ud835\uddfb \ud835\ude00 \ud835\uddd6\ud835\uddf5\ud835\uddee\ud835\uddfa\ud835\uddfd\ud835\uddf6\ud835\uddfc\ud835\uddfb\ud835\ude00\ud835\uddf5\ud835\uddf6\ud835\uddfd \ud835\uddf8\ud835\uddf6\ud835\uddf0\ud835\uddf8\ud835\ude00 \ud835\uddfc\ud835\uddf3\ud835\uddf3 \ud835\ude01\ud835\uddfc\ud835\uddf1\ud835\uddee\ud835\ude06 Thinley Namgay The seventh edition of the South As...",
+      "description": "\ud835\udde6\ud835\uddd4\ud835\uddd9\ud835\uddd9 \ud835\udde8-\ud835\udfed\ud835\udff3 \ud835\uddea\ud835\uddfc\ud835\uddfa\ud835\uddf2\ud835\uddfb \ud835\ude00 \ud835\uddd6\ud835\uddf5\ud835\uddee\ud835\uddfa\ud835\uddfd\ud835\uddf6\ud835\uddfc\ud835\uddfb\ud835\ude00\ud835\uddf5\ud835\uddf6\ud835\uddfd \ud835\uddf8\ud835\uddf6\ud835\uddf0\ud835\uddf8\ud835\ude00 \ud835\uddfc\ud835\uddf3\ud835\uddf3 \ud835\ude01\ud835\uddfc\ud835\uddf1\ud835\uddee\ud835\ude06 Thinley Namgay The seventh edition of the South Asia  See more",
+      "content": "\ud835\udde6\ud835\uddd4\ud835\uddd9\ud835\uddd9 \ud835\udde8-\ud835\udfed\ud835\udff3 \ud835\uddea\ud835\uddfc\ud835\uddfa\ud835\uddf2\ud835\uddfb \ud835\ude00 \ud835\uddd6\ud835\uddf5\ud835\uddee\ud835\uddfa\ud835\uddfd\ud835\uddf6\ud835\uddfc\ud835\uddfb\ud835\ude00\ud835\uddf5\ud835\uddf6\ud835\uddfd \ud835\uddf8\ud835\uddf6\ud835\uddf0\ud835\uddf8\ud835\ude00 \ud835\uddfc\ud835\uddf3\ud835\uddf3 \ud835\ude01\ud835\uddfc\ud835\uddf1\ud835\uddee\ud835\ude06 Thinley Namgay The seventh edition of the South Asia  See more",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.371245",
+      "publishAt": "2025-08-21T11:37:42.371246"
+    },
+    {
+      "id": "3d001b8783e9ae7f",
+      "title": "Update: With the support of Varja Builders Private Limited, the Gelephu Central Regional Referral...",
+      "description": "Update: With the support of Varja Builders Private Limited, the Gelephu Central Regional Referral Hospital (CRRH) initiated the improvement of basic amenities at the Se  See more",
+      "content": "Update: With the support of Varja Builders Private Limited, the Gelephu Central Regional Referral Hospital (CRRH) initiated the improvement of basic amenities at the Se  See more",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:37:42.369553",
+      "publishAt": "2025-08-21T11:37:42.369554"
+    },
+    {
+      "id": "2c53292dee71d642",
+      "title": "\ud835\udde1\ud835\uddfc\ud835\uddfb-\ud835\ude00\ud835\uddf0\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\uddf0\ud835\uddf2 \ud835\ude00\ud835\ude01\ud835\ude02\ud835\uddf1\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\ude00 \ud835\ude00\ud835\uddf5\ud835\uddfc\ud835\ude04 \ud835\uddf0\ud835\uddfc\ud835\uddfa\ud835\uddfd\ud835\uddf2\ud835\ude01\ud835\uddf6\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddff\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01\ud835\ude00 \ud835\uddf6\ud835\uddfb \ud835\uddfb\ud835\ude02\ud835\uddff\ud835\ude00\ud835\uddf6\ud835\uddfb\ud835\uddf4 Neten Dorji While nursing has been viewe...",
+      "description": "\ud835\udde1\ud835\uddfc\ud835\uddfb-\ud835\ude00\ud835\uddf0\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\uddf0\ud835\uddf2 \ud835\ude00\ud835\ude01\ud835\ude02\ud835\uddf1\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\ude00 \ud835\ude00\ud835\uddf5\ud835\uddfc\ud835\ude04 \ud835\uddf0\ud835\uddfc\ud835\uddfa\ud835\uddfd\ud835\uddf2\ud835\ude01\ud835\uddf6\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddff\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01\ud835\ude00 \ud835\uddf6\ud835\uddfb \ud835\uddfb\ud835\ude02\ud835\uddff\ud835\ude00\ud835\uddf6\ud835\uddfb\ud835\uddf4 Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https:  kuenselonline.com ... non-science-students-show... #nursing #GNM #Bhutan",
+      "content": "\ud835\udde1\ud835\uddfc\ud835\uddfb-\ud835\ude00\ud835\uddf0\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\uddf0\ud835\uddf2 \ud835\ude00\ud835\ude01\ud835\ude02\ud835\uddf1\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\ude00 \ud835\ude00\ud835\uddf5\ud835\uddfc\ud835\ude04 \ud835\uddf0\ud835\uddfc\ud835\uddfa\ud835\uddfd\ud835\uddf2\ud835\ude01\ud835\uddf6\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddff\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01\ud835\ude00 \ud835\uddf6\ud835\uddfb \ud835\uddfb\ud835\ude02\ud835\uddff\ud835\ude00\ud835\uddf6\ud835\uddfb\ud835\uddf4 Neten Dorji While nursing has been viewed as a profession best suited to students from science backgrounds, educators say that perception is outdated, and that students from arts and commerce streams are proving just as capable. The Apollo Bhutan Institute of Nursing and the Arura Nursing Institute have both begun admitting arts and commerce students to General Nursing and Midwifery (GNM) programmes, aligning with global practices. https:  kuenselonline.com ... non-science-students-show... #nursing #GNM #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:36:50.247596",
+      "publishAt": "2025-08-21T11:36:50.247599"
+    },
+    {
+      "id": "c6c9b55649c9d752",
+      "title": "\ud835\udde2\ud835\uddfb\ud835\uddf9\ud835\ude06 \ud835\uddd5\ud835\udde6\ud835\uddd5-\ud835\uddf0\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf3\ud835\uddf6\ud835\uddf2\ud835\uddf1 \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf0\ud835\ude01\ud835\ude00 \ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\uddfc\ud835\ude04\ud835\uddf2\ud835\uddf1 \ud835\uddf6\ud835\uddfb\ud835\ude01\ud835\uddfc \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff2 Foreign manufacturers face fees, inspec...",
+      "description": "\ud835\udde2\ud835\uddfb\ud835\uddf9\ud835\ude06 \ud835\uddd5\ud835\udde6\ud835\uddd5-\ud835\uddf0\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf3\ud835\uddf6\ud835\uddf2\ud835\uddf1 \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf0\ud835\ude01\ud835\ude00 \ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\uddfc\ud835\ude04\ud835\uddf2\ud835\uddf1 \ud835\uddf6\ud835\uddfb\ud835\ude01\ud835\uddfc \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff2 Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https:  kuenselonline.com ... only-bsb-certified-products... #BSB #Bhutan",
+      "content": "\ud835\udde2\ud835\uddfb\ud835\uddf9\ud835\ude06 \ud835\uddd5\ud835\udde6\ud835\uddd5-\ud835\uddf0\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf3\ud835\uddf6\ud835\uddf2\ud835\uddf1 \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf0\ud835\ude01\ud835\ude00 \ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\uddfc\ud835\ude04\ud835\uddf2\ud835\uddf1 \ud835\uddf6\ud835\uddfb\ud835\ude01\ud835\uddfc \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff2 Foreign manufacturers face fees, inspections under the strict certification regime Dorji Choden Starting next year, only products certified by the Bhutan Standards Bureau (BSB) will be permitted for import into Bhutan. This rule is based on the Bhutan Standards Act 2010, which gives BSB the authority to stop the import of products that do not meet national standards unless the product is made to even higher standards. https:  kuenselonline.com ... only-bsb-certified-products... #BSB #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:36:50.243348",
+      "publishAt": "2025-08-21T11:36:50.243349"
+    },
+    {
+      "id": "c93f671087e2e1d2",
+      "title": "\ud835\udde5\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\ude03\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude06\ud835\uddee\ud835\uddf8-\ud835\uddff\ud835\uddf2\ud835\uddee\ud835\uddff\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddf5\ud835\uddff\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5 \ud835\ude04\ud835\uddfc\ud835\uddfc\ud835\uddf9, \ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf4\ud835\uddf2\ud835\uddf9\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddfa\ud835\uddee\ud835\uddff\ud835\uddf8\ud835\uddf2\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00 YK Poudel Bhutan s highland commun...",
+      "description": "\ud835\udde5\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\ude03\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude06\ud835\uddee\ud835\uddf8-\ud835\uddff\ud835\uddf2\ud835\uddee\ud835\uddff\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddf5\ud835\uddff\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5 \ud835\ude04\ud835\uddfc\ud835\uddfc\ud835\uddf9, \ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf4\ud835\uddf2\ud835\uddf9\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddfa\ud835\uddee\ud835\uddff\ud835\uddf8\ud835\uddf2\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00 YK Poudel Bhutan s highland communities are set to benefit from new initiatives aimed at revitalising yak-rearing by promoting fibre production, rangeland development, and global market access. Officials say the move is designed to offer sustainable livelihoods, preserve cultural traditions, and unlock the economic potential of high-value yak wool exports. https:  kuenselonline.com ... reviving-yak-rearing... #yak #wool #highland #fibre #culture #traition #export #Bhutan",
+      "content": "\ud835\udde5\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\ude03\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude06\ud835\uddee\ud835\uddf8-\ud835\uddff\ud835\uddf2\ud835\uddee\ud835\uddff\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddf5\ud835\uddff\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5 \ud835\ude04\ud835\uddfc\ud835\uddfc\ud835\uddf9, \ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf4\ud835\uddf2\ud835\uddf9\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddfa\ud835\uddee\ud835\uddff\ud835\uddf8\ud835\uddf2\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00 YK Poudel Bhutan s highland communities are set to benefit from new initiatives aimed at revitalising yak-rearing by promoting fibre production, rangeland development, and global market access. Officials say the move is designed to offer sustainable livelihoods, preserve cultural traditions, and unlock the economic potential of high-value yak wool exports. https:  kuenselonline.com ... reviving-yak-rearing... #yak #wool #highland #fibre #culture #traition #export #Bhutan",
+      "categoryID": "culture",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:19:23.402578",
+      "publishAt": "2025-08-21T11:19:23.402579"
+    },
+    {
+      "id": "1257feb14f0aed52",
+      "title": "\ud835\udde5\ud835\uddfc\ud835\ude06\ud835\uddee\ud835\uddf9 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\udde7\ud835\uddf2\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\uddf6\ud835\uddfb \ud835\udde5\ud835\uddee\ud835\uddf7\ud835\uddf4\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddfc \ud835\uddfc\ud835\uddfd\ud835\uddf2\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde6\ud835\uddf2\ud835\uddfd\ud835\ude01\ud835\uddf2\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff Ugyen Dorji Located amid one of Buddhism s m...",
+      "description": "\ud835\udde5\ud835\uddfc\ud835\ude06\ud835\uddee\ud835\uddf9 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\udde7\ud835\uddf2\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\uddf6\ud835\uddfb \ud835\udde5\ud835\uddee\ud835\uddf7\ud835\uddf4\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddfc \ud835\uddfc\ud835\uddfd\ud835\uddf2\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde6\ud835\uddf2\ud835\uddfd\ud835\ude01\ud835\uddf2\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff Ugyen Dorji Located amid one of Buddhism s most sacred sites at Rajgir, Bihar, India, the Royal Bhutan Temple will be consecrated on September 4. His Holiness the Je Khenpo will preside over the consecration ceremony, which will be attended by senior Indian leaders, including the Chief Minister of Bihar and ministers of parliamentary and minority affairs. https:  kuenselonline.com ... royal-bhutan-temple-in... #Temple #Rajgir #sacred #Bhutan #India",
+      "content": "\ud835\udde5\ud835\uddfc\ud835\ude06\ud835\uddee\ud835\uddf9 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\udde7\ud835\uddf2\ud835\uddfa\ud835\uddfd\ud835\uddf9\ud835\uddf2 \ud835\uddf6\ud835\uddfb \ud835\udde5\ud835\uddee\ud835\uddf7\ud835\uddf4\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddfc \ud835\uddfc\ud835\uddfd\ud835\uddf2\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde6\ud835\uddf2\ud835\uddfd\ud835\ude01\ud835\uddf2\ud835\uddfa\ud835\uddef\ud835\uddf2\ud835\uddff Ugyen Dorji Located amid one of Buddhism s most sacred sites at Rajgir, Bihar, India, the Royal Bhutan Temple will be consecrated on September 4. His Holiness the Je Khenpo will preside over the consecration ceremony, which will be attended by senior Indian leaders, including the Chief Minister of Bihar and ministers of parliamentary and minority affairs. https:  kuenselonline.com ... royal-bhutan-temple-in... #Temple #Rajgir #sacred #Bhutan #India",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:19:23.396131",
+      "publishAt": "2025-08-21T11:19:23.396132"
+    },
+    {
+      "id": "3e06666549352a41",
+      "title": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf5\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde3\ud835\uddf2\ud835\uddee\ud835\uddf0\ud835\uddf2 \ud835\udde3\ud835\uddff\ud835\uddee\ud835\ude06\ud835\uddf2\ud835\uddff \ud835\uddd9\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\uddf9 Staff reporter Bhutan will host the Global Peace Pray...",
+      "description": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf5\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde3\ud835\uddf2\ud835\uddee\ud835\uddf0\ud835\uddf2 \ud835\udde3\ud835\uddff\ud835\uddee\ud835\ude06\ud835\uddf2\ud835\uddff \ud835\uddd9\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\uddf9 Staff reporter Bhutan will host the Global Peace Prayer Festival in Thimphu from November 4 to 17, an event of a scale never seen before in the country, the Prime Minister s Office (PMO) announced yesterday. https:  kuenselonline.com ... bhutan-to-host-global-peace... #Global #Peace #Prayer #Thimphu #Bhutan",
+      "content": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf5\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde3\ud835\uddf2\ud835\uddee\ud835\uddf0\ud835\uddf2 \ud835\udde3\ud835\uddff\ud835\uddee\ud835\ude06\ud835\uddf2\ud835\uddff \ud835\uddd9\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\uddf9 Staff reporter Bhutan will host the Global Peace Prayer Festival in Thimphu from November 4 to 17, an event of a scale never seen before in the country, the Prime Minister s Office (PMO) announced yesterday. https:  kuenselonline.com ... bhutan-to-host-global-peace... #Global #Peace #Prayer #Thimphu #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:19:23.391085",
+      "publishAt": "2025-08-21T11:19:23.391085"
+    },
+    {
+      "id": "554f641389534f7f",
+      "title": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01 \ud835\udff1,\ud835\udfec\ud835\udfec\ud835\udfec\ud835\udde0\ud835\udde7 \ud835\uddf3\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude00\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddee YK Poudel In a move to curb illegal impo...",
+      "description": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01 \ud835\udff1,\ud835\udfec\ud835\udfec\ud835\udfec\ud835\udde0\ud835\udde7 \ud835\uddf3\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude00\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddee YK Poudel In a move to curb illegal imports and ensure timely access to agricultural inputs, the National Seed Centre, Ministry of Agriculture and Livestock (MoAL) signed an agreement with Brahmaputra Valley Fertilizer Corporation Limited (BVFCL) yesterday to import 5,000 metric tonnes of fertilisers annually. https:  kuenselonline.com ... bhutan-to-import-5000mt... #fertilisers #agriculture #import #Bhutan",
+      "content": "\ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb \ud835\ude01\ud835\uddfc \ud835\uddf6\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01 \ud835\udff1,\ud835\udfec\ud835\udfec\ud835\udfec\ud835\udde0\ud835\udde7 \ud835\uddf3\ud835\uddf2\ud835\uddff\ud835\ude01\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude00\ud835\uddf2\ud835\uddff\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\ude02\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddff\ud835\uddfc\ud835\uddfa \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddee YK Poudel In a move to curb illegal imports and ensure timely access to agricultural inputs, the National Seed Centre, Ministry of Agriculture and Livestock (MoAL) signed an agreement with Brahmaputra Valley Fertilizer Corporation Limited (BVFCL) yesterday to import 5,000 metric tonnes of fertilisers annually. https:  kuenselonline.com ... bhutan-to-import-5000mt... #fertilisers #agriculture #import #Bhutan",
+      "categoryID": "culture",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:19:23.386180",
+      "publishAt": "2025-08-21T11:19:23.386181"
+    },
+    {
+      "id": "7cf25ef80caddc92",
+      "title": "MoAL psycho jow drea meana mo",
+      "description": "!",
+      "content": "MoAL psycho jow drea meana mo !",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:19:23.379466",
+      "publishAt": "2025-08-21T11:19:23.379471"
+    },
+    {
+      "id": "73d871ea54a59300",
+      "title": "August 19, 2025: On Their Majesties  ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and He...",
+      "description": "August 19, 2025: On Their Majesties  ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President H\u1ed3 Ch\u00ed Minh   the fou  See more",
+      "content": "August 19, 2025: On Their Majesties  ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President H\u1ed3 Ch\u00ed Minh   the fou  See more",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:18:42.706020",
+      "publishAt": "2025-08-21T11:18:42.706021"
+    },
+    {
+      "id": "d9efa6978792fa58",
+      "title": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Servic...",
+      "description": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infr  See more",
+      "content": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infr  See more",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:18:42.704394",
+      "publishAt": "2025-08-21T11:18:42.704395"
+    },
+    {
+      "id": "c6c3545e5187acc4",
+      "title": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 p...",
+      "description": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry  See more",
+      "content": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry  See more",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:18:22.739963",
+      "publishAt": "2025-08-21T11:18:22.739964"
+    },
+    {
+      "id": "ad7f5f7f31368631",
+      "title": "(WORLD ENTREPRENEURS' DAY) - Ministry of Industry, Commerce and Employment, Royal Government of B...",
+      "description": "(WORLD ENTREPRENEURS' DAY) - Ministry of Industry, Commerce and Employment, Royal Government of Bhutan",
+      "content": "(WORLD ENTREPRENEURS' DAY) - Ministry of Industry, Commerce and Employment, Royal Government of Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:18:22.738338",
+      "publishAt": "2025-08-21T11:18:22.738339"
+    },
+    {
+      "id": "915f90393442eee7",
+      "title": "\ud835\uddd7\ud835\uddf2\ud835\uddf0\ud835\uddf9\ud835\uddee\ud835\uddff\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddfc\ud835\uddf3 \ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddf9\ud835\uddf6\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd8\ud835\ude05\ud835\uddee\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb (\ud835\udde3\ud835\uddd8) \ud835\udde5\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\uddd5\ud835\uddd6\ud835\udde6\ud835\uddd8 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff1 The result of the Preliminary Ex...",
+      "description": "\ud835\uddd7\ud835\uddf2\ud835\uddf0\ud835\uddf9\ud835\uddee\ud835\uddff\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddfc\ud835\uddf3 \ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddf9\ud835\uddf6\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd8\ud835\ude05\ud835\uddee\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb (\ud835\udde3\ud835\uddd8) \ud835\udde5\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\uddd5\ud835\uddd6\ud835\udde6\ud835\uddd8 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff1 The result of the Preliminary Examination (PE) of the   See more",
+      "content": "\ud835\uddd7\ud835\uddf2\ud835\uddf0\ud835\uddf9\ud835\uddee\ud835\uddff\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddfc\ud835\uddf3 \ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddf9\ud835\uddf6\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd8\ud835\ude05\ud835\uddee\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb (\ud835\udde3\ud835\uddd8) \ud835\udde5\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\uddd5\ud835\uddd6\ud835\udde6\ud835\uddd8 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff1 The result of the Preliminary Examination (PE) of the   See more",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:18:22.736056",
+      "publishAt": "2025-08-21T11:18:22.736057"
+    },
+    {
+      "id": "a701363c89d9b2b0",
+      "title": "Perspective: \ud835\udddc\ud835\ude01 \ud835\uddf6\ud835\ude00 \ud835\uddfb\ud835\uddfc\ud835\ude01 \ud835\uddee\ud835\uddef\ud835\uddfc\ud835\ude02\ud835\ude01 \ud835\uddde\ud835\ude02\ud835\uddf2\ud835\uddfb\ud835\ude00\ud835\uddf2\ud835\uddf9 \ud835\ude03\ud835\ude00 \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\uddf2 It is unfortunate that the media has to eng...",
+      "description": "Perspective: \ud835\udddc\ud835\ude01 \ud835\uddf6\ud835\ude00 \ud835\uddfb\ud835\uddfc\ud835\ude01 \ud835\uddee\ud835\uddef\ud835\uddfc\ud835\ude02\ud835\ude01 \ud835\uddde\ud835\ude02\ud835\uddf2\ud835\uddfb\ud835\ude00\ud835\uddf2\ud835\uddf9 \ud835\ude03\ud835\ude00 \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\uddf2 It is unfortunate that the media has to engage in clarifying each other s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https:  kuenselonline.com news it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
+      "content": "Perspective: \ud835\udddc\ud835\ude01 \ud835\uddf6\ud835\ude00 \ud835\uddfb\ud835\uddfc\ud835\ude01 \ud835\uddee\ud835\uddef\ud835\uddfc\ud835\ude02\ud835\ude01 \ud835\uddde\ud835\ude02\ud835\uddf2\ud835\uddfb\ud835\ude00\ud835\uddf2\ud835\uddf9 \ud835\ude03\ud835\ude00 \ud835\udde7\ud835\uddf5\ud835\uddf2 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\uddf2 It is unfortunate that the media has to engage in clarifying each other s stand when we are tasked to inform and educate the readers. However, when others are deliberately engaged in a misinformation campaign, we are forced to set the record straight. https:  kuenselonline.com news it-is-not-about-kuensel-vs-the-bhutanese #Kuensel #TheBhutanese #media #Bhutan",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:18:22.734276",
+      "publishAt": "2025-08-21T11:18:22.734277"
+    },
+    {
+      "id": "839eccab0600b641",
+      "title": "\ud835\uddd7\ud835\uddf2\ud835\uddf0\ud835\uddf9\ud835\uddee\ud835\uddff\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddfc\ud835\uddf3 \ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddf9\ud835\uddf6\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd8\ud835\ude05\ud835\uddee\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb (\ud835\udde3\ud835\uddd8) \ud835\udde5\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\uddd5\ud835\uddd6\ud835\udde6\ud835\uddd8 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff1 The result of the Preliminary Ex...",
+      "description": "\ud835\uddd7\ud835\uddf2\ud835\uddf0\ud835\uddf9\ud835\uddee\ud835\uddff\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddfc\ud835\uddf3 \ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddf9\ud835\uddf6\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd8\ud835\ude05\ud835\uddee\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb (\ud835\udde3\ud835\uddd8) \ud835\udde5\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\uddd5\ud835\uddd6\ud835\udde6\ud835\uddd8 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff1 The result of the Preliminary Examination (PE) of the Bhutan Civil Service Examination 2025 is hereby declared. In line with \ud835\udc12\ud835\udc1e\ud835\udc1c\ud835\udc2d\ud835\udc22\ud835\udc28\ud835\udc27 \ud835\udfd3.\ud835\udfd1.\ud835\udfcf.\ud835\udfd2 of the \ud835\udc01\ud835\udc02\ud835\udc12\ud835\udc11 \ud835\udfd0\ud835\udfce\ud835\udfd0\ud835\udfd1, the Commission decided to set the passing cut-off mark of the \ud835\udc0f\ud835\udc2b\ud835\udc1e\ud835\udc25\ud835\udc22\ud835\udc26\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc2b\ud835\udc32 \ud835\udc04\ud835\udc31\ud835\udc1a\ud835\udc26\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc2d\ud835\udc22\ud835\udc28\ud835\udc27 (\ud835\udc0f\ud835\udc04) at \ud835\udff1\ud835\udff1. Those who scored 55 and above in PE will be eligible to sit for the main Examination. A total of 1726 graduates who have scored above the cut-off mark in PE, and 698 graduates who were waived from the requirement to appear PE will sit for the Main Examination (ME) scheduled to be held on 9, 10, and 11th, October 2025. In line with section 5.8.2 of BCSR 2023, candidates will be allowed to appeal for a recount. Candidates are required to submit the application form requesting the recounting of the PE score within 5 working days from August 21   27, 2025, and submit it to the Exam Office behind Drukair Office, Chubachu, Thimphu, or email it to bcse@rcsc.gov.bt Download Appeal recounting form : click here https:  shorturl.at BrHgZ \ud835\udc03\ud835\udc0e\ud835\udc02\ud835\udc14\ud835\udc0c\ud835\udc04\ud835\udc0d\ud835\udc13 \ud835\udc15\ud835\udc04\ud835\udc11\ud835\udc08\ud835\udc05\ud835\udc08\ud835\udc02\ud835\udc00\ud835\udc13\ud835\udc08\ud835\udc0e\ud835\udc0d \ud835\udc05\ud835\udc0e\ud835\udc11 \ud835\udc01\ud835\udc02\ud835\udc12\ud835\udc04 - \ud835\udfd0\ud835\udfce\ud835\udfd0\ud835\udfd3 The next step for the BCSE 2025 is  document verification . The verification of documents will be held as follows: Date : August 25 - September 3, 2025 Venue : Hotel Dorji Element (Opposite to Tarayana Centre, Lower Chubachu) Schedule: Day-wise schedule as per the categories click here https:  shorturl.at QJcU0 to check the schedule Documents required : Click here https:  shorturl.at xIkUn All Graduates, including graduates with PGDNL aspiring to join the civil service, are required to report in person for document verification to sign the letter of undertaking on the academic score of the Bachelor's Degree during the time of verification. Graduates are requested to follow the schedule as far as possible. Click here for the result: https:  bcse.rcsc.gov.bt Login",
+      "content": "\ud835\uddd7\ud835\uddf2\ud835\uddf0\ud835\uddf9\ud835\uddee\ud835\uddff\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddfc\ud835\uddf3 \ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddf9\ud835\uddf6\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd8\ud835\ude05\ud835\uddee\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb (\ud835\udde3\ud835\uddd8) \ud835\udde5\ud835\uddf2\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\uddd5\ud835\uddd6\ud835\udde6\ud835\uddd8 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff1 The result of the Preliminary Examination (PE) of the Bhutan Civil Service Examination 2025 is hereby declared. In line with \ud835\udc12\ud835\udc1e\ud835\udc1c\ud835\udc2d\ud835\udc22\ud835\udc28\ud835\udc27 \ud835\udfd3.\ud835\udfd1.\ud835\udfcf.\ud835\udfd2 of the \ud835\udc01\ud835\udc02\ud835\udc12\ud835\udc11 \ud835\udfd0\ud835\udfce\ud835\udfd0\ud835\udfd1, the Commission decided to set the passing cut-off mark of the \ud835\udc0f\ud835\udc2b\ud835\udc1e\ud835\udc25\ud835\udc22\ud835\udc26\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc2b\ud835\udc32 \ud835\udc04\ud835\udc31\ud835\udc1a\ud835\udc26\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc2d\ud835\udc22\ud835\udc28\ud835\udc27 (\ud835\udc0f\ud835\udc04) at \ud835\udff1\ud835\udff1. Those who scored 55 and above in PE will be eligible to sit for the main Examination. A total of 1726 graduates who have scored above the cut-off mark in PE, and 698 graduates who were waived from the requirement to appear PE will sit for the Main Examination (ME) scheduled to be held on 9, 10, and 11th, October 2025. In line with section 5.8.2 of BCSR 2023, candidates will be allowed to appeal for a recount. Candidates are required to submit the application form requesting the recounting of the PE score within 5 working days from August 21   27, 2025, and submit it to the Exam Office behind Drukair Office, Chubachu, Thimphu, or email it to bcse@rcsc.gov.bt Download Appeal recounting form : click here https:  shorturl.at BrHgZ \ud835\udc03\ud835\udc0e\ud835\udc02\ud835\udc14\ud835\udc0c\ud835\udc04\ud835\udc0d\ud835\udc13 \ud835\udc15\ud835\udc04\ud835\udc11\ud835\udc08\ud835\udc05\ud835\udc08\ud835\udc02\ud835\udc00\ud835\udc13\ud835\udc08\ud835\udc0e\ud835\udc0d \ud835\udc05\ud835\udc0e\ud835\udc11 \ud835\udc01\ud835\udc02\ud835\udc12\ud835\udc04 - \ud835\udfd0\ud835\udfce\ud835\udfd0\ud835\udfd3 The next step for the BCSE 2025 is  document verification . The verification of documents will be held as follows: Date : August 25 - September 3, 2025 Venue : Hotel Dorji Element (Opposite to Tarayana Centre, Lower Chubachu) Schedule: Day-wise schedule as per the categories click here https:  shorturl.at QJcU0 to check the schedule Documents required : Click here https:  shorturl.at xIkUn All Graduates, including graduates with PGDNL aspiring to join the civil service, are required to report in person for document verification to sign the letter of undertaking on the academic score of the Bachelor's Degree during the time of verification. Graduates are requested to follow the schedule as far as possible. Click here for the result: https:  bcse.rcsc.gov.bt Login",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/5442000980162332732?url=https%3A%2F%2Fbcse.rcsc.gov.bt%2Fimages%2Frcsc_logo.jpg&fb_obo=1&utld=gov.bt&stp=c0.5000x0.5000f_dst-jpg_flffffff_p278x278_q75_tt6&_nc_gid=oXMzo4Cu8cGPcr6r6HuGrA&_nc_oc=AdnfqicJAczo0fkQAoDZ2wQrdQ3gvaZ81K-ZSI0NdgJJWUJIsXpTpFhgz5SzYWnTld8&ccb=13-1&oh=06_Q3-2AVdoys1Rp3U9G-ObWaaRzrC7YEGQJRYuRN1xBEIqCRhM&oe=68A888D3&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T11:09:30.522484",
+      "publishAt": "2025-08-21T11:09:30.522492"
+    },
+    {
+      "id": "0a5366f69ad731e6",
+      "title": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 p...",
+      "description": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry of Health, WHO Bhutan, Dratshang Lhentshog, and Civil Society Organisations. Delivering the keynote address, Health Minister Lyonpo Tandin Wangchuk stressed that  a resilient and equitable health system is not built by health professionals alone, but by a society that is informed, engaged, and empowered.  He emphasized the media s vital role in bridging science and society, countering misinformation, and shaping healthier communities. Bhupinder Kaur Aulakh (PhD), WHO Representative to Bhutan, in her remarks today highlighted the crucial role of media in driving advocacy, awareness, and behavior change in public health. Source: WHO Bhutan #HealthForAll #MediaWorkshop2025 #Bhutan #HealthCommunication #ResilientSystems #PartnershipsForHealth",
+      "content": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry of Health, WHO Bhutan, Dratshang Lhentshog, and Civil Society Organisations. Delivering the keynote address, Health Minister Lyonpo Tandin Wangchuk stressed that  a resilient and equitable health system is not built by health professionals alone, but by a society that is informed, engaged, and empowered.  He emphasized the media s vital role in bridging science and society, countering misinformation, and shaping healthier communities. Bhupinder Kaur Aulakh (PhD), WHO Representative to Bhutan, in her remarks today highlighted the crucial role of media in driving advocacy, awareness, and behavior change in public health. Source: WHO Bhutan #HealthForAll #MediaWorkshop2025 #Bhutan #HealthCommunication #ResilientSystems #PartnershipsForHealth",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537321589_1174339054729463_7265319094305409689_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zWDXJS8ew7kQ7kNvwE5D6UN&_nc_oc=AdmLVhnH2M8SPQMpUoblJqvqmd7YpLGmOA_7IHH-6KLH30B5ZgU8MTvXCNgxK_k9PGM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfVBwsDuOp9KnaxLVzHY0yTGS_A7yKFKUT5Ug8rVgXPzJQ&oe=68AB8C16",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537179528_1174339071396128_2969466411390211218_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=umZVZ5xV9pIQ7kNvwHhTvOl&_nc_oc=AdmAqas4-CrLZd1yFtMry9_a7LSnYfpnCEJ7QJ1aCyWWDSY8_vV1IepRoywphwfb17A&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfUFYWUHkZKN_EUi-odPECwKqfrE2046BC-THmxd5Bm19A&oe=68AB7A28",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/536067425_1174339048062797_322482004691540130_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=edQT4Uy8HqYQ7kNvwF2zLgq&_nc_oc=Adnku17H4AxGbNyW_grIOgW7I7XO_DK1_atRwYk9Ltf1Swt4ec3qeJixbUm2mTGD4iA&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfXEjhbU7rI_60BmdLeZBgkROfgnh4zUwsvnLjRVN1_Ivw&oe=68AB685F",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537321589_1174339054729463_7265319094305409689_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zWDXJS8ew7kQ7kNvwE5D6UN&_nc_oc=AdmLVhnH2M8SPQMpUoblJqvqmd7YpLGmOA_7IHH-6KLH30B5ZgU8MTvXCNgxK_k9PGM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=NO4vnYp1hRVd5dNmByBpHQ&oh=00_AfXdcdyzin-Do_sM1Vq2lDqQ6sThh5E1RQ7XnSGvMxWPeQ&oe=68AB8C16",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537179528_1174339071396128_2969466411390211218_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=umZVZ5xV9pIQ7kNvwHhTvOl&_nc_oc=AdmAqas4-CrLZd1yFtMry9_a7LSnYfpnCEJ7QJ1aCyWWDSY8_vV1IepRoywphwfb17A&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=2dk0kp2oe5VN5zfwxZZo0w&oh=00_AfWxcMPuWzhCqWqg3paFl8JQ17m1IdQl4p-TZIZEJJ503w&oe=68AB7A28",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/536067425_1174339048062797_322482004691540130_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=edQT4Uy8HqYQ7kNvwF2zLgq&_nc_oc=Adnku17H4AxGbNyW_grIOgW7I7XO_DK1_atRwYk9Ltf1Swt4ec3qeJixbUm2mTGD4iA&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=-FEZFrgw4hiNOGIVeT16dw&oh=00_AfWHs-5J8TlE5aASz0oiNdvnaYix9R7WEooYPC4XnbuGqg&oe=68AB685F"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1174337991396236&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1174338061396229&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b1H-R",
+          "https://www.facebook.com/photo/?fbid=1174337984729570&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b2H-R"
+        ]
+      },
+      "createdAt": "2025-08-20T16:46:09.147234",
+      "publishAt": "2025-08-20T16:46:09.147244"
+    },
+    {
+      "id": "bdd3fb92747bf9e4",
+      "title": "August 19, 2025: On Their Majesties  ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and He...",
+      "description": "August 19, 2025: On Their Majesties  ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President H\u1ed3 Ch\u00ed Minh   the founder of modern Vi\u1ec7t Nam, and to the nation s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Vi\u1ec7t Nam s fallen heroes, and the H\u1ed3 Ch\u00ed Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President L\u01b0\u01a1ng C\u01b0\u1eddng and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Vi\u1ec7t Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Vi\u1ec7t Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Vi\u1ec7t Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t visited Tr\u1ea5n Qu\u1ed1c Pagoda, the oldest Buddhist temple in H\u00e0 N\u1ed9i. Her Majesty and the First Lady were received by the abbot, Most Venerable Th\u00edch Thanh Nh\u00e3, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Vi\u1ec7t Nam T\u00f4 L\u00e2m, Prime Minister Ph\u1ea1m Minh Ch\u00ednh, and Chairman of the National Assembly Tr\u1ea7n Thanh M\u1eabn. In the evening, the President and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
+      "content": "August 19, 2025: On Their Majesties  ongoing State Visit to Vi\u1ec7t Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President H\u1ed3 Ch\u00ed Minh   the founder of modern Vi\u1ec7t Nam, and to the nation s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Vi\u1ec7t Nam s fallen heroes, and the H\u1ed3 Ch\u00ed Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President L\u01b0\u01a1ng C\u01b0\u1eddng and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Vi\u1ec7t Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Vi\u1ec7t Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Vi\u1ec7t Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t visited Tr\u1ea5n Qu\u1ed1c Pagoda, the oldest Buddhist temple in H\u00e0 N\u1ed9i. Her Majesty and the First Lady were received by the abbot, Most Venerable Th\u00edch Thanh Nh\u00e3, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Vi\u1ec7t Nam T\u00f4 L\u00e2m, Prime Minister Ph\u1ea1m Minh Ch\u00ednh, and Chairman of the National Assembly Tr\u1ea7n Thanh M\u1eabn. In the evening, the President and Madame Nguy\u1ec5n Th\u1ecb Minh Nguy\u1ec7t hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVt5odakci-NrBEsQEp8JlM0396W_f6eBXNzOAMpL2lLQ&oe=68AB3141",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfW4hc-1OIWUlcp_AmS7G7bhZtBB3QBRWD5R8UBDUz_67Q&oe=68AB00C6",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVHm11_ZnTqo4BBAqdVVSYeUa1_Q2sb44q5in13A-t3zg&oe=68AB11C2",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVMn_1Tx_d3NGXfX2tszUrBXy5QUgbwvzRTF4p7MO7MXw&oe=68AB20E6",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfWMLzaFKiWIGTl6u325uB5--anYp_mO__3SZxFU369lXg&oe=68AAFE2A",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=4pmhVimohAa8wvT42DKIvw&oh=00_AfUAb-4wZxXjf0YDbnOEPyJDl4U9Zkt6l93uGN2MMeANlg&oe=68AB3141",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=tDCjnByw9vpYtBVrnG_AQw&oh=00_AfU34heV-mrIzegDn4mGlYi2T4zhH6XKtVM935_EOhbB9Q&oe=68AB00C6",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=Gi9OUwY7BF5kmHhEA2tBAg&oh=00_AfU8kI2PNAyK6nJf1t-3zsIVF9MJDUavIcr_1gML7aGhzg&oe=68AB11C2",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8aidRu-0Qma9iGUHDKlIOQ&oh=00_AfV8WpGxtQqfpH-1vfNdUNcVPeJcneF6d7sDiw0PzOSUIw&oe=68AB20E6",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=N3Dbx3kG43TRdyhKca-jHw&oh=00_AfW_hfu-Y3GWsHZVS7sQRBqBWU86gEyh8gw1fkqI-T1mzA&oe=68AAFE2A"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1173838874779481&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1173838938112808&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b1H-R",
+          "https://www.facebook.com/photo/?fbid=1173839078112794&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b2H-R",
+          "https://www.facebook.com/photo/?fbid=1173838868112815&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b3H-R",
+          "https://www.facebook.com/photo/?fbid=1173839014779467&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b4H-R"
+        ]
+      },
+      "createdAt": "2025-08-20T09:56:28.276488",
+      "publishAt": "2025-08-20T09:56:28.276502"
+    },
+    {
       "id": "eaa93840f009228b",
-      "title": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our co...",
-      "description": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
-      "content": "Editorial: 𝗔 𝗽𝗹𝗲𝗱𝗴𝗲 𝘄𝗲 𝗺𝘂𝘀𝘁 𝗮𝗹𝗹 𝗺𝗮𝗸𝗲 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "title": "Editorial: \ud835\uddd4 \ud835\uddfd\ud835\uddf9\ud835\uddf2\ud835\uddf1\ud835\uddf4\ud835\uddf2 \ud835\ude04\ud835\uddf2 \ud835\uddfa\ud835\ude02\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf9\ud835\uddf9 \ud835\uddfa\ud835\uddee\ud835\uddf8\ud835\uddf2 Alcohol remains one of the biggest social problems in our co...",
+      "description": "Editorial: \ud835\uddd4 \ud835\uddfd\ud835\uddf9\ud835\uddf2\ud835\uddf1\ud835\uddf4\ud835\uddf2 \ud835\ude04\ud835\uddf2 \ud835\uddfa\ud835\ude02\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf9\ud835\uddf9 \ud835\uddfa\ud835\uddee\ud835\uddf8\ud835\uddf2 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
+      "content": "Editorial: \ud835\uddd4 \ud835\uddfd\ud835\uddf9\ud835\uddf2\ud835\uddf1\ud835\uddf4\ud835\uddf2 \ud835\ude04\ud835\uddf2 \ud835\uddfa\ud835\ude02\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf9\ud835\uddf9 \ud835\uddfa\ud835\uddee\ud835\uddf8\ud835\uddf2 Alcohol remains one of the biggest social problems in our country. Solutions are rare, even though this substance has long been identified as a root cause of many evils including in the teachings of Lord Buddha. While we may not be able to eliminate alcohol completely, a small initiative could make a big difference: protecting our children from early exposure to it. https:  kuenselonline.com news a-pledge-we-must-all-make #alcohol #editorial #Bhutan",
       "categoryID": "news",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -29,9 +767,9 @@
     },
     {
       "id": "6306e23537a64363",
-      "title": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A rec...",
-      "description": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A recent survey conducted by the Journalists  Association of Bhutan (JAB) has revealed the profound and multifaceted influence of media on Bhutanese society. The Media Perception Index (MIL): Bhutan s First Citizen Survey 2025 found that an overwhelming 92 percent of respondents believe media influences their thinking and attitudes. https:  kuenselonline.com ... over-90-percent-of... #JAB #survey #media #Bhutan",
-      "content": "𝗢𝘃𝗲𝗿 𝟵𝟬 𝗽𝗲𝗿𝗰𝗲𝗻𝘁 𝗼𝗳 𝗕𝗵𝘂𝘁𝗮𝗻𝗲𝘀𝗲 𝘀𝗮𝘆 𝗺𝗲𝗱𝗶𝗮 𝗶𝗻𝗳𝗹𝘂𝗲𝗻𝗰𝗲𝘀 𝘁𝗵𝗲𝗶𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗮𝘁𝘁𝗶𝘁𝘂𝗱𝗲𝘀 Sherab Lhamo A recent survey conducted by the Journalists  Association of Bhutan (JAB) has revealed the profound and multifaceted influence of media on Bhutanese society. The Media Perception Index (MIL): Bhutan s First Citizen Survey 2025 found that an overwhelming 92 percent of respondents believe media influences their thinking and attitudes. https:  kuenselonline.com ... over-90-percent-of... #JAB #survey #media #Bhutan",
+      "title": "\ud835\udde2\ud835\ude03\ud835\uddf2\ud835\uddff \ud835\udff5\ud835\udfec \ud835\uddfd\ud835\uddf2\ud835\uddff\ud835\uddf0\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddfc\ud835\uddf3 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\uddf2 \ud835\ude00\ud835\uddee\ud835\ude06 \ud835\uddfa\ud835\uddf2\ud835\uddf1\ud835\uddf6\ud835\uddee \ud835\uddf6\ud835\uddfb\ud835\uddf3\ud835\uddf9\ud835\ude02\ud835\uddf2\ud835\uddfb\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5\ud835\ude01\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf6\ud835\ude01\ud835\ude02\ud835\uddf1\ud835\uddf2\ud835\ude00 Sherab Lhamo A rec...",
+      "description": "\ud835\udde2\ud835\ude03\ud835\uddf2\ud835\uddff \ud835\udff5\ud835\udfec \ud835\uddfd\ud835\uddf2\ud835\uddff\ud835\uddf0\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddfc\ud835\uddf3 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\uddf2 \ud835\ude00\ud835\uddee\ud835\ude06 \ud835\uddfa\ud835\uddf2\ud835\uddf1\ud835\uddf6\ud835\uddee \ud835\uddf6\ud835\uddfb\ud835\uddf3\ud835\uddf9\ud835\ude02\ud835\uddf2\ud835\uddfb\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5\ud835\ude01\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf6\ud835\ude01\ud835\ude02\ud835\uddf1\ud835\uddf2\ud835\ude00 Sherab Lhamo A recent survey conducted by the Journalists  Association of Bhutan (JAB) has revealed the profound and multifaceted influence of media on Bhutanese society. The Media Perception Index (MIL): Bhutan s First Citizen Survey 2025 found that an overwhelming 92 percent of respondents believe media influences their thinking and attitudes. https:  kuenselonline.com ... over-90-percent-of... #JAB #survey #media #Bhutan",
+      "content": "\ud835\udde2\ud835\ude03\ud835\uddf2\ud835\uddff \ud835\udff5\ud835\udfec \ud835\uddfd\ud835\uddf2\ud835\uddff\ud835\uddf0\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddfc\ud835\uddf3 \ud835\uddd5\ud835\uddf5\ud835\ude02\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\uddf2\ud835\ude00\ud835\uddf2 \ud835\ude00\ud835\uddee\ud835\ude06 \ud835\uddfa\ud835\uddf2\ud835\uddf1\ud835\uddf6\ud835\uddee \ud835\uddf6\ud835\uddfb\ud835\uddf3\ud835\uddf9\ud835\ude02\ud835\uddf2\ud835\uddfb\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddf6\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5\ud835\ude01\ud835\ude00 \ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf6\ud835\ude01\ud835\ude02\ud835\uddf1\ud835\uddf2\ud835\ude00 Sherab Lhamo A recent survey conducted by the Journalists  Association of Bhutan (JAB) has revealed the profound and multifaceted influence of media on Bhutanese society. The Media Perception Index (MIL): Bhutan s First Citizen Survey 2025 found that an overwhelming 92 percent of respondents believe media influences their thinking and attitudes. https:  kuenselonline.com ... over-90-percent-of... #JAB #survey #media #Bhutan",
       "categoryID": "event",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -49,9 +787,9 @@
     },
     {
       "id": "6b3865228a59ee6b",
-      "title": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to gree...",
-      "description": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to green its tourism industry has met its first real test: only five hotels all of them five-star properties have qualified under the country s newly launched Green Hotel Standard. The result underscores both the promise and the pressing challenges of aligning the hospitality sector with Bhutan s carbon-negative image. https:  kuenselonline.com ... green-hotel-drive-only-five... #hotel #Bhutan",
-      "content": "𝗚𝗿𝗲𝗲𝗻 𝗵𝗼𝘁𝗲𝗹 𝗱𝗿𝗶𝘃𝗲: 𝗢𝗻𝗹𝘆 𝗳𝗶𝘃𝗲 𝗵𝗼𝘁𝗲𝗹𝘀 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗰𝘂𝘁 Chencho Dema The country s ambitious bid to green its tourism industry has met its first real test: only five hotels all of them five-star properties have qualified under the country s newly launched Green Hotel Standard. The result underscores both the promise and the pressing challenges of aligning the hospitality sector with Bhutan s carbon-negative image. https:  kuenselonline.com ... green-hotel-drive-only-five... #hotel #Bhutan",
+      "title": "\ud835\uddda\ud835\uddff\ud835\uddf2\ud835\uddf2\ud835\uddfb \ud835\uddf5\ud835\uddfc\ud835\ude01\ud835\uddf2\ud835\uddf9 \ud835\uddf1\ud835\uddff\ud835\uddf6\ud835\ude03\ud835\uddf2: \ud835\udde2\ud835\uddfb\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddf5\ud835\uddfc\ud835\ude01\ud835\uddf2\ud835\uddf9\ud835\ude00 \ud835\uddfa\ud835\uddee\ud835\uddf8\ud835\uddf2 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddf0\ud835\ude02\ud835\ude01 Chencho Dema The country s ambitious bid to gree...",
+      "description": "\ud835\uddda\ud835\uddff\ud835\uddf2\ud835\uddf2\ud835\uddfb \ud835\uddf5\ud835\uddfc\ud835\ude01\ud835\uddf2\ud835\uddf9 \ud835\uddf1\ud835\uddff\ud835\uddf6\ud835\ude03\ud835\uddf2: \ud835\udde2\ud835\uddfb\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddf5\ud835\uddfc\ud835\ude01\ud835\uddf2\ud835\uddf9\ud835\ude00 \ud835\uddfa\ud835\uddee\ud835\uddf8\ud835\uddf2 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddf0\ud835\ude02\ud835\ude01 Chencho Dema The country s ambitious bid to green its tourism industry has met its first real test: only five hotels all of them five-star properties have qualified under the country s newly launched Green Hotel Standard. The result underscores both the promise and the pressing challenges of aligning the hospitality sector with Bhutan s carbon-negative image. https:  kuenselonline.com ... green-hotel-drive-only-five... #hotel #Bhutan",
+      "content": "\ud835\uddda\ud835\uddff\ud835\uddf2\ud835\uddf2\ud835\uddfb \ud835\uddf5\ud835\uddfc\ud835\ude01\ud835\uddf2\ud835\uddf9 \ud835\uddf1\ud835\uddff\ud835\uddf6\ud835\ude03\ud835\uddf2: \ud835\udde2\ud835\uddfb\ud835\uddf9\ud835\ude06 \ud835\uddf3\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddf5\ud835\uddfc\ud835\ude01\ud835\uddf2\ud835\uddf9\ud835\ude00 \ud835\uddfa\ud835\uddee\ud835\uddf8\ud835\uddf2 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddf0\ud835\ude02\ud835\ude01 Chencho Dema The country s ambitious bid to green its tourism industry has met its first real test: only five hotels all of them five-star properties have qualified under the country s newly launched Green Hotel Standard. The result underscores both the promise and the pressing challenges of aligning the hospitality sector with Bhutan s carbon-negative image. https:  kuenselonline.com ... green-hotel-drive-only-five... #hotel #Bhutan",
       "categoryID": "news",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -67,9 +805,9 @@
     },
     {
       "id": "b462471063cdab71",
-      "title": "𝗥𝗲𝘁𝗶𝗿𝗲𝗱 𝗵𝗲𝗮𝗹𝘁𝗵 𝘄𝗼𝗿𝗸𝗲𝗿 𝘁𝘂𝗿𝗻𝘀 𝘁𝗼 𝗳𝗮𝗿𝗺𝗶𝗻𝗴 𝘁𝗼 𝗽𝗿𝗼𝗺𝗼𝘁𝗲 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗶𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗰𝗮𝗿𝗲 KP Sharma Phuentsholing I...",
-      "description": "𝗥𝗲𝘁𝗶𝗿𝗲𝗱 𝗵𝗲𝗮𝗹𝘁𝗵 𝘄𝗼𝗿𝗸𝗲𝗿 𝘁𝘂𝗿𝗻𝘀 𝘁𝗼 𝗳𝗮𝗿𝗺𝗶𝗻𝗴 𝘁𝗼 𝗽𝗿𝗼𝗺𝗼𝘁𝗲 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗶𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗰𝗮𝗿𝗲 KP Sharma Phuentsholing In an age when farming is often seen as burdensome, Sanjeev Subba, a 60-year-old retired health assistant, has transformed it into a platform to advocate the importance of primary health care through preventive and promotive practices. https:  kuenselonline.com ... retired-health-worker-turns... #profile #healthcare #Bhutan",
-      "content": "𝗥𝗲𝘁𝗶𝗿𝗲𝗱 𝗵𝗲𝗮𝗹𝘁𝗵 𝘄𝗼𝗿𝗸𝗲𝗿 𝘁𝘂𝗿𝗻𝘀 𝘁𝗼 𝗳𝗮𝗿𝗺𝗶𝗻𝗴 𝘁𝗼 𝗽𝗿𝗼𝗺𝗼𝘁𝗲 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗶𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵𝗰𝗮𝗿𝗲 KP Sharma Phuentsholing In an age when farming is often seen as burdensome, Sanjeev Subba, a 60-year-old retired health assistant, has transformed it into a platform to advocate the importance of primary health care through preventive and promotive practices. https:  kuenselonline.com ... retired-health-worker-turns... #profile #healthcare #Bhutan",
+      "title": "\ud835\udde5\ud835\uddf2\ud835\ude01\ud835\uddf6\ud835\uddff\ud835\uddf2\ud835\uddf1 \ud835\uddf5\ud835\uddf2\ud835\uddee\ud835\uddf9\ud835\ude01\ud835\uddf5 \ud835\ude04\ud835\uddfc\ud835\uddff\ud835\uddf8\ud835\uddf2\ud835\uddff \ud835\ude01\ud835\ude02\ud835\uddff\ud835\uddfb\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\uddf3\ud835\uddee\ud835\uddff\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddfc \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddfa\ud835\uddfc\ud835\ude01\ud835\uddf2 \ud835\uddfd\ud835\uddff\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddf5\ud835\uddf2\ud835\uddee\ud835\uddf9\ud835\ude01\ud835\uddf5\ud835\uddf0\ud835\uddee\ud835\uddff\ud835\uddf2 KP Sharma Phuentsholing I...",
+      "description": "\ud835\udde5\ud835\uddf2\ud835\ude01\ud835\uddf6\ud835\uddff\ud835\uddf2\ud835\uddf1 \ud835\uddf5\ud835\uddf2\ud835\uddee\ud835\uddf9\ud835\ude01\ud835\uddf5 \ud835\ude04\ud835\uddfc\ud835\uddff\ud835\uddf8\ud835\uddf2\ud835\uddff \ud835\ude01\ud835\ude02\ud835\uddff\ud835\uddfb\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\uddf3\ud835\uddee\ud835\uddff\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddfc \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddfa\ud835\uddfc\ud835\ude01\ud835\uddf2 \ud835\uddfd\ud835\uddff\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddf5\ud835\uddf2\ud835\uddee\ud835\uddf9\ud835\ude01\ud835\uddf5\ud835\uddf0\ud835\uddee\ud835\uddff\ud835\uddf2 KP Sharma Phuentsholing In an age when farming is often seen as burdensome, Sanjeev Subba, a 60-year-old retired health assistant, has transformed it into a platform to advocate the importance of primary health care through preventive and promotive practices. https:  kuenselonline.com ... retired-health-worker-turns... #profile #healthcare #Bhutan",
+      "content": "\ud835\udde5\ud835\uddf2\ud835\ude01\ud835\uddf6\ud835\uddff\ud835\uddf2\ud835\uddf1 \ud835\uddf5\ud835\uddf2\ud835\uddee\ud835\uddf9\ud835\ude01\ud835\uddf5 \ud835\ude04\ud835\uddfc\ud835\uddff\ud835\uddf8\ud835\uddf2\ud835\uddff \ud835\ude01\ud835\ude02\ud835\uddff\ud835\uddfb\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\uddf3\ud835\uddee\ud835\uddff\ud835\uddfa\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddfc \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddfa\ud835\uddfc\ud835\ude01\ud835\uddf2 \ud835\uddfd\ud835\uddff\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddf2 \ud835\uddf5\ud835\uddf2\ud835\uddee\ud835\uddf9\ud835\ude01\ud835\uddf5\ud835\uddf0\ud835\uddee\ud835\uddff\ud835\uddf2 KP Sharma Phuentsholing In an age when farming is often seen as burdensome, Sanjeev Subba, a 60-year-old retired health assistant, has transformed it into a platform to advocate the importance of primary health care through preventive and promotive practices. https:  kuenselonline.com ... retired-health-worker-turns... #profile #healthcare #Bhutan",
       "categoryID": "event",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -112,39 +850,6 @@
       },
       "createdAt": "2025-08-20T04:24:21.658868",
       "publishAt": "2025-08-20T04:24:21.658876"
-    },
-    {
-      "id": "bdd3fb92747bf9e4",
-      "title": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and He...",
-      "description": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President Hồ Chí Minh   the founder of modern Việt Nam, and to the nation s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Việt Nam s fallen heroes, and the Hồ Chí Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President Lương Cường and Madame Nguyễn Thị Minh Nguyệt at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Việt Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Việt Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Việt Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguyễn Thị Minh Nguyệt visited Trấn Quốc Pagoda, the oldest Buddhist temple in Hà Nội. Her Majesty and the First Lady were received by the abbot, Most Venerable Thích Thanh Nhã, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Việt Nam Tô Lâm, Prime Minister Phạm Minh Chính, and Chairman of the National Assembly Trần Thanh Mẫn. In the evening, the President and Madame Nguyễn Thị Minh Nguyệt hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
-      "content": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President Hồ Chí Minh   the founder of modern Việt Nam, and to the nation s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Việt Nam s fallen heroes, and the Hồ Chí Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President Lương Cường and Madame Nguyễn Thị Minh Nguyệt at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Việt Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Việt Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Việt Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguyễn Thị Minh Nguyệt visited Trấn Quốc Pagoda, the oldest Buddhist temple in Hà Nội. Her Majesty and the First Lady were received by the abbot, Most Venerable Thích Thanh Nhã, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Việt Nam Tô Lâm, Prime Minister Phạm Minh Chính, and Chairman of the National Assembly Trần Thanh Mẫn. In the evening, the President and Madame Nguyễn Thị Minh Nguyệt hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
-      "categoryID": "event",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVt5odakci-NrBEsQEp8JlM0396W_f6eBXNzOAMpL2lLQ&oe=68AB3141",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfW4hc-1OIWUlcp_AmS7G7bhZtBB3QBRWD5R8UBDUz_67Q&oe=68AB00C6",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVHm11_ZnTqo4BBAqdVVSYeUa1_Q2sb44q5in13A-t3zg&oe=68AB11C2",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVMn_1Tx_d3NGXfX2tszUrBXy5QUgbwvzRTF4p7MO7MXw&oe=68AB20E6",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfWMLzaFKiWIGTl6u325uB5--anYp_mO__3SZxFU369lXg&oe=68AAFE2A",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=4pmhVimohAa8wvT42DKIvw&oh=00_AfUAb-4wZxXjf0YDbnOEPyJDl4U9Zkt6l93uGN2MMeANlg&oe=68AB3141",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=tDCjnByw9vpYtBVrnG_AQw&oh=00_AfU34heV-mrIzegDn4mGlYi2T4zhH6XKtVM935_EOhbB9Q&oe=68AB00C6",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=Gi9OUwY7BF5kmHhEA2tBAg&oh=00_AfU8kI2PNAyK6nJf1t-3zsIVF9MJDUavIcr_1gML7aGhzg&oe=68AB11C2",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8aidRu-0Qma9iGUHDKlIOQ&oh=00_AfV8WpGxtQqfpH-1vfNdUNcVPeJcneF6d7sDiw0PzOSUIw&oe=68AB20E6",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=N3Dbx3kG43TRdyhKca-jHw&oh=00_AfW_hfu-Y3GWsHZVS7sQRBqBWU86gEyh8gw1fkqI-T1mzA&oe=68AAFE2A"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1173838874779481&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1173838938112808&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b1H-R",
-          "https://www.facebook.com/photo/?fbid=1173839078112794&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b2H-R",
-          "https://www.facebook.com/photo/?fbid=1173838868112815&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b3H-R",
-          "https://www.facebook.com/photo/?fbid=1173839014779467&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b4H-R"
-        ]
-      },
-      "createdAt": "2025-08-20T09:56:28.276488",
-      "publishAt": "2025-08-20T09:56:28.276502"
     },
     {
       "id": "540bd49da09991ef",

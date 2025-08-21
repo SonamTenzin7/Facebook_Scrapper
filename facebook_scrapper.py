@@ -21,26 +21,26 @@ def get_adaptive_wait_time(current_time, last_run_time=None):
     - Day of week (more frequent on weekdays)
     """
     
-    # Base wait times (in seconds)
-    PEAK_HOURS_WAIT = 900      # 15 minutes during peak hours (9 AM - 6 PM Bhutan time)
+    # Base wait times 
+    PEAK_HOURS_WAIT = 900      # 15 minutes during peak hours (9 AM - 6 PM)
     NORMAL_HOURS_WAIT = 1800   # 30 minutes during normal hours
     LOW_ACTIVITY_WAIT = 3600   # 1 hour during low activity (late night)
     
-    # Convert to Bhutan time (UTC+6)
-    bhutan_time = current_time.replace(tzinfo=None)  # Assuming input is already in local time
+    # Convert to Bhutan time
+    bhutan_time = current_time.replace(tzinfo=None)  
     hour = bhutan_time.hour
-    weekday = bhutan_time.weekday()  # 0 = Monday, 6 = Sunday
+    weekday = bhutan_time.weekday()  
     
     # Determine wait time based on time of day
-    if 9 <= hour <= 18:  # Business hours (9 AM - 6 PM)
+    if 9 <= hour <= 18:  
         base_wait = PEAK_HOURS_WAIT
-    elif 6 <= hour <= 22:  # Extended hours (6 AM - 10 PM)
+    elif 6 <= hour <= 22:  
         base_wait = NORMAL_HOURS_WAIT
-    else:  # Late night/early morning (10 PM - 6 AM)
+    else:  
         base_wait = LOW_ACTIVITY_WAIT
     
     # Reduce wait time on weekdays when more content is typically posted
-    if weekday < 5:  # Monday to Friday
+    if weekday < 5: 
         base_wait = int(base_wait * 0.8)
     
     # Check recent activity to adjust timing
@@ -52,9 +52,9 @@ def get_adaptive_wait_time(current_time, last_run_time=None):
             # If new posts were found in the last session, reduce wait time
             if session_info.get('new_posts_this_session', 0) > 0:
                 base_wait = int(base_wait * 0.7)
-                print(f"🚀 Recent activity detected, reducing wait time to {base_wait} seconds")
+                print(f"Recent activity detected, reducing wait time to {base_wait} seconds")
     except:
-        pass  # Continue with base wait time
+        pass  
     
     return base_wait
 
@@ -145,7 +145,7 @@ class FacebookScraper:
                 if posts_tab:
                     self.driver.execute_script("arguments[0].click();", posts_tab[0])
                     time.sleep(2)
-                    print("✅ Clicked Posts tab for better coverage")
+                    print("Clicked Posts tab for better coverage")
             except Exception as e:
                 pass  # Continue if not found
             
@@ -325,7 +325,7 @@ class FacebookScraper:
                         if content_elem.select(exclude_selector):
                             is_excluded = True
                             break
-                        # Check if element itself matches excluded selector (basic check)
+                        # Check if element itself matches excluded selector 
                         if any(cls in exclude_selector for cls in ['comment', 'Comment', 'reaction', 'like']):
                             elem_text = content_elem.get_text().lower()
                             if any(word in elem_text for word in ['comment', 'reply', 'like', 'share']):
@@ -582,7 +582,7 @@ class FacebookScraper:
         media = {"images": [], "videos": []}
 
         try:
-            # Method 1: Extract images from img tags
+            # 1: Extract images from img tags
             img_elements = post_element.find_all('img')
             for img in img_elements:
                 src = img.get('src', '')
@@ -593,7 +593,7 @@ class FacebookScraper:
                         if src not in media["images"]:
                             media["images"].append(src)
 
-            # Method 2: Extract from data attributes (multiple variants)
+            # 2: Extract from data attributes (multiple variants)
             data_attrs = [
                 'data-imgurl', 'data-src', 'data-original', 'data-lazy-src',
                 'data-img-src', 'data-background-image', 'data-image-url'
@@ -606,7 +606,7 @@ class FacebookScraper:
                     if self.is_valid_image_url(img_url) and img_url not in media["images"]:
                         media["images"].append(img_url)
 
-            # Method 3: Extract image URLs from style attributes
+            # 3: Extract image URLs from style attributes
             style_elements = post_element.find_all(attrs={'style': True})
             for elem in style_elements:
                 style = elem.get('style', '')
@@ -616,7 +616,7 @@ class FacebookScraper:
                     if self.is_valid_image_url(url) and url not in media["images"]:
                         media["images"].append(url)
 
-            # Method 4: Extract from srcset attributes (responsive images)
+            # 4: Extract from srcset attributes (responsive images)
             srcset_elements = post_element.find_all(attrs={'srcset': True})
             for elem in srcset_elements:
                 srcset = elem.get('srcset', '')
@@ -626,7 +626,7 @@ class FacebookScraper:
                     if self.is_valid_image_url(url) and url not in media["images"]:
                         media["images"].append(url)
 
-            # Method 5: Look for specific Facebook image classes/patterns
+            # 5: Look for specific Facebook image classes/patterns
             fb_image_selectors = [
                 'img[class*="scaledImageFitWidth"]',
                 'img[class*="scaledImageFitHeight"]', 
@@ -667,7 +667,7 @@ class FacebookScraper:
                 except Exception as e:
                     print(f"Error with selector {selector}: {e}")
 
-            # Method 6: Extract videos
+            # 6: Extract videos
             video_elements = post_element.find_all('video')
             for video in video_elements:
                 src = video.get('src', '')
@@ -915,8 +915,13 @@ class FacebookScraper:
         # Remove extra whitespace
         text = re.sub(r'\s+', ' ', text).strip()
 
-        # Remove excessive special characters by keeping basic punctuation
-        text = re.sub(r'[^\w\s.,!?;:()\-\'\"#@]', ' ', text)
+        # Only remove very specific problematic characters, keep most text intact
+        # Remove only null bytes, control characters, and excessive Unicode symbols
+        text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)  # Remove control characters
+        text = re.sub(r'[^\x20-\x7E\u00A0-\uFFFF]', '', text)  # Keep printable ASCII and Unicode
+
+        # Remove excessive repeated punctuation (3 or more in a row)
+        text = re.sub(r'([.!?]){3,}', r'\1\1\1', text)
 
         return text.strip()
 
@@ -936,19 +941,19 @@ class FacebookScraper:
                 
             # Skip lines that look like comments or user interactions
             comment_patterns = [
-                r'^[A-Za-z\s]+ commented:',  # "User Name commented:"
-                r'^\d+\s*(like|comment|share|react)',  # "5 likes", "10 comments"
-                r'^(Like|Comment|Share|Reply)$',  # Individual reaction words
-                r'^[A-Za-z\s]+ replied:',  # "User Name replied:"
-                r'^[A-Za-z\s]+ reacted',  # "User Name reacted"
-                r'^\d+\s*(min|hr|day|week|month|year)s?\s+ago',  # Time stamps like "5 min ago"
-                r'^(Most relevant|Top comments|All comments|View \d+ replies?)',  # Comment section headers
-                r'^Write a comment',  # Comment prompt
-                r'^[A-Za-z\s]+ and \d+ others? (like|comment|react)',  # "John and 5 others liked this"
-                r'^How about',  # Questions like "How about closing AWP?"
-                r'^What about',  # Questions like "What about this?"
-                r'^Why not',    # Questions like "Why not do this?"
-                r'^\w+\?$',     # Single word questions like "Really?", "True?"
+                r'^[A-Za-z\s]+ commented:',  
+                r'^\d+\s*(like|comment|share|react)', 
+                r'^(Like|Comment|Share|Reply)$',  
+                r'^[A-Za-z\s]+ replied:',  
+                r'^[A-Za-z\s]+ reacted',  
+                r'^\d+\s*(min|hr|day|week|month|year)s?\s+ago',  
+                r'^(Most relevant|Top comments|All comments|View \d+ replies?)',  
+                r'^Write a comment',  
+                r'^[A-Za-z\s]+ and \d+ others? (like|comment|react)', 
+                r'^How about',  
+                r'^What about',  
+                r'^Why not',    
+                r'^\w+\?$',     
             ]
             
             is_comment = False
@@ -1015,14 +1020,29 @@ class FacebookScraper:
         if any(pattern in content_lower for pattern in generic_patterns):
             return False
         
-        # Filter out comment-like posts (short questions/statements)
+        # Filter out comment-like posts and Facebook comments
         comment_patterns = [
-            r'^how about.{1,30}\?*$',        # "How about closing AWP?"
-            r'^what about.{1,30}\?*$',       # "What about this?"
-            r'^why not.{1,30}\?*$',          # "Why not do this?"
-            r'^[a-zA-Z\s]{1,20}\?+$',        # Short questions like "Really???"
-            r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad)[\.\!\?]*$',  # Single word responses
-            r'^\w{1,10}[\.\!\?]+$',          # Very short exclamations
+            # Specific patterns from identified comments
+            r'if\s+he\s+full\s+fills\s+his\s+dream',  # The specific comment you found
+            r'druptop\s+vajra\s+guru',  # Buddhist spiritual title comment
+            
+            # Common comment patterns
+            r'^how about.{1,40}\?*$',       
+            r'^what about.{1,40}\?*$',       
+            r'^why not.{1,40}\?*$',
+            r'^what\s+do\s+you\s+think.{0,50}\?*$',  # Questions asking for opinions
+            r'^[a-zA-Z\s]{1,20}\?+$',        # Short questions
+            r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad|great|awesome|cool|sure|right)[\.\!\?]*$',  
+            r'^\w{1,15}[\.\!\?]+$',          # Very short exclamations
+            r'^(lol|lmao|haha)[\.\!\?]*$',   # Laughing responses
+            
+            # Generic comment responses
+            r'^(that\'s|thats)\s+(good|bad|nice|cool|great|awesome|amazing)',
+            r'^i\s+(think|believe|hope|wish|agree|disagree)',
+            r'^you\s+(should|could|might|can|will)',
+            
+            # Single word questions (likely comments)
+            r'^\w+\s*\?+$',
         ]
         
         for pattern in comment_patterns:
@@ -1049,6 +1069,42 @@ class FacebookScraper:
             if len(content_clean) < 50:
                 return False
         
+        # News quality check for longer posts
+        if len(content_clean) > 100:
+            # Check for news-like patterns  
+            news_indicators = [
+                r'\bannounce[sd]?\b',
+                r'\bnotification\b', 
+                r'\bpress\s+release\b',
+                r'\bstatement\b',
+                r'\bofficial\b',
+                r'\bupdate:\b',
+                r'\bdecision\b',
+                r'\bmeeting\b',
+                r'\btoday\b',
+                r'\byesterday\b',
+                r'\bthis\s+(week|month|year)\b'
+            ]
+            
+            # If it's a long post but lacks news indicators and seems conversational
+            has_news_pattern = any(re.search(pattern, content_lower) for pattern in news_indicators)
+            
+            # Additional conversational patterns to avoid
+            conversational_patterns = [
+                r'\bi\s+hope\b',
+                r'\bi\s+think\b', 
+                r'\blet\s+me\s+know\b',
+                r'\bwhat\s+do\s+you\s+think\b',
+                r'\byour\s+(thoughts|opinion)\b'
+            ]
+            
+            has_conversational = any(re.search(pattern, content_lower) for pattern in conversational_patterns)
+            
+            # If it's conversational without news indicators, likely a comment
+            if has_conversational and not has_news_pattern and not has_media:
+                print(f"Filtering out conversational content: '{content_clean[:50]}'")
+                return False
+        
         return True
 
     def cleanup_comment_posts(self, data):
@@ -1062,12 +1118,12 @@ class FacebookScraper:
             
             # Enhanced comment detection patterns
             comment_patterns = [
-                r'^how about.{1,30}\?*$',        # "How about closing AWP?"
-                r'^what about.{1,30}\?*$',       # "What about this?"
-                r'^why not.{1,30}\?*$',          # "Why not do this?"
-                r'^[a-zA-Z\s]{1,20}\?+$',        # Short questions like "Really???"
-                r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad)[\.\!\?]*$',  # Single word responses
-                r'^\w{1,10}[\.\!\?]+$',          # Very short exclamations
+                r'^how about.{1,30}\?*$',        
+                r'^what about.{1,30}\?*$',       
+                r'^why not.{1,30}\?*$',          
+                r'^[a-zA-Z\s]{1,20}\?+$',        
+                r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad)[\.\!\?]*$',  
+                r'^\w{1,10}[\.\!\?]+$',          
             ]
             
             is_comment = False
@@ -1099,7 +1155,7 @@ class FacebookScraper:
             data['scraping_session']['total_posts'] = len(cleaned_posts)
         
         if removed_count > 0:
-            print(f"✅ Removed {removed_count} comment-like posts from final data")
+            print(f"Removed {removed_count} comment-like posts from final data")
         
         return data
     
@@ -1589,7 +1645,7 @@ def main():
 
     except Exception as e:
         error_msg = str(e)
-        print(f"❌ An error occurred: {error_msg}")
+        print(f"An error occurred: {error_msg}")
         
         # Send failure notification
         notifier.notify_scraper_completed(
@@ -1604,7 +1660,7 @@ def main():
         scraper.close()
         end_time = datetime.now()
         duration = (end_time - start_time).total_seconds()
-        print(f"⏱️  Scraping completed in {duration:.1f} seconds")
+        print(f"Scraping completed in {duration:.1f} seconds")
 
 
 if __name__ == "__main__":
