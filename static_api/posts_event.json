@@ -1,8 +1,28 @@
 {
   "success": true,
   "category": "event",
-  "total_posts": 4,
+  "total_posts": 5,
   "posts": [
+    {
+      "id": "0cf1f93fc347a134",
+      "title": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 1...",
+      "description": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 18 to 22 at the invitation of President Luong Cuong, marking the first-ever visit by a Bhutanese Head of State to Vietnam. This historic engagement underscores the maturity of a diplomatic relationship established just over a decade ago and opens new horizons for cooperation in trade, culture, spirituality, and development, among others. https://kuenselonline.com/.../state-visit-heralds... #Vietnam #Bhutan",
+      "content": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 18 to 22 at the invitation of President Luong Cuong, marking the first-ever visit by a Bhutanese Head of State to Vietnam. This historic engagement underscores the maturity of a diplomatic relationship established just over a decade ago and opens new horizons for cooperation in trade, culture, spirituality, and development, among others. https://kuenselonline.com/.../state-visit-heralds... #Vietnam #Bhutan",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/536284482_1175040721325963_7336196986772156456_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VJAX4zPmjhAQ7kNvwFNpVdW&_nc_oc=AdmGdPC6-i4k5LKU5bF4A2b9KIhmwn6nMxNo0OBr01aQn6BhhQGV5EjteyWRy1hhJh4&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=znDg1cnM16b1rttA1UPcUQ&oh=00_AfVns2fNeH6Giynf_4XPwBbx1FSkIaxKbhh82uRSS95jsA&oe=68ACC97D"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175122137984488&set=a.470097558486953&__cft__[0]=AZWrmeSE-VUk_v7icJp83yXIqORrObjmon7Lna9fX84uqkd8VYZjzm-SLy_p8Twb7zwWqazaCoRjTufpYo-hPGViUOdX4RTgZpkoLoZOqTsqR3s2EFG9T9qHhV_YSpWUsiY8YIpnW1oRRp8qElHxIumdZv6VwLQPVW-O58r1HBoC3rB2irwZB_aPdSzNHenqNlE&__tn__=EH-R"
+        ]
+      },
+      "createdAt": "2025-08-21T08:52:13.457933",
+      "publishAt": "2025-08-21T08:52:13.457941"
+    },
     {
       "id": "fcc88c21bb977700",
       "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
@@ -103,5 +123,5 @@
       "publishAt": "2025-08-20T06:31:14.355896"
     }
   ],
-  "generated_at": "2025-08-21T08:35:18.866350"
+  "generated_at": "2025-08-21T08:53:07.884736"
 }
