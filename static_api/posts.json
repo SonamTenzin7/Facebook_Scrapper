@@ -1,14 +1,30 @@
 {
   "success": true,
-  "total_posts": 16,
+  "total_posts": 17,
   "scraping_session": {
-    "timestamp": "2025-08-21T08:53:07.876374",
-    "total_posts": 16,
+    "timestamp": "2025-08-21T09:35:05.696754",
+    "total_posts": 17,
     "new_posts_this_session": 1,
-    "existing_posts": 15,
+    "existing_posts": 16,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "69de33859f3ee41f",
+      "title": "If he full fills his dream then he will be titled as druptop vajra Guru",
+      "description": "...",
+      "content": "If he full fills his dream then he will be titled as druptop vajra Guru...",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T09:34:45.308419",
+      "publishAt": "2025-08-21T09:34:45.308423"
+    },
     {
       "id": "0cf1f93fc347a134",
       "title": "Editorial:     –  His Majesty the King and Her Majesty the Gyaltsuen are in Vietnam from August 1...",
@@ -352,5 +368,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-21T08:53:07.883707"
+  "generated_at": "2025-08-21T09:35:05.701033"
 }

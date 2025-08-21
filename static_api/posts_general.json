@@ -1,8 +1,24 @@
 {
   "success": true,
   "category": "general",
-  "total_posts": 2,
+  "total_posts": 3,
   "posts": [
+    {
+      "id": "69de33859f3ee41f",
+      "title": "If he full fills his dream then he will be titled as druptop vajra Guru",
+      "description": "...",
+      "content": "If he full fills his dream then he will be titled as druptop vajra Guru...",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-08-21T09:34:45.308419",
+      "publishAt": "2025-08-21T09:34:45.308423"
+    },
     {
       "id": "021f188ad79925cb",
       "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
@@ -47,5 +63,5 @@
       "publishAt": "2025-08-19T17:33:21.317822"
     }
   ],
-  "generated_at": "2025-08-21T08:53:07.885115"
+  "generated_at": "2025-08-21T09:35:05.702807"
 }
