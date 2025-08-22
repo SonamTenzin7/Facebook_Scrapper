@@ -1385,16 +1385,28 @@ class FacebookScraper:
             "posts": all_posts
         }
         
-        # Save consolidated file
-        with open(consolidated_file, 'w', encoding='utf-8') as f:
-            json.dump(final_data, f, indent=2, ensure_ascii=False)
-        
-        # Clean up any comment-like posts that might have slipped through
-        self.cleanup_comment_posts(final_data)
-        
-        # Re-save after cleanup
-        with open(consolidated_file, 'w', encoding='utf-8') as f:
-            json.dump(final_data, f, indent=2, ensure_ascii=False)
+        # Save consolidated file atomically to prevent corruption
+        temp_file = consolidated_file + '.tmp'
+        try:
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+            
+            # Clean up any comment-like posts that might have slipped through
+            self.cleanup_comment_posts(final_data)
+            
+            # Re-save after cleanup (atomically)
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+            
+            # Atomic move - replace original only after successful write
+            os.rename(temp_file, consolidated_file)
+            
+        except Exception as save_error:
+            print(f"Error saving consolidated file: {save_error}")
+            # Clean up temp file if it exists
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+            raise
         
         print(f"Consolidated data saved to {consolidated_file}")
         print(f"Added {len(truly_new_posts)} new posts to master file")
@@ -1426,9 +1438,21 @@ class FacebookScraper:
             "posts": posts
         }
 
-        # Save to file
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(final_data, f, indent=2, ensure_ascii=False)
+        # Save to file atomically
+        temp_file = filename + '.tmp'
+        try:
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+            
+            # Atomic move - replace original only after successful write
+            os.rename(temp_file, filename)
+            
+        except Exception as save_error:
+            print(f"Error saving to {filename}: {save_error}")
+            # Clean up temp file if it exists
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+            raise
 
         print(f"Data saved to {filename}")
         return filename
@@ -1484,10 +1508,28 @@ class FacebookScraper:
                     existing_posts = existing_data.get("posts", [])
                     self.existing_post_ids = {post.get("id") for post in existing_posts if post.get("id")}
                 print(f"Loaded {len(self.existing_post_ids)} existing post IDs to avoid re-scraping")
-            except (json.JSONDecodeError, FileNotFoundError) as e:
+            except json.JSONDecodeError as e:
+                print(f"JSON parsing error in {consolidated_file}: {e}")
+                print("Attempting to create backup and recover...")
+                
+                # Create backup of corrupted file
+                backup_file = f"{consolidated_file}.corrupted_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+                try:
+                    os.rename(consolidated_file, backup_file)
+                    print(f"Corrupted file backed up to: {backup_file}")
+                except Exception as backup_error:
+                    print(f"Could not backup corrupted file: {backup_error}")
+                
+                # Initialize with empty structure
+                self.existing_post_ids = set()
+                print("Initialized with empty post set - will scrape all posts")
+                
+            except FileNotFoundError as e:
                 print(f"Could not load existing posts: {e}")
+                self.existing_post_ids = set()
         else:
             print("No existing master file found, will scrape all posts")
+            self.existing_post_ids = set()
 
     def is_post_already_scraped(self, post_id):
         """Check if a post has already been scraped"""
@@ -1526,16 +1568,17 @@ def main():
         with open('data/kuensel_posts_master.json', 'r') as f:
             data = json.load(f)
             initial_post_count = len(data.get('posts', []))
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Could not load initial post count: {e}")
         initial_post_count = 0
 
     try:
-        print("🚀 Starting Kuensel Facebook scraper...")
+        print("Starting Kuensel Facebook scraper...")
         
         # Login to Facebook
-        print("🔐 Logging in to Facebook...")
+        print("Logging in to Facebook...")
         if not scraper.login():
-            print("❌ Failed to login.")
+            print("Failed to login.")
             notifier.notify_scraper_completed(success=False, errors="Login failed")
             return
             
@@ -1585,16 +1628,16 @@ def main():
             script_dir = os.path.dirname(os.path.abspath(__file__))
             deploy_script = os.path.join(script_dir, 'auto_deploy.sh')
             if os.path.exists(deploy_script):
-                print("🚀 Auto-deploying to GitHub Pages...")
+                print("Auto-deploying to GitHub Pages...")
                 result = subprocess.run([deploy_script], capture_output=True, text=True, cwd=script_dir)
                 if result.returncode == 0:
-                    print("✅ GitHub Pages deployment initiated")
+                    print("GitHub Pages deployment initiated")
                 else:
-                    print(f"⚠️  Deployment script output: {result.stdout}")
+                    print(f"Deployment script output: {result.stdout}")
                     if result.stderr:
-                        print(f"❌ Deployment error: {result.stderr}")
+                        print(f"Deployment error: {result.stderr}")
         except Exception as e:
-            print(f"❌ Auto-deployment failed: {e}")
+            print(f"Auto-deployment failed: {e}")
 
         # Calculate new posts found
         final_post_count = len(formatted_data)
@@ -1606,13 +1649,13 @@ def main():
             notifier.notify_new_posts_detected(new_posts)
         
         # Print summary
-        print(f"\n📊 === Scraping Summary ===")
-        print(f"✅ Total posts in database: {final_post_count}")
+        print(f"\n=== Scraping Summary ===")
+        print(f"Total posts in database: {final_post_count}")
         if new_posts > 0:
-            print(f"🆕 New posts found: {new_posts}")
+            print(f"New posts found: {new_posts}")
         else:
-            print("ℹ️  No new posts found this run")
-        print(f"💾 Master data saved to: {master_filename}")
+            print("No new posts found this run")
+        print(f"Master data saved to: {master_filename}")
         
         # Send completion notification
         notifier.notify_scraper_completed(
