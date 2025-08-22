@@ -1,12 +1,12 @@
 {
   "success": true,
   "total_posts": 12,
-  "last_updated": "2025-08-22T11:03:50.005824",
+  "last_updated": "2025-08-22T13:06:18.279504",
   "filter_applied": "only_posts_with_images",
   "scraping_session": {
-    "last_scrape": "2025-08-22T11:03:44.854888",
+    "last_scrape": "2025-08-22T13:06:13.107797",
     "status": "completed",
-    "original_total": 12,
+    "original_total": 13,
     "filtered_total": 12
   },
   "posts": [
@@ -34,68 +34,9 @@
       "content_length": 583
     },
     {
-      "id": "bdd3fb92747bf9e4",
-      "title": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and He...",
-      "content": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President Hồ Chí Minh   the founder of modern Việt Nam, and to the nation s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Việt Nam s fallen heroes, and the Hồ Chí Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President Lương Cường and Madame Nguyễn Thị Minh Nguyệt at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Việt Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Việt Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Việt Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguyễn Thị Minh Nguyệt visited Trấn Quốc Pagoda, the oldest Buddhist temple in Hà Nội. Her Majesty and the First Lady were received by the abbot, Most Venerable Thích Thanh Nhã, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Việt Nam Tô Lâm, Prime Minister Phạm Minh Chính, and Chairman of the National Assembly Trần Thanh Mẫn. In the evening, the President and Madame Nguyễn Thị Minh Nguyệt hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": null,
-      "published_at": null,
-      "has_images": true,
-      "image_count": 10,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVt5odakci-NrBEsQEp8JlM0396W_f6eBXNzOAMpL2lLQ&oe=68AB3141",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfW4hc-1OIWUlcp_AmS7G7bhZtBB3QBRWD5R8UBDUz_67Q&oe=68AB00C6",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVHm11_ZnTqo4BBAqdVVSYeUa1_Q2sb44q5in13A-t3zg&oe=68AB11C2",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVMn_1Tx_d3NGXfX2tszUrBXy5QUgbwvzRTF4p7MO7MXw&oe=68AB20E6",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfWMLzaFKiWIGTl6u325uB5--anYp_mO__3SZxFU369lXg&oe=68AAFE2A",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=4pmhVimohAa8wvT42DKIvw&oh=00_AfUAb-4wZxXjf0YDbnOEPyJDl4U9Zkt6l93uGN2MMeANlg&oe=68AB3141",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=tDCjnByw9vpYtBVrnG_AQw&oh=00_AfU34heV-mrIzegDn4mGlYi2T4zhH6XKtVM935_EOhbB9Q&oe=68AB00C6",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=Gi9OUwY7BF5kmHhEA2tBAg&oh=00_AfU8kI2PNAyK6nJf1t-3zsIVF9MJDUavIcr_1gML7aGhzg&oe=68AB11C2",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8aidRu-0Qma9iGUHDKlIOQ&oh=00_AfV8WpGxtQqfpH-1vfNdUNcVPeJcneF6d7sDiw0PzOSUIw&oe=68AB20E6",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=N3Dbx3kG43TRdyhKca-jHw&oh=00_AfW_hfu-Y3GWsHZVS7sQRBqBWU86gEyh8gw1fkqI-T1mzA&oe=68AAFE2A"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1173838874779481&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1173838938112808&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b1H-R",
-          "https://www.facebook.com/photo/?fbid=1173839078112794&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b2H-R",
-          "https://www.facebook.com/photo/?fbid=1173838868112815&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b3H-R",
-          "https://www.facebook.com/photo/?fbid=1173839014779467&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b4H-R"
-        ]
-      },
-      "content_length": 1544
-    },
-    {
-      "id": "0d43a7822ae31923",
-      "title": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Servic...",
-      "content": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infrastructure and Transport, Bhutan and the Civil Aviation Authority, Ministry of Construction, The Government of the Socialist Republic of Viet Nam in the presence of His Majesty The King and the President of Viet Nam. The objective of the MoU is to promote aeronautical relations in a spirit of cooperation and understanding for the benefit of both countries. #Update #energy #Aviation",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": null,
-      "published_at": null,
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/535806020_1174158101414225_2332051778912854884_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=0bbrEYRix0EQ7kNvwG4cINq&_nc_oc=AdlhR7e8dLmbNEEwICZL7RPg-Ij8HXsacTbJZW9sSEup3X3ha5wM69-bYrr2UB5hFfk&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&_nc_gid=6J9PmTbqXq68Fpqj_C42JQ&oh=00_AfUULsxC5-yaCd5sPqsc1m4tX3fFukB1UXSe-ywaZT-o-A&oe=68AB1043"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1174158094747559&set=a.470097565153619&__cft__[0]=AZWghJ7N14X24y8Oc5a6wE1NmujuSpCF5yIH7FWXofMaxzjJj7exHXPKIlIcPSbs01ezBaf6uVabdhqf4aS364YOf1kN6rgL9X-pam8e-8FXXLgjzWAlfoA9rt38YAdj0oGr4ZNAO9orgUeVSgNIfQ6nXGfJtftnrrvR8uDUp1EXlF3bBVRhPrgZuKmkLIFvVdk&__tn__=EH-R"
-        ]
-      },
-      "content_length": 552
-    },
-    {
-      "id": "540bd49da09991ef",
-      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a ...",
-      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three years and four months in prison. The verdict was passed today. The former MP Tashi Dorji of Nubi_Tangsibji consituency in Trongsa was charged for molesting a child in 2022. The incident occurred when he was serving as a Gewog Administrative Officer. The case was filed in court in October last year.",
+      "id": "e3a7451c49072a27",
+      "title": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkha...",
+      "content": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkhags in 2024–25 fiscal year YK Poudel Trashigang—Thirty-six-year-old Tenzin Wangda from Lungtenzampa, Trashigang, has invested Nu 850,000 that he secured from the Economic Stimulus Plan in upscaling his Samzang Gongphel Poultry Farm, located just below the highway. https://kuenselonline.com/.../funding-spurs-growth-of... #poultry #farms #Trashigang #Bhutan",
       "category": "general",
       "author": "Kuensel",
       "created_at": null,
@@ -106,20 +47,72 @@
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/535171289_1173573024806066_7537124039496390448_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SvgZlh8izl0Q7kNvwGIXPT7&_nc_oc=AdnV_lQjQ9CHf9XaGlgS-1ElAA6hMwNiIalBSYO731M25hVclc6aLS1z78FibT71SA4&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=KYIi4VrKoYN0g-uWKHlz2A&oh=00_AfWVl6h3_DeiXdr28TItZwYDrgI7pLsKTE9AoA7Px2dVrA&oe=68AA37B4",
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/535171289_1173573024806066_7537124039496390448_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SvgZlh8izl0Q7kNvwGIXPT7&_nc_oc=AdnV_lQjQ9CHf9XaGlgS-1ElAA6hMwNiIalBSYO731M25hVclc6aLS1z78FibT71SA4&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=0ArmjGfENxy9UkQBZlFCgQ&oh=00_AfVsd0Kqji6HMB7oBQ_ufmrkEvQgXk_aP0ynPVgQ5tUf8A&oe=68AA37B4"
+          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/536274822_1175856221244413_8960662731779002258_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V4ppOvxl7rkQ7kNvwHdm6Ll&_nc_oc=AdmwnZvSWfvsma__0DLJWtvUSikluctIvKPQ09a1iJkug-YR1ux13B8rE63ZxQBLSZk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfWB8ZATJTSZdNhjrkr4riJK9cqo_hSa2CuK4zOdUzuJRw&oe=68ADD149",
+          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/537644399_1175856224577746_5348400194743205006_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wc93Cy5eU9cQ7kNvwGYV032&_nc_oc=AdkTXmLwo0O2SnUre_X3rJZaizskTg0KCRc9woFQMDMvzQOAoGaw9_i6Q5wTRIqPXQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfVM0fMdRZb8zqUMo3t94ItV1Vy629BU-6EhLjmsaLv5Qg&oe=68ADC896"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1173573021472733&set=a.470097558486953&__cft__[0]=AZWLy8ltyfZP6k7aeYpM1aEd-BGi4e4p_eDeXGKq75XBe0IsLtg-RnWHTlS9DvtkUfPBguuM683hDKo3O_lnKZgV7d5HepqsXvZ3N1HzGRCgENBlEXrFH5S3gOOi5djEgSvyBPzINOktBTjF-at5O_j350lorGA6WtHZ3RClTnhUAq1T0DCWPK_fqy9ARr_IPHE&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1175886304574738&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175886301241405&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b1H-R"
         ]
       },
-      "content_length": 466
+      "content_length": 453
     },
     {
-      "id": "fcc88c21bb977700",
-      "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
-      "content": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty–the valleys, the mountains, the wind-tossed prayer flags. What I found was a deeper national treasure: a culture where kindness is instinct, and strangers become friends before you know their names. https://kuenselonline.com/.../bhutans-bold-step-toward... #GMC #GNH #GDP #Bhutan",
+      "id": "7d46daa0e4e1e6eb",
+      "title": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiar...",
+      "content": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiarisation (FAM) trip. They were granted a Sustainable Development Fee (SDF) waiver. https://kuenselonline.com/.../dubai-tour-operators... #Dubai #tourism #SDF #Bhutan #DoT #Bhutan",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": null,
+      "published_at": null,
+      "has_images": true,
+      "image_count": 2,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=UCYOkJh8j92xK3Sm3ZTTow&oh=00_AfWaGo2NUPbdJkFtby9Ae3F915hrTVKiGOroqwaZ4mm1Rg&oe=68AC9DFA",
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=dlR-brDDiFfF8zWZeIYRpQ&oh=00_AfXzKiuVjaVbKnBeHtvJVAJafXS67Z_UXWsu53Rx6Jz79A&oe=68AC9DFA"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175087657987936&set=a.470097558486953&__cft__[0]=AZUqvcJCEV7neCOlYdPCEmtKYpUFDxrKMP4_S5zh2dA8E6chhsETTpwL_rUSn420At0t2HzvV33HzDNgh0OVoAtW0RNXfnZyOSUwi2Nl59w3XHplz4k0AXSJIjmYSH2aFQZN7gAHZie2HPQt6LU_ItCAlChxDYKhQNIeMmDSRX1rC4cXyF-fuclGTYuj_N4__Fo&__tn__=EH-R"
+        ]
+      },
+      "content_length": 274
+    },
+    {
+      "id": "021f188ad79925cb",
+      "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
+      "content": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan’s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": null,
+      "published_at": null,
+      "has_images": true,
+      "image_count": 4,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfVTYwp1IYU6fzskQwy5BcPTfNBxzaZqaaX0_pxKU-Tcng&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfX94mpmVvyVsHaPRA-UTJ2DXtOLEQfZhSsB_PT4KSPUSg&oe=68AC86AC",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=Ciq21074n3ujszgX9bTfPg&oh=00_AfU6I059gyHp6RYWsfTWBNa0sJzv61qGmIYvVDEkQdL8pQ&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=BACWFIIE8DORfbTpmfWA2w&oh=00_AfUM9rNFeKyZ-VAXV1vXdw6jCJz7Vw4IB7u6605TCZKWAw&oe=68AC86AC"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175076354655733&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175076357989066&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b1H-R"
+        ]
+      },
+      "content_length": 309
+    },
+    {
+      "id": "6261033761db1fe0",
+      "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",
+      "content": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
       "category": "general",
       "author": "Kuensel",
       "created_at": null,
@@ -130,12 +123,12 @@
       "has_links": false,
       "attachment": {
         "images": [
-          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/2029737833369075710?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fgmc-14.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p720x376_q75_tt6&_nc_gid=DeF5iWpO48ZQxeSxtammzg&_nc_oc=Adl_lkcCD_BFTfW1LSyfckk0B0KG2ZD0NfAiZCgoR_wov5KZr5QIHvEdkW2ZHs6fNYc&ccb=13-1&oh=06_Q3-2ASaI5-c88vZkrgOkE2-xrlFYNf-_ZYHKFEmPqu1OUlo5&oe=68A8895F&_nc_sid=e17101"
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/6757268679376797768?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fparoairpot.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&_nc_gid=STOdJ-bLd-ocsbrSP5qphg&_nc_oc=Adn7pKt0phR-MrgmX3vouVhBCreFF4zCYf1l4Bo_dMKTAq7KBZtPoRrhN_GHllcLuqo&ccb=13-1&oh=06_Q3-2AfE1eEDyljWP3Q8RP1P2LB4fcZNoT4wYhO93KK5nHwMx&oe=68A8C7EF&_nc_sid=e17101"
         ],
         "videos": [],
         "links": []
       },
-      "content_length": 391
+      "content_length": 521
     },
     {
       "id": "94a2c686168fcc5d",
@@ -219,9 +212,9 @@
       "content_length": 287
     },
     {
-      "id": "7d46daa0e4e1e6eb",
-      "title": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiar...",
-      "content": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiarisation (FAM) trip. They were granted a Sustainable Development Fee (SDF) waiver. https://kuenselonline.com/.../dubai-tour-operators... #Dubai #tourism #SDF #Bhutan #DoT #Bhutan",
+      "id": "540bd49da09991ef",
+      "title": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a ...",
+      "content": "Just in: The Supreme Court upheld the earlier rulings, confirming Tashi Dorji s conviction for a fourth-degree felony and affirming the High Court s sentence of three years and four months in prison. The verdict was passed today. The former MP Tashi Dorji of Nubi_Tangsibji consituency in Trongsa was charged for molesting a child in 2022. The incident occurred when he was serving as a Gewog Administrative Officer. The case was filed in court in October last year.",
       "category": "general",
       "author": "Kuensel",
       "created_at": null,
@@ -232,47 +225,20 @@
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=UCYOkJh8j92xK3Sm3ZTTow&oh=00_AfWaGo2NUPbdJkFtby9Ae3F915hrTVKiGOroqwaZ4mm1Rg&oe=68AC9DFA",
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=dlR-brDDiFfF8zWZeIYRpQ&oh=00_AfXzKiuVjaVbKnBeHtvJVAJafXS67Z_UXWsu53Rx6Jz79A&oe=68AC9DFA"
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/535171289_1173573024806066_7537124039496390448_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SvgZlh8izl0Q7kNvwGIXPT7&_nc_oc=AdnV_lQjQ9CHf9XaGlgS-1ElAA6hMwNiIalBSYO731M25hVclc6aLS1z78FibT71SA4&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=KYIi4VrKoYN0g-uWKHlz2A&oh=00_AfWVl6h3_DeiXdr28TItZwYDrgI7pLsKTE9AoA7Px2dVrA&oe=68AA37B4",
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/535171289_1173573024806066_7537124039496390448_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SvgZlh8izl0Q7kNvwGIXPT7&_nc_oc=AdnV_lQjQ9CHf9XaGlgS-1ElAA6hMwNiIalBSYO731M25hVclc6aLS1z78FibT71SA4&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=0ArmjGfENxy9UkQBZlFCgQ&oh=00_AfVsd0Kqji6HMB7oBQ_ufmrkEvQgXk_aP0ynPVgQ5tUf8A&oe=68AA37B4"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1175087657987936&set=a.470097558486953&__cft__[0]=AZUqvcJCEV7neCOlYdPCEmtKYpUFDxrKMP4_S5zh2dA8E6chhsETTpwL_rUSn420At0t2HzvV33HzDNgh0OVoAtW0RNXfnZyOSUwi2Nl59w3XHplz4k0AXSJIjmYSH2aFQZN7gAHZie2HPQt6LU_ItCAlChxDYKhQNIeMmDSRX1rC4cXyF-fuclGTYuj_N4__Fo&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1173573021472733&set=a.470097558486953&__cft__[0]=AZWLy8ltyfZP6k7aeYpM1aEd-BGi4e4p_eDeXGKq75XBe0IsLtg-RnWHTlS9DvtkUfPBguuM683hDKo3O_lnKZgV7d5HepqsXvZ3N1HzGRCgENBlEXrFH5S3gOOi5djEgSvyBPzINOktBTjF-at5O_j350lorGA6WtHZ3RClTnhUAq1T0DCWPK_fqy9ARr_IPHE&__tn__=EH-R"
         ]
       },
-      "content_length": 274
+      "content_length": 466
     },
     {
-      "id": "021f188ad79925cb",
-      "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
-      "content": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan’s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": null,
-      "published_at": null,
-      "has_images": true,
-      "image_count": 4,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfVTYwp1IYU6fzskQwy5BcPTfNBxzaZqaaX0_pxKU-Tcng&oe=68AC867E",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfX94mpmVvyVsHaPRA-UTJ2DXtOLEQfZhSsB_PT4KSPUSg&oe=68AC86AC",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=Ciq21074n3ujszgX9bTfPg&oh=00_AfU6I059gyHp6RYWsfTWBNa0sJzv61qGmIYvVDEkQdL8pQ&oe=68AC867E",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=BACWFIIE8DORfbTpmfWA2w&oh=00_AfUM9rNFeKyZ-VAXV1vXdw6jCJz7Vw4IB7u6605TCZKWAw&oe=68AC86AC"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1175076354655733&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1175076357989066&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b1H-R"
-        ]
-      },
-      "content_length": 309
-    },
-    {
-      "id": "6261033761db1fe0",
-      "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",
-      "content": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
+      "id": "fcc88c21bb977700",
+      "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
+      "content": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty–the valleys, the mountains, the wind-tossed prayer flags. What I found was a deeper national treasure: a culture where kindness is instinct, and strangers become friends before you know their names. https://kuenselonline.com/.../bhutans-bold-step-toward... #GMC #GNH #GDP #Bhutan",
       "category": "general",
       "author": "Kuensel",
       "created_at": null,
@@ -283,37 +249,71 @@
       "has_links": false,
       "attachment": {
         "images": [
-          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/6757268679376797768?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fparoairpot.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&_nc_gid=STOdJ-bLd-ocsbrSP5qphg&_nc_oc=Adn7pKt0phR-MrgmX3vouVhBCreFF4zCYf1l4Bo_dMKTAq7KBZtPoRrhN_GHllcLuqo&ccb=13-1&oh=06_Q3-2AfE1eEDyljWP3Q8RP1P2LB4fcZNoT4wYhO93KK5nHwMx&oe=68A8C7EF&_nc_sid=e17101"
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/2029737833369075710?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fgmc-14.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p720x376_q75_tt6&_nc_gid=DeF5iWpO48ZQxeSxtammzg&_nc_oc=Adl_lkcCD_BFTfW1LSyfckk0B0KG2ZD0NfAiZCgoR_wov5KZr5QIHvEdkW2ZHs6fNYc&ccb=13-1&oh=06_Q3-2ASaI5-c88vZkrgOkE2-xrlFYNf-_ZYHKFEmPqu1OUlo5&oe=68A8895F&_nc_sid=e17101"
         ],
         "videos": [],
         "links": []
       },
-      "content_length": 521
+      "content_length": 391
     },
     {
-      "id": "e3a7451c49072a27",
-      "title": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkha...",
-      "content": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkhags in 2024–25 fiscal year YK Poudel Trashigang—Thirty-six-year-old Tenzin Wangda from Lungtenzampa, Trashigang, has invested Nu 850,000 that he secured from the Economic Stimulus Plan in upscaling his Samzang Gongphel Poultry Farm, located just below the highway. https://kuenselonline.com/.../funding-spurs-growth-of... #poultry #farms #Trashigang #Bhutan",
+      "id": "0d43a7822ae31923",
+      "title": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Servic...",
+      "content": "Update of His Majesty s State Visit to Vietnam: A Memorandum of Understanding (MoU) on Air Services Agreement was signed on August 19, 2025 between the Ministry of Infrastructure and Transport, Bhutan and the Civil Aviation Authority, Ministry of Construction, The Government of the Socialist Republic of Viet Nam in the presence of His Majesty The King and the President of Viet Nam. The objective of the MoU is to promote aeronautical relations in a spirit of cooperation and understanding for the benefit of both countries. #Update #energy #Aviation",
       "category": "general",
       "author": "Kuensel",
       "created_at": null,
       "published_at": null,
       "has_images": true,
-      "image_count": 2,
+      "image_count": 1,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/536274822_1175856221244413_8960662731779002258_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V4ppOvxl7rkQ7kNvwHdm6Ll&_nc_oc=AdmwnZvSWfvsma__0DLJWtvUSikluctIvKPQ09a1iJkug-YR1ux13B8rE63ZxQBLSZk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfWB8ZATJTSZdNhjrkr4riJK9cqo_hSa2CuK4zOdUzuJRw&oe=68ADD149",
-          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/537644399_1175856224577746_5348400194743205006_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wc93Cy5eU9cQ7kNvwGYV032&_nc_oc=AdkTXmLwo0O2SnUre_X3rJZaizskTg0KCRc9woFQMDMvzQOAoGaw9_i6Q5wTRIqPXQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfVM0fMdRZb8zqUMo3t94ItV1Vy629BU-6EhLjmsaLv5Qg&oe=68ADC896"
+          "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/535806020_1174158101414225_2332051778912854884_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=0bbrEYRix0EQ7kNvwG4cINq&_nc_oc=AdlhR7e8dLmbNEEwICZL7RPg-Ij8HXsacTbJZW9sSEup3X3ha5wM69-bYrr2UB5hFfk&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&_nc_gid=6J9PmTbqXq68Fpqj_C42JQ&oh=00_AfUULsxC5-yaCd5sPqsc1m4tX3fFukB1UXSe-ywaZT-o-A&oe=68AB1043"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1175886304574738&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1175886301241405&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b1H-R"
+          "https://www.facebook.com/photo/?fbid=1174158094747559&set=a.470097565153619&__cft__[0]=AZWghJ7N14X24y8Oc5a6wE1NmujuSpCF5yIH7FWXofMaxzjJj7exHXPKIlIcPSbs01ezBaf6uVabdhqf4aS364YOf1kN6rgL9X-pam8e-8FXXLgjzWAlfoA9rt38YAdj0oGr4ZNAO9orgUeVSgNIfQ6nXGfJtftnrrvR8uDUp1EXlF3bBVRhPrgZuKmkLIFvVdk&__tn__=EH-R"
         ]
       },
-      "content_length": 453
+      "content_length": 552
+    },
+    {
+      "id": "bdd3fb92747bf9e4",
+      "title": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and He...",
+      "content": "August 19, 2025: On Their Majesties  ongoing State Visit to Việt Nam, His Majesty The King and Her Majesty The Gyaltsuen paid tribute to President Hồ Chí Minh   the founder of modern Việt Nam, and to the nation s war heroes and martyrs. Their Majesties visited the Monument to Heroes and Martyrs to honour Việt Nam s fallen heroes, and the Hồ Chí Minh Mausoleum, the final resting place of the revolutionary leader. Their Majesties were then received in an official ceremony by President Lương Cường and Madame Nguyễn Thị Minh Nguyệt at the Presidential Palace with a Guard of Honour. His Majesty The King held a meeting with the President of Việt Nam, accompanied by the delegation from Bhutan. Two Memoranda of Understanding between Bhutan and Việt Nam on cooperation between the two governments and cooperation in aviation were signed in the presence of His Majesty The King and the President of Việt Nam. Meanwhile, Her Majesty The Gyaltsuen and Madame Nguyễn Thị Minh Nguyệt visited Trấn Quốc Pagoda, the oldest Buddhist temple in Hà Nội. Her Majesty and the First Lady were received by the abbot, Most Venerable Thích Thanh Nhã, and offered incense and prayers at the temple. In the afternoon, His Majesty met with the General Secretary of the Communist Party of Việt Nam Tô Lâm, Prime Minister Phạm Minh Chính, and Chairman of the National Assembly Trần Thanh Mẫn. In the evening, the President and Madame Nguyễn Thị Minh Nguyệt hosted a State Banquet in honour of Their Majesties. Source: His Majesty King Jigme Khesar Namgyel Wangchuck",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": null,
+      "published_at": null,
+      "has_images": true,
+      "image_count": 10,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVt5odakci-NrBEsQEp8JlM0396W_f6eBXNzOAMpL2lLQ&oe=68AB3141",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfW4hc-1OIWUlcp_AmS7G7bhZtBB3QBRWD5R8UBDUz_67Q&oe=68AB00C6",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVHm11_ZnTqo4BBAqdVVSYeUa1_Q2sb44q5in13A-t3zg&oe=68AB11C2",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfVMn_1Tx_d3NGXfX2tszUrBXy5QUgbwvzRTF4p7MO7MXw&oe=68AB20E6",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=8y_8H3qH4ej4qPyOcFTwhA&oh=00_AfWMLzaFKiWIGTl6u325uB5--anYp_mO__3SZxFU369lXg&oe=68AAFE2A",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534280640_1173839461446089_2741863816885604316_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A9DyR702YOMQ7kNvwHXauqL&_nc_oc=AdmPJ0DvWk8I5ptBSSoZvzSyImSU9I6lsPJ2F5Oa8nDdogvqx70NgqNIkpx8rZKYNz4&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=4pmhVimohAa8wvT42DKIvw&oh=00_AfUAb-4wZxXjf0YDbnOEPyJDl4U9Zkt6l93uGN2MMeANlg&oe=68AB3141",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/534907412_1173839704779398_3363090378388043546_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7qzlvFzplrsQ7kNvwHyOsTE&_nc_oc=AdlUBPOA1WupsqxPmXZoylOdo4NSf8_N3IfLnVDnt5fgxlcGvZqsDf1OBQXwH1kfL80&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=tDCjnByw9vpYtBVrnG_AQw&oh=00_AfU34heV-mrIzegDn4mGlYi2T4zhH6XKtVM935_EOhbB9Q&oe=68AB00C6",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536576656_1173840438112658_5812899780504757608_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=54SOWsc8nygQ7kNvwGBzKHm&_nc_oc=AdnN99XkqUDFseoO6JWwJxbgnpC7FpHC8kb3zsJGtMEYtMbfHA-q1jnq4voJNsiplr0&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=Gi9OUwY7BF5kmHhEA2tBAg&oh=00_AfU8kI2PNAyK6nJf1t-3zsIVF9MJDUavIcr_1gML7aGhzg&oe=68AB11C2",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536700161_1173839474779421_5812001714255202875_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2K0wAnGQKBEQ7kNvwE5c81a&_nc_oc=Adl37G0-0tkR5trexDnqv70CTTbzbe5Eoq4JinhADGLOQkFKOY9pC2Ex7bBwf9OAsPc&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=8aidRu-0Qma9iGUHDKlIOQ&oh=00_AfV8WpGxtQqfpH-1vfNdUNcVPeJcneF6d7sDiw0PzOSUIw&oe=68AB20E6",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535528241_1173839764779392_1064906275281054010_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kd5OMo4ClC8Q7kNvwGpETcd&_nc_oc=AdnYbVLH93XTxc_hL0Gf9sXsjZHLCvQhTFu7lKJkGgHnmqExwTp9OrS-5FTP1W_LmZk&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=N3Dbx3kG43TRdyhKca-jHw&oh=00_AfW_hfu-Y3GWsHZVS7sQRBqBWU86gEyh8gw1fkqI-T1mzA&oe=68AAFE2A"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1173838874779481&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1173838938112808&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b1H-R",
+          "https://www.facebook.com/photo/?fbid=1173839078112794&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b2H-R",
+          "https://www.facebook.com/photo/?fbid=1173838868112815&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b3H-R",
+          "https://www.facebook.com/photo/?fbid=1173839014779467&set=pcb.1173839334779435&__cft__[0]=AZVNisgYavF9QavP7wHJy4jAUPWp_bO1jhkL9QFHXLW_nKgDpq8wTOISBDMA9ssDkXB69XCcHO_xjnabm9xVGbnSJDg4fuxAHhwU_bPFGwFC7qhGhv4ZzLod63nwuHFzTPae4axsRueQgutQ-Y-YH5efWFWOSSQSrfFu-xNfqyd-2_6UUfkyoiYEBRDKOecGzEM&__tn__=*b4H-R"
+        ]
+      },
+      "content_length": 1544
     }
   ]
 }
