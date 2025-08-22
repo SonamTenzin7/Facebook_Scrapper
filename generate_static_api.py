@@ -13,7 +13,7 @@ def generate_posts_api():
     # Load master data
     master_file = 'data/kuensel_posts_master.json'
     if not os.path.exists(master_file):
-        print(f"❌ Master file not found: {master_file}")
+        print(f"Master file not found: {master_file}")
         return
     
     with open(master_file, 'r') as f:
@@ -37,9 +37,9 @@ def generate_posts_api():
         if images and len(images) > 0:
             posts_with_images.append(post)
     
-    print(f"📊 Total posts: {len(all_posts)}")
-    print(f"📸 Posts with images: {len(posts_with_images)}")
-    print(f"🚫 Posts filtered out: {len(all_posts) - len(posts_with_images)}")
+    print(f"Total posts: {len(all_posts)}")
+    print(f"Posts with images: {len(posts_with_images)}")
+    print(f"Posts filtered out: {len(all_posts) - len(posts_with_images)}")
     
     # Create clean API structure
     api_data = {
@@ -97,13 +97,13 @@ def generate_posts_api():
     total_images = sum(post["image_count"] for post in api_data["posts"])
     posts_with_videos = sum(1 for post in api_data["posts"] if post["has_videos"])
     
-    print(f"✅ Generated clean posts.json with image filter")
-    print(f"   📊 Posts included: {len(api_data['posts'])}")
-    print(f"   📸 Total images: {total_images}")
-    print(f"   📹 Posts with videos: {posts_with_videos}")
+    print(f"Generated clean posts.json with image filter")
+    print(f"   Posts included: {len(api_data['posts'])}")
+    print(f"   Total images: {total_images}")
+    print(f"   Posts with videos: {posts_with_videos}")
     if api_data['posts']:
         avg_length = sum(p['content_length'] for p in api_data['posts']) // len(api_data['posts'])
-        print(f"   📝 Average content length: {avg_length} chars")
+        print(f"   Average content length: {avg_length} chars")
 
 def clean_old_api_files():
     """Remove redundant API files from static_api directory"""
@@ -129,15 +129,15 @@ def clean_old_api_files():
         if os.path.exists(filepath):
             os.remove(filepath)
             removed_count += 1
-            print(f"🗑️ Removed: {filename}")
+            print(f"Removed: {filename}")
     
     if removed_count > 0:
-        print(f"🧹 Cleaned up {removed_count} redundant API files")
+        print(f"Cleaned up {removed_count} redundant API files")
     else:
-        print("📁 No redundant files to remove")
+        print("No redundant files to remove")
 
 if __name__ == "__main__":
-    print("🚀 Generating simplified static API (images only)...")
+    print("Generating simplified static API (images only)...")
     generate_posts_api()
     clean_old_api_files()
-    print("✅ API generation completed!")
+    print("API generation completed!")

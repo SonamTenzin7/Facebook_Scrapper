@@ -1,15 +1,36 @@
 {
   "success": true,
-  "total_posts": 10,
-  "last_updated": "2025-08-21T17:52:36.450090",
+  "total_posts": 11,
+  "last_updated": "2025-08-22T11:10:32.735133",
   "filter_applied": "only_posts_with_images",
   "scraping_session": {
-    "last_scrape": "",
-    "status": "success",
-    "original_total": 23,
-    "filtered_total": 10
+    "last_scrape": "2025-08-22T10:05:25.407795",
+    "status": "completed",
+    "original_total": 35,
+    "filtered_total": 11
   },
   "posts": [
+    {
+      "id": "009fe89df25fc24e",
+      "title": "- A - - - - u - g - - - u s - - - - - - t - 2 - 0 - a - - - t - - - 1 2 - - : - - - 0 - - - - - -...",
+      "content": "- A - - - - u - g - - - u s - - - - - - t - 2 - 0 - a - - - t - - - 1 2 - - : - - - 0 - - - - - - - - 0 - - - - - P - - - - M - - -",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": "2025-08-22T10:05:00.884691",
+      "published_at": "2025-08-22T10:05:00.884695",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": false,
+      "has_links": false,
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/16404676160462365502?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Ffootball-10.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p973x508_q75_tt6&_nc_gid=NfTq5RCmNutQwC3H5J6kmQ&_nc_oc=AdkBUp2pWwF6t7deZsI0HIJJ1quo4gXqN1wDcMI2SUy_W4jWm19GkuNdxuAOkLak6BQ&ccb=13-1&oh=06_Q3-2AVJUpirs5FttTM7jvzeBsfcnjw6aPjjDUcxchaWB8GcL&oe=68A9CECB&_nc_sid=c97757"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "content_length": 131
+    },
     {
       "id": "6261033761db1fe0",
       "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",

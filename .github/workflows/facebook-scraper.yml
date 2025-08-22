@@ -24,36 +24,36 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: 📥 Checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
       
-    - name: 🐍 Set up Python
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
         
-    - name: 📦 Install dependencies
+    - name: Install dependencies
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: 🌐 Install Chrome and ChromeDriver
+    - name: Install Chrome and ChromeDriver
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable xvfb
         
-    - name: ⚙️ Create config file
+    - name: Create config file
       run: |
         if [ -z "${{ secrets.FACEBOOK_CONFIG }}" ]; then
-          echo "⚠️ Warning: FACEBOOK_CONFIG secret not set, using example config"
+          echo "Warning: FACEBOOK_CONFIG secret not set, using example config"
           cp config.example.json config.json
         else
           echo '${{ secrets.FACEBOOK_CONFIG }}' > config.json
         fi
         
-    - name: 🚀 Run Facebook scraper
+    - name: Run Facebook scraper
       run: |
         export DISPLAY=:99
         Xvfb :99 -ac -screen 0 1280x1024x24 &
@@ -62,15 +62,15 @@ jobs:
         # Remove cooldown for GitHub Actions automation
         rm -f data/last_run.txt
         
-        echo "🤖 Starting automated scrape..."
+        echo "Starting automated scrape..."
         python facebook_scrapper.py --max-posts 8 --headless
         
-    - name: 📊 Generate static API
+    - name: Generate static API
       run: |
-        echo "📊 Generating static API files..."
+        echo "Generating static API files..."
         python generate_static_api.py
         
-    - name: 💾 Commit and push changes
+    - name: Commit and push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "GitHub Actions Bot"
@@ -80,64 +80,58 @@ jobs:
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then
-          echo "📝 No changes to commit"
+          echo "No changes to commit"
         else
           # Create commit with timestamp
           TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
-          git commit -m "🤖 Automated update: $TIMESTAMP
+          git commit -m "Automated update: $TIMESTAMP
 
           - Scraped latest posts from Kuensel Facebook
           - Updated static API files
           - Enhanced validation active
           
-          Automated by GitHub Actions ⚡"
+          Automated by GitHub Actions"
           
           # Push changes
           git push origin main
-          echo "✅ Successfully pushed changes!"
+          echo "Successfully pushed changes!"
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: 🧹 Auto-cleanup old workflow runs
+    - name: Auto-cleanup old workflow runs
       run: |
-        echo "🧹 Cleaning up old workflow runs..."
+        echo "Cleaning up old workflow runs..."
         
-        # Install GitHub CLI
-        curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-        sudo apt update
-        sudo apt install gh -y
-        
-        # Authenticate with GitHub token
+        # Simple cleanup using GitHub CLI (pre-installed on ubuntu-latest)
         echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
         
         # Keep only last 25 workflow runs (conservative cleanup)
-        echo "🗑️ Removing old workflow runs (keeping last 25)..."
-        gh run list --json databaseId --jq '.[25:] | .[].databaseId' | head -20 | while read -r run_id; do
+        echo "Removing old workflow runs (keeping last 25)..."
+        gh run list --limit 50 --json databaseId --jq '.[25:] | .[].databaseId' | head -20 | while read -r run_id; do
           if [ -n "$run_id" ]; then
-            gh api repos/${{ github.repository }}/actions/runs/$run_id -X DELETE || echo "⚠️ Could not delete run $run_id"
+            gh api repos/${{ github.repository }}/actions/runs/$run_id -X DELETE || echo "Could not delete run $run_id"
           fi
         done
         
-        echo "✅ Cleanup completed"
+        echo "Cleanup completed"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: github.ref == 'refs/heads/main'
       
-    - name: 📈 Summary
+    - name: Summary
       run: |
-        echo "🎯 Automation Summary:"
+        echo "Automation Summary:"
         echo "========================"
-        echo "✅ Scraper: Completed successfully"
-        echo "✅ API: Static files generated (images only)" 
-        echo "✅ Git: Changes committed and pushed"
-        echo "✅ Cleanup: Old workflow runs removed"
+        echo "Scraper: Completed successfully"
+        echo "API: Static files generated (images only)" 
+        echo "Git: Changes committed and pushed"
+        echo "Cleanup: Old workflow runs removed"
         echo ""
-        echo "⏰ Smart Schedule Active:"
-        echo "   🌅 Morning (8:30AM-6:30PM): 6 runs/day"
-        echo "   🌆 Evening (10:30PM): 1 run/day" 
-        echo "   🌙 Night (2:30AM): 1 run/day"
+        echo "Smart Schedule Active:"
+        echo "   Morning (8:30AM-6:30PM): 6 runs/day"
+        echo "   Evening (10:30PM): 1 run/day" 
+        echo "   Night (2:30AM): 1 run/day"
         echo ""
-        echo "📸 Filter: Only posts with images included"
-        echo "🌐 View results: https://${{ github.repository_owner }}.github.io/Facebook_Scrapper"
+        echo "Filter: Only posts with images included"
+        echo "View results: https://${{ github.repository_owner }}.github.io/Facebook_Scrapper"
