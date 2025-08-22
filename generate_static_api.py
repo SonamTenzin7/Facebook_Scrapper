@@ -19,11 +19,27 @@ def generate_posts_api():
     with open(master_file, 'r') as f:
         master_data = json.load(f)
     
-    # Handle both array and object structures
+    # Handle both scraper format and API format
     if isinstance(master_data, list):
+        # Old array format
         all_posts = master_data
         scraping_session = {}
+    elif "posts" in master_data and isinstance(master_data["posts"], list):
+        if "scraping_session" in master_data:
+            # Scraper format: {"scraping_session": {...}, "posts": [...]}
+            all_posts = master_data.get('posts', [])
+            scraping_session = master_data.get('scraping_session', {})
+        else:
+            # API format: {"success": true, "total_posts": N, "posts": [...]}
+            print("Warning: Found API format instead of scraper format in master file")
+            all_posts = master_data.get('posts', [])
+            scraping_session = {
+                "timestamp": master_data.get('last_updated', ''),
+                "status": "recovered_from_api_format",
+                "total_posts": master_data.get('total_posts', len(all_posts))
+            }
     else:
+        # Fallback
         all_posts = master_data.get('posts', master_data.get('data', []))
         scraping_session = master_data.get('scraping_session', {})
     
@@ -83,8 +99,8 @@ def generate_posts_api():
         
         api_data["posts"].append(clean_post)
     
-    # Sort posts by creation date (newest first)
-    api_data["posts"].sort(key=lambda x: x.get('created_at', ''), reverse=True)
+    # Sort posts by creation date (newest first), handle None values
+    api_data["posts"].sort(key=lambda x: x.get('created_at') or '1900-01-01', reverse=True)
     
     # Save clean posts.json
     output_file = 'static_api/posts.json'
@@ -136,8 +152,56 @@ def clean_old_api_files():
     else:
         print("No redundant files to remove")
 
+def restore_master_file_format():
+    """Restore the proper scraper format to the master file if it got corrupted"""
+    master_file = 'data/kuensel_posts_master.json'
+    
+    if not os.path.exists(master_file):
+        print("Master file not found, nothing to restore")
+        return
+    
+    try:
+        with open(master_file, 'r') as f:
+            data = json.load(f)
+        
+        # Check if it's in API format (needs restoration)
+        if "success" in data and "filter_applied" in data:
+            print("Restoring master file from API format to scraper format...")
+            
+            # Convert back to scraper format
+            scraper_format = {
+                "scraping_session": {
+                    "timestamp": data.get('last_updated', datetime.now().isoformat()),
+                    "total_posts": data.get('total_posts', len(data.get('posts', []))),
+                    "status": "restored_from_api_format"
+                },
+                "posts": data.get('posts', [])
+            }
+            
+            # Backup the API format file
+            backup_file = f"{master_file}.api_format_backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+            os.rename(master_file, backup_file)
+            print(f"API format backed up to: {backup_file}")
+            
+            # Save in proper scraper format
+            with open(master_file, 'w', encoding='utf-8') as f:
+                json.dump(scraper_format, f, indent=2, ensure_ascii=False)
+            
+            print(f"Master file restored to scraper format with {len(scraper_format['posts'])} posts")
+            return True
+            
+    except Exception as e:
+        print(f"Error restoring master file: {e}")
+        return False
+    
+    return False
+
 if __name__ == "__main__":
     print("Generating simplified static API (images only)...")
+    
+    # First, try to restore master file format if needed
+    restore_master_file_format()
+    
     generate_posts_api()
     clean_old_api_files()
     print("API generation completed!")
