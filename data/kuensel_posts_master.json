@@ -1,9 +1,9 @@
 {
   "scraping_session": {
-    "timestamp": "2025-08-22T10:05:25.407795",
-    "total_posts": 35,
-    "new_posts_this_session": 12,
-    "existing_posts": 23,
+    "timestamp": "2025-08-22T06:36:22.506272",
+    "total_posts": 36,
+    "new_posts_this_session": 1,
+    "existing_posts": 35,
     "status": "completed"
   },
   "posts": [
@@ -200,6 +200,28 @@
       },
       "createdAt": "2025-08-22T10:03:24.583095",
       "publishAt": "2025-08-22T10:03:24.583096"
+    },
+    {
+      "id": "e3a7451c49072a27",
+      "title": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkha...",
+      "description": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkhags in 2024–25 fiscal year YK Poudel Trashigang—Thirty-six-year-old Tenzin Wangda from Lungtenzampa, Trashigang, has invested Nu 850,000 that he secured from the Economic Stimulus Plan in upscaling his Samzang Gongphel Poultry Farm, located just below the highway. https://kuenselonline.com/.../funding-spurs-growth-of... #poultry #farms #Trashigang #Bhutan",
+      "content": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkhags in 2024–25 fiscal year YK Poudel Trashigang—Thirty-six-year-old Tenzin Wangda from Lungtenzampa, Trashigang, has invested Nu 850,000 that he secured from the Economic Stimulus Plan in upscaling his Samzang Gongphel Poultry Farm, located just below the highway. https://kuenselonline.com/.../funding-spurs-growth-of... #poultry #farms #Trashigang #Bhutan",
+      "categoryID": "culture",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/536274822_1175856221244413_8960662731779002258_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V4ppOvxl7rkQ7kNvwHdm6Ll&_nc_oc=AdmwnZvSWfvsma__0DLJWtvUSikluctIvKPQ09a1iJkug-YR1ux13B8rE63ZxQBLSZk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfWB8ZATJTSZdNhjrkr4riJK9cqo_hSa2CuK4zOdUzuJRw&oe=68ADD149",
+          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/537644399_1175856224577746_5348400194743205006_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wc93Cy5eU9cQ7kNvwGYV032&_nc_oc=AdkTXmLwo0O2SnUre_X3rJZaizskTg0KCRc9woFQMDMvzQOAoGaw9_i6Q5wTRIqPXQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfVM0fMdRZb8zqUMo3t94ItV1Vy629BU-6EhLjmsaLv5Qg&oe=68ADC896"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175886304574738&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175886301241405&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b1H-R"
+        ]
+      },
+      "createdAt": "2025-08-22T06:34:53.833212",
+      "publishAt": "2025-08-22T06:34:53.833219"
     },
     {
       "id": "79a0e6602bd312d5",
