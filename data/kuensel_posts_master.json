@@ -1,140 +1,81 @@
 {
   "scraping_session": {
-    "timestamp": "2025-08-24T06:50:49.255294",
-    "total_posts": 19,
+    "timestamp": "2025-08-25T10:44:36.354617",
+    "total_posts": 20,
     "new_posts_this_session": 1,
-    "existing_posts": 18,
+    "existing_posts": 19,
     "status": "completed"
   },
   "posts": [
     {
-      "id": "6261033761db1fe0",
-      "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",
-      "content": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
-      "category": "news",
+      "id": "e3a7451c49072a27",
+      "title": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkha...",
+      "content": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkhags in 2024–25 fiscal year YK Poudel Trashigang—Thirty-six-year-old Tenzin Wangda from Lungtenzampa, Trashigang, has invested Nu 850,000 that he secured from the Economic Stimulus Plan in upscaling his Samzang Gongphel Poultry Farm, located just below the highway. https://kuenselonline.com/.../funding-spurs-growth-of... #poultry #farms #Trashigang #Bhutan",
+      "category": "culture",
       "author": "Kuensel",
-      "created_at": "2025-08-21T14:20:50.791652",
-      "published_at": "2025-08-21T14:20:50.791663",
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [
-          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/6757268679376797768?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fparoairpot.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&_nc_gid=STOdJ-bLd-ocsbrSP5qphg&_nc_oc=Adn7pKt0phR-MrgmX3vouVhBCreFF4zCYf1l4Bo_dMKTAq7KBZtPoRrhN_GHllcLuqo&ccb=13-1&oh=06_Q3-2AfE1eEDyljWP3Q8RP1P2LB4fcZNoT4wYhO93KK5nHwMx&oe=68A8C7EF&_nc_sid=e17101"
-        ],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 521
-    },
-    {
-      "id": "021f188ad79925cb",
-      "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
-      "content": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan’s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-08-21T13:37:12.558810",
-      "published_at": "2025-08-21T13:37:12.558821",
-      "has_images": true,
-      "image_count": 4,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfVTYwp1IYU6fzskQwy5BcPTfNBxzaZqaaX0_pxKU-Tcng&oe=68AC867E",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfX94mpmVvyVsHaPRA-UTJ2DXtOLEQfZhSsB_PT4KSPUSg&oe=68AC86AC",
-          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=Ciq21074n3ujszgX9bTfPg&oh=00_AfU6I059gyHp6RYWsfTWBNa0sJzv61qGmIYvVDEkQdL8pQ&oe=68AC867E",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=BACWFIIE8DORfbTpmfWA2w&oh=00_AfUM9rNFeKyZ-VAXV1vXdw6jCJz7Vw4IB7u6605TCZKWAw&oe=68AC86AC"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1175076354655733&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1175076357989066&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b1H-R"
-        ]
-      },
-      "content_length": 309
-    },
-    {
-      "id": "0a5366f69ad731e6",
-      "title": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 p...",
-      "content": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry of Health, WHO Bhutan, Dratshang Lhentshog, and Civil Society Organisations. Delivering the keynote address, Health Minister Lyonpo Tandin Wangchuk stressed that  a resilient and equitable health system is not built by health professionals alone, but by a society that is informed, engaged, and empowered.  He emphasized the media s vital role in bridging science and society, countering misinformation, and shaping healthier communities. Bhupinder Kaur Aulakh (PhD), WHO Representative to Bhutan, in her remarks today highlighted the crucial role of media in driving advocacy, awareness, and behavior change in public health. Source: WHO Bhutan #HealthForAll #MediaWorkshop2025 #Bhutan #HealthCommunication #ResilientSystems #PartnershipsForHealth",
-      "category": "news",
-      "author": "Kuensel",
-      "created_at": "2025-08-20T16:46:09.147234",
-      "published_at": "2025-08-20T16:46:09.147244",
-      "has_images": true,
-      "image_count": 6,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537321589_1174339054729463_7265319094305409689_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zWDXJS8ew7kQ7kNvwE5D6UN&_nc_oc=AdmLVhnH2M8SPQMpUoblJqvqmd7YpLGmOA_7IHH-6KLH30B5ZgU8MTvXCNgxK_k9PGM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfVBwsDuOp9KnaxLVzHY0yTGS_A7yKFKUT5Ug8rVgXPzJQ&oe=68AB8C16",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537179528_1174339071396128_2969466411390211218_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=umZVZ5xV9pIQ7kNvwHhTvOl&_nc_oc=AdmAqas4-CrLZd1yFtMry9_a7LSnYfpnCEJ7QJ1aCyWWDSY8_vV1IepRoywphwfb17A&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfUFYWUHkZKN_EUi-odPECwKqfrE2046BC-THmxd5Bm19A&oe=68AB7A28",
-          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/536067425_1174339048062797_322482004691540130_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=edQT4Uy8HqYQ7kNvwF2zLgq&_nc_oc=Adnku17H4AxGbNyW_grIOgW7I7XO_DK1_atRwYk9Ltf1Swt4ec3qeJixbUm2mTGD4iA&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfXEjhbU7rI_60BmdLeZBgkROfgnh4zUwsvnLjRVN1_Ivw&oe=68AB685F",
-          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537321589_1174339054729463_7265319094305409689_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zWDXJS8ew7kQ7kNvwE5D6UN&_nc_oc=AdmLVhnH2M8SPQMpUoblJqvqmd7YpLGmOA_7IHH-6KLH30B5ZgU8MTvXCNgxK_k9PGM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=NO4vnYp1hRVd5dNmByBpHQ&oh=00_AfXdcdyzin-Do_sM1Vq2lDqQ6sThh5E1RQ7XnSGvMxWPeQ&oe=68AB8C16",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537179528_1174339071396128_2969466411390211218_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=umZVZ5xV9pIQ7kNvwHhTvOl&_nc_oc=AdmAqas4-CrLZd1yFtMry9_a7LSnYfpnCEJ7QJ1aCyWWDSY8_vV1IepRoywphwfb17A&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=2dk0kp2oe5VN5zfwxZZo0w&oh=00_AfWxcMPuWzhCqWqg3paFl8JQ17m1IdQl4p-TZIZEJJ503w&oe=68AB7A28",
-          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/536067425_1174339048062797_322482004691540130_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=edQT4Uy8HqYQ7kNvwF2zLgq&_nc_oc=Adnku17H4AxGbNyW_grIOgW7I7XO_DK1_atRwYk9Ltf1Swt4ec3qeJixbUm2mTGD4iA&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=-FEZFrgw4hiNOGIVeT16dw&oh=00_AfWHs-5J8TlE5aASz0oiNdvnaYix9R7WEooYPC4XnbuGqg&oe=68AB685F"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1174337991396236&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1174338061396229&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b1H-R",
-          "https://www.facebook.com/photo/?fbid=1174337984729570&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b2H-R"
-        ]
-      },
-      "content_length": 917
-    },
-    {
-      "id": "7d46daa0e4e1e6eb",
-      "title": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiar...",
-      "content": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiarisation (FAM) trip. They were granted a Sustainable Development Fee (SDF) waiver. https://kuenselonline.com/.../dubai-tour-operators... #Dubai #tourism #SDF #Bhutan #DoT #Bhutan",
-      "category": "news",
-      "author": "Kuensel",
-      "created_at": "2025-08-21T13:55:27.158729",
-      "published_at": "2025-08-21T13:55:27.158739",
+      "created_at": "2025-08-22T06:34:53.833212",
+      "published_at": "2025-08-22T06:34:53.833219",
       "has_images": true,
       "image_count": 2,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=UCYOkJh8j92xK3Sm3ZTTow&oh=00_AfWaGo2NUPbdJkFtby9Ae3F915hrTVKiGOroqwaZ4mm1Rg&oe=68AC9DFA",
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=dlR-brDDiFfF8zWZeIYRpQ&oh=00_AfXzKiuVjaVbKnBeHtvJVAJafXS67Z_UXWsu53Rx6Jz79A&oe=68AC9DFA"
+          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/536274822_1175856221244413_8960662731779002258_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V4ppOvxl7rkQ7kNvwHdm6Ll&_nc_oc=AdmwnZvSWfvsma__0DLJWtvUSikluctIvKPQ09a1iJkug-YR1ux13B8rE63ZxQBLSZk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfWB8ZATJTSZdNhjrkr4riJK9cqo_hSa2CuK4zOdUzuJRw&oe=68ADD149",
+          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/537644399_1175856224577746_5348400194743205006_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wc93Cy5eU9cQ7kNvwGYV032&_nc_oc=AdkTXmLwo0O2SnUre_X3rJZaizskTg0KCRc9woFQMDMvzQOAoGaw9_i6Q5wTRIqPXQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfVM0fMdRZb8zqUMo3t94ItV1Vy629BU-6EhLjmsaLv5Qg&oe=68ADC896"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1175087657987936&set=a.470097558486953&__cft__[0]=AZUqvcJCEV7neCOlYdPCEmtKYpUFDxrKMP4_S5zh2dA8E6chhsETTpwL_rUSn420At0t2HzvV33HzDNgh0OVoAtW0RNXfnZyOSUwi2Nl59w3XHplz4k0AXSJIjmYSH2aFQZN7gAHZie2HPQt6LU_ItCAlChxDYKhQNIeMmDSRX1rC4cXyF-fuclGTYuj_N4__Fo&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1175886304574738&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175886301241405&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b1H-R"
         ]
       },
-      "content_length": 274
+      "content_length": 453
     },
     {
-      "id": "94a2c686168fcc5d",
-      "title": "‘               ’ Our vision is to make Paro FC synonymous with excellence in Bhutanese football",
-      "content": "‘               ’ Our vision is to make Paro FC synonymous with excellence in Bhutanese football. We aspire to be a club that consistently represents Bhutan at the AFC level and competes against some of the best teams in Asia. Beyond football results, we want to create a professionally managed, financially sustainable club with modern infrastructure and strong governance. A key part of this vision is to establish a high-standard academy that nurtures local players into future national stars. At the same time, we aim to build a passionate and loyal fan base, making Paro FC a benchmark for professional football in Bhutan. https://kuenselonline.com/.../our-vision-is-to-show... #sports #ParoFC #football #Bhutan",
-      "category": "news",
+      "id": "b26f9fdaf2b9d974",
+      "title": "’  Dorji Choden A new investment strategy, aimed at achieving Bhutan’s ambitious 10X ...",
+      "content": "’Dorji Choden A new investment strategy, aimed at achieving Bhutan’s ambitious 10X economic aspiration, serves as a core pillar of the Druk Holding and Investment (DHI) Group’s newly launched roadmap. https://kuenselonline.com/.../dhi-groups-10x-roadmap... #DHI #Economy #roadmap #Bhutan",
+      "category": "general",
       "author": "Kuensel",
-      "created_at": "2025-08-21T12:27:43.529166",
-      "published_at": "2025-08-21T12:27:43.529173",
+      "created_at": "2025-08-21T14:03:56.868740",
+      "published_at": "2025-08-21T14:03:56.868747",
       "has_images": true,
-      "image_count": 4,
+      "image_count": 2,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/537869167_1175034017993300_6862710839697049236_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gUwEJAoR0tMQ7kNvwGju24a&_nc_oc=AdkuSPB7oZl2ROdP3aE7DTO8TGz1ReviXFEFwhiVE405IJZ3eYYXA49G0D-lliKG5hE&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=OY7WbvuPH5HZKGm0IxWFfg&oh=00_AfXj2uQaWsXTwpTobmVIU9_hKdTTIkjT4jVkp5p00QDkCw&oe=68AC9BBE",
-          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536275391_1175034197993282_2931272429517491550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cELcT1-zTuAQ7kNvwGcWmQW&_nc_oc=AdkHAJhiALcoCHFUBGob3iGcpcClYmRYegr6BpZwbay7cpZGTw3HYLaq3lE6c01G2vI&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=OY7WbvuPH5HZKGm0IxWFfg&oh=00_AfXKKIXurmzatoXvwcq7kymY_tRWinMDJdt9C5GE5B9KTQ&oe=68AC7A6F",
-          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/537869167_1175034017993300_6862710839697049236_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gUwEJAoR0tMQ7kNvwGju24a&_nc_oc=AdkuSPB7oZl2ROdP3aE7DTO8TGz1ReviXFEFwhiVE405IJZ3eYYXA49G0D-lliKG5hE&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=8DUhGzzhuToiN8BLwOTjjg&oh=00_AfUzPOMA0Hn7IgadBwuCbUVPa_PZdcEeMODcb7i-zG_ZnA&oe=68AC9BBE",
-          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536275391_1175034197993282_2931272429517491550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cELcT1-zTuAQ7kNvwGcWmQW&_nc_oc=AdkHAJhiALcoCHFUBGob3iGcpcClYmRYegr6BpZwbay7cpZGTw3HYLaq3lE6c01G2vI&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=3Ki7HmZYuT9tO8xvXOrApg&oh=00_AfUCwn7uIE8zgvHsIPDkfDK-L7jjI4XsyvmUVM2f_wE6Xw&oe=68AC7A6F"
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535777902_1175039707992731_66961070621326522_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8NIOVgTfIq8Q7kNvwFx5f1j&_nc_oc=AdmUUE5PYw11SkuJMNMJPwAuY3nh09AeZ3dR9AhKr35WWx9UR7boqPg_FbxUeQJIOQY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=d7woAcEaLjALyXtw3dfTHg&oh=00_AfVbqnPo3AC2ynEESpIwwZTDAX5cEviHX3tmHiKVu4aULw&oe=68AC8F81",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535777902_1175039707992731_66961070621326522_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8NIOVgTfIq8Q7kNvwFx5f1j&_nc_oc=AdmUUE5PYw11SkuJMNMJPwAuY3nh09AeZ3dR9AhKr35WWx9UR7boqPg_FbxUeQJIOQY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=bEm_GIK1tTbetX8bXvSFTA&oh=00_AfXQ913WDcNU1KVn1VhtOhdZQviKGlps5-CcdVPibizlkw&oe=68AC8F81"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1175044804658888&set=pcb.1175044854658883&__cft__[0]=AZVk_QRxonQyAMv-z99vS5Dkb4kglEYVS6jRJuUzFaKPZ61SvAl577s9vkj4U_5DdTAEwJVOig6h4ZvMNfeI3_Qfxa8bs0S-JgWmg2gz5X_G2ic1UifhbP-NnQvBhIXbkLjtuSBY2zOaJ3L3xozcCUEBUt1zdgH95WuQmKHh18avX_CDy0M0Jmkh_p7l3jSGSt4&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1175044801325555&set=pcb.1175044854658883&__cft__[0]=AZVk_QRxonQyAMv-z99vS5Dkb4kglEYVS6jRJuUzFaKPZ61SvAl577s9vkj4U_5DdTAEwJVOig6h4ZvMNfeI3_Qfxa8bs0S-JgWmg2gz5X_G2ic1UifhbP-NnQvBhIXbkLjtuSBY2zOaJ3L3xozcCUEBUt1zdgH95WuQmKHh18avX_CDy0M0Jmkh_p7l3jSGSt4&__tn__=*b1H-R"
+          "https://www.facebook.com/photo/?fbid=1175098704653498&set=a.470097558486953&__cft__[0]=AZWbR2vjVoK41qpKiw7PcYJPclx4pt6B2k3aKGlK2YZDI10pqcUPc7zBVwx8VRyNjUiFz-t0ocUmmS0dhKw9BBMjvdeKs2SWsRfWGlX46YVvBV8H2A8khK9kEucIbRUHUnmJdSFadT_-F4s6aeFOaKC-z2uPLuvGVCzErscS45UfqoE3jC6c6-fW3lvUz-imBbk&__tn__=EH-R"
         ]
       },
-      "content_length": 716
+      "content_length": 287
+    },
+    {
+      "id": "fcc88c21bb977700",
+      "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
+      "content": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty–the valleys, the mountains, the wind-tossed prayer flags. What I found was a deeper national treasure: a culture where kindness is instinct, and strangers become friends before you know their names. https://kuenselonline.com/.../bhutans-bold-step-toward... #GMC #GNH #GDP #Bhutan",
+      "category": "event",
+      "author": "Kuensel",
+      "created_at": "2025-08-21T12:45:30.531688",
+      "published_at": "2025-08-21T12:45:30.531697",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": false,
+      "has_links": false,
+      "attachment": {
+        "images": [
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/2029737833369075710?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fgmc-14.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p720x376_q75_tt6&_nc_gid=DeF5iWpO48ZQxeSxtammzg&_nc_oc=Adl_lkcCD_BFTfW1LSyfckk0B0KG2ZD0NfAiZCgoR_wov5KZr5QIHvEdkW2ZHs6fNYc&ccb=13-1&oh=06_Q3-2ASaI5-c88vZkrgOkE2-xrlFYNf-_ZYHKFEmPqu1OUlo5&oe=68A8895F&_nc_sid=e17101"
+        ],
+        "videos": [],
+        "links": []
+      },
+      "content_length": 391
     },
     {
       "id": "0d43a7822ae31923",
@@ -220,74 +161,155 @@
       "content_length": 1544
     },
     {
-      "id": "e3a7451c49072a27",
-      "title": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkha...",
-      "content": "CARLEP extended backyard poultry support to 199 vulnerable households across six eastern dzongkhags in 2024–25 fiscal year YK Poudel Trashigang—Thirty-six-year-old Tenzin Wangda from Lungtenzampa, Trashigang, has invested Nu 850,000 that he secured from the Economic Stimulus Plan in upscaling his Samzang Gongphel Poultry Farm, located just below the highway. https://kuenselonline.com/.../funding-spurs-growth-of... #poultry #farms #Trashigang #Bhutan",
-      "category": "culture",
+      "id": "7d46daa0e4e1e6eb",
+      "title": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiar...",
+      "content": "Dechen Dolkar Tour operators from Dubai, the UAE, explored Bhutan last week as part of a familiarisation (FAM) trip. They were granted a Sustainable Development Fee (SDF) waiver. https://kuenselonline.com/.../dubai-tour-operators... #Dubai #tourism #SDF #Bhutan #DoT #Bhutan",
+      "category": "news",
       "author": "Kuensel",
-      "created_at": "2025-08-22T06:34:53.833212",
-      "published_at": "2025-08-22T06:34:53.833219",
+      "created_at": "2025-08-21T13:55:27.158729",
+      "published_at": "2025-08-21T13:55:27.158739",
       "has_images": true,
       "image_count": 2,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/536274822_1175856221244413_8960662731779002258_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V4ppOvxl7rkQ7kNvwHdm6Ll&_nc_oc=AdmwnZvSWfvsma__0DLJWtvUSikluctIvKPQ09a1iJkug-YR1ux13B8rE63ZxQBLSZk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfWB8ZATJTSZdNhjrkr4riJK9cqo_hSa2CuK4zOdUzuJRw&oe=68ADD149",
-          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/537644399_1175856224577746_5348400194743205006_n.jpg?stp=dst-jpg_p235x350_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wc93Cy5eU9cQ7kNvwGYV032&_nc_oc=AdkTXmLwo0O2SnUre_X3rJZaizskTg0KCRc9woFQMDMvzQOAoGaw9_i6Q5wTRIqPXQg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=SX9dRlTsnnbAPko38yxAKA&oh=00_AfVM0fMdRZb8zqUMo3t94ItV1Vy629BU-6EhLjmsaLv5Qg&oe=68ADC896"
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=UCYOkJh8j92xK3Sm3ZTTow&oh=00_AfWaGo2NUPbdJkFtby9Ae3F915hrTVKiGOroqwaZ4mm1Rg&oe=68AC9DFA",
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/537703656_1175039081326127_4052595546457174129_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LZvZKPTETWgQ7kNvwGoApvb&_nc_oc=AdlERXHExc8mXxrNQJ0j_3FkONsehCjX7vQuOKl501WnR4loUF-6puLWp5T2KgcggSQ&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=dlR-brDDiFfF8zWZeIYRpQ&oh=00_AfXzKiuVjaVbKnBeHtvJVAJafXS67Z_UXWsu53Rx6Jz79A&oe=68AC9DFA"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1175886304574738&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1175886301241405&set=pcb.1175886331241402&__cft__[0]=AZVbZF-OnXbPyidgBsbjW0OrhXfWI-B8GENvODbwGRIhW8HUyhTJ80Uc_5CpyO1NU6RSLsw558rMXHAf1EhIbXuV2xTgPKhi_byacfapwJ05F5C4DBlKIcm2xu9lKxmegVfbCY5klg162ol7oZ5RPi3_3NmpaRVishvpWN1K7T6FKNw8DNUljeRuumMkNGeZ0Ok&__tn__=*b1H-R"
+          "https://www.facebook.com/photo/?fbid=1175087657987936&set=a.470097558486953&__cft__[0]=AZUqvcJCEV7neCOlYdPCEmtKYpUFDxrKMP4_S5zh2dA8E6chhsETTpwL_rUSn420At0t2HzvV33HzDNgh0OVoAtW0RNXfnZyOSUwi2Nl59w3XHplz4k0AXSJIjmYSH2aFQZN7gAHZie2HPQt6LU_ItCAlChxDYKhQNIeMmDSRX1rC4cXyF-fuclGTYuj_N4__Fo&__tn__=EH-R"
         ]
       },
-      "content_length": 453
+      "content_length": 274
     },
     {
-      "id": "b26f9fdaf2b9d974",
-      "title": "’  Dorji Choden A new investment strategy, aimed at achieving Bhutan’s ambitious 10X ...",
-      "content": "’Dorji Choden A new investment strategy, aimed at achieving Bhutan’s ambitious 10X economic aspiration, serves as a core pillar of the Druk Holding and Investment (DHI) Group’s newly launched roadmap. https://kuenselonline.com/.../dhi-groups-10x-roadmap... #DHI #Economy #roadmap #Bhutan",
+      "id": "94a2c686168fcc5d",
+      "title": "‘               ’ Our vision is to make Paro FC synonymous with excellence in Bhutanese football",
+      "content": "‘               ’ Our vision is to make Paro FC synonymous with excellence in Bhutanese football. We aspire to be a club that consistently represents Bhutan at the AFC level and competes against some of the best teams in Asia. Beyond football results, we want to create a professionally managed, financially sustainable club with modern infrastructure and strong governance. A key part of this vision is to establish a high-standard academy that nurtures local players into future national stars. At the same time, we aim to build a passionate and loyal fan base, making Paro FC a benchmark for professional football in Bhutan. https://kuenselonline.com/.../our-vision-is-to-show... #sports #ParoFC #football #Bhutan",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-08-21T12:27:43.529166",
+      "published_at": "2025-08-21T12:27:43.529173",
+      "has_images": true,
+      "image_count": 4,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/537869167_1175034017993300_6862710839697049236_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gUwEJAoR0tMQ7kNvwGju24a&_nc_oc=AdkuSPB7oZl2ROdP3aE7DTO8TGz1ReviXFEFwhiVE405IJZ3eYYXA49G0D-lliKG5hE&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=OY7WbvuPH5HZKGm0IxWFfg&oh=00_AfXj2uQaWsXTwpTobmVIU9_hKdTTIkjT4jVkp5p00QDkCw&oe=68AC9BBE",
+          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536275391_1175034197993282_2931272429517491550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cELcT1-zTuAQ7kNvwGcWmQW&_nc_oc=AdkHAJhiALcoCHFUBGob3iGcpcClYmRYegr6BpZwbay7cpZGTw3HYLaq3lE6c01G2vI&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=OY7WbvuPH5HZKGm0IxWFfg&oh=00_AfXKKIXurmzatoXvwcq7kymY_tRWinMDJdt9C5GE5B9KTQ&oe=68AC7A6F",
+          "https://scontent-sin11-2.xx.fbcdn.net/v/t39.30808-6/537869167_1175034017993300_6862710839697049236_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gUwEJAoR0tMQ7kNvwGju24a&_nc_oc=AdkuSPB7oZl2ROdP3aE7DTO8TGz1ReviXFEFwhiVE405IJZ3eYYXA49G0D-lliKG5hE&_nc_zt=23&_nc_ht=scontent-sin11-2.xx&_nc_gid=8DUhGzzhuToiN8BLwOTjjg&oh=00_AfUzPOMA0Hn7IgadBwuCbUVPa_PZdcEeMODcb7i-zG_ZnA&oe=68AC9BBE",
+          "https://scontent-sin2-2.xx.fbcdn.net/v/t39.30808-6/536275391_1175034197993282_2931272429517491550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cELcT1-zTuAQ7kNvwGcWmQW&_nc_oc=AdkHAJhiALcoCHFUBGob3iGcpcClYmRYegr6BpZwbay7cpZGTw3HYLaq3lE6c01G2vI&_nc_zt=23&_nc_ht=scontent-sin2-2.xx&_nc_gid=3Ki7HmZYuT9tO8xvXOrApg&oh=00_AfUCwn7uIE8zgvHsIPDkfDK-L7jjI4XsyvmUVM2f_wE6Xw&oe=68AC7A6F"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1175044804658888&set=pcb.1175044854658883&__cft__[0]=AZVk_QRxonQyAMv-z99vS5Dkb4kglEYVS6jRJuUzFaKPZ61SvAl577s9vkj4U_5DdTAEwJVOig6h4ZvMNfeI3_Qfxa8bs0S-JgWmg2gz5X_G2ic1UifhbP-NnQvBhIXbkLjtuSBY2zOaJ3L3xozcCUEBUt1zdgH95WuQmKHh18avX_CDy0M0Jmkh_p7l3jSGSt4&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175044801325555&set=pcb.1175044854658883&__cft__[0]=AZVk_QRxonQyAMv-z99vS5Dkb4kglEYVS6jRJuUzFaKPZ61SvAl577s9vkj4U_5DdTAEwJVOig6h4ZvMNfeI3_Qfxa8bs0S-JgWmg2gz5X_G2ic1UifhbP-NnQvBhIXbkLjtuSBY2zOaJ3L3xozcCUEBUt1zdgH95WuQmKHh18avX_CDy0M0Jmkh_p7l3jSGSt4&__tn__=*b1H-R"
+        ]
+      },
+      "content_length": 716
+    },
+    {
+      "id": "021f188ad79925cb",
+      "title": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Informatio...",
+      "content": "Neten Dorji Bhutan Insurance Limited (BIL), in partnership with Gyalpozhing College of Information Technology (GCIT), has launched a FinTech Innovation Lab to support Bhutan’s digital transformation. https://kuenselonline.com/.../bil-and-gcit-launch-fintech... #BIL #GCIT #FinTech #innovation #Digital #Bhutan",
       "category": "general",
       "author": "Kuensel",
-      "created_at": "2025-08-21T14:03:56.868740",
-      "published_at": "2025-08-21T14:03:56.868747",
+      "created_at": "2025-08-21T13:37:12.558810",
+      "published_at": "2025-08-21T13:37:12.558821",
       "has_images": true,
-      "image_count": 2,
+      "image_count": 4,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535777902_1175039707992731_66961070621326522_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8NIOVgTfIq8Q7kNvwFx5f1j&_nc_oc=AdmUUE5PYw11SkuJMNMJPwAuY3nh09AeZ3dR9AhKr35WWx9UR7boqPg_FbxUeQJIOQY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=d7woAcEaLjALyXtw3dfTHg&oh=00_AfVbqnPo3AC2ynEESpIwwZTDAX5cEviHX3tmHiKVu4aULw&oe=68AC8F81",
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/535777902_1175039707992731_66961070621326522_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8NIOVgTfIq8Q7kNvwFx5f1j&_nc_oc=AdmUUE5PYw11SkuJMNMJPwAuY3nh09AeZ3dR9AhKr35WWx9UR7boqPg_FbxUeQJIOQY&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=bEm_GIK1tTbetX8bXvSFTA&oh=00_AfXQ913WDcNU1KVn1VhtOhdZQviKGlps5-CcdVPibizlkw&oe=68AC8F81"
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfVTYwp1IYU6fzskQwy5BcPTfNBxzaZqaaX0_pxKU-Tcng&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=_0-bOK1RDnhZSi_sYX-wtQ&oh=00_AfX94mpmVvyVsHaPRA-UTJ2DXtOLEQfZhSsB_PT4KSPUSg&oe=68AC86AC",
+          "https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/535665150_1175038107992891_8570508356030022551_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LFvqkMvMJJcQ7kNvwFYwn9m&_nc_oc=AdlzOUOS-XnZTHMA-CwL_2XGN3jKRSvyDItr6LtG-w-CjoJaUEM24vXDUDFacFMBIL0&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=Ciq21074n3ujszgX9bTfPg&oh=00_AfU6I059gyHp6RYWsfTWBNa0sJzv61qGmIYvVDEkQdL8pQ&oe=68AC867E",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/536275695_1175038104659558_3120378055176654908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=d7pZAMbrRhwQ7kNvwFAgq1B&_nc_oc=AdkWGUo4ON98E9QawTbWk-9YRIl3JQfPW_o4qDQNLwx5AjNYpDjs3ntYZLUEy1A6bsQ&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=BACWFIIE8DORfbTpmfWA2w&oh=00_AfUM9rNFeKyZ-VAXV1vXdw6jCJz7Vw4IB7u6605TCZKWAw&oe=68AC86AC"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1175098704653498&set=a.470097558486953&__cft__[0]=AZWbR2vjVoK41qpKiw7PcYJPclx4pt6B2k3aKGlK2YZDI10pqcUPc7zBVwx8VRyNjUiFz-t0ocUmmS0dhKw9BBMjvdeKs2SWsRfWGlX46YVvBV8H2A8khK9kEucIbRUHUnmJdSFadT_-F4s6aeFOaKC-z2uPLuvGVCzErscS45UfqoE3jC6c6-fW3lvUz-imBbk&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1175076354655733&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1175076357989066&set=pcb.1175076387989063&__cft__[0]=AZXm3o_ZSK9hNbikHKyg86COS4Cnh07_VMhcvwpLZ-4hiUnqH75ASi1kvhQBzrfgdUpQvQCYTdfN6RAnUpTYyaqMS2OFo25y-nhKgkrAnJJo-PNZKnFOe9tQKq77cgGUaaYMaeWimYlyipYwyW13zMh21oOQ0OrgxqQefGlZWksorS1bZgbr9eEfS0Tth7Xm5gg&__tn__=*b1H-R"
         ]
       },
-      "content_length": 287
+      "content_length": 309
     },
     {
-      "id": "fcc88c21bb977700",
-      "title": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting p...",
-      "content": "Perspective: ’       I arrived in Bhutan for the 2025 Bhutan Echoes literary festival expecting postcard beauty–the valleys, the mountains, the wind-tossed prayer flags. What I found was a deeper national treasure: a culture where kindness is instinct, and strangers become friends before you know their names. https://kuenselonline.com/.../bhutans-bold-step-toward... #GMC #GNH #GDP #Bhutan",
-      "category": "event",
+      "id": "0a5366f69ad731e6",
+      "title": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 p...",
+      "content": "Update: The three-day Annual Media Workshop 2025 began today in Paro, bringing together over 37 participants, including media professionals, officials from the Ministry of Health, WHO Bhutan, Dratshang Lhentshog, and Civil Society Organisations. Delivering the keynote address, Health Minister Lyonpo Tandin Wangchuk stressed that  a resilient and equitable health system is not built by health professionals alone, but by a society that is informed, engaged, and empowered.  He emphasized the media s vital role in bridging science and society, countering misinformation, and shaping healthier communities. Bhupinder Kaur Aulakh (PhD), WHO Representative to Bhutan, in her remarks today highlighted the crucial role of media in driving advocacy, awareness, and behavior change in public health. Source: WHO Bhutan #HealthForAll #MediaWorkshop2025 #Bhutan #HealthCommunication #ResilientSystems #PartnershipsForHealth",
+      "category": "news",
       "author": "Kuensel",
-      "created_at": "2025-08-21T12:45:30.531688",
-      "published_at": "2025-08-21T12:45:30.531697",
+      "created_at": "2025-08-20T16:46:09.147234",
+      "published_at": "2025-08-20T16:46:09.147244",
+      "has_images": true,
+      "image_count": 6,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537321589_1174339054729463_7265319094305409689_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zWDXJS8ew7kQ7kNvwE5D6UN&_nc_oc=AdmLVhnH2M8SPQMpUoblJqvqmd7YpLGmOA_7IHH-6KLH30B5ZgU8MTvXCNgxK_k9PGM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfVBwsDuOp9KnaxLVzHY0yTGS_A7yKFKUT5Ug8rVgXPzJQ&oe=68AB8C16",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537179528_1174339071396128_2969466411390211218_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=umZVZ5xV9pIQ7kNvwHhTvOl&_nc_oc=AdmAqas4-CrLZd1yFtMry9_a7LSnYfpnCEJ7QJ1aCyWWDSY8_vV1IepRoywphwfb17A&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfUFYWUHkZKN_EUi-odPECwKqfrE2046BC-THmxd5Bm19A&oe=68AB7A28",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/536067425_1174339048062797_322482004691540130_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=edQT4Uy8HqYQ7kNvwF2zLgq&_nc_oc=Adnku17H4AxGbNyW_grIOgW7I7XO_DK1_atRwYk9Ltf1Swt4ec3qeJixbUm2mTGD4iA&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=mTQIx2_kUie1WvHH3Wcm3Q&oh=00_AfXEjhbU7rI_60BmdLeZBgkROfgnh4zUwsvnLjRVN1_Ivw&oe=68AB685F",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/537321589_1174339054729463_7265319094305409689_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zWDXJS8ew7kQ7kNvwE5D6UN&_nc_oc=AdmLVhnH2M8SPQMpUoblJqvqmd7YpLGmOA_7IHH-6KLH30B5ZgU8MTvXCNgxK_k9PGM&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=NO4vnYp1hRVd5dNmByBpHQ&oh=00_AfXdcdyzin-Do_sM1Vq2lDqQ6sThh5E1RQ7XnSGvMxWPeQ&oe=68AB8C16",
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/537179528_1174339071396128_2969466411390211218_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=umZVZ5xV9pIQ7kNvwHhTvOl&_nc_oc=AdmAqas4-CrLZd1yFtMry9_a7LSnYfpnCEJ7QJ1aCyWWDSY8_vV1IepRoywphwfb17A&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=2dk0kp2oe5VN5zfwxZZo0w&oh=00_AfWxcMPuWzhCqWqg3paFl8JQ17m1IdQl4p-TZIZEJJ503w&oe=68AB7A28",
+          "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/536067425_1174339048062797_322482004691540130_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=edQT4Uy8HqYQ7kNvwF2zLgq&_nc_oc=Adnku17H4AxGbNyW_grIOgW7I7XO_DK1_atRwYk9Ltf1Swt4ec3qeJixbUm2mTGD4iA&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_gid=-FEZFrgw4hiNOGIVeT16dw&oh=00_AfWHs-5J8TlE5aASz0oiNdvnaYix9R7WEooYPC4XnbuGqg&oe=68AB685F"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1174337991396236&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1174338061396229&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b1H-R",
+          "https://www.facebook.com/photo/?fbid=1174337984729570&set=pcb.1174338991396136&__cft__[0]=AZUoyjYeGpl5WrwnGq2pHSFwPQMEB9yTIpZ2lWw6rtMy7AXF06AQBllf50ot6jKgS6NdLXBj_jiOSTPKTeuxgLzl8PT8an2Zl4mh3SMJl6EJ-PmR2IInDM8LhDEkS5oV7IQUy8gUTlXfsbhIfjOYkjjtyyOCiETksXQ9STNJSriz7tnyak_2xQNCf6o6hoSb3Xk&__tn__=*b2H-R"
+        ]
+      },
+      "content_length": 917
+    },
+    {
+      "id": "6261033761db1fe0",
+      "title": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airline...",
+      "content": "A total of 6,203 tourists benefitted from subsidised fares during the period Sherab Lhamo Airlines have been instructed to discontinue the subsidised airfare scheme for tourists, following a directive issued by the Department of Tourism (DoT) in August. The order, according to Drukair CEO Tandi Wangchuk, came from the Ministry of Finance. He said that the DoT is working to reimburse airlines for tickets already sold under the scheme. https://kuenselonline.com/.../government-discontinues... #DoT #Tourism #TCB #Bhutan",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-08-21T14:20:50.791652",
+      "published_at": "2025-08-21T14:20:50.791663",
       "has_images": true,
       "image_count": 1,
       "has_videos": false,
       "has_links": false,
       "attachment": {
         "images": [
-          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/2029737833369075710?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fgmc-14.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p720x376_q75_tt6&_nc_gid=DeF5iWpO48ZQxeSxtammzg&_nc_oc=Adl_lkcCD_BFTfW1LSyfckk0B0KG2ZD0NfAiZCgoR_wov5KZr5QIHvEdkW2ZHs6fNYc&ccb=13-1&oh=06_Q3-2ASaI5-c88vZkrgOkE2-xrlFYNf-_ZYHKFEmPqu1OUlo5&oe=68A8895F&_nc_sid=e17101"
+          "https://external-sin6-3.xx.fbcdn.net/emg1/v/t13/6757268679376797768?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcis.kuenselonline%2Fparoairpot.jpg&fb_obo=1&utld=amazonaws.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1000x522_q75_tt6&_nc_gid=STOdJ-bLd-ocsbrSP5qphg&_nc_oc=Adn7pKt0phR-MrgmX3vouVhBCreFF4zCYf1l4Bo_dMKTAq7KBZtPoRrhN_GHllcLuqo&ccb=13-1&oh=06_Q3-2AfE1eEDyljWP3Q8RP1P2LB4fcZNoT4wYhO93KK5nHwMx&oe=68A8C7EF&_nc_sid=e17101"
         ],
         "videos": [],
         "links": []
       },
-      "content_length": 391
+      "content_length": 521
+    },
+    {
+      "id": "2418cef3e042e711",
+      "title": "Yangyel Lhaden On a serene Saturday morning, a few metres below Dochula Pass, the greenery of Lam...",
+      "description": "Yangyel Lhaden On a serene Saturday morning, a few metres below Dochula Pass, the greenery of Lampelri Recreational Park(LRP) came alive with the laughter of students and the voices of leaders, educators, and conservationists. https://kuenselonline.com/.../lampelri-recreational-park... #Lampelri #recreational #park #climate #education #Bhutan",
+      "content": "Yangyel Lhaden On a serene Saturday morning, a few metres below Dochula Pass, the greenery of Lampelri Recreational Park(LRP) came alive with the laughter of students and the voices of leaders, educators, and conservationists. https://kuenselonline.com/.../lampelri-recreational-park... #Lampelri #recreational #park #climate #education #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/539602032_1178505757646126_8836945781503881400_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FdY4ZR60HUEQ7kNvwFSkn-K&_nc_oc=Adnh9hrDxu03oxPpe3b7jxUhrgzrh918BCKy2ru4UI1Fp5ou-Hjf4xlvbq-iNLGorHk&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=PCmBHA2LeK7NhtyXJPfXwA&oh=00_AfWBSJtbQvI_A4wJeBFxFhANOSjPRHehhUaUNwtxt36YGg&oe=68B22BDD",
+          "https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/538945802_1178505760979459_1206297463960671162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=S7GDOrXVL2QQ7kNvwF48lf3&_nc_oc=Admc-vpcidhC17SuCeXW4qe0JaokZhcj-k_K6yXY1C0ugqou00Au808izVDsODOUmVU&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=PCmBHA2LeK7NhtyXJPfXwA&oh=00_AfVY4KvUjiFmlLDQvDvDmtY5GS0rd6382GFRl94lAIClCA&oe=68B21562"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1178594390970596&set=pcb.1178594414303927&__cft__[0]=AZUfkMbAFEGggjpw5iNn8bNT3uv7_8yVRhrRbTpGtyUBETVMmZpGSowQhZGbW9zZDK-Q9PdMFFv850xfb5Pv86BeAs0LGvHhxf7iw29XS5mx5SkIVf7EmevLHgqaApcMwtohn_U_i7OYSIBSc7YhTkdK9oIKxKJBiYhW6I42zw5o6NML9evltxeGAwoPZt0vFpo&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1178594387637263&set=pcb.1178594414303927&__cft__[0]=AZUfkMbAFEGggjpw5iNn8bNT3uv7_8yVRhrRbTpGtyUBETVMmZpGSowQhZGbW9zZDK-Q9PdMFFv850xfb5Pv86BeAs0LGvHhxf7iw29XS5mx5SkIVf7EmevLHgqaApcMwtohn_U_i7OYSIBSc7YhTkdK9oIKxKJBiYhW6I42zw5o6NML9evltxeGAwoPZt0vFpo&__tn__=*b1H-R"
+        ]
+      },
+      "createdAt": "2025-08-25T10:43:07.667624",
+      "publishAt": "2025-08-25T10:43:07.667631"
     },
     {
       "id": "ee655ee3dcd4edf9",
