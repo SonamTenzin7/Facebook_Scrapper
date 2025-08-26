@@ -1,4 +1,4 @@
-name: Facebook Scraper - Cloud Automation
+name: Facebook Scraper - Automation
 
 on:
   schedule:
