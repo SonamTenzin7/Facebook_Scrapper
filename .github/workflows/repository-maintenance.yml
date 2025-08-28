@@ -210,17 +210,17 @@ jobs:
         TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
         REPORT_FILE="maintenance_report_$(date +%Y%m%d).md"
         
-        cat > $REPORT_FILE << EOF
+        cat > "$REPORT_FILE" << 'EOF'
 # 🔧 Repository Maintenance Report
         
-**Date:** $TIMESTAMP  
-**Triggered by:** ${{ github.actor }}  
-**Maintenance type:** ${{ github.event.inputs.maintenance_type || 'scheduled_full' }}  
-**Repository:** ${{ github.repository }}
+**Date:** TIMESTAMP_PLACEHOLDER
+**Triggered by:** ACTOR_PLACEHOLDER
+**Maintenance type:** MAINTENANCE_TYPE_PLACEHOLDER
+**Repository:** REPOSITORY_PLACEHOLDER
         
 ## 📊 Statistics
-- **Repository size:** $REPO_SIZE
-- **Workflow runs:** $WORKFLOW_COUNT
+- **Repository size:** REPO_SIZE_PLACEHOLDER
+- **Workflow runs:** WORKFLOW_COUNT_PLACEHOLDER
 - **Maintenance status:** ✅ Completed successfully
         
 ## 🧹 Actions Performed
@@ -231,11 +231,29 @@ jobs:
 - ✅ Repository health check
         
 ## 📈 Health Score
-$([ $WORKFLOW_COUNT -lt 100 ] && echo "🟢 Excellent" || [ $WORKFLOW_COUNT -lt 200 ] && echo "🟡 Good" || echo "🔴 Needs attention")
+HEALTH_SCORE_PLACEHOLDER
         
 ---
 *Automated maintenance by GitHub Actions*
 EOF
+        
+        # Replace placeholders with actual values
+        sed -i "s/TIMESTAMP_PLACEHOLDER/$TIMESTAMP/g" "$REPORT_FILE"
+        sed -i "s/ACTOR_PLACEHOLDER/${{ github.actor }}/g" "$REPORT_FILE"
+        sed -i "s/MAINTENANCE_TYPE_PLACEHOLDER/${{ github.event.inputs.maintenance_type || 'scheduled_full' }}/g" "$REPORT_FILE"
+        sed -i "s/REPOSITORY_PLACEHOLDER/${{ github.repository }}/g" "$REPORT_FILE"
+        sed -i "s/REPO_SIZE_PLACEHOLDER/$REPO_SIZE/g" "$REPORT_FILE"
+        sed -i "s/WORKFLOW_COUNT_PLACEHOLDER/$WORKFLOW_COUNT/g" "$REPORT_FILE"
+        
+        # Set health score
+        if [ "$WORKFLOW_COUNT" -lt 100 ]; then
+          HEALTH_SCORE="🟢 Excellent"
+        elif [ "$WORKFLOW_COUNT" -lt 200 ]; then
+          HEALTH_SCORE="🟡 Good"
+        else
+          HEALTH_SCORE="🔴 Needs attention"
+        fi
+        sed -i "s/HEALTH_SCORE_PLACEHOLDER/$HEALTH_SCORE/g" "$REPORT_FILE"
         
         echo "📋 Maintenance report generated: $REPORT_FILE"
         
