@@ -23,18 +23,23 @@ class NotificationSystem:
                 "smtp_port": 587,
                 "sender_email": "",
                 "sender_password": "",
-                "recipient_email": "",
-                "app_password": ""
+                "recipient_emails": []
             },
-            "webhook": {
+            "discord": {
                 "enabled": False,
-                "url": "",
-                "discord_webhook": "",
-                "slack_webhook": ""
+                "webhook_url": ""
             }
         }
         
-        config_file = "../config/notification_config.json"
+        # Get the directory where this script is located
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        # Go up one level and then to config directory
+        config_file = os.path.join(os.path.dirname(script_dir), "config", "notification_config.json")
+        
+        # Ensure config directory exists
+        config_dir = os.path.dirname(config_file)
+        os.makedirs(config_dir, exist_ok=True)
+        
         if os.path.exists(config_file):
             try:
                 with open(config_file, 'r') as f:
@@ -44,13 +49,14 @@ class NotificationSystem:
                 print(f"⚠️  Failed to load notification config: {e}")
         
         # Create default config file
-        with open(config_file, 'w') as f:
-            json.dump(default_config, f, indent=2)
-        
-        print(f"📝 Created default notification config: {config_file}")
-        print("💡 Edit the config file to enable notifications")
-        
-        return default_config
+        try:
+            with open(config_file, 'w') as f:
+                json.dump(default_config, f, indent=2)
+            print(f"📝 Created default notification config: {config_file}")
+        except Exception as e:
+            print(f"⚠️  Failed to create notification config: {e}")
+            # Return default config if we can't create the file
+            return default_config
     
     def send_email_notification(self, subject, message):
         """Send email notification"""

@@ -13,6 +13,19 @@ import requests
 from urllib.parse import urljoin, urlparse
 from notification_system import NotificationSystem
 
+def get_project_root():
+    """Get the root directory of the project"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.dirname(current_dir)
+
+def get_data_path(filename):
+    """Get absolute path for data files"""
+    return os.path.join(get_project_root(), "data", filename)
+
+def get_config_path(filename):
+    """Get absolute path for config files"""
+    return os.path.join(get_project_root(), "config", filename)
+
 def get_adaptive_wait_time(current_time, last_run_time=None):
     """
     Calculate adaptive wait time based on:
@@ -59,7 +72,10 @@ def get_adaptive_wait_time(current_time, last_run_time=None):
     return base_wait
 
 class FacebookScraper:
-    def __init__(self, config_file="../config/config.json"):
+    def __init__(self, config_file=None):
+        if config_file is None:
+            config_file = get_config_path("config.json")
+        
         self.config = self.load_config(config_file)
         self.driver = None
         self.posts_data = []
@@ -1498,7 +1514,7 @@ class FacebookScraper:
 
     def load_existing_posts(self):
         """Load existing post IDs from master file to avoid re-scraping"""
-        consolidated_file = "data/kuensel_posts_master.json"
+        consolidated_file = get_data_path("kuensel_posts_master.json")
         self.existing_post_ids = set()
         
         if os.path.exists(consolidated_file):
