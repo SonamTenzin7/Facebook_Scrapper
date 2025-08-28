@@ -238,12 +238,14 @@ HEALTH_SCORE_PLACEHOLDER
 EOF
         
         # Replace placeholders with actual values
-        sed -i "s/TIMESTAMP_PLACEHOLDER/$TIMESTAMP/g" "$REPORT_FILE"
-        sed -i "s/ACTOR_PLACEHOLDER/${{ github.actor }}/g" "$REPORT_FILE"
-        sed -i "s/MAINTENANCE_TYPE_PLACEHOLDER/${{ github.event.inputs.maintenance_type || 'scheduled_full' }}/g" "$REPORT_FILE"
-        sed -i "s/REPOSITORY_PLACEHOLDER/${{ github.repository }}/g" "$REPORT_FILE"
-        sed -i "s/REPO_SIZE_PLACEHOLDER/$REPO_SIZE/g" "$REPORT_FILE"
-        sed -i "s/WORKFLOW_COUNT_PLACEHOLDER/$WORKFLOW_COUNT/g" "$REPORT_FILE"
+        sed -i "s|TIMESTAMP_PLACEHOLDER|$TIMESTAMP|g" "$REPORT_FILE"
+        sed -i "s|ACTOR_PLACEHOLDER|${{ github.actor }}|g" "$REPORT_FILE"
+        MAINTENANCE_TYPE="${{ github.event.inputs.maintenance_type || 'scheduled_full' }}"
+        sed -i "s|MAINTENANCE_TYPE_PLACEHOLDER|$MAINTENANCE_TYPE|g" "$REPORT_FILE"
+        REPOSITORY="${{ github.repository }}"
+        sed -i "s|REPOSITORY_PLACEHOLDER|$REPOSITORY|g" "$REPORT_FILE"
+        sed -i "s|REPO_SIZE_PLACEHOLDER|$REPO_SIZE|g" "$REPORT_FILE"
+        sed -i "s|WORKFLOW_COUNT_PLACEHOLDER|$WORKFLOW_COUNT|g" "$REPORT_FILE"
         
         # Set health score
         if [ "$WORKFLOW_COUNT" -lt 100 ]; then
@@ -253,7 +255,7 @@ EOF
         else
           HEALTH_SCORE="🔴 Needs attention"
         fi
-        sed -i "s/HEALTH_SCORE_PLACEHOLDER/$HEALTH_SCORE/g" "$REPORT_FILE"
+        sed -i "s|HEALTH_SCORE_PLACEHOLDER|$HEALTH_SCORE|g" "$REPORT_FILE"
         
         echo "📋 Maintenance report generated: $REPORT_FILE"
         
