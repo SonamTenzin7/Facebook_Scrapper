@@ -151,43 +151,43 @@ jobs:
           
           # Create a simple Python script for data optimization
           cat > optimize_data.py << 'EOF'
-import json
-import sys
-from collections import OrderedDict
-
-try:
-    with open('data/kuensel_posts_master.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    if isinstance(data, list):
-        # Remove duplicates based on URL
-        seen_urls = set()
-        unique_posts = []
-        
-        for post in data:
-            post_url = post.get('url', '')
-            if post_url and post_url not in seen_urls:
-                seen_urls.add(post_url)
-                unique_posts.append(post)
-            elif not post_url:
-                unique_posts.append(post)  # Keep posts without URL
-        
-        # Sort by timestamp if available
-        unique_posts.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
-        
-        # Keep only last 500 posts to manage size
-        if len(unique_posts) > 500:
-            unique_posts = unique_posts[:500]
-            
-        with open('data/kuensel_posts_master.json', 'w', encoding='utf-8') as f:
-            json.dump(unique_posts, f, ensure_ascii=False, separators=(',', ':'))
-            
-        print(f'Optimized: {len(data)} -> {len(unique_posts)} posts')
-        
-except Exception as e:
-    print(f'Data optimization failed: {e}')
-    sys.exit(0)  # Don't fail the workflow
-EOF
+          import json
+          import sys
+          from collections import OrderedDict
+          
+          try:
+              with open('data/kuensel_posts_master.json', 'r', encoding='utf-8') as f:
+                  data = json.load(f)
+              
+              if isinstance(data, list):
+                  # Remove duplicates based on URL
+                  seen_urls = set()
+                  unique_posts = []
+                  
+                  for post in data:
+                      post_url = post.get('url', '')
+                      if post_url and post_url not in seen_urls:
+                          seen_urls.add(post_url)
+                          unique_posts.append(post)
+                      elif not post_url:
+                          unique_posts.append(post)  # Keep posts without URL
+                  
+                  # Sort by timestamp if available
+                  unique_posts.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
+                  
+                  # Keep only last 500 posts to manage size
+                  if len(unique_posts) > 500:
+                      unique_posts = unique_posts[:500]
+                      
+                  with open('data/kuensel_posts_master.json', 'w', encoding='utf-8') as f:
+                      json.dump(unique_posts, f, ensure_ascii=False, separators=(',', ':'))
+                      
+                  print(f'Optimized: {len(data)} -> {len(unique_posts)} posts')
+                  
+          except Exception as e:
+              print(f'Data optimization failed: {e}')
+              sys.exit(0)  # Don't fail the workflow
+          EOF
           
           python3 optimize_data.py
           rm optimize_data.py
