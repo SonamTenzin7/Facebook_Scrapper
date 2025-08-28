@@ -39,10 +39,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
+      - name: Prepare deployment structure
+        run: |
+          mkdir -p _site
+          cp web/* _site/
+          cp -r static_api _site/
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './_site'
           
       - name: Deploy to GitHub Pages
         id: deployment
