@@ -50,7 +50,7 @@ class SmartScheduler:
             }
         }
         
-        config_file = "scheduler_config.json"
+        config_file = "../config/scheduler_config.json"
         if os.path.exists(config_file):
             try:
                 with open(config_file, 'r') as f:

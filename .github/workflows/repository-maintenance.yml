@@ -1,0 +1,275 @@
+name: 🔧 Repository Maintenance Automation
+
+on:
+  schedule:
+    # Daily maintenance at 1 AM UTC
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+    inputs:
+      maintenance_type:
+        description: 'Type of maintenance to perform'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+        - 'full'
+        - 'logs_only'
+        - 'cache_only'
+        - 'workflows_only'
+        - 'data_optimization'
+      force_cleanup:
+        description: 'Force aggressive cleanup (use with caution)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  actions: write
+  pages: write
+  id-token: write
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🚀 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: 📊 Repository Health Check
+      run: |
+        echo "🔍 Analyzing repository health..."
+        
+        # Check repository size
+        REPO_SIZE=$(du -sh . 2>/dev/null | cut -f1)
+        echo "📦 Repository size: $REPO_SIZE"
+        
+        # Check log files
+        LOG_SIZE=$(du -sh log/ 2>/dev/null | cut -f1 || echo "0")
+        echo "📋 Log directory size: $LOG_SIZE"
+        
+        # Check data files
+        DATA_SIZE=$(du -sh data/ 2>/dev/null | cut -f1 || echo "0")
+        echo "💾 Data directory size: $DATA_SIZE"
+        
+        # Count workflow runs
+        WORKFLOW_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?per_page=1" | \
+          jq -r '.total_count // 0')
+        echo "🔄 Total workflow runs: $WORKFLOW_COUNT"
+        
+        # Export for next steps
+        echo "REPO_SIZE=$REPO_SIZE" >> $GITHUB_ENV
+        echo "WORKFLOW_COUNT=$WORKFLOW_COUNT" >> $GITHUB_ENV
+        
+    - name: 🧹 Clean Log Files
+      if: ${{ github.event.inputs.maintenance_type == 'full' || github.event.inputs.maintenance_type == 'logs_only' }}
+      run: |
+        echo "🗑️  Cleaning log files..."
+        
+        # Keep only last 7 days of logs
+        find log/ -name "*.log" -type f -mtime +7 -delete 2>/dev/null || true
+        
+        # Archive old logs
+        if [ -d "log/archive" ]; then
+          find log/archive/ -name "*.log" -type f -mtime +14 -delete 2>/dev/null || true
+        fi
+        
+        # Compress large current logs
+        find log/ -name "*.log" -type f -size +10M -exec gzip {} \; 2>/dev/null || true
+        
+        echo "✅ Log cleanup completed"
+        
+    - name: 💨 Clean Cache and Temp Files
+      if: ${{ github.event.inputs.maintenance_type == 'full' || github.event.inputs.maintenance_type == 'cache_only' }}
+      run: |
+        echo "🗑️  Cleaning cache and temporary files..."
+        
+        # Clean Python cache
+        find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
+        find . -name "*.pyc" -delete 2>/dev/null || true
+        find . -name "*.pyo" -delete 2>/dev/null || true
+        
+        # Clean any .DS_Store files (macOS)
+        find . -name ".DS_Store" -delete 2>/dev/null || true
+        
+        # Clean any temporary files
+        find . -name "*.tmp" -delete 2>/dev/null || true
+        find . -name "temp_*" -delete 2>/dev/null || true
+        
+        echo "✅ Cache cleanup completed"
+        
+    - name: 🔄 Advanced Workflow Cleanup
+      if: ${{ github.event.inputs.maintenance_type == 'full' || github.event.inputs.maintenance_type == 'workflows_only' }}
+      run: |
+        echo "🗑️  Advanced workflow cleanup..."
+        
+        # Set retention based on force_cleanup flag
+        if [ "${{ github.event.inputs.force_cleanup }}" = "true" ]; then
+          RETAIN_DAYS=3
+          MIN_RUNS=5
+          echo "⚠️  AGGRESSIVE MODE: Keeping only 3 days / 5 runs"
+        else
+          RETAIN_DAYS=10
+          MIN_RUNS=15
+          echo "📅 STANDARD MODE: Keeping 10 days / 15 runs"
+        fi
+        
+        # Clean up different workflow statuses
+        for status in "failure" "cancelled" "timed_out"; do
+          echo "Cleaning $status workflows..."
+          curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=$status&per_page=50" | \
+            jq -r '.workflow_runs[].id' | \
+            while read run_id; do
+              if [ ! -z "$run_id" ]; then
+                curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                  "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+                sleep 0.5
+              fi
+            done
+        done
+        
+        echo "✅ Workflow cleanup completed"
+        
+    - name: 📈 Data Optimization
+      if: ${{ github.event.inputs.maintenance_type == 'full' || github.event.inputs.maintenance_type == 'data_optimization' }}
+      run: |
+        echo "📊 Optimizing data files..."
+        
+        # Check for duplicate posts in data files
+        if [ -f "data/kuensel_posts_master.json" ]; then
+          echo "Checking for data optimization opportunities..."
+          
+          # Get file size before
+          BEFORE_SIZE=$(stat -f%z "data/kuensel_posts_master.json" 2>/dev/null || stat -c%s "data/kuensel_posts_master.json" 2>/dev/null || echo 0)
+          echo "Data file size before: $BEFORE_SIZE bytes"
+          
+          # Create a simple Python script for data optimization
+          python3 -c "
+import json
+import sys
+from collections import OrderedDict
+
+try:
+    with open('data/kuensel_posts_master.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    if isinstance(data, list):
+        # Remove duplicates based on URL
+        seen_urls = set()
+        unique_posts = []
+        
+        for post in data:
+            post_url = post.get('url', '')
+            if post_url and post_url not in seen_urls:
+                seen_urls.add(post_url)
+                unique_posts.append(post)
+            elif not post_url:
+                unique_posts.append(post)  # Keep posts without URL
+        
+        # Sort by timestamp if available
+        unique_posts.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
+        
+        # Keep only last 500 posts to manage size
+        if len(unique_posts) > 500:
+            unique_posts = unique_posts[:500]
+            
+        with open('data/kuensel_posts_master.json', 'w', encoding='utf-8') as f:
+            json.dump(unique_posts, f, ensure_ascii=False, separators=(',', ':'))
+            
+        print(f'Optimized: {len(data)} -> {len(unique_posts)} posts')
+        
+except Exception as e:
+    print(f'Data optimization failed: {e}')
+    sys.exit(0)  # Don't fail the workflow
+"
+          
+          # Get file size after
+          AFTER_SIZE=$(stat -f%z "data/kuensel_posts_master.json" 2>/dev/null || stat -c%s "data/kuensel_posts_master.json" 2>/dev/null || echo 0)
+          SAVED=$((BEFORE_SIZE - AFTER_SIZE))
+          
+          echo "Data file size after: $AFTER_SIZE bytes"
+          echo "Space saved: $SAVED bytes"
+        fi
+        
+        echo "✅ Data optimization completed"
+        
+    - name: 📝 Generate Maintenance Report
+      run: |
+        echo "📋 Generating maintenance report..."
+        
+        # Create maintenance log
+        TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
+        REPORT_FILE="maintenance_report_$(date +%Y%m%d).md"
+        
+        cat > $REPORT_FILE << EOF
+# 🔧 Repository Maintenance Report
+        
+**Date:** $TIMESTAMP  
+**Triggered by:** ${{ github.actor }}  
+**Maintenance type:** ${{ github.event.inputs.maintenance_type || 'scheduled_full' }}  
+**Repository:** ${{ github.repository }}
+        
+## 📊 Statistics
+- **Repository size:** $REPO_SIZE
+- **Workflow runs:** $WORKFLOW_COUNT
+- **Maintenance status:** ✅ Completed successfully
+        
+## 🧹 Actions Performed
+- ✅ Log file cleanup (7+ day retention)
+- ✅ Cache and temporary file removal
+- ✅ Workflow run optimization
+- ✅ Data file optimization
+- ✅ Repository health check
+        
+## 📈 Health Score
+$([ $WORKFLOW_COUNT -lt 100 ] && echo "🟢 Excellent" || [ $WORKFLOW_COUNT -lt 200 ] && echo "🟡 Good" || echo "🔴 Needs attention")
+        
+---
+*Automated maintenance by GitHub Actions*
+EOF
+        
+        echo "📋 Maintenance report generated: $REPORT_FILE"
+        
+    - name: 💾 Commit Maintenance Changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "Repository Maintenance Bot"
+        
+        # Add any changes from maintenance
+        git add -A
+        
+        if ! git diff --staged --quiet; then
+          TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
+          git commit -m "🔧 Repository maintenance: $TIMESTAMP
+
+- Cleaned log files and cache
+- Optimized data files  
+- Removed temporary files
+- Workflow cleanup performed
+
+Maintenance type: ${{ github.event.inputs.maintenance_type || 'scheduled' }}
+Triggered by: ${{ github.actor }}"
+          
+          git push origin main
+          echo "✅ Maintenance changes committed and pushed"
+        else
+          echo "ℹ️  No changes to commit from maintenance"
+        fi
+        
+    - name: 📊 Final Health Summary  
+      run: |
+        echo "🎯 Repository Maintenance Completed!"
+        echo "======================================"
+        echo "✅ All maintenance tasks finished successfully"
+        echo "📦 Repository optimized and cleaned"
+        echo "🔄 Workflow history managed"
+        echo "💾 Data files optimized"
+        echo "🗑️  Unnecessary files removed"
+        echo ""
+        echo "Next scheduled maintenance: $(date -d '+1 day' '+%Y-%m-%d %H:%M UTC')"

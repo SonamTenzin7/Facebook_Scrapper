@@ -34,7 +34,7 @@ class NotificationSystem:
             }
         }
         
-        config_file = "notification_config.json"
+        config_file = "../config/notification_config.json"
         if os.path.exists(config_file):
             try:
                 with open(config_file, 'r') as f:

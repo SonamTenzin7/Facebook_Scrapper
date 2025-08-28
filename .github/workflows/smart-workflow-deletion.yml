@@ -1,0 +1,273 @@
+name: 🗑️ Smart Workflow Deletion System
+
+on:
+  workflow_dispatch:
+    inputs:
+      deletion_strategy:
+        description: 'Workflow deletion strategy'
+        required: true
+        default: 'smart'
+        type: choice
+        options:
+        - 'smart'           # Intelligent cleanup based on patterns
+        - 'old_only'        # Only delete runs older than X days
+        - 'failed_only'     # Only delete failed runs
+        - 'by_status'       # Delete by specific status
+        - 'by_count'        # Keep only X most recent runs
+        - 'nuclear'         # Delete almost everything (danger!)
+      days_threshold:
+        description: 'Days to keep (for old_only strategy)'
+        required: false
+        default: '14'
+      runs_to_keep:
+        description: 'Number of runs to keep (for by_count strategy)'
+        required: false
+        default: '20'
+      target_status:
+        description: 'Target status (for by_status strategy)'
+        required: false
+        default: 'failure'
+        type: choice
+        options:
+        - 'failure'
+        - 'cancelled'
+        - 'timed_out'
+        - 'success'
+      confirm_deletion:
+        description: '⚠️ CONFIRM: Type "DELETE" to proceed with deletion'
+        required: true
+        type: string
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  validate-input:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.validate.outputs.proceed }}
+    steps:
+    - name: 🔍 Validate deletion confirmation
+      id: validate
+      run: |
+        if [ "${{ github.event.inputs.confirm_deletion }}" != "DELETE" ]; then
+          echo "❌ Deletion not confirmed. You must type 'DELETE' to proceed."
+          echo "proceed=false" >> $GITHUB_OUTPUT
+          exit 1
+        else
+          echo "✅ Deletion confirmed by ${{ github.actor }}"
+          echo "proceed=true" >> $GITHUB_OUTPUT
+        fi
+
+  smart-deletion:
+    needs: validate-input
+    if: needs.validate-input.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🚀 Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: 📊 Analyze current workflows
+      id: analyze
+      run: |
+        echo "🔍 Analyzing workflow runs..."
+        
+        # Get comprehensive workflow data
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?per_page=100" > workflow_data.json
+          
+        TOTAL_RUNS=$(jq -r '.total_count' workflow_data.json)
+        SUCCESS_RUNS=$(jq -r '[.workflow_runs[] | select(.conclusion=="success")] | length' workflow_data.json)
+        FAILED_RUNS=$(jq -r '[.workflow_runs[] | select(.conclusion=="failure")] | length' workflow_data.json)
+        CANCELLED_RUNS=$(jq -r '[.workflow_runs[] | select(.conclusion=="cancelled")] | length' workflow_data.json)
+        
+        echo "📈 Workflow Analysis:"
+        echo "  Total runs: $TOTAL_RUNS"
+        echo "  Successful: $SUCCESS_RUNS"  
+        echo "  Failed: $FAILED_RUNS"
+        echo "  Cancelled: $CANCELLED_RUNS"
+        
+        # Export for use in deletion steps
+        echo "TOTAL_RUNS=$TOTAL_RUNS" >> $GITHUB_ENV
+        echo "SUCCESS_RUNS=$SUCCESS_RUNS" >> $GITHUB_ENV
+        echo "FAILED_RUNS=$FAILED_RUNS" >> $GITHUB_ENV
+        echo "CANCELLED_RUNS=$CANCELLED_RUNS" >> $GITHUB_ENV
+        
+    - name: 🧠 Smart Deletion Strategy
+      if: ${{ github.event.inputs.deletion_strategy == 'smart' }}
+      run: |
+        echo "🧠 Executing smart deletion strategy..."
+        
+        # Smart deletion logic:
+        # 1. Always delete failed runs older than 3 days
+        # 2. Keep last 10 successful runs
+        # 3. Delete duplicate runs (same commit, same status)
+        # 4. Keep runs from last 24 hours regardless
+        
+        echo "Phase 1: Deleting old failed runs..."
+        three_days_ago=$(date -d '3 days ago' -u +%Y-%m-%dT%H:%M:%SZ)
+        
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=failure&per_page=100" | \
+          jq -r --arg cutoff "$three_days_ago" '.workflow_runs[] | select(.created_at < $cutoff) | .id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting old failed run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+          
+        echo "Phase 2: Cleaning cancelled runs..."
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=cancelled&per_page=50" | \
+          jq -r '.workflow_runs[10:] | .[].id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting cancelled run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+          
+        echo "Phase 3: Keep only recent successful runs..."
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=success&per_page=100" | \
+          jq -r '.workflow_runs[30:] | .[].id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting old successful run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+        
+    - name: 📅 Old Runs Only Deletion
+      if: ${{ github.event.inputs.deletion_strategy == 'old_only' }}
+      run: |
+        echo "📅 Deleting runs older than ${{ github.event.inputs.days_threshold }} days..."
+        
+        cutoff_date=$(date -d '${{ github.event.inputs.days_threshold }} days ago' -u +%Y-%m-%dT%H:%M:%SZ)
+        
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?per_page=100" | \
+          jq -r --arg cutoff "$cutoff_date" '.workflow_runs[] | select(.created_at < $cutoff) | .id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting old run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+          
+    - name: ❌ Failed Runs Only Deletion
+      if: ${{ github.event.inputs.deletion_strategy == 'failed_only' }}
+      run: |
+        echo "❌ Deleting all failed workflow runs..."
+        
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=failure&per_page=100" | \
+          jq -r '.workflow_runs[].id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting failed run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+          
+    - name: 🎯 Status-Based Deletion
+      if: ${{ github.event.inputs.deletion_strategy == 'by_status' }}
+      run: |
+        echo "🎯 Deleting runs with status: ${{ github.event.inputs.target_status }}..."
+        
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=${{ github.event.inputs.target_status }}&per_page=100" | \
+          jq -r '.workflow_runs[].id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting ${{ github.event.inputs.target_status }} run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+          
+    - name: 🔢 Count-Based Deletion
+      if: ${{ github.event.inputs.deletion_strategy == 'by_count' }}
+      run: |
+        echo "🔢 Keeping only the last ${{ github.event.inputs.runs_to_keep }} runs..."
+        
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?per_page=100" | \
+          jq -r --argjson keep ${{ github.event.inputs.runs_to_keep }} '.workflow_runs[$keep:] | .[].id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Deleting excess run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 1
+            fi
+          done
+          
+    - name: ☢️ Nuclear Deletion (DANGER!)
+      if: ${{ github.event.inputs.deletion_strategy == 'nuclear' }}
+      run: |
+        echo "☢️ WARNING: Nuclear deletion - keeping only last 5 successful runs!"
+        echo "⚠️ This will delete almost all workflow history!"
+        
+        # Wait 10 seconds for dramatic effect and last chance to cancel
+        for i in {10..1}; do
+          echo "Nuclear deletion in $i seconds... (Ctrl+C to cancel)"
+          sleep 1
+        done
+        
+        echo "🚀 Executing nuclear deletion..."
+        
+        # Keep only 5 most recent successful runs, delete everything else
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?per_page=100" | \
+          jq -r '.workflow_runs[5:] | .[].id' | \
+          while read run_id; do
+            if [ ! -z "$run_id" ]; then
+              echo "Nuclear deletion of run: $run_id"
+              curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id" || true
+              sleep 0.5
+            fi
+          done
+        
+    - name: 📊 Post-Deletion Analysis
+      run: |
+        echo "📊 Analyzing results after deletion..."
+        
+        # Wait for API to update
+        sleep 15
+        
+        # Get new counts
+        NEW_TOTAL=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs?per_page=1" | \
+          jq -r '.total_count')
+          
+        DELETED=$((TOTAL_RUNS - NEW_TOTAL))
+        SPACE_SAVED=$((DELETED * 3))  # Estimate 3MB per run
+        
+        echo "🎯 Deletion Summary:"
+        echo "=================================="
+        echo "Strategy used: ${{ github.event.inputs.deletion_strategy }}"
+        echo "Runs before: $TOTAL_RUNS"
+        echo "Runs after: $NEW_TOTAL"
+        echo "Deleted: $DELETED runs"
+        echo "Est. space saved: ${SPACE_SAVED}MB"
+        echo "Deletion rate: $(( (DELETED * 100) / TOTAL_RUNS ))%"
+        echo ""
+        echo "✅ Workflow deletion completed successfully!"
+        echo "Performed by: ${{ github.actor }}"
+        echo "Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')"

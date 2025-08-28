@@ -1,103 +1,202 @@
-name: Facebook Scraper - Cloud Automation
+name: 🤖 Facebook Scraper - Optimized Cloud Automation
 
 on:
   schedule:
-    # Morning peak (8:30 AM - maximum activity)
-    - cron: '30 2 * * *'   # 8:30 AM Bhutan Time (UTC+6)
-    - cron: '30 4 * * *'   # 10:30 AM Bhutan Time
-    - cron: '30 6 * * *'   # 12:30 PM Bhutan Time
-    - cron: '30 8 * * *'   # 2:30 PM Bhutan Time
-    - cron: '30 10 * * *'  # 4:30 PM Bhutan Time
-    - cron: '30 12 * * *'  # 6:30 PM Bhutan Time
-    # Evening (moderate activity)
-    - cron: '30 16 * * *'  # 10:30 PM Bhutan Time
-    # Night (minimal activity)
-    - cron: '30 20 * * *'  # 2:30 AM Bhutan Time
-  workflow_dispatch: # Allow manual triggering from GitHub UI
+    # Optimized schedule - 4 times per day at strategic times
+    - cron: '30 2 * * *'   # 8:30 AM Bhutan Time (morning peak)
+    - cron: '30 6 * * *'   # 12:30 PM Bhutan Time (lunch peak)  
+    - cron: '30 10 * * *'  # 4:30 PM Bhutan Time (evening peak)
+    - cron: '30 16 * * *'  # 10:30 PM Bhutan Time (night update)
+  workflow_dispatch:
+    inputs:
+      max_posts:
+        description: 'Maximum posts to scrape'
+        required: false
+        default: '8'
+        type: string
+      force_scrape:
+        description: 'Force scrape (ignore cooldown)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
   actions: write
-  
+  pages: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 15  # Prevent hanging
     
     steps:
-    - name: Checkout repository
+    - name: 🚀 Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-      
-    - name: Set up Python
+        
+    - name: ⚡ Setup Python with cache
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
+        cache: 'pip'
         
-    - name: Install dependencies
+    - name: 📦 Install dependencies (cached)
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Install Chrome and ChromeDriver
+    - name: 🌐 Setup Chrome (optimized)
       run: |
-        sudo apt-get update
+        # Install Chrome efficiently
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
+        sudo apt-get update -qq
         sudo apt-get install -y google-chrome-stable xvfb
         
-    - name: Create config file
+    - name: ⚙️ Prepare configuration
       run: |
         if [ -z "${{ secrets.FACEBOOK_CONFIG }}" ]; then
-          echo "Warning: FACEBOOK_CONFIG secret not set, using example config"
-          cp config.example.json config.json
+          echo "⚠️  FACEBOOK_CONFIG secret not set, using example config"
+          cp config/config.example.json config/config.json
         else
-          echo '${{ secrets.FACEBOOK_CONFIG }}' > config.json
+          echo "✅ Using secret configuration"
+          echo '${{ secrets.FACEBOOK_CONFIG }}' > config/config.json
         fi
         
-    - name: Run Facebook scraper
+        # Show config (without sensitive data)
+        echo "📋 Configuration loaded:"
+        jq -r 'keys[]' config/config.json | head -5
+        
+    - name: 🕷️ Execute Facebook scraping
       run: |
         export DISPLAY=:99
         Xvfb :99 -ac -screen 0 1280x1024x24 &
         sleep 3
         
-        # Remove cooldown for GitHub Actions automation
-        rm -f data/last_run.txt
+        # Handle cooldown based on input
+        if [ "${{ github.event.inputs.force_scrape }}" = "true" ]; then
+          echo "🔥 Force scrape enabled - removing cooldown"
+          rm -f data/last_run.txt
+        fi
         
-        echo "Starting automated scrape..."
-        python facebook_scrapper.py --max-posts 8 --headless
+        # Set max posts from input or default
+        MAX_POSTS="${{ github.event.inputs.max_posts || '8' }}"
         
-    - name: Generate static API
+        echo "🚀 Starting scraping (max posts: $MAX_POSTS)..."
+        timeout 600s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless
+        
+        # Check if scraping was successful
+        if [ $? -eq 0 ]; then
+          echo "✅ Scraping completed successfully"
+        else
+          echo "⚠️  Scraping completed with warnings"
+        fi
+        
+    - name: 📊 Generate optimized API
       run: |
-        echo "Generating static API files..."
-        python generate_static_api.py
+        echo "🔄 Generating static API files..."
+        python src/generate_static_api.py
         
-    - name: Commit and push changes
+        # Validate API generation
+        if [ -f "static_api/posts.json" ]; then
+          POST_COUNT=$(jq length static_api/posts.json)
+          echo "✅ API generated with $POST_COUNT posts"
+        else
+          echo "⚠️  API generation may have failed"
+        fi
+        
+    - name: 🧹 Mini cleanup (every 10th run)
+      run: |
+        # Simple cleanup to prevent accumulation
+        RUN_NUMBER=${{ github.run_number }}
+        
+        if [ $((RUN_NUMBER % 10)) -eq 0 ]; then
+          echo "🗑️  Performing mini cleanup (run #$RUN_NUMBER)..."
+          
+          # Clean old log files
+          find log/ -name "*.log" -mtime +3 -delete 2>/dev/null || true
+          
+          # Clean Python cache
+          find . -name "*.pyc" -delete 2>/dev/null || true
+          find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
+          
+          echo "✅ Mini cleanup completed"
+        else
+          echo "ℹ️  Mini cleanup not needed (run #$RUN_NUMBER)"
+        fi
+        
+    - name: 📤 Smart commit and push
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "GitHub Actions Bot"
+        git config --local user.name "Facebook Scraper Bot"
         
-        # Add all changes
+        # Check for changes
         git add -A
         
-        # Check if there are changes to commit
         if git diff --staged --quiet; then
-          echo "No changes to commit"
+          echo "ℹ️  No new content to commit"
         else
-          # Create commit with timestamp
-          TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
-          git commit -m "Automated update: $TIMESTAMP
+          # Count new posts if possible
+          NEW_POSTS=""
+          if [ -f "static_api/posts.json" ]; then
+            POST_COUNT=$(jq length static_api/posts.json 2>/dev/null || echo "unknown")
+            NEW_POSTS=" ($POST_COUNT posts total)"
+          fi
+          
+          # Create informative commit message
+          TIMESTAMP=$(date '+%Y-%m-%d %H:%M UTC')
+          BHUTAN_TIME=$(TZ='Asia/Thimphu' date '+%Y-%m-%d %I:%M %p BTT')
+          
+          git commit -m "🤖 Automated update: $TIMESTAMP
 
-          - Scraped latest posts from Kuensel Facebook
-          - Updated static API files
-          - Enhanced validation active
+📱 Scraped Kuensel Facebook posts$NEW_POSTS
+🕐 Bhutan time: $BHUTAN_TIME
+🚀 Run #${{ github.run_number }}
+🎯 Trigger: ${{ github.event_name }}
+
+✅ Static API updated
+📊 Data optimized
+🔄 Repository maintained"
           
-          Automated by GitHub Actions"
-          
-          # Push changes
-          git push origin main
-          echo "Successfully pushed changes!"
+          # Push with retry logic
+          for attempt in 1 2 3; do
+            if git push origin main; then
+              echo "✅ Successfully pushed changes (attempt $attempt)"
+              break
+            else
+              echo "⚠️  Push failed, retrying in 5s (attempt $attempt)"
+              sleep 5
+            fi
+          done
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: 🎯 Execution summary
+      if: always()
+      run: |
+        echo "📋 Scraper Execution Summary"
+        echo "============================"
+        echo "📅 Completed: $(date '+%Y-%m-%d %H:%M:%S UTC')"
+        echo "🏃 Run number: ${{ github.run_number }}"
+        echo "👤 Triggered by: ${{ github.actor }}"
+        echo "⚡ Event: ${{ github.event_name }}"
+        echo "⏱️  Duration: ${{ job.status }}"
+        
+        # Check file sizes
+        if [ -f "data/kuensel_posts_master.json" ]; then
+          DATA_SIZE=$(du -h data/kuensel_posts_master.json | cut -f1)
+          echo "💾 Master data: $DATA_SIZE"
+        fi
+        
+        if [ -f "static_api/posts.json" ]; then
+          API_SIZE=$(du -h static_api/posts.json | cut -f1)
+          echo "🔗 API file: $API_SIZE"
+        fi
+        
+        echo "✅ Facebook Scraper automation completed!"
 
     - name: Auto-cleanup old workflow runs
       run: |

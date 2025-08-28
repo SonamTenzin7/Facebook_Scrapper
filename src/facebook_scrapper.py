@@ -59,7 +59,7 @@ def get_adaptive_wait_time(current_time, last_run_time=None):
     return base_wait
 
 class FacebookScraper:
-    def __init__(self, config_file="config.json"):
+    def __init__(self, config_file="../config/config.json"):
         self.config = self.load_config(config_file)
         self.driver = None
         self.posts_data = []
@@ -105,7 +105,7 @@ class FacebookScraper:
             password = self.config["credentials"]["password"]
 
             if not email or not password:
-                print("Email and password not configured in config.json")
+                print("Email and password not configured in ../config/config.json")
                 return False
 
             self.driver.get("https://www.facebook.com/login")
