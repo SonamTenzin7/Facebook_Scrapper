@@ -1,4 +1,3 @@
-
 echo "Setting up GitHub repository..."
 
 # Add all files

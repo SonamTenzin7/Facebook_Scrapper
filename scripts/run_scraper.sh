@@ -1,6 +1,5 @@
-# Set error handling
 set -e
-set -x  # Add debug output
+set -x 
 
 # Lock file
 LOCK_FILE="/tmp/facebook_scraper.lock"
