@@ -1,20 +1,20 @@
-# 🤖 Kuensel Facebook Scraper - Cloud Automation
+# Kuensel Facebook Scraper - Cloud Automation
 
 A fully automated Facebook scraper that collects posts from Kuensel's Facebook page and presents them through a clean API and web interface. **Now runs entirely in the cloud via GitHub Actions!**
 
-## 🌐 Live Demo
+## Live Demo
 - **Posts API**: [https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json](https://sonamtenzin7.github.io/Facebook_Scrapper/static_api/posts.json)
 - **Web Interface**: [https://sonamtenzin7.github.io/Facebook_Scrapper/](https://sonamtenzin7.github.io/Facebook_Scrapper/)
 
-## ✨ Features
+## Features
 
-### 🚀 Cloud Automation
-- ⚡ **100% cloud-based** - runs on GitHub Actions, no laptop needed
-- 🕐 **Smart scheduling** - 4 times daily at optimal times (Bhutan timezone)
+### Cloud Automation
+- ⚡ **100% cloud-based** - runs on GitHub Actions.
+- 🕐 **Smart scheduling** - 4 times daily at optimal times 
 - 🧹 **Automatic cleanup** - intelligent workflow management
 - 📊 **Repository maintenance** - automated optimization and health checks
 
-### 📱 API & Interface
+### API & Interface
 - 🔗 **JSON API** for easy integration with other applications
 - 📊 Statistics dashboard showing total posts, images, and categories
 - 🔍 Filter posts by category and content
@@ -22,13 +22,11 @@ A fully automated Facebook scraper that collects posts from Kuensel's Facebook p
 - 🖼️ Image gallery with click-to-expand
 - ⚡ Static file generation for lightning-fast loading
 
-### 🛡️ Reliability & Monitoring  
+### Reliability & Monitoring  
 - 🔄 **Smart retry logic** and error handling
 - 📈 **Performance monitoring** and optimization
 - 🗑️ **Automatic cleanup** of old data and workflows
 - 🔐 **Secure configuration** via GitHub Secrets
-
-## 🚀 Cloud Setup (Recommended)
 
 ### Prerequisites
 1. Fork this repository to your GitHub account
@@ -52,10 +50,9 @@ Add your Facebook configuration as a GitHub Secret:
 }
 ```
 
-### 🎯 That's it! 
+### That's it! 
 The scraper will now run automatically every 6 hours and update your GitHub Pages site.
 
-## 🛠️ Manual Operations
 
 ### Local Development
 ```bash

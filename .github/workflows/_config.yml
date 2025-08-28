@@ -1,0 +1,21 @@
+title: Kuensel Posts
+description: Latest posts and news from Kuensel, Bhutan's national newspaper
+baseurl: ""
+url: "https://sonamtenzin7.github.io/Facebook_Scrapper"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - requirements.txt
+  - src/
+  - scripts/
+  - config/
+  - log/
+  - __pycache__/
+  - .git/
+  - .github/
