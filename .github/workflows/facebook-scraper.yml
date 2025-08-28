@@ -1,4 +1,4 @@
-name: 🤖 Facebook Scraper - Optimized Cloud Automation
+name: Facebook Scraper - Cloud Automation
 
 on:
   schedule:
@@ -149,16 +149,7 @@ jobs:
           TIMESTAMP=$(date '+%Y-%m-%d %H:%M UTC')
           BHUTAN_TIME=$(TZ='Asia/Thimphu' date '+%Y-%m-%d %I:%M %p BTT')
           
-          git commit -m "🤖 Automated update: $TIMESTAMP
-
-📱 Scraped Kuensel Facebook posts$NEW_POSTS
-🕐 Bhutan time: $BHUTAN_TIME
-🚀 Run #${{ github.run_number }}
-🎯 Trigger: ${{ github.event_name }}
-
-✅ Static API updated
-📊 Data optimized
-🔄 Repository maintained"
+          git commit -m "🤖 Automated update: $TIMESTAMP - 📱 Scraped Kuensel Facebook posts$NEW_POSTS - 🕐 Bhutan time: $BHUTAN_TIME - 🚀 Run #${{ github.run_number }} - 🎯 Trigger: ${{ github.event_name }} - ✅ Static API updated"
           
           # Push with retry logic
           for attempt in 1 2 3; do

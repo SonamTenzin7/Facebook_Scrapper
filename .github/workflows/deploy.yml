@@ -1,7 +1,15 @@
 name: Deploy to GitHub Pages
 
-on:
-  push:
+on:      - name: Prepare deployment structure
+        run: |
+          mkdir -p _site
+          cp web/* _site/
+          cp -r static_api _site/
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'ush:
     branches: [ main ]
   
   # Allow manual trigger
