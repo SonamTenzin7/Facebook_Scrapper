@@ -193,9 +193,7 @@ jobs:
       run: |
         echo "Cleaning up old workflow runs..."
         
-        # Simple cleanup using GitHub CLI (pre-installed on ubuntu-latest)
-        echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-        
+        # GitHub CLI will use GITHUB_TOKEN environment variable automatically
         # Keep only last 25 workflow runs (conservative cleanup)
         echo "Removing old workflow runs (keeping last 25)..."
         gh run list --limit 50 --json databaseId --jq '.[25:] | .[].databaseId' | head -20 | while read -r run_id; do
