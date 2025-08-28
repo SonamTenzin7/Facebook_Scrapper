@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuensel Posts Viewer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            min-width: 120px;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .filter-btn:hover {
+            background: #f8f9fa;
+        }
+        .filter-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .posts-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .post {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .post-category {
+            background: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .post-content {
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+        .post-images {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+        .post-images img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📰 Kuensel Posts</h1>
+        <p>Latest posts from Kuensel Facebook page</p>
+    </div>
+
+    <div id="stats" class="stats">
+        <!-- Stats will be loaded here -->
+    </div>
+
+    <div id="filters" class="filters">
+        <!-- Filter buttons will be loaded here -->
+    </div>
+
+    <div id="posts" class="posts-container">
+        <div class="loading">Loading posts...</div>
+    </div>
+
+    <script>
+        // Use static files instead of API server
+        const API_BASE = './static_api';
+        let allPosts = [];
+        let currentCategory = 'all';
+
+        async function fetchData(endpoint) {
+            try {
+                const response = await fetch(`${API_BASE}${endpoint}`);
+                return await response.json();
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                return { error: 'Failed to fetch data' };
+            }
+        }
+
+        async function loadStats() {
+            const data = await fetchData('/posts.json');
+            if (data.success) {
+                // Extract categories from posts
+                const categories = new Set();
+                data.posts.forEach(post => {
+                    if (post.category) categories.add(post.category);
+                });
+                
+                // Count images
+                let totalImages = 0;
+                data.posts.forEach(post => {
+                    if (post.images && Array.isArray(post.images)) {
+                        totalImages += post.images.length;
+                    }
+                });
+                
+                const statsHtml = `
+                    <div class="stat-card">
+                        <h3>${data.total_posts || data.posts.length}</h3>
+                        <p>Total Posts</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>${totalImages}</h3>
+                        <p>Images</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>${categories.size}</h3>
+                        <p>Categories</p>
+                    </div>
+                `;
+                document.getElementById('stats').innerHTML = statsHtml;
+            }
+        }
+
+        async function loadFilters() {
+            const data = await fetchData('/posts.json');
+            if (data.success) {
+                // Extract unique categories from posts
+                const categories = new Set();
+                data.posts.forEach(post => {
+                    if (post.category) categories.add(post.category);
+                });
+                
+                let filtersHtml = '<button class="filter-btn active" onclick="filterPosts(\'all\')">All</button>';
+                Array.from(categories).sort().forEach(category => {
+                    const capitalizedCategory = category.charAt(0).toUpperCase() + category.slice(1);
+                    filtersHtml += `<button class="filter-btn" onclick="filterPosts('${category}')">${capitalizedCategory}</button>`;
+                });
+                document.getElementById('filters').innerHTML = filtersHtml;
+            }
+        }
+
+        async function loadPosts() {
+            const data = await fetchData('/posts.json');
+            if (data.success) {
+                allPosts = data.posts;
+                displayPosts(allPosts);
+            } else {
+                document.getElementById('posts').innerHTML = '<div class="loading">Error loading posts</div>';
+            }
+        }
+
+        function displayPosts(posts) {
+            if (posts.length === 0) {
+                document.getElementById('posts').innerHTML = '<div class="loading">No posts found</div>';
+                return;
+            }
+
+            const postsHtml = posts.map(post => {
+                // Handle different image field names
+                const images = post.images || post.attachment?.images || [];
+                const imagesHtml = images.length > 0 ? 
+                    `<div class="post-images">
+                        ${images.slice(0, 3).map(img => `<img src="${img}" alt="Post image" onclick="window.open('${img}', '_blank')" onerror="this.style.display='none'">`).join('')}
+                        ${images.length > 3 ? `<div style="display: flex; align-items: center; color: #666; padding: 10px;">+${images.length - 3} more images</div>` : ''}
+                    </div>` : '';
+
+                // Format the date properly
+                const publishDate = post.published_at || post.created_at || new Date().toISOString();
+                const formattedDate = new Date(publishDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+
+                // Truncate content if too long
+                let content = post.content || post.description || '';
+                if (content.length > 300) {
+                    content = content.substring(0, 300) + '...';
+                }
+
+                return `
+                    <div class="post">
+                        <div class="post-header">
+                            <h2 class="post-title">${post.title || 'Untitled Post'}</h2>
+                            <span class="post-category">${post.category || 'general'}</span>
+                        </div>
+                        <div class="post-content">${content}</div>
+                        ${imagesHtml}
+                        <div class="post-footer">
+                            <span>By ${post.author || 'Kuensel'}</span>
+                            <span>${formattedDate}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('posts').innerHTML = postsHtml;
+        }
+
+        function filterPosts(category) {
+            currentCategory = category;
+            
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Find the clicked button and make it active
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                if (btn.textContent.toLowerCase() === category || (category === 'all' && btn.textContent === 'All')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Filter posts
+            if (category === 'all') {
+                displayPosts(allPosts);
+            } else {
+                const filteredPosts = allPosts.filter(post => post.category === category);
+                displayPosts(filteredPosts);
+            }
+        }
+
+        // Load data on page load
+        window.onload = function() {
+            loadStats();
+            loadFilters();
+            loadPosts();
+        };
+
+        // Auto-refresh every 5 minutes
+        setInterval(() => {
+            loadStats();
+            loadPosts();
+        }, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
