@@ -150,7 +150,7 @@ jobs:
           echo "Data file size before: $BEFORE_SIZE bytes"
           
           # Create a simple Python script for data optimization
-          python3 -c "
+          cat > optimize_data.py << 'EOF'
 import json
 import sys
 from collections import OrderedDict
@@ -187,7 +187,10 @@ try:
 except Exception as e:
     print(f'Data optimization failed: {e}')
     sys.exit(0)  # Don't fail the workflow
-"
+EOF
+          
+          python3 optimize_data.py
+          rm optimize_data.py
           
           # Get file size after
           AFTER_SIZE=$(stat -f%z "data/kuensel_posts_master.json" 2>/dev/null || stat -c%s "data/kuensel_posts_master.json" 2>/dev/null || echo 0)
