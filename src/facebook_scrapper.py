@@ -95,8 +95,9 @@ class FacebookScraper:
         chrome_options = Options()
         scraping_cfg = self.config.get("scraping")
         if not scraping_cfg:
-            print("❌ 'scraping' section missing in config. Please check config/config.json.")
-            raise KeyError("Missing 'scraping' section in config.")
+            print("⚠️  'scraping' section missing in config. Using default scraping config.")
+            scraping_cfg = {"headless": True, "max_scrolls": 15, "scroll_pause": 3, "target_count": 25}
+            self.config["scraping"] = scraping_cfg
         if scraping_cfg.get("headless", False):
             chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
