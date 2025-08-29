@@ -1,17 +1,9 @@
 name: Deploy to GitHub Pages
 
-on:      - name: Prepare deployment structure
-        run: |
-          mkdir -p _site
-          cp web/* _site/
-          cp -r static_api _site/
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './_site'ush:
+on:
+  push:
     branches: [ main ]
-  
+
   # Allow manual trigger
   workflow_dispatch:
 
@@ -29,27 +21,28 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
+      # These steps were misplaced and now correctly belong here.
       - name: Prepare deployment structure
         run: |
           mkdir -p _site
           cp web/* _site/
           cp -r static_api _site/
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_site'
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
