@@ -1,4 +1,4 @@
-name: 🔧 Repository Maintenance Automation
+name: Repository Maintenance Automation
 
 on:
   schedule:

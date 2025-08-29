@@ -12,7 +12,27 @@ from email.mime.multipart import MIMEMultipart
 
 class NotificationSystem:
     def __init__(self):
-        self.config = self.load_notification_config()
+        config = self.load_notification_config()
+        if not isinstance(config, dict):
+            print("⚠️ Notification config is not a dict, using default config.")
+            config = {
+                "email": {
+                    "enabled": False,
+                    "smtp_server": "smtp.gmail.com",
+                    "smtp_port": 587,
+                    "sender_email": "",
+                    "sender_password": "",
+                    "recipient_email": "",
+                    "app_password": ""
+                },
+                "webhook": {
+                    "enabled": False,
+                    "url": "",
+                    "discord_webhook": "",
+                    "slack_webhook": ""
+                }
+            }
+        self.config = config
     
     def load_notification_config(self):
         """Load notification configuration"""
@@ -23,107 +43,90 @@ class NotificationSystem:
                 "smtp_port": 587,
                 "sender_email": "",
                 "sender_password": "",
-                "recipient_emails": []
+                "recipient_email": "",
+                "app_password": ""
             },
-            "discord": {
+            "webhook": {
                 "enabled": False,
-                "webhook_url": ""
+                "url": "",
+                "discord_webhook": "",
+                "slack_webhook": ""
             }
         }
-        
-        # Get the directory where this script is located
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        # Go up one level and then to config directory
-        config_file = os.path.join(os.path.dirname(script_dir), "config", "notification_config.json")
-        
-        # Ensure config directory exists
-        config_dir = os.path.dirname(config_file)
-        os.makedirs(config_dir, exist_ok=True)
-        
+        config_file = "notification_config.json"
         if os.path.exists(config_file):
             try:
                 with open(config_file, 'r') as f:
                     config = json.load(f)
-                return {**default_config, **config}
+                if isinstance(config, dict):
+                    return {**default_config, **config}
+                else:
+                    print("⚠️ notification_config.json is not a dict, using default config.")
             except Exception as e:
                 print(f"⚠️  Failed to load notification config: {e}")
-        
-        # Create default config file
+        # Create default config file if missing or invalid
         try:
             with open(config_file, 'w') as f:
                 json.dump(default_config, f, indent=2)
             print(f"📝 Created default notification config: {config_file}")
+            print("💡 Edit the config file to enable notifications")
         except Exception as e:
-            print(f"⚠️  Failed to create notification config: {e}")
-            # Return default config if we can't create the file
-            return default_config
+            print(f"⚠️ Could not create default notification config: {e}")
+        return default_config
     
     def send_email_notification(self, subject, message):
         """Send email notification"""
-        if not self.config["email"]["enabled"]:
+        email_cfg = self.config.get("email", {})
+        if not email_cfg.get("enabled", False):
             return False
-            
         try:
             msg = MIMEMultipart()
-            msg['From'] = self.config["email"]["sender_email"]
-            msg['To'] = self.config["email"]["recipient_email"]
+            msg['From'] = email_cfg.get("sender_email", "")
+            msg['To'] = email_cfg.get("recipient_email", "")
             msg['Subject'] = subject
-            
             msg.attach(MIMEText(message, 'plain'))
-            
             server = smtplib.SMTP(
-                self.config["email"]["smtp_server"], 
-                self.config["email"]["smtp_port"]
+                email_cfg.get("smtp_server", "smtp.gmail.com"),
+                email_cfg.get("smtp_port", 587)
             )
             server.starttls()
-            
-            password = (self.config["email"]["app_password"] or 
-                       self.config["email"]["sender_password"])
-            server.login(self.config["email"]["sender_email"], password)
-            
+            password = (email_cfg.get("app_password") or email_cfg.get("sender_password"))
+            server.login(email_cfg.get("sender_email", ""), password)
             text = msg.as_string()
             server.sendmail(
-                self.config["email"]["sender_email"],
-                self.config["email"]["recipient_email"],
+                email_cfg.get("sender_email", ""),
+                email_cfg.get("recipient_email", ""),
                 text
             )
             server.quit()
-            
             print("✅ Email notification sent successfully")
             return True
-            
         except Exception as e:
             print(f"❌ Failed to send email: {e}")
             return False
     
     def send_webhook_notification(self, message):
         """Send webhook notification (Discord/Slack)"""
-        if not self.config["webhook"]["enabled"]:
+        webhook_cfg = self.config.get("webhook", {})
+        if not webhook_cfg.get("enabled", False):
             return False
-            
         import requests
-        
         webhooks = [
-            self.config["webhook"]["discord_webhook"],
-            self.config["webhook"]["slack_webhook"],
-            self.config["webhook"]["url"]
+            webhook_cfg.get("discord_webhook", ""),
+            webhook_cfg.get("slack_webhook", ""),
+            webhook_cfg.get("url", "")
         ]
-        
         for webhook_url in webhooks:
             if not webhook_url:
                 continue
-                
             try:
                 payload = {"content": message} if "discord" in webhook_url else {"text": message}
-                
                 response = requests.post(webhook_url, json=payload, timeout=10)
                 if response.status_code == 200:
                     print("✅ Webhook notification sent successfully")
                     return True
-                    
             except Exception as e:
                 print(f"❌ Failed to send webhook: {e}")
-        
         return False
     
     def send_desktop_notification(self, title, message):

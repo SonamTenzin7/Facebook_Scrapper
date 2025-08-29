@@ -1,4 +1,4 @@
-name: 🗑️ Smart Workflow Deletion System
+name: Smart Workflow Deletion System
 
 on:
   workflow_dispatch:
