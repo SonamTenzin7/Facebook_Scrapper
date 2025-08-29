@@ -86,7 +86,11 @@ class FacebookScraper:
     def setup_driver(self):
         """Setup Chrome driver with appropriate options"""
         chrome_options = Options()
-        if self.config["scraping"]["headless"]:
+        scraping_cfg = self.config.get("scraping")
+        if not scraping_cfg:
+            print("❌ 'scraping' section missing in config. Please check config/config.json.")
+            raise KeyError("Missing 'scraping' section in config.")
+        if scraping_cfg.get("headless", False):
             chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
