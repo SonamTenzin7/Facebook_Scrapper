@@ -69,15 +69,22 @@ class FacebookScraper:
         self.setup_driver()
 
     def load_config(self, config_file):
-        """Load configuration from Json file"""
+        """Load configuration from Json file, fallback to environment variables if missing."""
+        import os
         try:
             with open(config_file, 'r') as f:
                 return json.load(f)
         except FileNotFoundError:
-            print(f"Config File {config_file} not found. Using default configuration.")
-           
+            print(f"Config File {config_file} not found. Using environment variables or default configuration.")
+            # Load credentials from environment variables
+            email = os.environ.get("FB_EMAIL", "")
+            password = os.environ.get("FB_PASSWORD", "")
+            github_token = os.environ.get("GITHUB_TOKEN", "")
+            # If using GitHub token, set as password
+            if github_token:
+                password = github_token
             return {
-                "credentials": {"email": "", "password": ""},
+                "credentials": {"email": email, "password": password},
                 "scraping": {"headless": True, "max_scrolls": 15, "scroll_pause": 3, "target_count": 25},
                 "output": {"folder": "data/", "filename_prefix": "kuensel_posts"},
                 "download_images": False
