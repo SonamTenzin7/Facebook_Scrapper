@@ -1,4 +1,8 @@
 {
+  "success": true,
+  "total_posts": 6,
+  "last_updated": "2025-09-02T03:30:11.582272",
+  "filter_applied": "all_posts",
   "scraping_session": {
     "timestamp": "2025-09-01T17:49:57.621043",
     "total_posts": 6,
