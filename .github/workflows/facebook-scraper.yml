@@ -205,20 +205,28 @@ jobs:
 
     - name: Auto-cleanup old workflow runs
       run: |
-        echo "Cleaning up old workflow runs..."
+        echo "🧹 Cleaning up old workflow runs..."
         
-        # Simple cleanup using GitHub CLI (pre-installed on ubuntu-latest)
-        echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+        # Authenticate with GitHub CLI (suppress informational messages)
+        echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token 2>/dev/null || true
         
-        # Keep only last 25 workflow runs (conservative cleanup)
-        echo "Removing old workflow runs (keeping last 25)..."
-        gh run list --limit 50 --json databaseId --jq '.[25:] | .[].databaseId' | head -20 | while read -r run_id; do
-          if [ -n "$run_id" ]; then
-            gh api repos/${{ github.repository }}/actions/runs/$run_id -X DELETE || echo "Could not delete run $run_id"
-          fi
-        done
+        # Keep only last 30 workflow runs (conservative cleanup)
+        echo "📊 Removing old workflow runs (keeping last 30)..."
         
-        echo "Cleanup completed"
+        # Get runs to delete and count them
+        RUNS_TO_DELETE=$(gh run list --limit 50 --json databaseId --jq '.[30:] | .[].databaseId' 2>/dev/null || echo "")
+        
+        if [ -n "$RUNS_TO_DELETE" ]; then
+          echo "$RUNS_TO_DELETE" | head -15 | while read -r run_id; do
+            if [ -n "$run_id" ]; then
+              gh api repos/${{ github.repository }}/actions/runs/$run_id -X DELETE 2>/dev/null && echo "🗑️  Deleted run $run_id" || echo "⚠️  Could not delete run $run_id"
+            fi
+          done
+        else
+          echo "ℹ️  No old runs to delete"
+        fi
+        
+        echo "✅ Cleanup completed"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: github.ref == 'refs/heads/main'
