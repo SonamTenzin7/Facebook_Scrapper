@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 import time
 import json
 import hashlib
@@ -10,8 +10,12 @@ import html
 import re
 import os
 import requests
+import subprocess
 from urllib.parse import urljoin, urlparse
-from notification_system import NotificationSystem
+try:
+    from notification_system import NotificationSystem
+except ImportError:
+    from src.notification_system import NotificationSystem
 
 def get_adaptive_wait_time(current_time, last_run_time=None):
     """
@@ -61,6 +65,9 @@ def get_adaptive_wait_time(current_time, last_run_time=None):
 class FacebookScraper:
     def __init__(self, config_file="config/config.json"):
         self.config = self.load_config(config_file)
+        print("[DEBUG] Loaded config:", self.config)
+        creds = self.config.get("credentials", {})
+        print(f"[DEBUG] Credentials found: email='{creds.get('email', None)}', password={'***' if creds.get('password', None) else None}")
         self.driver = None
         self.posts_data = []
         self.seen_post_hashes = set()
@@ -70,12 +77,20 @@ class FacebookScraper:
 
     def load_config(self, config_file):
         """Load configuration from Json file, fallback to environment variables if missing."""
-        import os
+        # Convert to absolute path for better debugging
+        config_path = os.path.abspath(config_file)
+        print(f"[DEBUG] Looking for config file at: {config_path}")
+        print(f"[DEBUG] Current working directory: {os.getcwd()}")
+        print(f"[DEBUG] Config file exists: {os.path.exists(config_file)}")
+        
         try:
             with open(config_file, 'r') as f:
-                return json.load(f)
+                config = json.load(f)
+                print(f"[DEBUG] Successfully loaded config from: {config_file}")
+                return config
         except FileNotFoundError:
             print(f"Config File {config_file} not found. Using environment variables or default configuration.")
+            print(f"[DEBUG] Searched in: {config_path}")
             # Load credentials from environment variables
             email = os.environ.get("FB_EMAIL", "")
             password = os.environ.get("FB_PASSWORD", "")
@@ -184,7 +199,8 @@ class FacebookScraper:
         try:
             # Common selectors for "See more" links
             see_more_selectors = [
-                "[role='button'][tabindex='0']",  # Generic clickable elements
+                "[role='button'][tabindex='0']", 
+                "div.x1yztbdb.x1n2onr6.xh8yej3",
                 "div[role='button']:has-text('See more')",
                 "span[role='button']:has-text('See more')",
                 "[aria-label*='See more']",
@@ -299,18 +315,37 @@ class FacebookScraper:
         try:
             # Extract content 
             content = ""
+            
+            print(f"[DEBUG] Processing post element {index}")
 
-            # content selectors (most common)
+            # Improved content selectors (Facebook 2024/2025 structure)
             content_selectors = [
+                # Main post content
                 "[data-ad-preview='message']",
-                ".userContent",
+                ".userContent", 
                 "[data-testid='post_message']",
-                "div[data-gt*='content']",
-                "div[direction='auto']",
+                
+                # Facebook's new structure selectors
+                "div[data-ad-comet-preview='message']",
+                "div[data-testid='story-subtitle'] + div",
+                "div[data-testid='story-subtitle'] ~ div",
+                "[data-testid='story-subtitle'] ~ [dir='auto']",
+                
+                # Generic text content selectors
                 "div[dir='auto']",
                 "span[dir='auto']",
+                "div[direction='auto']",
                 "div > span:not([class])",
-                "div > div > span"
+                "div > div > span",
+                
+                # Fallback - any div with substantial text
+                "div:not([class*='comment']):not([class*='reaction'])",
+                "p",
+                
+                # Even broader fallback
+                "[role='article'] div",
+                "[role='article'] span",
+                "[role='article'] p"
             ]
 
             # Selectors to exclude (comments and reactions)
@@ -324,32 +359,62 @@ class FacebookScraper:
                 "div[aria-label*='reaction']",
                 "div[aria-label*='like']",
                 "[data-testid='reactions-section']",
-                "[data-testid='social-context']"
+                "[data-testid='social-context']",
+                "[data-testid='story-header']",
+                "[data-testid='story-subtitle']"
             ]
 
+            # Try each selector and collect all potential content
+            potential_contents = []
+            
             for selector in content_selectors:
-                content_elem = post_element.select_one(selector)
-                if content_elem:
-                    # Check if this element contains excluded content
+                elements = post_element.select(selector)
+                print(f"[DEBUG] Selector '{selector}' found {len(elements)} elements")
+                
+                for elem in elements:
+                    # Check if this element should be excluded
                     is_excluded = False
+                    
+                    # Skip if element is inside excluded areas
                     for exclude_selector in exclude_selectors:
-                        # Check if element contains excluded elements
-                        if content_elem.select(exclude_selector):
-                            is_excluded = True
-                            break
-                        # Check if element itself matches excluded selector 
-                        if any(cls in exclude_selector for cls in ['comment', 'Comment', 'reaction', 'like']):
-                            elem_text = content_elem.get_text().lower()
-                            if any(word in elem_text for word in ['comment', 'reply', 'like', 'share']):
+                        # Check if any parent matches the exclude selector
+                        for parent in elem.find_parents():
+                            if parent.name and parent.select(exclude_selector):
                                 is_excluded = True
                                 break
+                        if is_excluded:
+                            break
+                        # Check if element itself contains excluded elements
+                        if elem.select(exclude_selector):
+                            is_excluded = True
+                            break
                     
                     if not is_excluded:
-                        temp_content = content_elem.get_text(strip=True, separator=' ')
-                        # Additional filtering for comment-like patterns
-                        temp_content = self.filter_comments_from_content(temp_content)
-                        if len(temp_content) > len(content) and len(temp_content) > 3:
-                            content = temp_content
+                        temp_content = elem.get_text(strip=True, separator=' ')
+                        if temp_content and len(temp_content) > 10:
+                            # Additional filtering for comment-like patterns
+                            temp_content = self.filter_comments_from_content(temp_content)
+                            if temp_content and len(temp_content) > 10:
+                                potential_contents.append(temp_content)
+                                print(f"[DEBUG] Found potential content: '{temp_content[:100]}...'")
+            
+            # Choose the best content (longest meaningful text)
+            if potential_contents:
+                # Remove duplicates and sort by length
+                unique_contents = list(set(potential_contents))
+                unique_contents.sort(key=len, reverse=True)
+                content = unique_contents[0]
+                print(f"[DEBUG] Selected content ({len(content)} chars): '{content[:100]}...'")
+            else:
+                print(f"[DEBUG] No content found for post {index}")
+                # Fallback: get all text from the post element
+                raw_text = post_element.get_text(strip=True, separator=' ')
+                if raw_text and len(raw_text) > 20:
+                    content = self.filter_comments_from_content(raw_text)
+                    print(f"[DEBUG] Using fallback content: '{content[:100]}...'")
+                else:
+                    print(f"[DEBUG] Even fallback content is too short: '{raw_text[:50]}...'")
+                    content = ""
 
             # Extract timestamp
             timestamp = ""
@@ -403,13 +468,21 @@ class FacebookScraper:
             media = self.extract_media_from_post(post_element)
 
             # Extract additional images from Facebook photo links
-            photo_images = self.extract_images_from_facebook_photo_links(links)
-            if photo_images:
-                print(f"Found {len(photo_images)} additional images from photo links")
-                # Add to existing media images, avoiding duplicates
-                for img_url in photo_images:
-                    if img_url not in media["images"]:
-                        media["images"].append(img_url)
+            photo_images = []
+            
+            # Check if photo processing is enabled (can be disabled for faster testing)
+            process_photos = self.config.get("process_facebook_photos", True)
+            
+            if process_photos and links:
+                photo_images = self.extract_images_from_facebook_photo_links(links)
+                if photo_images:
+                    print(f"Found {len(photo_images)} additional images from photo links")
+                    # Add to existing media images, avoiding duplicates
+                    for img_url in photo_images:
+                        if img_url not in media["images"]:
+                            media["images"].append(img_url)
+            elif not process_photos:
+                print("📷 Photo processing disabled, skipping Facebook photo links")
 
             # Fetch full article content if Kuensel links are found
             article_content, article_title = self.fetch_full_article_content(links)
@@ -464,25 +537,40 @@ class FacebookScraper:
 
     def extract_title_from_content(self, content):
         """Extract title from content"""
+        print(f"[DEBUG] Extracting title from content length: {len(content) if content else 0}")
+        
         if not content:
+            print(f"[DEBUG] No content provided, using 'Untitled Post'")
             return "Untitled Post"
 
+        # Clean content first
+        content = content.strip()
+        
         # Try to get first sentence
-        sentences = re.split(r'[.!?]+', content)
+        sentences = re.split(r'[.!?\n]+', content)
         if sentences and len(sentences[0].strip()) > 10:
             title = sentences[0].strip()
+            print(f"[DEBUG] Title from first sentence: '{title[:50]}...'")
         else:
-            # Use first 100 characters
-            title = content[:100].strip()
+            # Use first line or first 100 characters
+            lines = content.split('\n')
+            if lines and len(lines[0].strip()) > 10:
+                title = lines[0].strip()
+                print(f"[DEBUG] Title from first line: '{title[:50]}...'")
+            else:
+                title = content[:100].strip()
+                print(f"[DEBUG] Title from first 100 chars: '{title[:50]}...'")
 
-        # If title is too short, use the full content (up to 150 chars)
+        # If title is too short, use more content
         if len(title) < 10:
             title = content[:150].strip() if content else "Untitled Post"
+            print(f"[DEBUG] Title was too short, using 150 chars: '{title[:50]}...'")
 
         # Ensure title ends properly
         if len(title) > 100:
             title = title[:97] + "..."
 
+        print(f"[DEBUG] Final title: '{title}'")
         return title
 
     def extract_description_from_content(self, content, title):
@@ -704,16 +792,36 @@ class FacebookScraper:
         """Extract actual image URLs from Facebook photo links"""
         image_urls = []
         
+        # Limit processing to avoid endless loops
+        MAX_PHOTO_LINKS = 3  # Process max 3 photo links per post
+        TIMEOUT_PER_LINK = 8  # Max 8 seconds per photo link
+        
         try:
+            processed_links = 0
             for link in links:
+                if processed_links >= MAX_PHOTO_LINKS:
+                    print(f"Reached max photo links limit ({MAX_PHOTO_LINKS}), skipping remaining photos")
+                    break
+                    
                 if '/photo?' in link or 'fbid=' in link:
-                    print(f"Processing Facebook photo link: {link}")
+                    print(f"Processing Facebook photo link {processed_links + 1}/{min(len(links), MAX_PHOTO_LINKS)}: {link[:80]}...")
+                    processed_links += 1
                     
                     try:
-                        # Navigate to the photo page
+                        # Navigate to the photo page with timeout
                         self.driver.execute_script(f"window.open('{link}', '_blank');")
                         self.driver.switch_to.window(self.driver.window_handles[-1])
-                        time.sleep(3)  # Wait for page to load
+                        
+                        # Wait for page to load with shorter timeout
+                        start_time = time.time()
+                        time.sleep(2)  # Reduced from 3 to 2 seconds
+                        
+                        # Check timeout
+                        if time.time() - start_time > TIMEOUT_PER_LINK:
+                            print(f"Timeout reached for photo link, skipping...")
+                            self.driver.close()
+                            self.driver.switch_to.window(self.driver.window_handles[0])
+                            continue
                         
                         # Get page source and parse with BeautifulSoup
                         photo_page_html = self.driver.page_source
@@ -741,7 +849,7 @@ class FacebookScraper:
                                         # Check if it's a high-quality image (not thumbnail)
                                         if 'scontent' in src and len(src) > 50:
                                             image_urls.append(src)
-                                            print(f"Extracted image from photo page: {src[:100]}...")
+                                            print(f"✅ Extracted image: {src[:60]}...")
                                             found_image = True
                                             break
                                 if found_image:
@@ -754,10 +862,10 @@ class FacebookScraper:
                         self.driver.switch_to.window(self.driver.window_handles[0])
                         
                         if not found_image:
-                            print(f"Could not extract image from photo page: {link}")
+                            print(f"❌ Could not extract image from photo page")
                             
                     except Exception as e:
-                        print(f"Error processing photo link {link}: {e}")
+                        print(f"⚠️ Error processing photo link: {e}")
                         # Make sure we're back on main window
                         try:
                             if len(self.driver.window_handles) > 1:
@@ -924,6 +1032,18 @@ class FacebookScraper:
         # Decode HTML entities
         text = html.unescape(text)
 
+        # Remove Facebook-specific metadata and timestamps
+        # Remove timestamps like "4h ·", "3h ·", "2h", "1 min", etc.
+        text = re.sub(r'\b\d+[hm]\s*·?\s*', '', text)  # Matches "4h ·", "3h", "2m ·", etc.
+        text = re.sub(r'\b\d+\s*(hour|hours|min|mins|minute|minutes)\s*ago\s*·?\s*', '', text)  # "2 hours ago ·"
+        text = re.sub(r'\bVerified\s+account\s*', '', text)  # Remove "Verified account"
+        text = re.sub(r'\bShared\s+with\s+Public\s*', '', text)  # Remove "Shared with Public"
+        text = re.sub(r'^[^·]*·\s*', '', text)  # Remove everything before and including first "·"
+        
+        # Remove Facebook interaction text at the end
+        text = re.sub(r'\s*All\s+reactions?:.*$', '', text, flags=re.IGNORECASE | re.DOTALL)  # Remove "All reactions: 199 38 6"
+        text = re.sub(r'\s*(Like|Comment|Share|View\s+more\s+comments?).*$', '', text, flags=re.IGNORECASE | re.DOTALL)  # Remove interaction buttons
+        
         # Remove extra whitespace
         text = re.sub(r'\s+', ' ', text).strip()
 
@@ -1001,122 +1121,89 @@ class FacebookScraper:
         content = post_data.get('content', '')
         title = post_data.get('title', '')
         description = post_data.get('description', '')
-        
-        # Filter out posts with no meaningful content
-        if not content or len(content.strip()) < 10:
-            return False
-            
-        # Filter out posts with only dots or minimal content
         content_clean = content.strip()
-        if content_clean in ['', '.', '..', '...', '....', '.....']:
+        title_clean = title.strip().lower()
+
+        print(f"[DEBUG] Validating post: title='{title}', content_length={len(content_clean)}")
+        print(f"[DEBUG] Content preview: '{content_clean[:100]}...'")
+
+        # Temporary: Be more lenient to see what we're getting
+        # Allow 'Untitled Post' or 'Intro' if content has any meaningful text
+        if title_clean in ['untitled post', 'intro']:
+            if content_clean and len(content_clean) > 5 and any(char.isalnum() for char in content_clean):
+                print(f"[DEBUG] Accepting '{title}' with {len(content_clean)} chars of content")
+                return True
+            else:
+                print(f"[DEBUG] Rejecting '{title}': content too short or empty")
+                return False
+
+        # Filter out posts with no meaningful content
+        if not content or len(content_clean) < 5:  # Lowered from 10 to 5
+            print(f"[DEBUG] Rejecting: content too short ({len(content_clean)} chars)")
             return False
-            
+
+        # Filter out posts with only dots or minimal content
+        if content_clean in ['', '.', '..', '...', '....', '.....']:
+            print(f"[DEBUG] Rejecting: content is just dots")
+            return False
+
         # Filter out posts that are just the title repeated
         if content_clean == title.strip():
+            print(f"[DEBUG] Rejecting: content matches title")
             return False
-            
-        # Filter out very short posts that are likely incomplete
-        if len(content_clean) < 15 and not any(char.isalnum() for char in content_clean):
+
+        # Filter out very short posts that are likely incomplete - be more lenient
+        if len(content_clean) < 8 and not any(char.isalnum() for char in content_clean):  # Lowered from 15 to 8
+            print(f"[DEBUG] Rejecting: content too short and not alphanumeric")
             return False
-            
+
         # Filter out posts with suspiciously generic content
         generic_patterns = [
-            'shame for a leader',
-            'untitled post',
             'loading...',
             'error',
             'failed to load'
         ]
-        
         content_lower = content_clean.lower()
         if any(pattern in content_lower for pattern in generic_patterns):
+            print(f"[DEBUG] Rejecting: generic pattern found")
             return False
-        
+
         # Filter out comment-like posts and Facebook comments
         comment_patterns = [
-            # Specific patterns from identified comments
-            r'if\s+he\s+full\s+fills\s+his\s+dream',  # The specific comment you found
-            r'druptop\s+vajra\s+guru',  # Buddhist spiritual title comment
-            
-            # Common comment patterns
-            r'^how about.{1,40}\?*$',       
-            r'^what about.{1,40}\?*$',       
+            r'if\s+he\s+full\s+fills\s+his\s+dream',
+            r'druptop\s+vajra\s+guru',
+            r'^how about.{1,40}\?*$',
+            r'^what about.{1,40}\?*$',
             r'^why not.{1,40}\?*$',
-            r'^what\s+do\s+you\s+think.{0,50}\?*$',  # Questions asking for opinions
-            r'^[a-zA-Z\s]{1,20}\?+$',        # Short questions
-            r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad|great|awesome|cool|sure|right)[\.\!\?]*$',  
-            r'^\w{1,15}[\.\!\?]+$',          # Very short exclamations
-            r'^(lol|lmao|haha)[\.\!\?]*$',   # Laughing responses
-            
-            # Generic comment responses
+            r'^what\s+do\s+you\s+think.{0,50}\?*$',
+            r'^[a-zA-Z\s]{1,20}\?+$',
+            r'^(ok|okay|yes|no|true|false|really|wow|nice|good|bad|great|awesome|cool|sure|right)[\.\!\?]*$',
+            r'^\w{1,15}[\.\!\?]+$',
+            r'^(lol|lmao|haha)[\.\!\?]*$',
             r'^(that\'s|thats)\s+(good|bad|nice|cool|great|awesome|amazing)',
             r'^i\s+(think|believe|hope|wish|agree|disagree)',
             r'^you\s+(should|could|might|can|will)',
-            
-            # Single word questions (likely comments)
             r'^\w+\s*\?+$',
         ]
-        
         for pattern in comment_patterns:
             if re.search(pattern, content_lower.strip()):
-                print(f"Filtering out comment-like content: '{content_clean[:50]}'")
+                print(f"[DEBUG] Rejecting: comment-like pattern found")
                 return False
-            
-        # Require substantial content OR media attachments
+
+        # Require substantial content OR media attachments - be more lenient
         has_media = bool(post_data.get('attachment', {}).get('images') or 
                         post_data.get('attachment', {}).get('videos') or
                         post_data.get('attachment', {}).get('links'))
-        
-        if len(content_clean) < 25 and not has_media:
-            print(f"Filtering out short post without media: '{content_clean[:30]}'")
+        if len(content_clean) < 15 and not has_media:  # Lowered from 25 to 15
+            print(f"[DEBUG] Rejecting: short post without media ({len(content_clean)} chars)")
             return False
-            
+
         # Require at least some meaningful text (letters or numbers)
         if not any(char.isalnum() for char in content_clean):
+            print(f"[DEBUG] Rejecting: no alphanumeric content")
             return False
-            
-        # Additional check: if description is just dots, it's likely incomplete
-        if description and description.strip() in ['', '.', '..', '...', '....', '.....']:
-            # Unless the content is substantial
-            if len(content_clean) < 50:
-                return False
-        
-        # News quality check for longer posts
-        if len(content_clean) > 100:
-            # Check for news-like patterns  
-            news_indicators = [
-                r'\bannounce[sd]?\b',
-                r'\bnotification\b', 
-                r'\bpress\s+release\b',
-                r'\bstatement\b',
-                r'\bofficial\b',
-                r'\bupdate:\b',
-                r'\bdecision\b',
-                r'\bmeeting\b',
-                r'\btoday\b',
-                r'\byesterday\b',
-                r'\bthis\s+(week|month|year)\b'
-            ]
-            
-            # If it's a long post but lacks news indicators and seems conversational
-            has_news_pattern = any(re.search(pattern, content_lower) for pattern in news_indicators)
-            
-            # Additional conversational patterns to avoid
-            conversational_patterns = [
-                r'\bi\s+hope\b',
-                r'\bi\s+think\b', 
-                r'\blet\s+me\s+know\b',
-                r'\bwhat\s+do\s+you\s+think\b',
-                r'\byour\s+(thoughts|opinion)\b'
-            ]
-            
-            has_conversational = any(re.search(pattern, content_lower) for pattern in conversational_patterns)
-            
-            # If it's conversational without news indicators, likely a comment
-            if has_conversational and not has_news_pattern and not has_media:
-                print(f"Filtering out conversational content: '{content_clean[:50]}'")
-                return False
-        
+
+        print(f"[DEBUG] Accepting post: '{title}' with {len(content_clean)} chars")
         return True
 
     def cleanup_comment_posts(self, data):
@@ -1352,6 +1439,21 @@ class FacebookScraper:
         
         if not truly_new_posts:
             print("No new posts to add to master file")
+            # Save empty structure if file does not exist
+            if not os.path.exists(consolidated_file):
+                final_data = {
+                    "scraping_session": {
+                        "timestamp": datetime.now().isoformat(),
+                        "total_posts": 0,
+                        "new_posts_this_session": 0,
+                        "existing_posts": 0,
+                        "status": "completed"
+                    },
+                    "posts": []
+                }
+                with open(consolidated_file, 'w', encoding='utf-8') as f:
+                    json.dump(final_data, f, indent=2, ensure_ascii=False)
+                print(f"Created empty master file: {consolidated_file}")
             return consolidated_file
         
         # Combine all posts
@@ -1396,6 +1498,35 @@ class FacebookScraper:
             },
             "posts": all_posts
         }
+        
+        # Save consolidated file atomically to prevent corruption
+        temp_file = consolidated_file + '.tmp'
+        try:
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+            
+            # Clean up any comment-like posts that might have slipped through
+            final_data = self.cleanup_comment_posts(final_data)
+            
+            # Re-save after cleanup (atomically)
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+            
+            # Atomic move - replace original only after successful write
+            os.rename(temp_file, consolidated_file)
+            
+        except Exception as save_error:
+            print(f"Error saving consolidated file: {save_error}")
+            # Clean up temp file if it exists
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+            raise
+        
+        print(f"Consolidated data saved to {consolidated_file}")
+        print(f"Added {len(truly_new_posts)} new posts to master file")
+        print(f"Total posts in master file: {len(final_data['posts'])}")
+        
+        return consolidated_file
         
         # Save consolidated file atomically to prevent corruption
         temp_file = consolidated_file + '.tmp'
@@ -1553,6 +1684,10 @@ def main():
     notifier = NotificationSystem()
     start_time = datetime.now()
     
+    # Ensure data directory exists
+    os.makedirs('data', exist_ok=True)
+    print("📁 Ensured data directory exists")
+    
     # Check if we've already scraped recently with adaptive timing
     last_run_file = "data/last_run.txt"
     current_time = datetime.now()
@@ -1590,7 +1725,15 @@ def main():
         # Login to Facebook
         print("Logging in to Facebook...")
         if not scraper.login():
-            print("Failed to login.")
+            print("❌ Failed to login.")
+            print("🔧 Creating empty master file since login failed...")
+            
+            # Still create the master file even if login failed
+            empty_data = []  # Empty list for no posts
+            formatted_data = scraper.format_for_output()
+            master_filename = scraper.save_posts_consolidated(formatted_data)
+            
+            print(f"📄 Empty master file created at: {master_filename}")
             notifier.notify_scraper_completed(success=False, errors="Login failed")
             return
             
@@ -1604,24 +1747,16 @@ def main():
         # Fixed URL (removed extra spaces)
         posts = scraper.scrape_posts("https://www.facebook.com/Kuensel")
 
-        if not posts:
-            print("⚠️  No posts were scraped.")
-            # Save raw data for debugging
-            raw_data = {
-                "scraping_session": {
-                    "timestamp": datetime.now().isoformat(),
-                    "total_posts": 0,
-                    "status": "no_posts_found",
-                    "debug_info": "No valid posts found during scraping"
-                },
-                "posts": []
-            }
-            notifier.notify_scraper_completed(success=False, errors="No posts found")
-            return
-
-        # Formating data with required fields
+        # Always format data, even if empty
         print("📋 Formatting data with required fields...")
         formatted_data = scraper.format_for_output()
+
+        if not posts:
+            print("⚠️  No posts were scraped.")
+            # Still save the empty data structure to create the master file
+            print("� Creating empty master file...")
+        else:
+            print(f"✅ Successfully scraped {len(posts)} posts.")
 
         # Download images (False for now)
         scraper.download_images(formatted_data)
@@ -1655,25 +1790,41 @@ def main():
         final_post_count = len(formatted_data)
         new_posts = final_post_count - initial_post_count
         
-        # Send success notification
+        # Send notifications based on results
         if new_posts > 0:
             print(f"🆕 Found {new_posts} new posts!")
             notifier.notify_new_posts_detected(new_posts)
+            # Send success notification
+            notifier.notify_scraper_completed(
+                success=True, 
+                posts_found=final_post_count
+            )
+        else:
+            print("ℹ️  No new posts found this run")
+            # Still consider it a successful run, just no new content
+            notifier.notify_scraper_completed(
+                success=True, 
+                posts_found=final_post_count
+            )
         
         # Print summary
         print(f"\n=== Scraping Summary ===")
-        print(f"Total posts in database: {final_post_count}")
+        print(f"Posts processed this session: {final_post_count}")
         if new_posts > 0:
             print(f"New posts found: {new_posts}")
         else:
-            print("No new posts found this run")
-        print(f"Master data saved to: {master_filename}")
+            print("No new posts found this run (may have found existing posts)")
+        print(f"Master data file: {master_filename}")
+        print(f"Master file created/updated: {'✅' if os.path.exists(master_filename) else '❌'}")
         
-        # Send completion notification
-        notifier.notify_scraper_completed(
-            success=True, 
-            posts_found=final_post_count
-        )
+        # Try to get total posts from master file
+        try:
+            with open(master_filename, 'r', encoding='utf-8') as f:
+                master_data = json.load(f)
+                total_in_master = len(master_data.get('posts', []))
+                print(f"Total posts in master file: {total_in_master}")
+        except Exception as e:
+            print(f"Could not read master file for total count: {e}")
 
         # Print sample data
         if len(formatted_data) > 0:
@@ -1697,6 +1848,33 @@ def main():
                 print(f"Links found: {len(attachment['links'])}")
         else:
             print("No valid posts found after formatting.")
+        
+        # Final verification that master file exists
+        master_file_path = "data/kuensel_posts_master.json"
+        if os.path.exists(master_file_path):
+            print(f"✅ Master file confirmed at: {master_file_path}")
+            file_size = os.path.getsize(master_file_path)
+            print(f"📊 File size: {file_size} bytes")
+        else:
+            print(f"❌ Master file not found at: {master_file_path}")
+            print("🔧 Attempting to create empty master file...")
+            try:
+                os.makedirs('data', exist_ok=True)
+                empty_data = {
+                    "scraping_session": {
+                        "timestamp": datetime.now().isoformat(),
+                        "total_posts": 0,
+                        "new_posts_this_session": 0,
+                        "existing_posts": 0,
+                        "status": "emergency_creation"
+                    },
+                    "posts": []
+                }
+                with open(master_file_path, 'w', encoding='utf-8') as f:
+                    json.dump(empty_data, f, indent=2, ensure_ascii=False)
+                print(f"✅ Emergency master file created at: {master_file_path}")
+            except Exception as create_error:
+                print(f"❌ Failed to create emergency master file: {create_error}")
 
     except Exception as e:
         error_msg = str(e)

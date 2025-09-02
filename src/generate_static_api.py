@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate simplified static API with only posts that have images
+Generate simplified static API with all posts from the scraper
 """
 
 import json
@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 
 def generate_posts_api():
-    """Generate clean posts.json API with only posts that have images"""
+    """Generate clean posts.json API with all posts from the scraper"""
     
     # Load master data
     master_file = 'data/kuensel_posts_master.json'
@@ -43,38 +43,38 @@ def generate_posts_api():
         all_posts = master_data.get('posts', master_data.get('data', []))
         scraping_session = master_data.get('scraping_session', {})
     
-    # Filter posts that have images
-    posts_with_images = []
+    # Include all posts (not just those with images)
+    all_valid_posts = []
     for post in all_posts:
         attachment = post.get('attachment', {})
         images = attachment.get('images', [])
         
-        # Only include posts with images
-        if images and len(images) > 0:
-            posts_with_images.append(post)
+        # Include all posts
+        all_valid_posts.append(post)
     
     print(f"Total posts: {len(all_posts)}")
-    print(f"Posts with images: {len(posts_with_images)}")
-    print(f"Posts filtered out: {len(all_posts) - len(posts_with_images)}")
+    print(f"Posts with images: {sum(1 for post in all_valid_posts if post.get('attachment', {}).get('images'))}")
+    print(f"Posts included: {len(all_valid_posts)}")
     
     # Create clean API structure
     api_data = {
         "success": True,
-        "total_posts": len(posts_with_images),
+        "total_posts": len(all_valid_posts),
         "last_updated": datetime.now().isoformat(),
-        "filter_applied": "only_posts_with_images",
+        "filter_applied": "all_posts",
         "scraping_session": {
             "last_scrape": scraping_session.get('timestamp', ''),
             "status": scraping_session.get('status', 'success'),
             "original_total": len(all_posts),
-            "filtered_total": len(posts_with_images)
+            "filtered_total": len(all_valid_posts)
         },
         "posts": []
     }
     
-    # Process posts with clean structure
-    for post in posts_with_images:
+    # Process all posts with clean structure
+    for post in all_valid_posts:
         attachment = post.get('attachment', {})
+        has_images = len(attachment.get('images', [])) > 0
         clean_post = {
             "id": post.get('id'),
             "title": post.get('title', '').strip(),
@@ -83,7 +83,7 @@ def generate_posts_api():
             "author": post.get('AuthorName', 'Kuensel'),
             "created_at": post.get('createdAt'),
             "published_at": post.get('publishAt'),
-            "has_images": True,  # All posts have images now
+            "has_images": has_images,
             "image_count": len(attachment.get('images', [])),
             "has_videos": len(attachment.get('videos', [])) > 0,
             "has_links": len(attachment.get('links', [])) > 0,
@@ -113,10 +113,11 @@ def generate_posts_api():
     total_images = sum(post["image_count"] for post in api_data["posts"])
     posts_with_videos = sum(1 for post in api_data["posts"] if post["has_videos"])
     
-    print(f"Generated clean posts.json with image filter")
+    print(f"Generated clean posts.json with all posts")
     print(f"   Posts included: {len(api_data['posts'])}")
     print(f"   Total images: {total_images}")
     print(f"   Posts with videos: {posts_with_videos}")
+    print(f"   Posts with images: {sum(1 for post in api_data['posts'] if post['has_images'])}")
     if api_data['posts']:
         avg_length = sum(p['content_length'] for p in api_data['posts']) // len(api_data['posts'])
         print(f"   Average content length: {avg_length} chars")
@@ -196,7 +197,8 @@ def restore_master_file_format():
     
     return False
 
-if __name__ == "__main__":
+def generate_static_api():
+    """Main function called by the scraper to generate static API files"""
     print("Generating simplified static API (images only)...")
     
     # First, try to restore master file format if needed
@@ -205,3 +207,6 @@ if __name__ == "__main__":
     generate_posts_api()
     clean_old_api_files()
     print("API generation completed!")
+
+if __name__ == "__main__":
+    generate_static_api()
