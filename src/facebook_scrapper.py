@@ -11,6 +11,8 @@ import re
 import os
 import requests
 import subprocess
+import argparse
+import sys
 from urllib.parse import urljoin, urlparse
 try:
     from notification_system import NotificationSystem
@@ -1896,5 +1898,73 @@ def main():
         print(f"Scraping completed in {duration:.1f} seconds")
 
 
+def parse_arguments():
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(description='Facebook Scraper for Kuensel Posts')
+    
+    parser.add_argument('--max-posts', 
+                        type=int, 
+                        default=10,
+                        help='Maximum number of posts to scrape (default: 10)')
+    
+    parser.add_argument('--headless', 
+                        action='store_true',
+                        help='Run browser in headless mode')
+    
+    parser.add_argument('--force-scrape',
+                        action='store_true', 
+                        help='Force scrape ignoring cooldown')
+    
+    parser.add_argument('--config',
+                        type=str,
+                        default='config/config.json',
+                        help='Path to config file (default: config/config.json)')
+    
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
+    args = parse_arguments()
+    
+    # Update config with command line arguments
+    try:
+        # Load existing config
+        with open(args.config, 'r') as f:
+            config = json.load(f)
+        
+        # Override with command line arguments
+        if hasattr(args, 'max_posts') and args.max_posts:
+            config['scraping']['target_count'] = args.max_posts
+            print(f"📊 Max posts set to: {args.max_posts}")
+        
+        if hasattr(args, 'headless') and args.headless:
+            config['scraping']['headless'] = True
+            print("🖥️  Headless mode enabled")
+        
+        # Handle force scrape
+        if hasattr(args, 'force_scrape') and args.force_scrape:
+            last_run_file = 'data/last_run.txt'
+            if os.path.exists(last_run_file):
+                os.remove(last_run_file)
+                print("🔥 Force scrape: Cooldown removed")
+        
+        # Save updated config temporarily
+        with open(args.config, 'w') as f:
+            json.dump(config, f, indent=2)
+            
+        print(f"⚙️  Using config: {args.config}")
+        print(f"🎯 Target posts: {config['scraping']['target_count']}")
+        print(f"👤 Headless: {config['scraping']['headless']}")
+        
+    except FileNotFoundError:
+        print(f"❌ Config file not found: {args.config}")
+        print("💡 Make sure to set up your configuration file")
+        sys.exit(1)
+    except json.JSONDecodeError as e:
+        print(f"❌ Invalid JSON in config file: {e}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"⚠️  Error processing arguments: {e}")
+    
+    # Run the main scraper
     main()

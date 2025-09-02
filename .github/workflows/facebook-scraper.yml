@@ -85,7 +85,7 @@ jobs:
         MAX_POSTS="${{ github.event.inputs.max_posts || '8' }}"
         
         echo "🚀 Starting scraping (max posts: $MAX_POSTS)..."
-        timeout 600s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless
+        timeout 600s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless --force-scrape
         
         # Check if scraping was successful
         if [ $? -eq 0 ]; then
