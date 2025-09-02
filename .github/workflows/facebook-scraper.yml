@@ -71,8 +71,11 @@ jobs:
         
     - name: 🕷️ Execute Facebook scraping
       run: |
+        # Set up X11 display with reduced warnings
         export DISPLAY=:99
-        Xvfb :99 -ac -screen 0 1280x1024x24 &
+        export XKBPATH=/usr/share/X11/xkb
+        Xvfb :99 -ac -screen 0 1280x1024x24 -noreset +extension GLX +render -logfile /tmp/xvfb.log 2>&1 &
+        XVFB_PID=$!
         sleep 3
         
         # Handle cooldown based on input
@@ -87,12 +90,16 @@ jobs:
         echo "🚀 Starting scraping (max posts: $MAX_POSTS)..."
         
         # For scheduled runs, always force scrape to bypass cooldown
+        # Increased timeout to 15 minutes (900s) to handle Facebook's slow loading
         if [ "${{ github.event_name }}" = "schedule" ]; then
           echo "🕒 Scheduled run detected - forcing scrape to bypass cooldown"
-          timeout 600s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless --force-scrape
+          timeout 900s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless --force-scrape
         else
-          timeout 600s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless
+          timeout 900s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless
         fi
+        
+        # Clean up Xvfb process
+        kill $XVFB_PID 2>/dev/null || true
         
         # Check if scraping was successful
         if [ $? -eq 0 ]; then

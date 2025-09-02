@@ -122,9 +122,23 @@ class FacebookScraper:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+        
+        # Add timeout and stability options
+        chrome_options.add_argument("--page-load-strategy=eager")  # Don't wait for all resources
+        chrome_options.add_argument("--disable-extensions")
+        chrome_options.add_argument("--disable-plugins")
+        chrome_options.add_argument("--disable-background-timer-throttling")
+        chrome_options.add_argument("--disable-renderer-backgrounding")
+        chrome_options.add_argument("--disable-backgrounding-occluded-windows")
 
+        # Set timeouts
         self.driver = webdriver.Chrome(options=chrome_options)
-        print("WebDriver initialized successfully")
+        
+        # Set page load and script timeouts
+        self.driver.set_page_load_timeout(45)  # 45 seconds max for page load
+        self.driver.implicitly_wait(15)  # 15 seconds for element finding
+        
+        print("WebDriver initialized successfully with timeouts")
 
     def login(self):
         """Login to Facebook"""
@@ -1281,7 +1295,7 @@ class FacebookScraper:
         self.posts_data = unique_posts
         return len(unique_posts)
 
-    def scrape_posts(self, page_url="https://www.facebook.com/Kuensel", target_count=None, max_scrolls=None): # Fixed URL
+    def scrape_posts(self, page_url="https://www.facebook.com/Kuensel", target_count=None, max_scrolls=None, runtime_checker=None): # Fixed URL
         """Main scraping function - implements your 7-step process"""
         if target_count is None:
             target_count = self.config["scraping"]["target_count"]
@@ -1303,6 +1317,11 @@ class FacebookScraper:
 
         # Cycle until required number of posts
         while len(self.posts_data) < target_count and scrolls < max_scrolls:
+            # Check runtime if checker provided
+            if runtime_checker and runtime_checker():
+                print("⏰ Runtime limit reached, stopping scraping...")
+                break
+                
             # 1: Use Selenium to scroll down a little and load new posts
             print(f"Scroll #{scrolls + 1}... (Found {len(self.posts_data)} new posts so far)")
             self.scroll_page()
@@ -1686,6 +1705,16 @@ def main():
     notifier = NotificationSystem()
     start_time = datetime.now()
     
+    # Set a maximum runtime of 12 minutes (720 seconds) to prevent timeout
+    MAX_RUNTIME = 720  # 12 minutes
+    
+    def check_runtime():
+        elapsed = (datetime.now() - start_time).total_seconds()
+        if elapsed > MAX_RUNTIME:
+            print(f"⏰ Maximum runtime ({MAX_RUNTIME}s) exceeded. Stopping gracefully...")
+            return True
+        return False
+    
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)
     print("📁 Ensured data directory exists")
@@ -1746,8 +1775,8 @@ def main():
 
         # Scrape posts from Kuensel page
         print("📄 Starting to scrape Kuensel Facebook page...")
-        # Fixed URL (removed extra spaces)
-        posts = scraper.scrape_posts("https://www.facebook.com/Kuensel")
+        # Fixed URL (removed extra spaces) with runtime checker
+        posts = scraper.scrape_posts("https://www.facebook.com/Kuensel", runtime_checker=check_runtime)
 
         # Always format data, even if empty
         print("📋 Formatting data with required fields...")
