@@ -1278,7 +1278,10 @@ class FacebookScraper:
         """Create hash to identify duplicate posts"""
         content = post_data.get('content', '')
         title = post_data.get('title', '')
-        combined = f"{content}_{title}"
+        # Use only first 100 chars of content for hash to avoid minor variations
+        content_key = content[:100].strip() if content else ""
+        title_key = title[:50].strip() if title else ""
+        combined = f"{content_key}_{title_key}"
         return hashlib.md5(combined.encode()).hexdigest()
 
     def remove_duplicates(self):
@@ -1354,12 +1357,17 @@ class FacebookScraper:
                     already_scraped_count += 1
                     continue
                 
-                post_hash = self.create_post_hash(post)
-                if post_hash not in self.seen_post_hashes:
+                # Create a more lenient hash for session deduplication (only first 50 chars)
+                content_for_hash = post.get('content', '')[:50].strip()
+                title_for_hash = post.get('title', '')[:30].strip()  
+                session_hash = hashlib.md5(f"{content_for_hash}_{title_for_hash}".encode()).hexdigest()
+                
+                if session_hash not in self.seen_post_hashes:
                     if self.is_valid_post(post):  
-                        self.seen_post_hashes.add(post_hash)
+                        self.seen_post_hashes.add(session_hash)
                         self.posts_data.append(post)
                         valid_posts_count += 1
+                        print(f"✓ Added new post: {post.get('title', '')[:50]}...")
                     else:
                         print(f"Post rejected as invalid: {post.get('title', '')[:30] if post.get('title') else 'No title'}")
                 else:
