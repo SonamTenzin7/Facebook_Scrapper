@@ -134,40 +134,49 @@ class FacebookScraper:
         chrome_options.add_argument("--disable-backgrounding-occluded-windows")
 
         # Set timeouts
+        self.driver = None
+        driver_initialized = False
+        
+        # Try using webdriver-manager for automatic ChromeDriver management
         try:
-            # Try using webdriver-manager for automatic ChromeDriver management
             service = Service(ChromeDriverManager().install())
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
             print("WebDriver initialized with webdriver-manager")
+            driver_initialized = True
         except Exception as e:
             print(f"⚠️  webdriver-manager failed: {e}")
+        
+        # Fallback to system ChromeDriver if webdriver-manager failed
+        if not driver_initialized:
+            chromedriver_paths = [
+                "/usr/local/bin/chromedriver",
+                "/usr/bin/chromedriver",
+                "chromedriver"
+            ]
+            
+            for path in chromedriver_paths:
+                try:
+                    service = Service(path)
+                    self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                    print(f"WebDriver initialized with ChromeDriver at: {path}")
+                    driver_initialized = True
+                    break
+                except Exception as path_error:
+                    print(f"⚠️  Failed to use ChromeDriver at {path}: {path_error}")
+                    continue
+        
+        # Final fallback - try without specifying service
+        if not driver_initialized:
             try:
-                # Fallback to system ChromeDriver
-                # Check common paths where ChromeDriver might be installed
-                chromedriver_paths = [
-                    "/usr/local/bin/chromedriver",
-                    "/usr/bin/chromedriver",
-                    "chromedriver"
-                ]
-                
-                service = None
-                for path in chromedriver_paths:
-                    try:
-                        service = Service(path)
-                        self.driver = webdriver.Chrome(service=service, options=chrome_options)
-                        print(f"WebDriver initialized with ChromeDriver at: {path}")
-                        break
-                    except Exception:
-                        continue
-                
-                if service is None:
-                    # Last resort - try without specifying service
-                    self.driver = webdriver.Chrome(options=chrome_options)
-                    print("WebDriver initialized with system default ChromeDriver")
-                    
+                self.driver = webdriver.Chrome(options=chrome_options)
+                print("WebDriver initialized with system default ChromeDriver")
+                driver_initialized = True
             except Exception as fallback_error:
-                print(f"❌ All ChromeDriver initialization methods failed: {fallback_error}")
-                raise
+                print(f"❌ Final fallback failed: {fallback_error}")
+        
+        # Check if any method succeeded
+        if not driver_initialized or self.driver is None:
+            raise Exception("❌ All ChromeDriver initialization methods failed. Please install Chrome and ChromeDriver.")
         
         # Set page load and script timeouts
         self.driver.set_page_load_timeout(45)  # 45 seconds max for page load
