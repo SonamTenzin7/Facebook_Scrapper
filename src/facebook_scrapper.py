@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup, Tag
 import time
 import json
@@ -132,7 +134,40 @@ class FacebookScraper:
         chrome_options.add_argument("--disable-backgrounding-occluded-windows")
 
         # Set timeouts
-        self.driver = webdriver.Chrome(options=chrome_options)
+        try:
+            # Try using webdriver-manager for automatic ChromeDriver management
+            service = Service(ChromeDriverManager().install())
+            self.driver = webdriver.Chrome(service=service, options=chrome_options)
+            print("WebDriver initialized with webdriver-manager")
+        except Exception as e:
+            print(f"⚠️  webdriver-manager failed: {e}")
+            try:
+                # Fallback to system ChromeDriver
+                # Check common paths where ChromeDriver might be installed
+                chromedriver_paths = [
+                    "/usr/local/bin/chromedriver",
+                    "/usr/bin/chromedriver",
+                    "chromedriver"
+                ]
+                
+                service = None
+                for path in chromedriver_paths:
+                    try:
+                        service = Service(path)
+                        self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                        print(f"WebDriver initialized with ChromeDriver at: {path}")
+                        break
+                    except Exception:
+                        continue
+                
+                if service is None:
+                    # Last resort - try without specifying service
+                    self.driver = webdriver.Chrome(options=chrome_options)
+                    print("WebDriver initialized with system default ChromeDriver")
+                    
+            except Exception as fallback_error:
+                print(f"❌ All ChromeDriver initialization methods failed: {fallback_error}")
+                raise
         
         # Set page load and script timeouts
         self.driver.set_page_load_timeout(45)  # 45 seconds max for page load
@@ -1969,6 +2004,16 @@ if __name__ == "__main__":
         with open(args.config, 'r') as f:
             config = json.load(f)
         
+        # Ensure scraping section exists
+        if 'scraping' not in config:
+            config['scraping'] = {
+                'target_count': 5,
+                'headless': True,
+                'max_scrolls': 25,
+                'scroll_pause': 5
+            }
+            print("⚙️  Added missing 'scraping' section to config")
+        
         # Override with command line arguments
         if hasattr(args, 'max_posts') and args.max_posts:
             config['scraping']['target_count'] = args.max_posts
@@ -2000,8 +2045,15 @@ if __name__ == "__main__":
     except json.JSONDecodeError as e:
         print(f"❌ Invalid JSON in config file: {e}")
         sys.exit(1)
+    except KeyError as e:
+        print(f"❌ Missing required config section: {e}")
+        print("💡 Check your config file structure")
+        sys.exit(1)
     except Exception as e:
         print(f"⚠️  Error processing arguments: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
     
     # Run the main scraper
     main()

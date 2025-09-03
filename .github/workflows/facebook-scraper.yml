@@ -55,6 +55,13 @@ jobs:
         sudo apt-get update -qq
         sudo apt-get install -y google-chrome-stable xvfb
         
+        # Remove any existing chromedriver to avoid conflicts
+        sudo rm -f /usr/bin/chromedriver /usr/local/bin/chromedriver
+        
+        # Verify Chrome installation
+        echo "✅ Chrome version: $(google-chrome --version)"
+        echo "📦 webdriver-manager will handle ChromeDriver automatically"
+        
     - name: ⚙️ Prepare configuration
       run: |
         if [ -z "${{ secrets.FACEBOOK_CONFIG }}" ]; then
