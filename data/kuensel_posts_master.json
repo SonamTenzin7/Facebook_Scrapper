@@ -1,9 +1,9 @@
 {
   "scraping_session": {
     "timestamp": "2025-09-03T14:35:31.985129",
-    "total_posts": 23,
+    "total_posts": 22,
     "new_posts_this_session": 3,
-    "existing_posts": 23,
+    "existing_posts": 22,
     "status": "completed"
   },
   "posts": [
@@ -518,22 +518,6 @@
       },
       "createdAt": "2025-09-03T12:34:36.082031",
       "publishAt": "2025-09-03T12:34:36.082039"
-    },
-    {
-      "id": "852e2cf16d17ece8",
-      "title": "Perspective: ’           This time, human–wildlife conflict hit home, and it felt different",
-      "description": ". Hearing my parents describe the destruction caused by an elephant and express their fear for their own safety brought a new dimension to a challenge I had long studied but never experienced so closely https://kuenselonline.com/.../bhutans-frontline-villages... #villager #perspective #Bhutan",
-      "content": "Perspective: ’           This time, human–wildlife conflict hit home, and it felt different. Hearing my parents describe the destruction caused by an elephant and express their fear for their own safety brought a new dimension to a challenge I had long studied but never experienced so closely https://kuenselonline.com/.../bhutans-frontline-villages... #villager #perspective #Bhutan",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-09-03T12:33:51.629070",
-      "publishAt": "2025-09-03T12:33:51.629079"
     },
     {
       "id": "711e18825c9df643",
