@@ -1,13 +1,13 @@
 {
   "success": true,
-  "total_posts": 24,
+  "total_posts": 23,
   "last_updated": "2025-09-03T14:35:31.987338",
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-03T14:35:31.985129",
     "status": "completed",
-    "original_total": 24,
-    "filtered_total": 24
+    "original_total": 23,
+    "filtered_total": 23
   },
   "posts": [
     {
@@ -422,25 +422,6 @@
         ]
       },
       "content_length": 370
-    },
-    {
-      "id": "bec5c0543bc42ad3",
-      "title": "So this was just waste of govt money",
-      "content": "So this was just waste of govt money??? Tashi and Drukair got millions payment on top of more tourist arrival??? Another shortsighted and stupid move of PDP government.",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": null,
-      "published_at": null,
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 168
     },
     {
       "id": "e61c3fc9909b44f1",
