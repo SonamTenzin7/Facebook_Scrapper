@@ -1,34 +1,15 @@
 {
   "success": true,
-  "total_posts": 25,
+  "total_posts": 24,
   "last_updated": "2025-09-04T11:36:02.228079",
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-04T11:36:02.057822",
     "status": "completed",
-    "original_total": 25,
-    "filtered_total": 25
+    "original_total": 24,
+    "filtered_total": 24
   },
   "posts": [
-    {
-      "id": "a62f8cda47b7078c",
-      "title": "Sonam ST Tenzin 2",
-      "content": "Sonam ST Tenzin 2.5 entitled",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-04T11:26:04.378185",
-      "published_at": "2025-09-04T11:26:04.378194",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 28
-    },
     {
       "id": "744f45d090e294a8",
       "title": "Kuensel Postal ballot results: PDP candidate leading in the Nubi-Tangsibji bye-election",
