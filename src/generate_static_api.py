@@ -65,7 +65,7 @@ def generate_posts_api():
         "scraping_session": {
             "last_scrape": scraping_session.get('timestamp', ''),
             "status": scraping_session.get('status', 'success'),
-            "original_total": len(all_posts),
+            "original_total": len(all_posts),  # Use actual count, not metadata count
             "filtered_total": len(all_valid_posts)
         },
         "posts": []
@@ -101,6 +101,13 @@ def generate_posts_api():
     
     # Sort posts by creation date (newest first), handle None values
     api_data["posts"].sort(key=lambda x: x.get('created_at') or '1900-01-01', reverse=True)
+    
+    # Validate data consistency
+    print(f"Validation: Master file has {len(all_posts)} posts, API will have {len(api_data['posts'])} posts")
+    if len(all_posts) != len(api_data['posts']):
+        print(f"⚠️  Post count mismatch detected!")
+    else:
+        print("✅ Post counts match between master and API files")
     
     # Save clean posts.json
     output_file = 'static_api/posts.json'

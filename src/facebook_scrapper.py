@@ -1696,6 +1696,15 @@ class FacebookScraper:
             "posts": all_posts
         }
         
+        # Validate data consistency
+        actual_post_count = len(final_data["posts"])
+        metadata_post_count = final_data["scraping_session"]["total_posts"]
+        if actual_post_count != metadata_post_count:
+            print(f"⚠️  Data inconsistency detected! Actual posts: {actual_post_count}, Metadata: {metadata_post_count}")
+            # Fix the metadata to match actual data
+            final_data["scraping_session"]["total_posts"] = actual_post_count
+            print(f"✅ Corrected metadata to match actual post count: {actual_post_count}")
+        
         # Save consolidated file atomically to prevent corruption
         temp_file = consolidated_file + '.tmp'
         try:
