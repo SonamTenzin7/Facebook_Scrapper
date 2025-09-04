@@ -1346,13 +1346,24 @@ class FacebookScraper:
         return data
     
     def create_post_hash(self, post_data):
-        """Create hash to identify duplicate posts"""
+        """Create hash to identify duplicate posts - using more content for better uniqueness"""
         content = post_data.get('content', '')
         title = post_data.get('title', '')
-        # Use only first 100 chars of content for hash to avoid minor variations
-        content_key = content[:100].strip() if content else ""
-        title_key = title[:50].strip() if title else ""
-        combined = f"{content_key}_{title_key}"
+        
+        # Use more content for hash to avoid minor variations causing duplicates
+        content_key = content[:200].strip() if content else ""  # Increased from 100 to 200
+        title_key = title[:100].strip() if title else ""        # Increased from 50 to 100
+        
+        # Normalize content for better duplicate detection
+        def normalize_text(text):
+            # Remove extra whitespace and convert to lowercase
+            text = re.sub(r'\s+', ' ', text.lower().strip())
+            return text
+        
+        normalized_content = normalize_text(content_key)
+        normalized_title = normalize_text(title_key)
+        
+        combined = f"{normalized_content}_{normalized_title}"
         return hashlib.md5(combined.encode()).hexdigest()
 
     def remove_duplicates(self):
@@ -1369,6 +1380,31 @@ class FacebookScraper:
         self.posts_data = unique_posts
         return len(unique_posts)
 
+    def filter_duplicate_posts_in_batch(self, posts):
+        """Remove duplicate posts from a single batch before processing"""
+        if not posts:
+            return posts
+            
+        unique_posts = []
+        seen_content_hashes = set()
+        
+        for post in posts:
+            content = post.get('content', '').strip()
+            title = post.get('title', '').strip()
+            
+            # Create content hash for this post
+            content_key = content[:200].strip() if content else ""
+            content_hash = hashlib.md5(content_key.encode()).hexdigest()
+            
+            # Skip if we've seen this content hash in this batch
+            if content_hash not in seen_content_hashes:
+                seen_content_hashes.add(content_hash)
+                unique_posts.append(post)
+            else:
+                print(f"Removed batch duplicate: {title[:50]}...")
+                
+        return unique_posts
+
     def scrape_posts(self, page_url="https://www.facebook.com/Kuensel", target_count=None, max_scrolls=None, runtime_checker=None): # Fixed URL
         """Main scraping function - implements your 7-step process"""
         if target_count is None:
@@ -1377,6 +1413,10 @@ class FacebookScraper:
             max_scrolls = self.config["scraping"]["max_scrolls"]
 
         print(f"Starting to scrape up to {target_count} posts from {page_url}...")
+        
+        # Clear session hashes to start fresh
+        self.seen_post_hashes.clear()
+        print(f"Cleared session hashes. Starting with {len(self.existing_post_ids)} known existing posts.")
         
         # Add overall timeout protection - max 15 minutes for entire scraping
         OVERALL_TIMEOUT = 900  # 15 minutes in seconds
@@ -1423,19 +1463,25 @@ class FacebookScraper:
             # 3: Use BeautifulSoup to parse the HTML and extract the required post data
             new_posts = self.extract_posts_with_beautifulsoup(html_content)
             print(f"Extracted {len(new_posts)} raw posts")
+            
+            # Pre-filter the new posts to remove obvious duplicates within this batch
+            unique_new_posts = self.filter_duplicate_posts_in_batch(new_posts)
+            print(f"After batch deduplication: {len(unique_new_posts)} unique posts to process")
 
             # 4: Store the extracted data in a list (after validation)
             old_count = len(self.posts_data)
             valid_posts_count = 0
             already_scraped_count = 0  # Track how many posts were already scraped
 
-            for post in new_posts:
+            for post in unique_new_posts:
                 # Check timeout during post processing
                 if time.time() - scraping_start_time > OVERALL_TIMEOUT:
                     print(f"⏰ Timeout reached during post processing, breaking...")
                     break
                     
                 post_id = post.get("id", "")
+                post_content = post.get('content', '').strip()
+                post_title = post.get('title', '').strip()
                 
                 # Skip if post already exists in master file
                 if post_id and self.is_post_already_scraped(post_id):
@@ -1443,21 +1489,56 @@ class FacebookScraper:
                     already_scraped_count += 1
                     continue
                 
-                # Create a more lenient hash for session deduplication (only first 50 chars)
-                content_for_hash = post.get('content', '')[:50].strip()
-                title_for_hash = post.get('title', '')[:30].strip()  
-                session_hash = hashlib.md5(f"{content_for_hash}_{title_for_hash}".encode()).hexdigest()
+                # Enhanced duplicate checking - create multiple hashes for better detection
+                # 1. Content-based hash (first 200 chars for better uniqueness)
+                content_for_hash = post_content[:200].strip() if post_content else ""
+                content_hash = hashlib.md5(content_for_hash.encode()).hexdigest()
                 
-                if session_hash not in self.seen_post_hashes:
+                # 2. Title-based hash
+                title_hash = hashlib.md5(post_title.encode()).hexdigest() if post_title else ""
+                
+                # 3. Combined hash for session deduplication
+                combined_key = f"{content_for_hash}_{post_title[:50].strip()}"
+                session_hash = hashlib.md5(combined_key.encode()).hexdigest()
+                
+                # Check if we've already seen this content in this session
+                is_duplicate = False
+                
+                # Check against seen hashes from this session
+                if session_hash in self.seen_post_hashes:
+                    print(f"Skipping duplicate post (session hash): {post_title[:50]}...")
+                    is_duplicate = True
+                elif content_hash in self.seen_post_hashes:
+                    print(f"Skipping duplicate post (content hash): {post_title[:50]}...")
+                    is_duplicate = True
+                elif title_hash and title_hash in self.seen_post_hashes:
+                    print(f"Skipping duplicate post (title hash): {post_title[:50]}...")
+                    is_duplicate = True
+                    
+                # Additional content similarity check for similar posts
+                if not is_duplicate and post_content:
+                    for existing_post in self.posts_data:
+                        existing_content = existing_post.get('content', '').strip()
+                        if existing_content and self.is_content_similar(post_content, existing_content):
+                            print(f"Skipping similar post: {post_title[:50]}...")
+                            is_duplicate = True
+                            break
+                
+                if not is_duplicate:
                     if self.is_valid_post(post):  
+                        # Add all hashes to seen set
                         self.seen_post_hashes.add(session_hash)
+                        self.seen_post_hashes.add(content_hash)
+                        if title_hash:
+                            self.seen_post_hashes.add(title_hash)
+                        
                         self.posts_data.append(post)
                         valid_posts_count += 1
-                        print(f"✓ Added new post: {post.get('title', '')[:50]}...")
+                        print(f"✓ Added new post: {post_title[:50]}...")
                     else:
-                        print(f"Post rejected as invalid: {post.get('title', '')[:30] if post.get('title') else 'No title'}")
+                        print(f"Post rejected as invalid: {post_title[:30] if post_title else 'No title'}")
                 else:
-                    print(f"Skipping duplicate post in this session: {post.get('title', '')[:50]}...")
+                    already_scraped_count += 1
 
             new_count = len(self.posts_data)
             print(f"Found {valid_posts_count} valid posts in this scroll. Total unique posts: {new_count}")
@@ -1776,6 +1857,7 @@ class FacebookScraper:
                 backup_file = f"{consolidated_file}.corrupted_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
                 try:
                     os.rename(consolidated_file, backup_file)
+
                     print(f"Corrupted file backed up to: {backup_file}")
                 except Exception as backup_error:
                     print(f"Could not backup corrupted file: {backup_error}")
@@ -1794,6 +1876,39 @@ class FacebookScraper:
     def is_post_already_scraped(self, post_id):
         """Check if a post has already been scraped"""
         return post_id in self.existing_post_ids
+    
+    def is_content_similar(self, content1, content2, similarity_threshold=0.8):
+        """Check if two content strings are similar"""
+        if not content1 or not content2:
+            return False
+            
+        # Normalize content for comparison
+        def normalize_content(text):
+            # Remove extra whitespace and convert to lowercase
+            text = re.sub(r'\s+', ' ', text.lower().strip())
+            # Remove punctuation for better comparison
+            text = re.sub(r'[^\w\s]', '', text)
+            return text
+        
+        norm_content1 = normalize_content(content1)
+        norm_content2 = normalize_content(content2)
+        
+        # If either content is too short, use exact match
+        if len(norm_content1) < 50 or len(norm_content2) < 50:
+            return norm_content1 == norm_content2
+        
+        # Use simple similarity: check if one is contained in the other
+        # or if they share significant common substrings
+        shorter = norm_content1 if len(norm_content1) < len(norm_content2) else norm_content2
+        longer = norm_content2 if shorter == norm_content1 else norm_content1
+        
+        # Check if the shorter content is mostly contained in the longer one
+        if len(shorter) > 0:
+            common_chars = sum(1 for c in shorter if c in longer)
+            similarity = common_chars / len(shorter)
+            return similarity >= similarity_threshold
+            
+        return False
 
 
 def main():
