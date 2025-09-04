@@ -1,34 +1,36 @@
 {
   "scraping_session": {
-    "timestamp": "2025-09-03T14:35:31.985129",
-    "total_posts": 22,
-    "new_posts_this_session": 3,
-    "existing_posts": 22,
+    "timestamp": "2025-09-04T11:36:02.057822",
+    "total_posts": 25,
+    "new_posts_this_session": 2,
+    "existing_posts": 23,
     "status": "completed"
   },
   "posts": [
     {
-      "id": "d65243ed5d2b1112",
-      "title": "Kuensel Editorial: The government’s decision to rev...",
-      "content": "Kuensel Editorial: The government’s decision to revise taxation on alcohol and tobacco products is a long-overdue step in the fight against non-communicable diseases (NCDs). The country is losing 72 percent of its population to illnesses that are preventable—diseases linked not to fate, but to lifestyle choices and substances we willingly consume. Stronger taxes on harmful products is not just a revenue measure, it is an act of national self-preservation. https://kuenselonline.com/news/taxing-harm-to-save-lives #NCDs #taxing #editorial #Bhutan",
-      "category": "news",
+      "id": "ae375fa5b5b1a62d",
+      "title": "’       The project will be funded jointly by the government and Pro Bhutan Association Chencho D...",
+      "content": "’       The project will be funded jointly by the government and Pro Bhutan Association Chencho Dema Punakha—Changyuel Galem’s house in Punakha, recognised as a heritage building for its cultural and historical significance, is set to undergo restoration and development under a proposal by the Department of Culture and Dzongkha Development in collaboration with the Punakha Dzongkhag Administration. https://kuenselonline.com/.../restoration-of-changyuel... #restoration #Galem #house #Punakha #Bhutan",
+      "category": "culture",
       "author": "Kuensel",
-      "created_at": "2025-09-01T17:29:02.872032",
-      "published_at": "2025-09-01T17:29:02.872038",
+      "created_at": "2025-08-27T10:40:08.040072",
+      "published_at": "2025-08-27T10:40:08.040079",
       "has_images": true,
-      "image_count": 1,
+      "image_count": 2,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540605571_1184276543735714_3648099050851264644_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zzk_kCGsBqoQ7kNvwFcvPWo&_nc_oc=Adk82JzTSYmIZDru4QuXZtnaFq69djYwjmD1jC0L6MFizPueV-mKg7__yeeMt6TlPqY&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=o_F_LbYWq8etNifJJy2Ecg&oh=00_AfXdh5nICyrL08hk9ySRoOe5M_5bVaNWwL_F8k8pje5_jA&oe=68BB59B7"
+          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/539353031_1180450054118363_8562511908181915201_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2ETGiZ8-oDkQ7kNvwFQECK-&_nc_oc=AdmvDBWJOVmD5R3maLj4q050FRlmxRZbnI1KggEhA2MRq6I6DqWCYrSQ_Wsv2CN1Slw&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=60B1q5asnCscvugvpAGVhA&oh=00_AfVt7VkKlEvJUs0qHHZQtOai_zXhiGn_PjNe41ceKUfWjg&oe=68B4C9A4",
+          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/539434724_1180450064118362_4580758078548429930_n.jpg?stp=dst-jpg_s851x315_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=a9m4SrYBydkQ7kNvwH_lhHA&_nc_oc=AdmXcqopwyF0ADf-BlUvJDKAkM8aCFCTvdD6CvB10iWdarzrHQytAAJamQHj-b2v2u8&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=60B1q5asnCscvugvpAGVhA&oh=00_AfXvlDWZjGeWaJ1GaizqKjYXfAY__7L_ICI8Cyy3MiKnKQ&oe=68B4BFEE"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1184344897062212&set=a.470097558486953&__cft__[0]=AZVYSxEgqOmWMQ8YJIMEE0VnmP2gRkVxzNO_NbvdC4EzyXoxu6Ykpy2x4tTYyaJ4U6f77nncW3zYaxUwPnbuH1mxUrcMZFGO7wp9RRjAemvFCalZjiHXsYXngSzx0pbTsN9ldf9_jIgx7K-RhCjWLQQxQdqbLj2TddKCT4W6c7-JQo0NQ7D34DpTZWqRCWOJtZY&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1180450044118364&set=pcb.1180450384118330&__cft__[0]=AZUzXrzUHPmvnHd-h1TwuioUGTl-ffyJQHJ2lAIAEgIxvgsplRm9B6H6klibp3IO0iJuWNrMOnk41B7KrR2lnKdw52AhqoWl4GUk4tvpnfexnDb5DDTRLwzV7GxztaYfuneeqXrQeZlRmkbK65T39QfKJGt9srpamJy5EPTurefN9rDDXKX3y174__UujS46HKg&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1180450060785029&set=pcb.1180450384118330&__cft__[0]=AZUzXrzUHPmvnHd-h1TwuioUGTl-ffyJQHJ2lAIAEgIxvgsplRm9B6H6klibp3IO0iJuWNrMOnk41B7KrR2lnKdw52AhqoWl4GUk4tvpnfexnDb5DDTRLwzV7GxztaYfuneeqXrQeZlRmkbK65T39QfKJGt9srpamJy5EPTurefN9rDDXKX3y174__UujS46HKg&__tn__=*b1H-R"
         ]
       },
-      "content_length": 549
+      "content_length": 503
     },
     {
       "id": "d9f5ae9a3e730146",
@@ -55,53 +57,27 @@
       "content_length": 549
     },
     {
-      "id": "322bde75b2c345ae",
-      "title": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped s...",
-      "content": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped sharply this year following the commissioning of the Punatsangchhu-II hydropower project (PHPA-II). https://kuenselonline.com/.../phpa-ii-cuts-power-imports... #PHPA #hydropower #export #import #Bhutan",
-      "category": "general",
+      "id": "d65243ed5d2b1112",
+      "title": "Kuensel Editorial: The government’s decision to rev...",
+      "content": "Kuensel Editorial: The government’s decision to revise taxation on alcohol and tobacco products is a long-overdue step in the fight against non-communicable diseases (NCDs). The country is losing 72 percent of its population to illnesses that are preventable—diseases linked not to fate, but to lifestyle choices and substances we willingly consume. Stronger taxes on harmful products is not just a revenue measure, it is an act of national self-preservation. https://kuenselonline.com/news/taxing-harm-to-save-lives #NCDs #taxing #editorial #Bhutan",
+      "category": "news",
       "author": "Kuensel",
-      "created_at": "2025-09-02T13:36:47.899046",
-      "published_at": "2025-09-02T13:36:47.899052",
+      "created_at": "2025-09-01T17:29:02.872032",
+      "published_at": "2025-09-01T17:29:02.872038",
       "has_images": true,
-      "image_count": 2,
+      "image_count": 1,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=hjNdc9lYuyEnVokzWExDUg&oh=00_AfWRZPVrKzb7g-fkDZCpaRleny0lUCIwE-vOd8YlC_lC9g&oe=68BC54F2",
-          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=F4zxZC58RCtKwkFGAdfLCA&oh=00_AfX8GWiSfsOili56K19enx5sIRKzRQ_VCK44QVNNx9qjeg&oe=68BC8D32"
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540605571_1184276543735714_3648099050851264644_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zzk_kCGsBqoQ7kNvwFcvPWo&_nc_oc=Adk82JzTSYmIZDru4QuXZtnaFq69djYwjmD1jC0L6MFizPueV-mKg7__yeeMt6TlPqY&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=o_F_LbYWq8etNifJJy2Ecg&oh=00_AfXdh5nICyrL08hk9ySRoOe5M_5bVaNWwL_F8k8pje5_jA&oe=68BB59B7"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1185107423652626&set=a.470097558486953&__cft__[0]=AZURNuo19KnKKhV82hLdFbUGmO9ZzEyBplBG_JzmghMXvPgxJGLfa3O9pw1g0aYUXL6U0gIq6bpuPGPO8JRaSeiJdSmd8rZnvtz2WBxEO-ZlenqOloB9ESYtexiThkdMoegYSpvUzJRzgZPh0dO62q2LdjP4OTdkuwZ3h5yE0Fjz3LVH6rxbOyLszs2cR43qXL4&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1184344897062212&set=a.470097558486953&__cft__[0]=AZVYSxEgqOmWMQ8YJIMEE0VnmP2gRkVxzNO_NbvdC4EzyXoxu6Ykpy2x4tTYyaJ4U6f77nncW3zYaxUwPnbuH1mxUrcMZFGO7wp9RRjAemvFCalZjiHXsYXngSzx0pbTsN9ldf9_jIgx7K-RhCjWLQQxQdqbLj2TddKCT4W6c7-JQo0NQ7D34DpTZWqRCWOJtZY&__tn__=EH-R"
         ]
       },
-      "content_length": 297
-    },
-    {
-      "id": "ae375fa5b5b1a62d",
-      "title": "’       The project will be funded jointly by the government and Pro Bhutan Association Chencho D...",
-      "content": "’       The project will be funded jointly by the government and Pro Bhutan Association Chencho Dema Punakha—Changyuel Galem’s house in Punakha, recognised as a heritage building for its cultural and historical significance, is set to undergo restoration and development under a proposal by the Department of Culture and Dzongkha Development in collaboration with the Punakha Dzongkhag Administration. https://kuenselonline.com/.../restoration-of-changyuel... #restoration #Galem #house #Punakha #Bhutan",
-      "category": "culture",
-      "author": "Kuensel",
-      "created_at": "2025-08-27T10:40:08.040072",
-      "published_at": "2025-08-27T10:40:08.040079",
-      "has_images": true,
-      "image_count": 2,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/539353031_1180450054118363_8562511908181915201_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2ETGiZ8-oDkQ7kNvwFQECK-&_nc_oc=AdmvDBWJOVmD5R3maLj4q050FRlmxRZbnI1KggEhA2MRq6I6DqWCYrSQ_Wsv2CN1Slw&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=60B1q5asnCscvugvpAGVhA&oh=00_AfVt7VkKlEvJUs0qHHZQtOai_zXhiGn_PjNe41ceKUfWjg&oe=68B4C9A4",
-          "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/539434724_1180450064118362_4580758078548429930_n.jpg?stp=dst-jpg_s851x315_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=a9m4SrYBydkQ7kNvwH_lhHA&_nc_oc=AdmXcqopwyF0ADf-BlUvJDKAkM8aCFCTvdD6CvB10iWdarzrHQytAAJamQHj-b2v2u8&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=60B1q5asnCscvugvpAGVhA&oh=00_AfXvlDWZjGeWaJ1GaizqKjYXfAY__7L_ICI8Cyy3MiKnKQ&oe=68B4BFEE"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1180450044118364&set=pcb.1180450384118330&__cft__[0]=AZUzXrzUHPmvnHd-h1TwuioUGTl-ffyJQHJ2lAIAEgIxvgsplRm9B6H6klibp3IO0iJuWNrMOnk41B7KrR2lnKdw52AhqoWl4GUk4tvpnfexnDb5DDTRLwzV7GxztaYfuneeqXrQeZlRmkbK65T39QfKJGt9srpamJy5EPTurefN9rDDXKX3y174__UujS46HKg&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1180450060785029&set=pcb.1180450384118330&__cft__[0]=AZUzXrzUHPmvnHd-h1TwuioUGTl-ffyJQHJ2lAIAEgIxvgsplRm9B6H6klibp3IO0iJuWNrMOnk41B7KrR2lnKdw52AhqoWl4GUk4tvpnfexnDb5DDTRLwzV7GxztaYfuneeqXrQeZlRmkbK65T39QfKJGt9srpamJy5EPTurefN9rDDXKX3y174__UujS46HKg&__tn__=*b1H-R"
-        ]
-      },
-      "content_length": 503
+      "content_length": 549
     },
     {
       "id": "a45ac899b9095f75",
@@ -151,6 +127,53 @@
       "content_length": 361
     },
     {
+      "id": "322bde75b2c345ae",
+      "title": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped s...",
+      "content": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped sharply this year following the commissioning of the Punatsangchhu-II hydropower project (PHPA-II). https://kuenselonline.com/.../phpa-ii-cuts-power-imports... #PHPA #hydropower #export #import #Bhutan",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": "2025-09-02T13:36:47.899046",
+      "published_at": "2025-09-02T13:36:47.899052",
+      "has_images": true,
+      "image_count": 2,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=hjNdc9lYuyEnVokzWExDUg&oh=00_AfWRZPVrKzb7g-fkDZCpaRleny0lUCIwE-vOd8YlC_lC9g&oe=68BC54F2",
+          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=F4zxZC58RCtKwkFGAdfLCA&oh=00_AfX8GWiSfsOili56K19enx5sIRKzRQ_VCK44QVNNx9qjeg&oe=68BC8D32"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1185107423652626&set=a.470097558486953&__cft__[0]=AZURNuo19KnKKhV82hLdFbUGmO9ZzEyBplBG_JzmghMXvPgxJGLfa3O9pw1g0aYUXL6U0gIq6bpuPGPO8JRaSeiJdSmd8rZnvtz2WBxEO-ZlenqOloB9ESYtexiThkdMoegYSpvUzJRzgZPh0dO62q2LdjP4OTdkuwZ3h5yE0Fjz3LVH6rxbOyLszs2cR43qXL4&__tn__=EH-R"
+        ]
+      },
+      "content_length": 297
+    },
+    {
+      "id": "5145de58bc88c07a",
+      "title": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition...",
+      "content": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition and growth at all costs, cultivating a mindset of gratitude is not only challenging but absolutely necessary for our well-being. Just as water is nature’s perfect answer to thirst, gratitude is the antidote to our incessant dissatisfaction and desire for more. https://kuenselonline.com/news/ask-mr-bhutan-5 #MrBhutan #lifestyle",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-08-26T10:42:43.912278",
+      "published_at": "2025-08-26T10:42:43.912285",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/539550496_1179494754213893_4045117636315665038_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HsNN1K4YYmgQ7kNvwFO2lle&_nc_oc=AdnBO0YnuYUe4ySo_qay3KEQ5PuPrbKIGBasLI0pC8wKtH5kgnSMGfAn-tPweo7VWcE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=HUvPrMSZWM9vVVqZpHITpQ&oh=00_AfV8qcc7iXZu5t49wGk--y19gaP7dYxkgFpsZItkeYfQPw&oe=68B364BD"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1179494750880560&set=a.470097558486953&__cft__[0]=AZUFi0UA6RpSWWLKsVkcQ4mPf-Opx9oK-6eg4XyWU6luOL3XEi7et8zTgIVlCHUHJY2Q3ICXhc5yFM0jfZMDOoASj5LI3oPGMdosEhorXpdkAAq0kNRQo2c60uNK3nfUBeIYPOGKseiJfGsYGnxcymT3j1wjp8HTkJ-6NUkUWR3y8RsGXeK4p4UmJKONdq70XD4&__tn__=EH-R"
+        ]
+      },
+      "content_length": 426
+    },
+    {
       "id": "c3072605aa892b11",
       "title": "Kuensel Editorial: The government’s decision to rev...",
       "content": "Kuensel Editorial: The government’s decision to revise taxation on alcohol and tobacco products is a long-overdue step in the fight against non-communicable diseases (NCDs). The country is losing 72 percent of its population to illnesses that are preventable—diseases linked not to fate, but to lifestyle choices and substances we willingly consume. Stronger taxes on harmful products is not just a revenue measure, it is an act of national self-preservation. https://kuenselonline.com/news/taxing-harm-to-save-lives #NCDs #taxing #editorial #Bhutan",
@@ -196,52 +219,6 @@
         ]
       },
       "content_length": 749
-    },
-    {
-      "id": "a3d33d731a89ba90",
-      "title": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s populat...",
-      "content": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s population, with nearly half of all children and women suffering from anaemia. According to data, 44.7 percent of children aged 6–59 months are affected. https://kuenselonline.com/.../nearly-half-of-women-and... #women #children #Anaemia #Bhutan",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-08-26T06:53:02.609367",
-      "published_at": "2025-08-26T06:53:02.609374",
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/539138774_1179235040906531_5785336193725149678_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IPVk8Nga2ZMQ7kNvwF2WLPi&_nc_oc=AdkpLkOaBy1bq1CSKogWakFHHm32CMbTxAhugvqlbWmmwZd7_2t2oVjPqQ19WdziUfk&_nc_zt=23&_nc_ht=scontent-del1-2.xx&_nc_gid=ZQZfm_1T4y9kVD4pVp3c5Q&oh=00_AfXyqXF4h4oR2Su3zmD3YrhoRcbOCrsAnZhd-wnYo0-t3Q&oe=68B32DA6"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1179281010901934&set=a.470097558486953&__cft__[0]=AZUGbTfJ644wxOaQJw1LwU3YvEjx7_Bf9jclwbwUtJoRDqn8U-VbeuqHEYgqlwOsCbH-SdO56lNmU7s6HhiLxYjuHHEjJ3jQThXkNvSr9e4bDMVAuPp1EY_oEMLKnGPmIYDl8gOj8fKhsBltt0UeNTkSQCRr-lf_Of_0hMr8H5thXXfHDOuRupkwGG_sV_wjHws&__tn__=EH-R"
-        ]
-      },
-      "content_length": 335
-    },
-    {
-      "id": "5145de58bc88c07a",
-      "title": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition...",
-      "content": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition and growth at all costs, cultivating a mindset of gratitude is not only challenging but absolutely necessary for our well-being. Just as water is nature’s perfect answer to thirst, gratitude is the antidote to our incessant dissatisfaction and desire for more. https://kuenselonline.com/news/ask-mr-bhutan-5 #MrBhutan #lifestyle",
-      "category": "news",
-      "author": "Kuensel",
-      "created_at": "2025-08-26T10:42:43.912278",
-      "published_at": "2025-08-26T10:42:43.912285",
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/539550496_1179494754213893_4045117636315665038_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HsNN1K4YYmgQ7kNvwFO2lle&_nc_oc=AdnBO0YnuYUe4ySo_qay3KEQ5PuPrbKIGBasLI0pC8wKtH5kgnSMGfAn-tPweo7VWcE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=HUvPrMSZWM9vVVqZpHITpQ&oh=00_AfV8qcc7iXZu5t49wGk--y19gaP7dYxkgFpsZItkeYfQPw&oe=68B364BD"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1179494750880560&set=a.470097558486953&__cft__[0]=AZUFi0UA6RpSWWLKsVkcQ4mPf-Opx9oK-6eg4XyWU6luOL3XEi7et8zTgIVlCHUHJY2Q3ICXhc5yFM0jfZMDOoASj5LI3oPGMdosEhorXpdkAAq0kNRQo2c60uNK3nfUBeIYPOGKseiJfGsYGnxcymT3j1wjp8HTkJ-6NUkUWR3y8RsGXeK4p4UmJKONdq70XD4&__tn__=EH-R"
-        ]
-      },
-      "content_length": 426
     },
     {
       "id": "2418cef3e042e711",
@@ -290,6 +267,29 @@
         ]
       },
       "content_length": 249
+    },
+    {
+      "id": "a3d33d731a89ba90",
+      "title": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s populat...",
+      "content": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s population, with nearly half of all children and women suffering from anaemia. According to data, 44.7 percent of children aged 6–59 months are affected. https://kuenselonline.com/.../nearly-half-of-women-and... #women #children #Anaemia #Bhutan",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": "2025-08-26T06:53:02.609367",
+      "published_at": "2025-08-26T06:53:02.609374",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/539138774_1179235040906531_5785336193725149678_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IPVk8Nga2ZMQ7kNvwF2WLPi&_nc_oc=AdkpLkOaBy1bq1CSKogWakFHHm32CMbTxAhugvqlbWmmwZd7_2t2oVjPqQ19WdziUfk&_nc_zt=23&_nc_ht=scontent-del1-2.xx&_nc_gid=ZQZfm_1T4y9kVD4pVp3c5Q&oh=00_AfXyqXF4h4oR2Su3zmD3YrhoRcbOCrsAnZhd-wnYo0-t3Q&oe=68B32DA6"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1179281010901934&set=a.470097558486953&__cft__[0]=AZUGbTfJ644wxOaQJw1LwU3YvEjx7_Bf9jclwbwUtJoRDqn8U-VbeuqHEYgqlwOsCbH-SdO56lNmU7s6HhiLxYjuHHEjJ3jQThXkNvSr9e4bDMVAuPp1EY_oEMLKnGPmIYDl8gOj8fKhsBltt0UeNTkSQCRr-lf_Of_0hMr8H5thXXfHDOuRupkwGG_sV_wjHws&__tn__=EH-R"
+        ]
+      },
+      "content_length": 335
     },
     {
       "id": "9e5bb521a97c4006",
@@ -361,6 +361,29 @@
       "content_length": 549
     },
     {
+      "id": "4a5e2a2b06eb41bf",
+      "title": "Update: The stretch of road along the Phuentsholing–Samtse highway at Amochu, in front of STCBL, ...",
+      "content": "Update: The stretch of road along the Phuentsholing–Samtse highway at Amochu, in front of STCBL, has been in poor condition for months, causing problems for commuters. Light vehicles often get stuck or sustain damage on the potholes, forcing drivers to slow down or stop. Commuters say the issue occurs daily, and even when repairs are carried out, the patches are washed away the next day by rain and traffic. Drivers are suggesting that they be allowed to use alternative lane for their safety and convenience. #Bhutan #Kuensel #news #UpdateNews #phuentsholing #amochhu #roadsafety",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-08-22T11:03:24.204832",
+      "published_at": "2025-08-22T11:03:24.204840",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": true,
+      "has_links": false,
+      "attachment": {
+        "images": [
+          "https://scontent-sin6-3.xx.fbcdn.net/v/t15.5256-10/536259315_792373899799133_1202943910994004289_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=282d23&_nc_ohc=Bf-zXNYsIb0Q7kNvwGzH7dL&_nc_oc=Adk77O7HgBzC98UW1lUyJ9dBlH-eARbZ9bTaKzwQsGz5aanmvvE8o8QGrT-pCN1DgVo&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=zz0RKQopvAIxTAbSIfhRpg&oh=00_AfW-yOBlwG3WSUtp1UDDh7C-xKBmreXNNQwP9kmQMxsOUQ&oe=68AE2924"
+        ],
+        "videos": [
+          "https://video-sin6-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPIPT6PUOhOvEgYBXmPQ19pqGTDr4qe3cej07ezxWq5VXWx6cM-Z2ke49B6OeHf1g-66AwEdTA7JNGPBXZPPnj5jrdekquoXPIeEGasIA.mp4?_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-sin6-3.xx.fbcdn.net&_nc_ohc=Zu0IBPkbF94Q7kNvwE82Hpb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI2Mzk1NDEyNDkyOTMxNCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjY3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=zz0RKQopvAIxTAbSIfhRpg&_nc_zt=28&oh=00_AfUs4GO9UCik3yVGjIZZdrGOJrh7rIY3VJdK35LR3J4eOg&oe=68AE37BC&bitrate=698504&tag=sve_sd"
+        ],
+        "links": []
+      },
+      "content_length": 583
+    },
+    {
       "id": "b36d8fad6689e532",
       "title": "(ADVERTISEMENT) - @Stele",
       "content": "(ADVERTISEMENT) - @Stele.in",
@@ -428,27 +451,56 @@
       "content_length": 336
     },
     {
-      "id": "4a5e2a2b06eb41bf",
-      "title": "Update: The stretch of road along the Phuentsholing–Samtse highway at Amochu, in front of STCBL, ...",
-      "content": "Update: The stretch of road along the Phuentsholing–Samtse highway at Amochu, in front of STCBL, has been in poor condition for months, causing problems for commuters. Light vehicles often get stuck or sustain damage on the potholes, forcing drivers to slow down or stop. Commuters say the issue occurs daily, and even when repairs are carried out, the patches are washed away the next day by rain and traffic. Drivers are suggesting that they be allowed to use alternative lane for their safety and convenience. #Bhutan #Kuensel #news #UpdateNews #phuentsholing #amochhu #roadsafety",
-      "category": "news",
-      "author": "Kuensel",
-      "created_at": "2025-08-22T11:03:24.204832",
-      "published_at": "2025-08-22T11:03:24.204840",
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": true,
-      "has_links": false,
+      "id": "a62f8cda47b7078c",
+      "title": "Sonam ST Tenzin 2",
+      "description": ".5 entitled",
+      "content": "Sonam ST Tenzin 2.5 entitled",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-09-04T11:26:04.378185",
+      "publishAt": "2025-09-04T11:26:04.378194"
+    },
+    {
+      "id": "744f45d090e294a8",
+      "title": "Kuensel Postal ballot results: PDP candidate leading in the Nubi-Tangsibji bye-election",
+      "description": ". PDP received 455 postal ballots, while BTP received 284 postal ballots. #Bhutan #2025byelections #naelection #ecb #bhutantendrelparty #peopledemocraticparty",
+      "content": "Kuensel Postal ballot results: PDP candidate leading in the Nubi-Tangsibji bye-election. PDP received 455 postal ballots, while BTP received 284 postal ballots. #Bhutan #2025byelections #naelection #ecb #bhutantendrelparty #peopledemocraticparty",
+      "categoryID": "politics",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-09-04T11:25:57.255035",
+      "publishAt": "2025-09-04T11:25:57.255044"
+    },
+    {
+      "id": "90e39573f70268f5",
+      "title": "Kuensel Update: Nubi-Tangsibji Bye-election A 75-year-old Tshangla came yesterday from Lobesa, Wa...",
+      "description": "Kuensel Update: Nubi-Tangsibji Bye-election A 75-year-old Tshangla came yesterday from Lobesa, Wangdue to cast his vote at Sinphu ECR. More than 60 voters have already cast their votes at the Sinphu ECR polling station in Nubi Gewog, Trongsa. There are 436 registered voters at the station. #naelections #Bhutan #2025byeelectionselections #ecb #bhutantendrelparty #peopledemocraticparty 0:00 / 0:28",
+      "content": "Kuensel Update: Nubi-Tangsibji Bye-election A 75-year-old Tshangla came yesterday from Lobesa, Wangdue to cast his vote at Sinphu ECR. More than 60 voters have already cast their votes at the Sinphu ECR polling station in Nubi Gewog, Trongsa. There are 436 registered voters at the station. #naelections #Bhutan #2025byeelectionselections #ecb #bhutantendrelparty #peopledemocraticparty 0:00 / 0:28",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
       "attachment": {
         "images": [
-          "https://scontent-sin6-3.xx.fbcdn.net/v/t15.5256-10/536259315_792373899799133_1202943910994004289_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=282d23&_nc_ohc=Bf-zXNYsIb0Q7kNvwGzH7dL&_nc_oc=Adk77O7HgBzC98UW1lUyJ9dBlH-eARbZ9bTaKzwQsGz5aanmvvE8o8QGrT-pCN1DgVo&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=zz0RKQopvAIxTAbSIfhRpg&oh=00_AfW-yOBlwG3WSUtp1UDDh7C-xKBmreXNNQwP9kmQMxsOUQ&oe=68AE2924"
+          "https://scontent-iad3-1.xx.fbcdn.net/v/t15.5256-10/542435227_1072970854614342_436166435065541592_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=282d23&_nc_ohc=zIPs_sTzQFsQ7kNvwHuLI2O&_nc_oc=AdmwNxJHqh_rNMO-Zh-3IjUmvl1-rqWdoixRtHoCLGYhp_iV6_RS47rRLHdUvSa-m60&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=VuHT9y6qdOqHwmwRy-_rag&oh=00_AfZ5pYf1v64JnH2eQobYneoqbPOl53jUd_FWEkKTtKZ1mQ&oe=68BEE169"
         ],
         "videos": [
-          "https://video-sin6-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPIPT6PUOhOvEgYBXmPQ19pqGTDr4qe3cej07ezxWq5VXWx6cM-Z2ke49B6OeHf1g-66AwEdTA7JNGPBXZPPnj5jrdekquoXPIeEGasIA.mp4?_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-sin6-3.xx.fbcdn.net&_nc_ohc=Zu0IBPkbF94Q7kNvwE82Hpb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI2Mzk1NDEyNDkyOTMxNCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjY3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=zz0RKQopvAIxTAbSIfhRpg&_nc_zt=28&oh=00_AfUs4GO9UCik3yVGjIZZdrGOJrh7rIY3VJdK35LR3J4eOg&oe=68AE37BC&bitrate=698504&tag=sve_sd"
+          "https://video-iad3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQMhLO7tucqtkuXi5jUe1IS-S1mg73VsqAo3T-lqOGZNJgd3R3suwnBtZpiEEQWIqo_X6_El8DbmwhVGKTcal7tEojfYrty7s16LzrIpeA.mp4?_nc_cat=105&_nc_sid=8bf8fe&_nc_ht=video-iad3-2.xx.fbcdn.net&_nc_ohc=obSrB3_Y0SMQ7kNvwF8uwmE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNjQwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjAxMTM1NTkzOTcwNDI5NSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=VuHT9y6qdOqHwmwRy-_rag&_nc_zt=28&oh=00_Afa4FijeLBRfQfbZwEMVvlfWsYw5QiWnLxS1IW1icAvrJg&oe=68BEDEE9&bitrate=422129&tag=sve_sd"
         ],
         "links": []
       },
-      "content_length": 583
+      "createdAt": "2025-09-04T05:42:18.312901",
+      "publishAt": "2025-09-04T05:42:18.312910"
     },
     {
       "id": "2481f51256a962b6",
@@ -465,22 +517,6 @@
       },
       "createdAt": "2025-09-03T14:30:57.814047",
       "publishAt": "2025-09-03T14:30:57.814053"
-    },
-    {
-      "id": "11501678d1ffbf56",
-      "title": "Drukpa Kinley Hope not paper tiger again",
-      "description": "?",
-      "content": "Drukpa Kinley Hope not paper tiger again?",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-09-03T14:30:34.006282",
-      "publishAt": "2025-09-03T14:30:34.006288"
     },
     {
       "id": "fd7bf30e03f09ea8",
