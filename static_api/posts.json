@@ -1,26 +1,15 @@
 {
   "success": true,
-  "total_posts": 23,
+  "total_posts": 22,
   "last_updated": "2025-09-04T05:54:58.615352",
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-04T05:54:58.442152",
     "status": "completed",
-    "original_total": 23,
-    "filtered_total": 23
+    "original_total": 22,
+    "filtered_total": 22
   },
   "posts": [
-
-
-
-
-
-
-
-
-
-
-
     {
       "id": "96a6e9dd93ed6909",
       "title": "Chencho Dema This year’s cordyceps auction recorded the highest harvest in recent years, with 940",
@@ -499,22 +488,6 @@
       },
       "createdAt": "2025-09-03T14:30:57.814047",
       "publishAt": "2025-09-03T14:30:57.814053"
-    },
-    {
-      "id": "11501678d1ffbf56",
-      "title": "Drukpa Kinley Hope not paper tiger again",
-      "description": "?",
-      "content": "Drukpa Kinley Hope not paper tiger again?",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-09-03T14:30:34.006282",
-      "publishAt": "2025-09-03T14:30:34.006288"
     },
     {
       "id": "fd7bf30e03f09ea8",
