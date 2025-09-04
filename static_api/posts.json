@@ -1,13 +1,13 @@
 {
   "success": true,
-  "total_posts": 24,
+  "total_posts": 23,
   "last_updated": "2025-09-04T05:54:58.615352",
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-04T05:54:58.442152",
     "status": "completed",
-    "original_total": 24,
-    "filtered_total": 24
+    "original_total": 23,
+    "filtered_total": 23
   },
   "posts": [
     {
@@ -51,25 +51,6 @@
         "links": []
       },
       "content_length": 357
-    },
-    {
-      "id": "11501678d1ffbf56",
-      "title": "Drukpa Kinley Hope not paper tiger again",
-      "content": "Drukpa Kinley Hope not paper tiger again?",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-03T14:30:34.006282",
-      "published_at": "2025-09-03T14:30:34.006288",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 41
     },
     {
       "id": "fd7bf30e03f09ea8",
