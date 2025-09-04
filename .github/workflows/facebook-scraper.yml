@@ -28,7 +28,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15  # Prevent hanging
+    timeout-minutes: 20  # Increased from 15 to 20 minutes
     
     steps:
     - name: 🚀 Checkout repository
@@ -67,9 +67,14 @@ jobs:
         if [ -z "${{ secrets.FACEBOOK_CONFIG }}" ]; then
           echo "⚠️  FACEBOOK_CONFIG secret not set, using example config"
           cp config/config.example.json config/config.json
+          # Optimize for GitHub Actions performance
+          echo "⚙️  Setting GitHub Actions optimized config"
+          jq '.scraping.target_count = 5 | .process_facebook_photos = false | .download_images = false' config/config.json > config/config_tmp.json && mv config/config_tmp.json config/config.json
         else
           echo "✅ Using secret configuration"
           echo '${{ secrets.FACEBOOK_CONFIG }}' > config/config.json
+          # Ensure photo processing is disabled in GitHub Actions for performance
+          jq '.process_facebook_photos = false | .download_images = false' config/config.json > config/config_tmp.json && mv config/config_tmp.json config/config.json
         fi
         
         # Show config (without sensitive data)
@@ -97,12 +102,12 @@ jobs:
         echo "🚀 Starting scraping (max posts: $MAX_POSTS)..."
         
         # For scheduled runs, always force scrape to bypass cooldown
-        # Increased timeout to 15 minutes (900s) to handle Facebook's slow loading
+        # Increased timeout to 18 minutes (1080s) to handle Facebook's slow loading
         if [ "${{ github.event_name }}" = "schedule" ]; then
           echo "🕒 Scheduled run detected - forcing scrape to bypass cooldown"
-          timeout 900s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless --force-scrape
+          timeout 1080s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless --force-scrape
         else
-          timeout 900s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless
+          timeout 1080s python src/facebook_scrapper.py --max-posts $MAX_POSTS --headless
         fi
         
         # Clean up Xvfb process

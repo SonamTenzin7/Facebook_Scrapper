@@ -533,6 +533,11 @@ class FacebookScraper:
             # Check if photo processing is enabled (can be disabled for faster testing)
             process_photos = self.config.get("process_facebook_photos", True)
             
+            # Skip photo processing in GitHub Actions for better performance and reliability
+            if os.getenv('GITHUB_ACTIONS') == 'true':
+                print("🚀 GitHub Actions detected - skipping photo processing for better performance")
+                process_photos = False
+            
             if process_photos and links:
                 photo_images = self.extract_images_from_facebook_photo_links(links)
                 if photo_images:
@@ -1675,7 +1680,8 @@ class FacebookScraper:
 
     def download_images(self, posts, download_folder="downloaded_images"):
         """Download images from posts"""
-        if not self.config["download_images"]:
+        # Use .get() to safely access config with default value
+        if not self.config.get("download_images", False):
             return
 
         if not os.path.exists(download_folder):

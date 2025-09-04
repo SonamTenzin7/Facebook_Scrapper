@@ -13,5 +13,6 @@
     "folder": "data/",
     "filename_prefix": "kuensel_posts"
   },
-  "download_images": false
+  "download_images": false,
+  "process_facebook_photos": true
 }
