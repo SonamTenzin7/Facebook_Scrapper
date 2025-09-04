@@ -1,23 +1,13 @@
 {
   "success": true,
-<<<<<<< HEAD
-  "total_posts": 23,
-  "last_updated": "2025-09-04T23:01:33.909791",
-=======
   "total_posts": 24,
   "last_updated": "2025-09-04T11:36:02.228079",
->>>>>>> 61b912c984786a7da03b104420256d9ab62dfe9d
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-04T11:36:02.057822",
     "status": "completed",
-<<<<<<< HEAD
-    "original_total": 23,
-    "filtered_total": 23
-=======
     "original_total": 24,
     "filtered_total": 24
->>>>>>> 61b912c984786a7da03b104420256d9ab62dfe9d
   },
   "posts": [
     {
