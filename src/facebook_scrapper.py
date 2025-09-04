@@ -257,18 +257,11 @@ class FacebookScraper:
     def expand_see_more_links(self):
         """Expand all 'See more' links to get full content"""
         try:
-            # Common selectors for "See more" links
-            see_more_selectors = [
-                "[role='button'][tabindex='0']", 
-                "div.x1yztbdb.x1n2onr6.xh8yej3",
-                "div[role='button']:has-text('See more')",
-                "span[role='button']:has-text('See more')",
-                "[aria-label*='See more']",
-                "div[tabindex='0']:has-text('See more')",
-                "span:has-text('See more')",
-                "div:has-text('See more')"
-            ]
+            # Add timeout to prevent infinite expansion loops
+            EXPANSION_TIMEOUT = 30  # Max 30 seconds for expanding all links
+            MAX_EXPANSIONS = 10     # Max 10 expansions per call
             
+            start_time = time.time()
             expanded_count = 0
             
             # Find and click all "See more" elements using Selenium
@@ -285,23 +278,33 @@ class FacebookScraper:
                 print(f"Found {len(see_more_elements)} 'See more' elements")
                 
                 for element in see_more_elements:
+                    # Check timeout
+                    if time.time() - start_time > EXPANSION_TIMEOUT:
+                        print(f"⏰ Expansion timeout ({EXPANSION_TIMEOUT}s) reached, stopping...")
+                        break
+                        
+                    # Check max expansions
+                    if expanded_count >= MAX_EXPANSIONS:
+                        print(f"Max expansions ({MAX_EXPANSIONS}) reached, stopping...")
+                        break
+                        
                     try:
                         # Scroll element into view
                         self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-                        time.sleep(0.5)
+                        time.sleep(0.3)  # Reduced from 0.5 to 0.3
                         
                         # Try to click the element
                         if element.is_displayed() and element.is_enabled():
                             element.click()
                             expanded_count += 1
-                            time.sleep(1)  # Wait for content to expand
+                            time.sleep(0.8)  # Reduced from 1 to 0.8 seconds
                             print(f"Expanded content #{expanded_count}")
                     except (ElementClickInterceptedException, Exception) as e:
                         # Try JavaScript click as fallback
                         try:
                             self.driver.execute_script("arguments[0].click();", element)
                             expanded_count += 1
-                            time.sleep(1)
+                            time.sleep(0.8)
                             print(f"Expanded content #{expanded_count} (JS click)")
                         except Exception as js_e:
                             print(f"Could not click 'See more' element: {js_e}")
@@ -310,7 +313,8 @@ class FacebookScraper:
             except Exception as e:
                 print(f"Error finding 'See more' elements: {e}")
             
-            print(f"Successfully expanded {expanded_count} 'See more' links")
+            total_time = time.time() - start_time
+            print(f"Successfully expanded {expanded_count} 'See more' links in {total_time:.2f}s")
             return expanded_count
             
         except Exception as e:
@@ -857,13 +861,21 @@ class FacebookScraper:
         """Extract actual image URLs from Facebook photo links"""
         image_urls = []
         
-        # Limit processing to avoid endless loops
-        MAX_PHOTO_LINKS = 3  # Process max 3 photo links per post
-        TIMEOUT_PER_LINK = 8  # Max 8 seconds per photo link
+        # Strict limits to prevent infinite loops and timeouts
+        MAX_PHOTO_LINKS = 2  # Reduced from 3 to 2 for faster processing
+        TIMEOUT_PER_LINK = 5  # Reduced from 8 to 5 seconds per photo link
+        TOTAL_TIMEOUT = 15   # Max 15 seconds total for all photo processing
+        
+        start_total_time = time.time()
         
         try:
             processed_links = 0
             for link in links:
+                # Check total timeout
+                if time.time() - start_total_time > TOTAL_TIMEOUT:
+                    print(f"⏰ Total photo processing timeout ({TOTAL_TIMEOUT}s) reached, stopping...")
+                    break
+                    
                 if processed_links >= MAX_PHOTO_LINKS:
                     print(f"Reached max photo links limit ({MAX_PHOTO_LINKS}), skipping remaining photos")
                     break
@@ -872,17 +884,18 @@ class FacebookScraper:
                     print(f"Processing Facebook photo link {processed_links + 1}/{min(len(links), MAX_PHOTO_LINKS)}: {link[:80]}...")
                     processed_links += 1
                     
+                    start_link_time = time.time()
+                    
                     try:
                         # Navigate to the photo page with timeout
                         self.driver.execute_script(f"window.open('{link}', '_blank');")
                         self.driver.switch_to.window(self.driver.window_handles[-1])
                         
                         # Wait for page to load with shorter timeout
-                        start_time = time.time()
-                        time.sleep(2)  # Reduced from 3 to 2 seconds
+                        time.sleep(1)  # Reduced from 2 to 1 second
                         
                         # Check timeout
-                        if time.time() - start_time > TIMEOUT_PER_LINK:
+                        if time.time() - start_link_time > TIMEOUT_PER_LINK:
                             print(f"Timeout reached for photo link, skipping...")
                             self.driver.close()
                             self.driver.switch_to.window(self.driver.window_handles[0])
@@ -906,6 +919,10 @@ class FacebookScraper:
                         
                         found_image = False
                         for selector in photo_selectors:
+                            if time.time() - start_link_time > TIMEOUT_PER_LINK:
+                                print(f"Timeout during selector processing, breaking...")
+                                break
+                                
                             try:
                                 img_elements = soup.select(selector)
                                 for img in img_elements:
@@ -923,8 +940,11 @@ class FacebookScraper:
                                 continue
                                 
                         # Close the photo page tab
-                        self.driver.close()
-                        self.driver.switch_to.window(self.driver.window_handles[0])
+                        try:
+                            self.driver.close()
+                            self.driver.switch_to.window(self.driver.window_handles[0])
+                        except Exception as close_e:
+                            print(f"Warning: Error closing tab: {close_e}")
                         
                         if not found_image:
                             print(f"❌ Could not extract image from photo page")
@@ -942,6 +962,8 @@ class FacebookScraper:
         except Exception as e:
             print(f"Error extracting images from photo links: {e}")
             
+        total_time = time.time() - start_total_time
+        print(f"Photo processing completed in {total_time:.2f}s, found {len(image_urls)} images")
         return image_urls
 
     def fetch_full_article_content(self, links):
@@ -1355,6 +1377,10 @@ class FacebookScraper:
             max_scrolls = self.config["scraping"]["max_scrolls"]
 
         print(f"Starting to scrape up to {target_count} posts from {page_url}...")
+        
+        # Add overall timeout protection - max 15 minutes for entire scraping
+        OVERALL_TIMEOUT = 900  # 15 minutes in seconds
+        scraping_start_time = time.time()
 
         # Step 1: Navigate to page
         if not self.navigate_to_page(page_url): # This method is now defined
@@ -1369,13 +1395,19 @@ class FacebookScraper:
 
         # Cycle until required number of posts
         while len(self.posts_data) < target_count and scrolls < max_scrolls:
+            # Check overall timeout
+            elapsed_time = time.time() - scraping_start_time
+            if elapsed_time > OVERALL_TIMEOUT:
+                print(f"⏰ Overall scraping timeout ({OVERALL_TIMEOUT/60:.1f} minutes) reached, stopping...")
+                break
+                
             # Check runtime if checker provided
             if runtime_checker and runtime_checker():
                 print("⏰ Runtime limit reached, stopping scraping...")
                 break
                 
             # 1: Use Selenium to scroll down a little and load new posts
-            print(f"Scroll #{scrolls + 1}... (Found {len(self.posts_data)} new posts so far)")
+            print(f"Scroll #{scrolls + 1}... (Found {len(self.posts_data)} new posts so far, {elapsed_time/60:.1f}min elapsed)")
             self.scroll_page()
 
             # 1.5: Expand "See more" links to get full content
@@ -1398,6 +1430,11 @@ class FacebookScraper:
             already_scraped_count = 0  # Track how many posts were already scraped
 
             for post in new_posts:
+                # Check timeout during post processing
+                if time.time() - scraping_start_time > OVERALL_TIMEOUT:
+                    print(f"⏰ Timeout reached during post processing, breaking...")
+                    break
+                    
                 post_id = post.get("id", "")
                 
                 # Skip if post already exists in master file
@@ -1456,7 +1493,8 @@ class FacebookScraper:
             # Small delay between scrolls
             time.sleep(1)
 
-        print(f"Scraping complete. Found {len(self.posts_data)} unique posts.")
+        elapsed_total = time.time() - scraping_start_time
+        print(f"Scraping complete in {elapsed_total/60:.1f} minutes. Found {len(self.posts_data)} unique posts.")
         if len(self.posts_data) > 0:
             print(f"New posts found this session:")
             for i, post in enumerate(self.posts_data[:3], 1):  # Show first 3 posts
