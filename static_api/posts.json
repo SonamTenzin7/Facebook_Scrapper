@@ -1,13 +1,13 @@
 {
   "success": true,
-  "total_posts": 26,
+  "total_posts": 25,
   "last_updated": "2025-09-05T03:23:45.630099",
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-05T03:23:45.459545",
     "status": "completed",
-    "original_total": 26,
-    "filtered_total": 26
+    "original_total": 25,
+    "filtered_total": 25
   },
   "posts": [
     {
@@ -40,25 +40,6 @@
         ]
       },
       "content_length": 1111
-    },
-    {
-      "id": "a62f8cda47b7078c",
-      "title": "Sonam ST Tenzin 2",
-      "content": "Sonam ST Tenzin 2.5 entitled",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-04T11:26:04.378185",
-      "published_at": "2025-09-04T11:26:04.378194",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 28
     },
     {
       "id": "744f45d090e294a8",
