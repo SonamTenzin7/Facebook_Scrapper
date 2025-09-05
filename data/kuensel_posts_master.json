@@ -1,7 +1,7 @@
 {
   "scraping_session": {
     "timestamp": "2025-09-05T03:23:45.459545",
-    "total_posts": 26,
+    "total_posts": 25,
     "new_posts_this_session": 1,
     "existing_posts": 25,
     "status": "completed"
@@ -477,22 +477,6 @@
       },
       "createdAt": "2025-09-05T03:13:28.912837",
       "publishAt": "2025-09-05T03:13:28.912846"
-    },
-    {
-      "id": "a62f8cda47b7078c",
-      "title": "Sonam ST Tenzin 2",
-      "description": ".5 entitled",
-      "content": "Sonam ST Tenzin 2.5 entitled",
-      "categoryID": "general",
-      "authorId": "kuensel",
-      "AuthorName": "Kuensel",
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "createdAt": "2025-09-04T11:26:04.378185",
-      "publishAt": "2025-09-04T11:26:04.378194"
     },
     {
       "id": "744f45d090e294a8",
