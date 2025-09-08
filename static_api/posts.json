@@ -1,34 +1,15 @@
 {
   "success": true,
-  "total_posts": 31,
+  "total_posts": 26,
   "last_updated": "2025-09-08T17:11:44.074974",
   "filter_applied": "all_posts",
   "scraping_session": {
     "last_scrape": "2025-09-04T11:36:02.057822",
     "status": "completed",
-    "original_total": 31,
-    "filtered_total": 31
+    "original_total": 26,
+    "filtered_total": 26
   },
   "posts": [
-    {
-      "id": "b6ae9362ca943979",
-      "title": "August 22, 2025 – His Majesty The King and Her Majesty The Gyaltsuen returned to Bhutan today aft...",
-      "content": "August 22, 2025 – His Majesty The King and Her Majesty The Gyaltsuen returned to Bhutan today after concluding a landmark State Visit to Việt Nam, the first from Bhutan to the Southeast Asian nation.",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-08T03:31:00.618151",
-      "published_at": "2025-09-08T03:31:00.618160",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 199
-    },
     {
       "id": "1bb55a0894738394",
       "title": "Kuensel Actress Tandin Bidha won the Yakushi Pearl Award for her performance in \"I, the Song\" at ...",
@@ -53,25 +34,6 @@
       "content_length": 714
     },
     {
-      "id": "3056a7f53c1e5ed0",
-      "title": "Drukpa Kuenga ༄༅། ། ཕ་བླ་ན་མེད་པ་རྗེ་བླ་མ། །ལྷ་བླ་ན་མེད་པ་སྤྱན་རས་གཟིགས། །ཆོས་བླ་ན་མེད་པ་ཡི་གེ་དྲ...",
-      "content": "Drukpa Kuenga ༄༅། ། ཕ་བླ་ན་མེད་པ་རྗེ་བླ་མ། །ལྷ་བླ་ན་མེད་པ་སྤྱན་རས་གཟིགས། །ཆོས་བླ་ན་མེད་པ་ཡི་གེ་དྲུག །ཐུགས་བླ་ན་མེད་པ་བྱང་ཆུབ་སེམས། །མ་འགྲོ་དྲུག་ཀུན་གྱིས་ཐོབ་པར་ཤོག །འཕགས་པ་ཐུགས་རྗེ་ཆེན་པོ་སྤྱན་རས་གཟིགས་དང་གཉིས་སུ་མེད་པའི་དོན་བརྒྱུད་དཔལ་ལྡན་འབྲུག་པའི་རྒྱལ་ཡོངས་ཆོས་ཀྱི་དབུ་ཁྲིད་དམ་པ་ རྗེ་མཁན་ཁྲི་རབས་ ༧༠ པ་ དཔལ་འཇིགས་མེད་ཆོས་ཀྱི་གྲགས་པ་མཆོག་གི་སྤྲུལ་པའི་སྐུ་ སྐུ་ཚེ་འཆི་མེད་མགོན་པོ་ཚེ་ལྷ་རྣམ་གསུམ་གྱི་བརྟནད་ཅིང་ འགྲོ་དོན་འཕྲིན་ལས་འཕགས་པ་མིག་མི་ཟུམ་པ་དང་མཉམ་པར་ཤོག་ཅིག། ཅེས་པ་གང་གི་འབངས་མཐར་འཁོད་པ་འདུ་ཤེས་གསུམ་པ་དགེ་འདུན་དཔལ་བཟང་ངམ་ སངྒ་ཤྲཱི་བྷ་བས་སྨོན་པ་དགེའོ།། 3",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-07T10:39:01.314959",
-      "published_at": "2025-09-07T10:39:01.314969",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 563
-    },
-    {
       "id": "2eca3faf2a5f1d03",
       "title": "Kuensel At the ongoing Moenlam Chhenmo (Great Prayer Ceremony) in Rajgir, India, His Holiness the...",
       "content": "Kuensel At the ongoing Moenlam Chhenmo (Great Prayer Ceremony) in Rajgir, India, His Holiness the Je Khenpo granted a holiday to 350 cart horses today by paying Nu 1,500 for each horse. This act reflects His Holiness’s immense love and compassion for all sentient beings. The total cost incurred is Nu 525, 000. 0:00 / 1:27",
@@ -93,25 +55,6 @@
         "links": []
       },
       "content_length": 323
-    },
-    {
-      "id": "ab834aa3fc4811e4",
-      "title": "Media/news company Thimphu, Bhutan managingeditor@kuensel",
-      "content": "Media/news company Thimphu, Bhutan managingeditor@kuensel.bt kuenselonline.com Always open 100% recommend (19 Reviews) ﻿",
-      "category": "news",
-      "author": "Kuensel",
-      "created_at": "2025-09-05T16:44:46.244278",
-      "published_at": "2025-09-05T16:44:46.244288",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 120
     },
     {
       "id": "b8c6cc43c60eb539",
@@ -168,25 +111,6 @@
       "content_length": 1111
     },
     {
-      "id": "744f45d090e294a8",
-      "title": "Kuensel Postal ballot results: PDP candidate leading in the Nubi-Tangsibji bye-election",
-      "content": "Kuensel Postal ballot results: PDP candidate leading in the Nubi-Tangsibji bye-election. PDP received 455 postal ballots, while BTP received 284 postal ballots. #Bhutan #2025byelections #naelection #ecb #bhutantendrelparty #peopledemocraticparty",
-      "category": "politics",
-      "author": "Kuensel",
-      "created_at": "2025-09-04T11:25:57.255035",
-      "published_at": "2025-09-04T11:25:57.255044",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 245
-    },
-    {
       "id": "90e39573f70268f5",
       "title": "Kuensel Update: Nubi-Tangsibji Bye-election A 75-year-old Tshangla came yesterday from Lobesa, Wa...",
       "content": "Kuensel Update: Nubi-Tangsibji Bye-election A 75-year-old Tshangla came yesterday from Lobesa, Wangdue to cast his vote at Sinphu ECR. More than 60 voters have already cast their votes at the Sinphu ECR polling station in Nubi Gewog, Trongsa. There are 436 registered voters at the station. #naelections #Bhutan #2025byeelectionselections #ecb #bhutantendrelparty #peopledemocraticparty 0:00 / 0:28",
@@ -208,25 +132,6 @@
         "links": []
       },
       "content_length": 398
-    },
-    {
-      "id": "2481f51256a962b6",
-      "title": "Editorial:       ? There is a \"great\" new plan to tackle decongestion and urbanisation. Any new i...",
-      "content": "Editorial:       ? There is a \"great\" new plan to tackle decongestion and urbanisation. Any new imitative to make Thimphu a more livable place is welcome. The old Thimphu Structural Plan 2002-2027 is now replaced by a new plan. It goes by the same name with a different time frame. https://kuenselonline.com/.../a-second-chance-for-the... #editorial #Bhutan",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-03T14:30:57.814047",
-      "published_at": "2025-09-03T14:30:57.814053",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 357
     },
     {
       "id": "fd7bf30e03f09ea8",
