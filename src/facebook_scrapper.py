@@ -1806,39 +1806,109 @@ class FacebookScraper:
         print(f"Data saved to {filename}")
         return filename
 
-    def download_images(self, posts, download_folder="downloaded_images"):
-        """Download images from posts"""
+    def download_images(self, posts, download_folder="images"):
+        """Download images from posts with enhanced Facebook signature handling"""
         # Use .get() to safely access config with default value
         if not self.config.get("download_images", False):
-            return
+            print("Image downloading is disabled in configuration")
+            return 0
 
-        if not os.path.exists(download_folder):
-            os.makedirs(download_folder)
+        # Get custom images folder from config if specified
+        base_folder = self.config.get("images_folder", download_folder)
+        
+        # Create organized folder structure
+        daily_folder = self.create_image_folder_structure(base_folder)
 
         downloaded_count = 0
+        failed_count = 0
+        
+        print(f"🖼️  Starting image download to: {daily_folder}")
+        
         for i, post in enumerate(posts):
             attachment = post.get("attachment", {})
             images = attachment.get("images", [])
+            
+            if not images:
+                continue
+                
+            post_id = post.get("id", f"unknown_{i}")
+            post_date = post.get("date", "unknown_date")
+            
+            print(f"\nProcessing post {i+1}: {post_id} ({len(images)} images)")
 
             for j, img_url in enumerate(images):
                 try:
-                    response = requests.get(img_url, timeout=10)
+                    print(f"  📥 Downloading image {j+1}/{len(images)}...")
+                    
+                    # Enhanced headers to mimic browser request for Facebook images
+                    headers = {
+                        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept-Language': 'en-US,en;q=0.9',
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache',
+                        'Sec-Fetch-Dest': 'image',
+                        'Sec-Fetch-Mode': 'no-cors',
+                        'Sec-Fetch-Site': 'cross-site',
+                        'Referer': 'https://www.facebook.com/'
+                    }
+                    
+                    # Make request with longer timeout and proper headers
+                    response = requests.get(
+                        img_url, 
+                        timeout=30, 
+                        headers=headers, 
+                        stream=True,
+                        allow_redirects=True
+                    )
+                    
                     if response.status_code == 200:
-                        # Create filename
-                        ext = img_url.split('.')[-1].split('?')[0]
-                        if not ext or len(ext) > 5:  # Invalid extension
-                            ext = 'jpg'
-                        filename = f"post_{i}_img_{j}.{ext}"
-                        filepath = os.path.join(download_folder, filename)
-
+                        # Get content type
+                        content_type = response.headers.get('content-type', '').lower()
+                        
+                        # Generate filename using helper function
+                        filename = self.get_image_filename(img_url, post_id, j+1, content_type)
+                        filepath = os.path.join(daily_folder, filename)
+                        
+                        # Write image data in chunks
+                        file_size = 0
                         with open(filepath, 'wb') as f:
-                            f.write(response.content)
+                            for chunk in response.iter_content(chunk_size=8192):
+                                if chunk:
+                                    f.write(chunk)
+                                    file_size += len(chunk)
+                        
                         downloaded_count += 1
-                        print(f"Downloaded: {filename}")
+                        print(f"  ✅ Saved: {filename} ({file_size:,} bytes)")
+                        
+                        # Add metadata to image (optional - create .txt file with image info)
+                        metadata_file = filepath.replace(f".{filename.split('.')[-1]}", "_metadata.txt")
+                        with open(metadata_file, 'w') as f:
+                            f.write(f"Post ID: {post_id}\n")
+                            f.write(f"Post Date: {post_date}\n")
+                            f.write(f"Image URL: {img_url}\n")
+                            f.write(f"Downloaded: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                            f.write(f"File Size: {file_size:,} bytes\n")
+                        
+                    else:
+                        print(f"  ❌ HTTP {response.status_code} - Failed to download image")
+                        failed_count += 1
+                        
+                except requests.exceptions.RequestException as e:
+                    print(f"  ❌ Network error: {e}")
+                    failed_count += 1
                 except Exception as e:
-                    print(f"Failed to download image {img_url}: {e}")
+                    print(f"  ❌ Unexpected error: {e}")
+                    failed_count += 1
 
-        print(f"Downloaded {downloaded_count} images to {download_folder}")
+        print(f"\n📊 Image download summary:")
+        print(f"✅ Successfully downloaded: {downloaded_count} images")
+        if failed_count > 0:
+            print(f"❌ Failed downloads: {failed_count} images")
+        print(f"📁 Images saved to: {daily_folder}")
+        
+        return downloaded_count
 
     def close(self):
         """Close the WebDriver"""
@@ -1919,6 +1989,45 @@ class FacebookScraper:
             
         return False
 
+    def create_image_folder_structure(self, base_folder="images"):
+        """Create organized folder structure for downloaded images"""
+        # Create base images folder
+        if not os.path.exists(base_folder):
+            os.makedirs(base_folder)
+            
+        # Create subfolders by date
+        today = datetime.now().strftime("%Y-%m-%d")
+        daily_folder = os.path.join(base_folder, today)
+        if not os.path.exists(daily_folder):
+            os.makedirs(daily_folder)
+            
+        return daily_folder
+
+    def get_image_filename(self, url, post_id, img_index, content_type=None):
+        """Generate a descriptive filename for downloaded images"""
+        # Get file extension
+        if content_type:
+            if 'jpeg' in content_type or 'jpg' in content_type:
+                ext = 'jpg'
+            elif 'png' in content_type:
+                ext = 'png'
+            elif 'gif' in content_type:
+                ext = 'gif'
+            elif 'webp' in content_type:
+                ext = 'webp'
+            else:
+                ext = 'jpg'
+        else:
+            # Fallback: try to get extension from URL
+            url_ext = url.split('.')[-1].split('?')[0].lower()
+            ext = url_ext if url_ext in ['jpg', 'jpeg', 'png', 'gif', 'webp'] else 'jpg'
+        
+        # Create descriptive filename
+        timestamp = datetime.now().strftime("%H%M%S")
+        filename = f"kuensel_{post_id}_img{img_index:02d}_{timestamp}.{ext}"
+        
+        return filename
+        
 
 def main():
     # Initialize notification system

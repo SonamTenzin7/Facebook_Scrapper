@@ -1,12 +1,36 @@
 {
   "scraping_session": {
-    "timestamp": "2025-09-04T11:36:02.057822",
-    "total_posts": 25,
-    "new_posts_this_session": 2,
-    "existing_posts": 23,
+    "timestamp": "2025-09-08T17:00:50.371036",
+    "total_posts": 31,
+    "new_posts_this_session": 1,
+    "existing_posts": 30,
     "status": "completed"
   },
   "posts": [
+    {
+      "id": "d9f5ae9a3e730146",
+      "title": "Kuensel Editorial: The government’s decision to rev...",
+      "content": "Kuensel Editorial: The government’s decision to revise taxation on alcohol and tobacco products is a long-overdue step in the fight against non-communicable diseases (NCDs). The country is losing 72 percent of its population to illnesses that are preventable—diseases linked not to fate, but to lifestyle choices and substances we willingly consume. Stronger taxes on harmful products is not just a revenue measure, it is an act of national self-preservation. https://kuenselonline.com/news/taxing-harm-to-save-lives #NCDs #taxing #editorial #Bhutan",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-09-01T17:44:17.952128",
+      "published_at": "2025-09-01T17:44:17.952134",
+      "has_images": true,
+      "image_count": 2,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540605571_1184276543735714_3648099050851264644_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zzk_kCGsBqoQ7kNvwFcvPWo&_nc_oc=Adk82JzTSYmIZDru4QuXZtnaFq69djYwjmD1jC0L6MFizPueV-mKg7__yeeMt6TlPqY&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=p7sYucuX1Db_qaWsVkCNMw&oh=00_AfUjHNWotC7Hh08qdyJetb_dpz5i5CKGa_lQVgeMkwcTvw&oe=68BB59B7",
+          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540605571_1184276543735714_3648099050851264644_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zzk_kCGsBqoQ7kNvwFcvPWo&_nc_oc=Adk82JzTSYmIZDru4QuXZtnaFq69djYwjmD1jC0L6MFizPueV-mKg7__yeeMt6TlPqY&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=o99Q5Uy-Jx6ZJYelHCLihA&oh=00_AfUKBNd9HLvZLuiariTw9KBLJFuqNCueXhcB0zvR1rBiCA&oe=68BB59B7"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1184344897062212&set=a.470097558486953&__cft__[0]=AZXOxe7BKnCNKx1NaUSsIqoIzhEt3cHqKjLRw_dBj75AEdZkuX4TIqWIjgpSGjU0vPl8XwLHsHP_Tzkce5rKFfu6DDcMIpFTNAnRX-DUXrjtQ5Pmp_087G0j8rIqv1fKNX-P5MYT9alXAbofwi3smNi3mpv5cAeInzGJNLRhkRV9itsfvSzwYR-KqCbJRuxIrMo&__tn__=EH-R"
+        ]
+      },
+      "content_length": 549
+    },
     {
       "id": "ae375fa5b5b1a62d",
       "title": "’       The project will be funded jointly by the government and Pro Bhutan Association Chencho D...",
@@ -33,28 +57,28 @@
       "content_length": 503
     },
     {
-      "id": "d9f5ae9a3e730146",
-      "title": "Kuensel Editorial: The government’s decision to rev...",
-      "content": "Kuensel Editorial: The government’s decision to revise taxation on alcohol and tobacco products is a long-overdue step in the fight against non-communicable diseases (NCDs). The country is losing 72 percent of its population to illnesses that are preventable—diseases linked not to fate, but to lifestyle choices and substances we willingly consume. Stronger taxes on harmful products is not just a revenue measure, it is an act of national self-preservation. https://kuenselonline.com/news/taxing-harm-to-save-lives #NCDs #taxing #editorial #Bhutan",
+      "id": "2eef788babe8bf40",
+      "title": "Editorial:      Bhutan’s greatest national achievement since the introduction of planned developm...",
+      "content": "Editorial:      Bhutan’s greatest national achievement since the introduction of planned development has been the delivery of free healthcare for every citizen. It is a policy rooted in compassion and equity, and even today, it remains the bedrock of our social contract. https://kuenselonline.com/news/fix-the-health-workforce-now #workforce #editorial #Bhutan",
       "category": "news",
       "author": "Kuensel",
-      "created_at": "2025-09-01T17:44:17.952128",
-      "published_at": "2025-09-01T17:44:17.952134",
+      "created_at": "2025-08-27T13:02:41.135024",
+      "published_at": "2025-08-27T13:02:41.135032",
       "has_images": true,
       "image_count": 2,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540605571_1184276543735714_3648099050851264644_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zzk_kCGsBqoQ7kNvwFcvPWo&_nc_oc=Adk82JzTSYmIZDru4QuXZtnaFq69djYwjmD1jC0L6MFizPueV-mKg7__yeeMt6TlPqY&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=p7sYucuX1Db_qaWsVkCNMw&oh=00_AfUjHNWotC7Hh08qdyJetb_dpz5i5CKGa_lQVgeMkwcTvw&oe=68BB59B7",
-          "https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540605571_1184276543735714_3648099050851264644_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zzk_kCGsBqoQ7kNvwFcvPWo&_nc_oc=Adk82JzTSYmIZDru4QuXZtnaFq69djYwjmD1jC0L6MFizPueV-mKg7__yeeMt6TlPqY&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=o99Q5Uy-Jx6ZJYelHCLihA&oh=00_AfUKBNd9HLvZLuiariTw9KBLJFuqNCueXhcB0zvR1rBiCA&oe=68BB59B7"
+          "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/539907249_1180462994117069_3840077050780019073_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=O6qGZ4lDjMgQ7kNvwFmDhCC&_nc_oc=AdkUh6OE8qsfqVMeTi8pIagnqH9fBGiXusXr1hCyRC0yQPbq26GsMQBQUz8p3cc5r9M&_nc_zt=23&_nc_ht=scontent-lhr8-1.xx&_nc_gid=DTiq4wZsoZ2Gv9_j_Qm3nw&oh=00_AfW76PU-HKioWya00YrVxWuFFS3lfx83fa2X8IroxVlixQ&oe=68B4E0D9",
+          "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/539907249_1180462994117069_3840077050780019073_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=O6qGZ4lDjMgQ7kNvwFmDhCC&_nc_oc=AdkUh6OE8qsfqVMeTi8pIagnqH9fBGiXusXr1hCyRC0yQPbq26GsMQBQUz8p3cc5r9M&_nc_zt=23&_nc_ht=scontent-lhr8-1.xx&_nc_gid=DaKaYDCbeOkrQRYRBGOAJg&oh=00_AfVFm6LfvjvNHpU0dRgifUgxBXCfjrPv2BycthdJOdb-QQ&oe=68B4E0D9"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1184344897062212&set=a.470097558486953&__cft__[0]=AZXOxe7BKnCNKx1NaUSsIqoIzhEt3cHqKjLRw_dBj75AEdZkuX4TIqWIjgpSGjU0vPl8XwLHsHP_Tzkce5rKFfu6DDcMIpFTNAnRX-DUXrjtQ5Pmp_087G0j8rIqv1fKNX-P5MYT9alXAbofwi3smNi3mpv5cAeInzGJNLRhkRV9itsfvSzwYR-KqCbJRuxIrMo&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1180505464112822&set=a.470097558486953&__cft__[0]=AZXohYbJK9PY3y_3babVVZ0NfhYVYEV8js-y2QSlX-CJNRaa4Cu7bgMsN-MsdkFvdQI4K-xKB2pM4H3mPqnIeWEhekL8h3mP4qJy1C1piAT6vrATQbTAKEKphr9tI5_dtic6pXIMZGcdU3849UbgDpnIIGQfJVRbwVsXe7yeMWkFIWzNuKQS_W8hDmnWm3JKfnU&__tn__=EH-R"
         ]
       },
-      "content_length": 549
+      "content_length": 361
     },
     {
       "id": "d65243ed5d2b1112",
@@ -103,75 +127,27 @@
       "content_length": 625
     },
     {
-      "id": "2eef788babe8bf40",
-      "title": "Editorial:      Bhutan’s greatest national achievement since the introduction of planned developm...",
-      "content": "Editorial:      Bhutan’s greatest national achievement since the introduction of planned development has been the delivery of free healthcare for every citizen. It is a policy rooted in compassion and equity, and even today, it remains the bedrock of our social contract. https://kuenselonline.com/news/fix-the-health-workforce-now #workforce #editorial #Bhutan",
-      "category": "news",
+      "id": "ee655ee3dcd4edf9",
+      "title": "Chencho wins bronze at Asian Bodybuilding Championship Chencho secured third place in the Men’s A...",
+      "content": "Chencho wins bronze at Asian Bodybuilding Championship Chencho secured third place in the Men’s Athletic Physique Over 182cm category at the 57th Asian Bodybuilding & Physique Sport Championship 2025 held in Thailand. Photo: Bhutan Olympic Committee",
+      "category": "sports",
       "author": "Kuensel",
-      "created_at": "2025-08-27T13:02:41.135024",
-      "published_at": "2025-08-27T13:02:41.135032",
-      "has_images": true,
-      "image_count": 2,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/539907249_1180462994117069_3840077050780019073_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=O6qGZ4lDjMgQ7kNvwFmDhCC&_nc_oc=AdkUh6OE8qsfqVMeTi8pIagnqH9fBGiXusXr1hCyRC0yQPbq26GsMQBQUz8p3cc5r9M&_nc_zt=23&_nc_ht=scontent-lhr8-1.xx&_nc_gid=DTiq4wZsoZ2Gv9_j_Qm3nw&oh=00_AfW76PU-HKioWya00YrVxWuFFS3lfx83fa2X8IroxVlixQ&oe=68B4E0D9",
-          "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/539907249_1180462994117069_3840077050780019073_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=O6qGZ4lDjMgQ7kNvwFmDhCC&_nc_oc=AdkUh6OE8qsfqVMeTi8pIagnqH9fBGiXusXr1hCyRC0yQPbq26GsMQBQUz8p3cc5r9M&_nc_zt=23&_nc_ht=scontent-lhr8-1.xx&_nc_gid=DaKaYDCbeOkrQRYRBGOAJg&oh=00_AfVFm6LfvjvNHpU0dRgifUgxBXCfjrPv2BycthdJOdb-QQ&oe=68B4E0D9"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1180505464112822&set=a.470097558486953&__cft__[0]=AZXohYbJK9PY3y_3babVVZ0NfhYVYEV8js-y2QSlX-CJNRaa4Cu7bgMsN-MsdkFvdQI4K-xKB2pM4H3mPqnIeWEhekL8h3mP4qJy1C1piAT6vrATQbTAKEKphr9tI5_dtic6pXIMZGcdU3849UbgDpnIIGQfJVRbwVsXe7yeMWkFIWzNuKQS_W8hDmnWm3JKfnU&__tn__=EH-R"
-        ]
-      },
-      "content_length": 361
-    },
-    {
-      "id": "322bde75b2c345ae",
-      "title": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped s...",
-      "content": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped sharply this year following the commissioning of the Punatsangchhu-II hydropower project (PHPA-II). https://kuenselonline.com/.../phpa-ii-cuts-power-imports... #PHPA #hydropower #export #import #Bhutan",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-09-02T13:36:47.899046",
-      "published_at": "2025-09-02T13:36:47.899052",
-      "has_images": true,
-      "image_count": 2,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=hjNdc9lYuyEnVokzWExDUg&oh=00_AfWRZPVrKzb7g-fkDZCpaRleny0lUCIwE-vOd8YlC_lC9g&oe=68BC54F2",
-          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=F4zxZC58RCtKwkFGAdfLCA&oh=00_AfX8GWiSfsOili56K19enx5sIRKzRQ_VCK44QVNNx9qjeg&oe=68BC8D32"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1185107423652626&set=a.470097558486953&__cft__[0]=AZURNuo19KnKKhV82hLdFbUGmO9ZzEyBplBG_JzmghMXvPgxJGLfa3O9pw1g0aYUXL6U0gIq6bpuPGPO8JRaSeiJdSmd8rZnvtz2WBxEO-ZlenqOloB9ESYtexiThkdMoegYSpvUzJRzgZPh0dO62q2LdjP4OTdkuwZ3h5yE0Fjz3LVH6rxbOyLszs2cR43qXL4&__tn__=EH-R"
-        ]
-      },
-      "content_length": 297
-    },
-    {
-      "id": "5145de58bc88c07a",
-      "title": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition...",
-      "content": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition and growth at all costs, cultivating a mindset of gratitude is not only challenging but absolutely necessary for our well-being. Just as water is nature’s perfect answer to thirst, gratitude is the antidote to our incessant dissatisfaction and desire for more. https://kuenselonline.com/news/ask-mr-bhutan-5 #MrBhutan #lifestyle",
-      "category": "news",
-      "author": "Kuensel",
-      "created_at": "2025-08-26T10:42:43.912278",
-      "published_at": "2025-08-26T10:42:43.912285",
+      "created_at": "2025-08-24T06:49:54.750156",
+      "published_at": "2025-08-24T06:49:54.750166",
       "has_images": true,
       "image_count": 1,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/539550496_1179494754213893_4045117636315665038_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HsNN1K4YYmgQ7kNvwFO2lle&_nc_oc=AdnBO0YnuYUe4ySo_qay3KEQ5PuPrbKIGBasLI0pC8wKtH5kgnSMGfAn-tPweo7VWcE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=HUvPrMSZWM9vVVqZpHITpQ&oh=00_AfV8qcc7iXZu5t49wGk--y19gaP7dYxkgFpsZItkeYfQPw&oe=68B364BD"
+          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/539307100_1177548524408516_8757897332280702775_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y326K9omBm4Q7kNvwFEvpn2&_nc_oc=AdlsHnr_AtOMw0jRJVseQROv7wUIS7NofGZAWNYnWbtYsL4Tr1rqEgVqGMytY-ENV9g&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=U6Z53_PQY9wOy2pescmWKQ&oh=00_AfWs_HkulhMcbov_RChyUuw4BhtbHS0C2TBG98sc8rEHpw&oe=68B09496"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1179494750880560&set=a.470097558486953&__cft__[0]=AZUFi0UA6RpSWWLKsVkcQ4mPf-Opx9oK-6eg4XyWU6luOL3XEi7et8zTgIVlCHUHJY2Q3ICXhc5yFM0jfZMDOoASj5LI3oPGMdosEhorXpdkAAq0kNRQo2c60uNK3nfUBeIYPOGKseiJfGsYGnxcymT3j1wjp8HTkJ-6NUkUWR3y8RsGXeK4p4UmJKONdq70XD4&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1177548487741853&set=a.470097565153619&__cft__[0]=AZWLp-6vxN9hr4yEbE1B3J48iVwGkNHm35P7JLmOSVAUjJ0Z8i52AXG1_MD_A0W9MLc9-xjzBWR_m908VQ10EWC1v0NKAnuW9ADnO89-9-WpyBlrbkbydPBeikJkz0CdQXwzS1zDTppG1kU48w7_rqjr2jSJs-Y7cyYED6yJ_fhk15MjdZzPO00Cy3Ww5Ynhmmg&__tn__=EH-R"
         ]
       },
-      "content_length": 426
+      "content_length": 249
     },
     {
       "id": "c3072605aa892b11",
@@ -221,6 +197,53 @@
       "content_length": 749
     },
     {
+      "id": "e61c3fc9909b44f1",
+      "title": "Editorial:      ? The government has discontinued the tourist airfare subsidy after six months, foll",
+      "content": "Editorial:      ? The government has discontinued the tourist airfare subsidy after six months, following the recommendation made by the Economic and Finance Committee of the National Assembly. The scheme, launched in November 2024, promised to boost arrivals during off-season months. The government had allocated Nu 49.5 million for the subsidy, of which Nu 38.59 million was utilised. A total of 6,203 tourists benefitted from subsidised fares during the period. https://kuenselonline.com/.../was-the-airfare-subsidy... #tourism #DoT #TCB #Bhutan",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-08-23T12:58:53.972798",
+      "published_at": "2025-08-23T12:58:53.972808",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/537590176_1176820804481288_5969031847688774920_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qiHlzmqXun0Q7kNvwGwCvnf&_nc_oc=Adn0OE3G04zsic2wNHkz_DLB6NrBaLIy_MMaRMnoKawON1ouxlsWTk0dLlfU1h2s3eU&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=mAV6l46WPS7SPUe4onyP5Q&oh=00_AfWTwSvQ3-SiAuop1lFeU25vz8lcGv3w0CE-KsdS64SHdw&oe=68AF9668"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1176925337804168&set=a.470097558486953&__cft__[0]=AZUqs3q_9GAe7UeLzMeQhUG9pv3-KR-wKugGnb6EgF3aPJ89KSGVYWQIsXy7-e_6PJfPdJl1_iKWK9eY-9KRTGSanagCfc5nO2gR2RNawy6yEUAc3iqXZOQE8e6l-TuiS4GxTETG1iGDor1w9cZclmvF-mefQd37wFOiYttWrRgHx5itMQTMIUsvIvDWOt8AC30&__tn__=EH-R"
+        ]
+      },
+      "content_length": 549
+    },
+    {
+      "id": "322bde75b2c345ae",
+      "title": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped s...",
+      "content": "Kuensel -   ,   Dechen Dolkar The import of electricity during Bhutan’s lean season has dropped sharply this year following the commissioning of the Punatsangchhu-II hydropower project (PHPA-II). https://kuenselonline.com/.../phpa-ii-cuts-power-imports... #PHPA #hydropower #export #import #Bhutan",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": "2025-09-02T13:36:47.899046",
+      "published_at": "2025-09-02T13:36:47.899052",
+      "has_images": true,
+      "image_count": 2,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=hjNdc9lYuyEnVokzWExDUg&oh=00_AfWRZPVrKzb7g-fkDZCpaRleny0lUCIwE-vOd8YlC_lC9g&oe=68BC54F2",
+          "https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/541775919_1185034266993275_2764538784610822685_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eQ5jZX8OlNcQ7kNvwG1-m_U&_nc_oc=AdmpVt5VO-eOSZT5wYEiZf3Kac4pTAC8kQJqySOJxek-XOCgiHl1BglsXVZS5XwbSyM&_nc_zt=23&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=F4zxZC58RCtKwkFGAdfLCA&oh=00_AfX8GWiSfsOili56K19enx5sIRKzRQ_VCK44QVNNx9qjeg&oe=68BC8D32"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1185107423652626&set=a.470097558486953&__cft__[0]=AZURNuo19KnKKhV82hLdFbUGmO9ZzEyBplBG_JzmghMXvPgxJGLfa3O9pw1g0aYUXL6U0gIq6bpuPGPO8JRaSeiJdSmd8rZnvtz2WBxEO-ZlenqOloB9ESYtexiThkdMoegYSpvUzJRzgZPh0dO62q2LdjP4OTdkuwZ3h5yE0Fjz3LVH6rxbOyLszs2cR43qXL4&__tn__=EH-R"
+        ]
+      },
+      "content_length": 297
+    },
+    {
       "id": "2418cef3e042e711",
       "title": "Yangyel Lhaden On a serene Saturday morning, a few metres below Dochula Pass, the greenery of Lam...",
       "content": "Yangyel Lhaden On a serene Saturday morning, a few metres below Dochula Pass, the greenery of Lampelri Recreational Park(LRP) came alive with the laughter of students and the voices of leaders, educators, and conservationists. https://kuenselonline.com/.../lampelri-recreational-park... #Lampelri #recreational #park #climate #education #Bhutan",
@@ -246,50 +269,52 @@
       "content_length": 344
     },
     {
-      "id": "ee655ee3dcd4edf9",
-      "title": "Chencho wins bronze at Asian Bodybuilding Championship Chencho secured third place in the Men’s A...",
-      "content": "Chencho wins bronze at Asian Bodybuilding Championship Chencho secured third place in the Men’s Athletic Physique Over 182cm category at the 57th Asian Bodybuilding & Physique Sport Championship 2025 held in Thailand. Photo: Bhutan Olympic Committee",
-      "category": "sports",
-      "author": "Kuensel",
-      "created_at": "2025-08-24T06:49:54.750156",
-      "published_at": "2025-08-24T06:49:54.750166",
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/539307100_1177548524408516_8757897332280702775_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y326K9omBm4Q7kNvwFEvpn2&_nc_oc=AdlsHnr_AtOMw0jRJVseQROv7wUIS7NofGZAWNYnWbtYsL4Tr1rqEgVqGMytY-ENV9g&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=U6Z53_PQY9wOy2pescmWKQ&oh=00_AfWs_HkulhMcbov_RChyUuw4BhtbHS0C2TBG98sc8rEHpw&oe=68B09496"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1177548487741853&set=a.470097565153619&__cft__[0]=AZWLp-6vxN9hr4yEbE1B3J48iVwGkNHm35P7JLmOSVAUjJ0Z8i52AXG1_MD_A0W9MLc9-xjzBWR_m908VQ10EWC1v0NKAnuW9ADnO89-9-WpyBlrbkbydPBeikJkz0CdQXwzS1zDTppG1kU48w7_rqjr2jSJs-Y7cyYED6yJ_fhk15MjdZzPO00Cy3Ww5Ynhmmg&__tn__=EH-R"
-        ]
-      },
-      "content_length": 249
-    },
-    {
-      "id": "a3d33d731a89ba90",
-      "title": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s populat...",
-      "content": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s population, with nearly half of all children and women suffering from anaemia. According to data, 44.7 percent of children aged 6–59 months are affected. https://kuenselonline.com/.../nearly-half-of-women-and... #women #children #Anaemia #Bhutan",
+      "id": "96a6e9dd93ed6909",
+      "title": "Chencho Dema This year’s cordyceps auction recorded the highest harvest in recent years, with 940",
+      "content": "Chencho Dema This year’s cordyceps auction recorded the highest harvest in recent years, with 940.29 kilograms brought to auction. Of this, 292.93 kilograms were sold while 647.35 kilograms were withdrawn, generating Nu 4.43 million in revenue from royalties. https://kuenselonline.com/.../cordyceps-harvest-records... #cordycep #Bhutan",
       "category": "general",
       "author": "Kuensel",
-      "created_at": "2025-08-26T06:53:02.609367",
-      "published_at": "2025-08-26T06:53:02.609374",
+      "created_at": "2025-08-23T08:44:44.732315",
+      "published_at": "2025-08-23T08:44:44.732322",
+      "has_images": true,
+      "image_count": 2,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/536285432_1176807964482572_4861415718005918468_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gKi-9RHO0CcQ7kNvwHBa7hs&_nc_oc=Adln9q1p3g_gAA-nbbTPRdkk9h7c6Z0YBUxWIw6uARcoIO-04FKUdvWLFrVNQTvg1QY&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=CaOlFRMriv2sH30M6HkyrQ&oh=00_AfWmNIT7glUyQYgSt4iV2FgFIrSVSJGqSMPinhk80Zw0FQ&oe=68AF555A",
+          "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/536284486_1176807967815905_9012067244430795506_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Ye7ieRI5uD0Q7kNvwE9zOEw&_nc_oc=AdkzbIOxRJ_M4w1ZUPSbW-V4Y8GcRFKPQBDHbxNvNiZ5hxsMP86cKyICY7bQfpuLwrc&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=CaOlFRMriv2sH30M6HkyrQ&oh=00_AfWwNeQuYiEJ1-dW5omkY6I9m-D2r4YayZpr87ZeiHhhoQ&oe=68AF5ADC"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1176820911147944&set=pcb.1176820941147941&__cft__[0]=AZX-PURiDmgfkwLRJ6ontTYaKpiWKe3RHT5jCqSVwjYmiToFXdjZjcqNQX9Y7Pc-dVBlsy2XLj3lBGKMv5clgDQQ6oHhEgpBYhNUYtaejAYmaSZyAxzPZKPsjeo--6wNPzqvPPoRCmUEMjPC0N0-WNnDc7WbnHjaW0UdgubhQaQrMtzulmq8eF74VeikI5uW_hg&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1176820907814611&set=pcb.1176820941147941&__cft__[0]=AZX-PURiDmgfkwLRJ6ontTYaKpiWKe3RHT5jCqSVwjYmiToFXdjZjcqNQX9Y7Pc-dVBlsy2XLj3lBGKMv5clgDQQ6oHhEgpBYhNUYtaejAYmaSZyAxzPZKPsjeo--6wNPzqvPPoRCmUEMjPC0N0-WNnDc7WbnHjaW0UdgubhQaQrMtzulmq8eF74VeikI5uW_hg&__tn__=*b1H-R"
+        ]
+      },
+      "content_length": 336
+    },
+    {
+      "id": "5145de58bc88c07a",
+      "title": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition...",
+      "content": "Lifestyle:    In a world that constantly advertises, applauds, and sells consumption, acquisition and growth at all costs, cultivating a mindset of gratitude is not only challenging but absolutely necessary for our well-being. Just as water is nature’s perfect answer to thirst, gratitude is the antidote to our incessant dissatisfaction and desire for more. https://kuenselonline.com/news/ask-mr-bhutan-5 #MrBhutan #lifestyle",
+      "category": "news",
+      "author": "Kuensel",
+      "created_at": "2025-08-26T10:42:43.912278",
+      "published_at": "2025-08-26T10:42:43.912285",
       "has_images": true,
       "image_count": 1,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/539138774_1179235040906531_5785336193725149678_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IPVk8Nga2ZMQ7kNvwF2WLPi&_nc_oc=AdkpLkOaBy1bq1CSKogWakFHHm32CMbTxAhugvqlbWmmwZd7_2t2oVjPqQ19WdziUfk&_nc_zt=23&_nc_ht=scontent-del1-2.xx&_nc_gid=ZQZfm_1T4y9kVD4pVp3c5Q&oh=00_AfXyqXF4h4oR2Su3zmD3YrhoRcbOCrsAnZhd-wnYo0-t3Q&oe=68B32DA6"
+          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/539550496_1179494754213893_4045117636315665038_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HsNN1K4YYmgQ7kNvwFO2lle&_nc_oc=AdnBO0YnuYUe4ySo_qay3KEQ5PuPrbKIGBasLI0pC8wKtH5kgnSMGfAn-tPweo7VWcE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=HUvPrMSZWM9vVVqZpHITpQ&oh=00_AfV8qcc7iXZu5t49wGk--y19gaP7dYxkgFpsZItkeYfQPw&oe=68B364BD"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1179281010901934&set=a.470097558486953&__cft__[0]=AZUGbTfJ644wxOaQJw1LwU3YvEjx7_Bf9jclwbwUtJoRDqn8U-VbeuqHEYgqlwOsCbH-SdO56lNmU7s6HhiLxYjuHHEjJ3jQThXkNvSr9e4bDMVAuPp1EY_oEMLKnGPmIYDl8gOj8fKhsBltt0UeNTkSQCRr-lf_Of_0hMr8H5thXXfHDOuRupkwGG_sV_wjHws&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1179494750880560&set=a.470097558486953&__cft__[0]=AZUFi0UA6RpSWWLKsVkcQ4mPf-Opx9oK-6eg4XyWU6luOL3XEi7et8zTgIVlCHUHJY2Q3ICXhc5yFM0jfZMDOoASj5LI3oPGMdosEhorXpdkAAq0kNRQo2c60uNK3nfUBeIYPOGKseiJfGsYGnxcymT3j1wjp8HTkJ-6NUkUWR3y8RsGXeK4p4UmJKONdq70XD4&__tn__=EH-R"
         ]
       },
-      "content_length": 335
+      "content_length": 426
     },
     {
       "id": "9e5bb521a97c4006",
@@ -338,27 +363,50 @@
       "content_length": 370
     },
     {
-      "id": "e61c3fc9909b44f1",
-      "title": "Editorial:      ? The government has discontinued the tourist airfare subsidy after six months, foll",
-      "content": "Editorial:      ? The government has discontinued the tourist airfare subsidy after six months, following the recommendation made by the Economic and Finance Committee of the National Assembly. The scheme, launched in November 2024, promised to boost arrivals during off-season months. The government had allocated Nu 49.5 million for the subsidy, of which Nu 38.59 million was utilised. A total of 6,203 tourists benefitted from subsidised fares during the period. https://kuenselonline.com/.../was-the-airfare-subsidy... #tourism #DoT #TCB #Bhutan",
-      "category": "news",
+      "id": "b36d8fad6689e532",
+      "title": "(ADVERTISEMENT) - @Stele",
+      "content": "(ADVERTISEMENT) - @Stele.in",
+      "category": "general",
       "author": "Kuensel",
-      "created_at": "2025-08-23T12:58:53.972798",
-      "published_at": "2025-08-23T12:58:53.972808",
+      "created_at": "2025-08-23T04:44:56.716504",
+      "published_at": "2025-08-23T04:44:56.716511",
       "has_images": true,
       "image_count": 1,
       "has_videos": false,
       "has_links": true,
       "attachment": {
         "images": [
-          "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/537590176_1176820804481288_5969031847688774920_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qiHlzmqXun0Q7kNvwGwCvnf&_nc_oc=Adn0OE3G04zsic2wNHkz_DLB6NrBaLIy_MMaRMnoKawON1ouxlsWTk0dLlfU1h2s3eU&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=mAV6l46WPS7SPUe4onyP5Q&oh=00_AfWTwSvQ3-SiAuop1lFeU25vz8lcGv3w0CE-KsdS64SHdw&oe=68AF9668"
+          "https://scontent-lhr6-1.xx.fbcdn.net/v/t39.30808-6/538260659_1176678871162148_612044495720624774_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-kM3PNqoY3kQ7kNvwHoFlUY&_nc_oc=Adn2oB-vP6GrQ3uYdXd7A3wZs8tvI_MqlqoZwg5Ue8rccjCj27Cacow_A2K1lR5dItc&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&_nc_gid=CUWYvq4QtAmA3qan8kxUOQ&oh=00_AfVpdE6Np8mdr9EKW2ZVVYiZy_e_Mc3FKiXx85LpynZSoQ&oe=68AF15A5"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1176925337804168&set=a.470097558486953&__cft__[0]=AZUqs3q_9GAe7UeLzMeQhUG9pv3-KR-wKugGnb6EgF3aPJ89KSGVYWQIsXy7-e_6PJfPdJl1_iKWK9eY-9KRTGSanagCfc5nO2gR2RNawy6yEUAc3iqXZOQE8e6l-TuiS4GxTETG1iGDor1w9cZclmvF-mefQd37wFOiYttWrRgHx5itMQTMIUsvIvDWOt8AC30&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1176678867828815&set=a.470097565153619&__cft__[0]=AZVb3eNn5LxJdER7IJPXRGTyNgQNumMG1XhNO_MjsEC8iWqj1DXaZP_SBmVwpIaETGLDHoc7jWSeRAqG6yVYNfJNQkLiQRn1WmRclb49KgBs4zYGB-5c2ZPI2P1G9O3vTvHi1hwhsanAE-EShZLtDpq7jrnTZ5uw-Q2c4GUryDNtI3gnqhYssN86-rGMGe1S9k4&__tn__=EH-R"
         ]
       },
-      "content_length": 549
+      "content_length": 27
+    },
+    {
+      "id": "a3d33d731a89ba90",
+      "title": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s populat...",
+      "content": "Thinley Namgay A silent health crisis is affecting a significant portion of the country’s population, with nearly half of all children and women suffering from anaemia. According to data, 44.7 percent of children aged 6–59 months are affected. https://kuenselonline.com/.../nearly-half-of-women-and... #women #children #Anaemia #Bhutan",
+      "category": "general",
+      "author": "Kuensel",
+      "created_at": "2025-08-26T06:53:02.609367",
+      "published_at": "2025-08-26T06:53:02.609374",
+      "has_images": true,
+      "image_count": 1,
+      "has_videos": false,
+      "has_links": true,
+      "attachment": {
+        "images": [
+          "https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/539138774_1179235040906531_5785336193725149678_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IPVk8Nga2ZMQ7kNvwF2WLPi&_nc_oc=AdkpLkOaBy1bq1CSKogWakFHHm32CMbTxAhugvqlbWmmwZd7_2t2oVjPqQ19WdziUfk&_nc_zt=23&_nc_ht=scontent-del1-2.xx&_nc_gid=ZQZfm_1T4y9kVD4pVp3c5Q&oh=00_AfXyqXF4h4oR2Su3zmD3YrhoRcbOCrsAnZhd-wnYo0-t3Q&oe=68B32DA6"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1179281010901934&set=a.470097558486953&__cft__[0]=AZUGbTfJ644wxOaQJw1LwU3YvEjx7_Bf9jclwbwUtJoRDqn8U-VbeuqHEYgqlwOsCbH-SdO56lNmU7s6HhiLxYjuHHEjJ3jQThXkNvSr9e4bDMVAuPp1EY_oEMLKnGPmIYDl8gOj8fKhsBltt0UeNTkSQCRr-lf_Of_0hMr8H5thXXfHDOuRupkwGG_sV_wjHws&__tn__=EH-R"
+        ]
+      },
+      "content_length": 335
     },
     {
       "id": "4a5e2a2b06eb41bf",
@@ -384,77 +432,59 @@
       "content_length": 583
     },
     {
-      "id": "b36d8fad6689e532",
-      "title": "(ADVERTISEMENT) - @Stele",
-      "content": "(ADVERTISEMENT) - @Stele.in",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-08-23T04:44:56.716504",
-      "published_at": "2025-08-23T04:44:56.716511",
-      "has_images": true,
-      "image_count": 1,
-      "has_videos": false,
-      "has_links": true,
+      "id": "b0db1afba52b84cf",
+      "title": "Kuensel Editorial:     ’ For years, cleaning campaigns in Bhutan have been little more than a ritual",
+      "description": ". People came together with gloves and sacks, streets looked tidy for a day or two, and social media brimmed with photos of civic duty. But soon enough, drains filled again, footpaths grew ugly with doma stains, and bridges became dumping sites. The message “do not litter in the first place” was repeated endlessly, but it rarely stuck. Conscience, it seems, was not enough. https://kuenselonline.com/.../cameras-catch-what... #editorial #Bhutan",
+      "content": "Kuensel Editorial:     ’ For years, cleaning campaigns in Bhutan have been little more than a ritual. People came together with gloves and sacks, streets looked tidy for a day or two, and social media brimmed with photos of civic duty. But soon enough, drains filled again, footpaths grew ugly with doma stains, and bridges became dumping sites. The message “do not litter in the first place” was repeated endlessly, but it rarely stuck. Conscience, it seems, was not enough. https://kuenselonline.com/.../cameras-catch-what... #editorial #Bhutan",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
       "attachment": {
         "images": [
-          "https://scontent-lhr6-1.xx.fbcdn.net/v/t39.30808-6/538260659_1176678871162148_612044495720624774_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-kM3PNqoY3kQ7kNvwHoFlUY&_nc_oc=Adn2oB-vP6GrQ3uYdXd7A3wZs8tvI_MqlqoZwg5Ue8rccjCj27Cacow_A2K1lR5dItc&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&_nc_gid=CUWYvq4QtAmA3qan8kxUOQ&oh=00_AfVpdE6Np8mdr9EKW2ZVVYiZy_e_Mc3FKiXx85LpynZSoQ&oe=68AF15A5"
+          "https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/545053855_1189843779845657_8490041547744825351_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3No_lnh2A4AQ7kNvwGpb1VH&_nc_oc=AdkXVEUtxt5MafRrjCpisQ-XGlZhKP8IMUkSrkqnG81vNKOa9i48NfGQkK5FL4xJmcA&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=QjbtNQBw7nBz10Czef4Iyg&oh=00_AfZWWiUJkNlng64amlc0ijD7Sxzy3PDd8FM4f9uNweYG5Q&oe=68C4770A",
+          "https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/545053855_1189843779845657_8490041547744825351_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3No_lnh2A4AQ7kNvwGpb1VH&_nc_oc=AdkXVEUtxt5MafRrjCpisQ-XGlZhKP8IMUkSrkqnG81vNKOa9i48NfGQkK5FL4xJmcA&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=ugkQYjiFSbrxzfHoO3p_AA&oh=00_AfZUH0tyKUuU4n3dyHtOUb_Uq8kotVO31yX5XoicqgRzKg&oe=68C4770A"
         ],
         "videos": [],
         "links": [
-          "https://www.facebook.com/photo/?fbid=1176678867828815&set=a.470097565153619&__cft__[0]=AZVb3eNn5LxJdER7IJPXRGTyNgQNumMG1XhNO_MjsEC8iWqj1DXaZP_SBmVwpIaETGLDHoc7jWSeRAqG6yVYNfJNQkLiQRn1WmRclb49KgBs4zYGB-5c2ZPI2P1G9O3vTvHi1hwhsanAE-EShZLtDpq7jrnTZ5uw-Q2c4GUryDNtI3gnqhYssN86-rGMGe1S9k4&__tn__=EH-R"
+          "https://www.facebook.com/photo/?fbid=1189914453171923&set=a.470097558486953&__cft__[0]=AZUQmV6LN_1V1Bfr_P_4FBmcZkjHhzGouxxZCblpV4uW-urKhEqAs85PoNj85o-hzk2PQ8ZRkrIc6dJW6fv0RvgAJxPQ6DXlHQlEiMl8sAPmDi3dJp_6kxZbSWeIOBc3J5uP08-jmI9RWiN-xdyKpvwzdBrSpIT3yN_eNLPhN4dk5d26r4ySxaDchtpx2A8O0xw&__tn__=EH-R"
         ]
       },
-      "content_length": 27
+      "createdAt": "2025-09-08T16:59:52.163960",
+      "publishAt": "2025-09-08T16:59:52.163978",
+      "local_images": [
+        {
+          "local_path": "/Users/sonamtenzin/Desktop/AI_ML/Facebook_Scrapper/images/2025-09-08/kuensel_b0db1afba52b84cf_img02_170050.jpg",
+          "relative_path": "images/2025-09-08/kuensel_b0db1afba52b84cf_img02_170050.jpg",
+          "filename": "kuensel_b0db1afba52b84cf_img02_170050.jpg",
+          "size": 204409,
+          "metadata": {
+            "Post ID": "b0db1afba52b84cf",
+            "Post Date": "unknown_date",
+            "Image URL": "https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/545053855_1189843779845657_8490041547744825351_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3No_lnh2A4AQ7kNvwGpb1VH&_nc_oc=AdkXVEUtxt5MafRrjCpisQ-XGlZhKP8IMUkSrkqnG81vNKOa9i48NfGQkK5FL4xJmcA&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=ugkQYjiFSbrxzfHoO3p_AA&oh=00_AfZUH0tyKUuU4n3dyHtOUb_Uq8kotVO31yX5XoicqgRzKg&oe=68C4770A",
+            "Downloaded": "2025-09-08 17:00:50",
+            "File Size": "204,409 bytes"
+          }
+        },
+        {
+          "local_path": "/Users/sonamtenzin/Desktop/AI_ML/Facebook_Scrapper/images/2025-09-08/kuensel_b0db1afba52b84cf_img01_170049.jpg",
+          "relative_path": "images/2025-09-08/kuensel_b0db1afba52b84cf_img01_170049.jpg",
+          "filename": "kuensel_b0db1afba52b84cf_img01_170049.jpg",
+          "size": 49179,
+          "metadata": {
+            "Post ID": "b0db1afba52b84cf",
+            "Post Date": "unknown_date",
+            "Image URL": "https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/545053855_1189843779845657_8490041547744825351_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3No_lnh2A4AQ7kNvwGpb1VH&_nc_oc=AdkXVEUtxt5MafRrjCpisQ-XGlZhKP8IMUkSrkqnG81vNKOa9i48NfGQkK5FL4xJmcA&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=QjbtNQBw7nBz10Czef4Iyg&oh=00_AfZWWiUJkNlng64amlc0ijD7Sxzy3PDd8FM4f9uNweYG5Q&oe=68C4770A",
+            "Downloaded": "2025-09-08 17:00:49",
+            "File Size": "49,179 bytes"
+          }
+        }
+      ]
     },
     {
-      "id": "b6ae9362ca943979",
-      "title": "August 22, 2025 – His Majesty The King and Her Majesty The Gyaltsuen returned to Bhutan today aft...",
-      "content": "August 22, 2025 – His Majesty The King and Her Majesty The Gyaltsuen returned to Bhutan today after concluding a landmark State Visit to Việt Nam, the first from Bhutan to the Southeast Asian nation.",
-      "category": "event",
-      "author": "Kuensel",
-      "created_at": "2025-08-22T13:03:17.444549",
-      "published_at": "2025-08-22T13:03:17.444560",
-      "has_images": false,
-      "image_count": 0,
-      "has_videos": false,
-      "has_links": false,
-      "attachment": {
-        "images": [],
-        "videos": [],
-        "links": []
-      },
-      "content_length": 199
-    },
-    {
-      "id": "96a6e9dd93ed6909",
-      "title": "Chencho Dema This year’s cordyceps auction recorded the highest harvest in recent years, with 940",
-      "content": "Chencho Dema This year’s cordyceps auction recorded the highest harvest in recent years, with 940.29 kilograms brought to auction. Of this, 292.93 kilograms were sold while 647.35 kilograms were withdrawn, generating Nu 4.43 million in revenue from royalties. https://kuenselonline.com/.../cordyceps-harvest-records... #cordycep #Bhutan",
-      "category": "general",
-      "author": "Kuensel",
-      "created_at": "2025-08-23T08:44:44.732315",
-      "published_at": "2025-08-23T08:44:44.732322",
-      "has_images": true,
-      "image_count": 2,
-      "has_videos": false,
-      "has_links": true,
-      "attachment": {
-        "images": [
-          "https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/536285432_1176807964482572_4861415718005918468_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gKi-9RHO0CcQ7kNvwHBa7hs&_nc_oc=Adln9q1p3g_gAA-nbbTPRdkk9h7c6Z0YBUxWIw6uARcoIO-04FKUdvWLFrVNQTvg1QY&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=CaOlFRMriv2sH30M6HkyrQ&oh=00_AfWmNIT7glUyQYgSt4iV2FgFIrSVSJGqSMPinhk80Zw0FQ&oe=68AF555A",
-          "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/536284486_1176807967815905_9012067244430795506_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Ye7ieRI5uD0Q7kNvwE9zOEw&_nc_oc=AdkzbIOxRJ_M4w1ZUPSbW-V4Y8GcRFKPQBDHbxNvNiZ5hxsMP86cKyICY7bQfpuLwrc&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=CaOlFRMriv2sH30M6HkyrQ&oh=00_AfWwNeQuYiEJ1-dW5omkY6I9m-D2r4YayZpr87ZeiHhhoQ&oe=68AF5ADC"
-        ],
-        "videos": [],
-        "links": [
-          "https://www.facebook.com/photo/?fbid=1176820911147944&set=pcb.1176820941147941&__cft__[0]=AZX-PURiDmgfkwLRJ6ontTYaKpiWKe3RHT5jCqSVwjYmiToFXdjZjcqNQX9Y7Pc-dVBlsy2XLj3lBGKMv5clgDQQ6oHhEgpBYhNUYtaejAYmaSZyAxzPZKPsjeo--6wNPzqvPPoRCmUEMjPC0N0-WNnDc7WbnHjaW0UdgubhQaQrMtzulmq8eF74VeikI5uW_hg&__tn__=*b0H-R",
-          "https://www.facebook.com/photo/?fbid=1176820907814611&set=pcb.1176820941147941&__cft__[0]=AZX-PURiDmgfkwLRJ6ontTYaKpiWKe3RHT5jCqSVwjYmiToFXdjZjcqNQX9Y7Pc-dVBlsy2XLj3lBGKMv5clgDQQ6oHhEgpBYhNUYtaejAYmaSZyAxzPZKPsjeo--6wNPzqvPPoRCmUEMjPC0N0-WNnDc7WbnHjaW0UdgubhQaQrMtzulmq8eF74VeikI5uW_hg&__tn__=*b1H-R"
-        ]
-      },
-      "content_length": 336
-    },
-    {
-      "id": "a62f8cda47b7078c",
-      "title": "Sonam ST Tenzin 2",
-      "description": ".5 entitled",
-      "content": "Sonam ST Tenzin 2.5 entitled",
+      "id": "e82aeb8e4ff3a96e",
+      "title": "Ugyen Wangdi After award, anchor was saying \"mini chori sata gatakota ani dhgfab jvcn bbcc xsfv b...",
+      "description": "Ugyen Wangdi After award, anchor was saying \"mini chori sata gatakota ani dhgfab jvcn bbcc xsfv bvc dhuna aykodho baghjs dhuna mass\" and Tandin bidha was",
+      "content": "Ugyen Wangdi After award, anchor was saying \"mini chori sata gatakota ani dhgfab jvcn bbcc xsfv bvc dhuna aykodho baghjs dhuna mass\" and Tandin bidha was",
       "categoryID": "general",
       "authorId": "kuensel",
       "AuthorName": "Kuensel",
@@ -463,8 +493,128 @@
         "videos": [],
         "links": []
       },
-      "createdAt": "2025-09-04T11:26:04.378185",
-      "publishAt": "2025-09-04T11:26:04.378194"
+      "createdAt": "2025-09-08T03:31:00.618151",
+      "publishAt": "2025-09-08T03:31:00.618160"
+    },
+    {
+      "id": "1bb55a0894738394",
+      "title": "Kuensel Actress Tandin Bidha won the Yakushi Pearl Award for her performance in \"I, the Song\" at ...",
+      "description": "Kuensel Actress Tandin Bidha won the Yakushi Pearl Award for her performance in \"I, the Song\" at the Osaka Asian Film Festival in Japan today. The award recognizes the most brilliant performers among all participating films cast members. \"I, the Song\" was selected in the competition category of this years Osaka Asian Film Festival. This is the second international award won by \"I, the Song\". The director of the film, Dechen Roder, won the Best Director Award for the film at the 28th Tallinn Black Nights Film Festival 2024 in Estonia, competing in the Critics' Picks Competition. The film is also the winner of multiple national awards at the Bhutan National Film Awards 2025, including Best Film. 0:00 / 2:01",
+      "content": "Kuensel Actress Tandin Bidha won the Yakushi Pearl Award for her performance in \"I, the Song\" at the Osaka Asian Film Festival in Japan today. The award recognizes the most brilliant performers among all participating films cast members. \"I, the Song\" was selected in the competition category of this years Osaka Asian Film Festival. This is the second international award won by \"I, the Song\". The director of the film, Dechen Roder, won the Best Director Award for the film at the 28th Tallinn Black Nights Film Festival 2024 in Estonia, competing in the Critics' Picks Competition. The film is also the winner of multiple national awards at the Bhutan National Film Awards 2025, including Best Film. 0:00 / 2:01",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/544986892_1504084397263845_620824613602160720_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=1&ccb=1-7&_nc_sid=282d23&_nc_ohc=ppeitOO5nHoQ7kNvwEOl-TN&_nc_oc=AdlD0FKZEKzcEV5YKhaKh-FsDEgJGD9HYVgAPozapYM0ZWn8C2-mceibFkaYTlQmUQ8&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=5YC2J_s2dAunYMRKqBF9ag&oh=00_AfZMRkTT-pxVOrVvw55Cmo68KXj_D5lRBCcQauxLAMy5QQ&oe=68C37B1A"
+        ],
+        "videos": [
+          "https://video-ord5-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQMc7vmZTlg6KcHJOBvtlR6KK1fks9Bhjk6-umVepf0NBjRQwOCHbTXZW_zJHnXHas4x8hJIyLZHUVEeHrSJEsieJCjvFFdImdfaoo6tzw.mp4?_nc_cat=100&_nc_sid=8bf8fe&_nc_ht=video-ord5-3.xx.fbcdn.net&_nc_ohc=wayYlwAppNwQ7kNvwHnzCao&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNjQwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI4MDY0ODg5MzI1NzkwNiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=5YC2J_s2dAunYMRKqBF9ag&_nc_zt=28&oh=00_AfZ7bPOfS4q8dja9V0ok6hlT-cXbogFZR-GcfplwcpRQmg&oe=68C38566&bitrate=283667&tag=sve_sd"
+        ],
+        "links": []
+      },
+      "createdAt": "2025-09-07T16:41:26.633288",
+      "publishAt": "2025-09-07T16:41:26.633296"
+    },
+    {
+      "id": "3056a7f53c1e5ed0",
+      "title": "Drukpa Kuenga ༄༅། ། ཕ་བླ་ན་མེད་པ་རྗེ་བླ་མ། །ལྷ་བླ་ན་མེད་པ་སྤྱན་རས་གཟིགས། །ཆོས་བླ་ན་མེད་པ་ཡི་གེ་དྲ...",
+      "description": "Drukpa Kuenga ༄༅། ། ཕ་བླ་ན་མེད་པ་རྗེ་བླ་མ། །ལྷ་བླ་ན་མེད་པ་སྤྱན་རས་གཟིགས། །ཆོས་བླ་ན་མེད་པ་ཡི་གེ་དྲུག །ཐུགས་བླ་ན་མེད་པ་བྱང་ཆུབ་སེམས། །མ་འགྲོ་དྲུག་ཀུན་གྱིས་ཐོབ་པར་ཤོག །འཕགས་པ་ཐུགས་རྗེ་ཆེན་པོ་སྤྱན་རས་གཟིགས་དང་གཉིས་སུ་མེད་པའི་དོན་བརྒྱུད་དཔལ་ལྡན་འབྲུག་པའི་རྒྱལ་ཡོངས་ཆོས་ཀྱི་དབུ་ཁྲིད་དམ་པ་ རྗེ་མཁན་ཁྲི་རབས་ ༧༠ པ་ དཔལ་འཇིགས་མེད་ཆོས་ཀྱི་གྲགས་པ་མཆོག་གི་སྤྲུལ་པའི་སྐུ་ སྐུ་ཚེ་འཆི་མེད་མགོན་པོ་ཚེ་ལྷ་རྣམ་གསུམ་གྱི་བརྟནད་ཅིང་ འགྲོ་དོན་འཕྲིན་ལས་འཕགས་པ་མིག་མི་ཟུམ་པ་དང་མཉམ་པར་ཤོག་ཅིག། ཅེས་པ་གང་གི་འབངས་མཐར་འཁོད་པ་འདུ་ཤེས་གསུམ་པ་དགེ་འདུན་དཔལ་བཟང་ངམ་ སངྒ་ཤྲཱི་བྷ་བས་སྨོན་པ་དགེའོ།། 3",
+      "content": "Drukpa Kuenga ༄༅། ། ཕ་བླ་ན་མེད་པ་རྗེ་བླ་མ། །ལྷ་བླ་ན་མེད་པ་སྤྱན་རས་གཟིགས། །ཆོས་བླ་ན་མེད་པ་ཡི་གེ་དྲུག །ཐུགས་བླ་ན་མེད་པ་བྱང་ཆུབ་སེམས། །མ་འགྲོ་དྲུག་ཀུན་གྱིས་ཐོབ་པར་ཤོག །འཕགས་པ་ཐུགས་རྗེ་ཆེན་པོ་སྤྱན་རས་གཟིགས་དང་གཉིས་སུ་མེད་པའི་དོན་བརྒྱུད་དཔལ་ལྡན་འབྲུག་པའི་རྒྱལ་ཡོངས་ཆོས་ཀྱི་དབུ་ཁྲིད་དམ་པ་ རྗེ་མཁན་ཁྲི་རབས་ ༧༠ པ་ དཔལ་འཇིགས་མེད་ཆོས་ཀྱི་གྲགས་པ་མཆོག་གི་སྤྲུལ་པའི་སྐུ་ སྐུ་ཚེ་འཆི་མེད་མགོན་པོ་ཚེ་ལྷ་རྣམ་གསུམ་གྱི་བརྟནད་ཅིང་ འགྲོ་དོན་འཕྲིན་ལས་འཕགས་པ་མིག་མི་ཟུམ་པ་དང་མཉམ་པར་ཤོག་ཅིག། ཅེས་པ་གང་གི་འབངས་མཐར་འཁོད་པ་འདུ་ཤེས་གསུམ་པ་དགེ་འདུན་དཔལ་བཟང་ངམ་ སངྒ་ཤྲཱི་བྷ་བས་སྨོན་པ་དགེའོ།། 3",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-09-07T10:39:01.314959",
+      "publishAt": "2025-09-07T10:39:01.314969"
+    },
+    {
+      "id": "2eca3faf2a5f1d03",
+      "title": "Kuensel At the ongoing Moenlam Chhenmo (Great Prayer Ceremony) in Rajgir, India, His Holiness the...",
+      "description": "Kuensel At the ongoing Moenlam Chhenmo (Great Prayer Ceremony) in Rajgir, India, His Holiness the Je Khenpo granted a holiday to 350 cart horses today by paying Nu 1,500 for each horse. This act reflects His Holiness’s immense love and compassion for all sentient beings. The total cost incurred is Nu 525, 000. 0:00 / 1:27",
+      "content": "Kuensel At the ongoing Moenlam Chhenmo (Great Prayer Ceremony) in Rajgir, India, His Holiness the Je Khenpo granted a holiday to 350 cart horses today by paying Nu 1,500 for each horse. This act reflects His Holiness’s immense love and compassion for all sentient beings. The total cost incurred is Nu 525, 000. 0:00 / 1:27",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-atl3-2.xx.fbcdn.net/v/t15.5256-10/543162023_783833340862444_6534658987996472292_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=282d23&_nc_ohc=JuORpS922vUQ7kNvwGsdlEj&_nc_oc=AdkZZUrWvIHAJ7rhQqenhm2H1J6Qbu1VgqlN5Md3kqD-fgYkh6XvH2fY7ZJE88YqmZI&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=IMMa3mU9sgkegGb7wV3nig&oh=00_AfY-dlGeHvT4r84uzgeLrY4CnUFQYR4qB0zPD08YN1OyMg&oe=68C32573"
+        ],
+        "videos": [
+          "https://video-atl3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPz9xidfbdBec8_TN0rYkrtOFYhl3xrbGx_MyIQbIzlDMRyAewLmQMl5wJikXr5BdSymmT2w2Ht81HINfiyjqxQV74KzQ-yntw0uL0cQg.mp4?_nc_cat=110&_nc_sid=8bf8fe&_nc_ht=video-atl3-3.xx.fbcdn.net&_nc_ohc=gRwnQOo5HHEQ7kNvwHg62xn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzNlLjY0MC5zdmVfc2QiLCJ4cHZfYXNzZXRfaWQiOjExNjM2MTQzMjkxNTY3NzgsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=IMMa3mU9sgkegGb7wV3nig&_nc_zt=28&oh=00_AfbxkfP6OGFJDZ6KFhzi88qSIZb2D1Rf2UtfvBYBB5dk6Q&oe=68C33810&bitrate=376032&tag=sve_sd"
+        ],
+        "links": []
+      },
+      "createdAt": "2025-09-07T10:38:43.278153",
+      "publishAt": "2025-09-07T10:38:43.278161"
+    },
+    {
+      "id": "ab834aa3fc4811e4",
+      "title": "Media/news company Thimphu, Bhutan managingeditor@kuensel",
+      "description": ".bt kuenselonline.com Always open 100% recommend (19 Reviews) ﻿",
+      "content": "Media/news company Thimphu, Bhutan managingeditor@kuensel.bt kuenselonline.com Always open 100% recommend (19 Reviews) ﻿",
+      "categoryID": "news",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [],
+        "videos": [],
+        "links": []
+      },
+      "createdAt": "2025-09-05T16:44:46.244278",
+      "publishAt": "2025-09-05T16:44:46.244288"
+    },
+    {
+      "id": "b8c6cc43c60eb539",
+      "title": "Kuensel ༉ དགེ་ལེགས་ཕུག་དྲན་ཤེས་ཁྲོམ་ཚོགས་ཀྱི་དོན་ལུ་ ཁས་བླངས་པ་༧,༠༥༠ ལྷགཔ་ཅིག་འཛོམས་ཡོདཔ། 0:00 / ...",
+      "description": "Kuensel ༉ དགེ་ལེགས་ཕུག་དྲན་ཤེས་ཁྲོམ་ཚོགས་ཀྱི་དོན་ལུ་ ཁས་བླངས་པ་༧,༠༥༠ ལྷགཔ་ཅིག་འཛོམས་ཡོདཔ། 0:00 / 0:50",
+      "content": "Kuensel ༉ དགེ་ལེགས་ཕུག་དྲན་ཤེས་ཁྲོམ་ཚོགས་ཀྱི་དོན་ལུ་ ཁས་བླངས་པ་༧,༠༥༠ ལྷགཔ་ཅིག་འཛོམས་ཡོདཔ། 0:00 / 0:50",
+      "categoryID": "general",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-iad3-1.xx.fbcdn.net/v/t15.5256-10/544908410_24313888188302618_3437438390787821256_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=282d23&_nc_ohc=ztlotRZB3egQ7kNvwFt17Ea&_nc_oc=Adn41whuhnyoAccCuvfyPVtRRlDfVtLDOZjlKW0a4q7_uohXnfZpVnRsSZvvbHb6kJE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=qjjAqk3JMGFfp0Fhg3Ghfw&oh=00_AfbvvoLzfaztfXTlQDENR2rUNt3MaZ4JXuFdTCxz22wSkg&oe=68C0F553"
+        ],
+        "videos": [
+          "https://video-iad3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQMr6_4TPEEPpMt38iT0mGB1hWODh223uMUowW4KnK23qH5kKvOyE4sLudI9Lyx-w-UbOa56BK9nAZp_wHbzxtv86R2CzYFc3yq3Lf_Ejg.mp4?_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-iad3-2.xx.fbcdn.net&_nc_ohc=7a_LK99wZzcQ7kNvwER47iN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNjQwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NDExNTc3OTYwNTQwNzkyMCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjQ5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=qjjAqk3JMGFfp0Fhg3Ghfw&_nc_zt=28&oh=00_AfbKVYec-F-XUFUoIMAGueNvDvbGGq1unrjgWJzE5ICYVA&oe=68C0E8D3&bitrate=370911&tag=sve_sd"
+        ],
+        "links": []
+      },
+      "createdAt": "2025-09-05T16:43:09.208196",
+      "publishAt": "2025-09-05T16:43:09.208205"
+    },
+    {
+      "id": "92adcae0c662bf5f",
+      "title": "Kuensel 4 September 2025: His Majesty The King joined 7,050 volunteers contributing zhabtog (comm...",
+      "description": "Kuensel 4 September 2025: His Majesty The King joined 7,050 volunteers contributing zhabtog (community service) to develop public spaces and parks across Gelephu Mindfulness City A total of 7,050 volunteers are taking part in the program, including residents of Gelephu and nearby areas, Gyalsups and Desuups. Volunteers from outside Gelephu include Members of Parliament, various agencies, DHI and its companies, Bhutan Red Cross, Judiciary, NGOs, and community groups from Tsirang, Dagana, Pemathang, Phuentsholing, Trong, Mendrelgang, and Nganglam. The mass volunteer program, being held from 4-8 September, was developed following overwhelming interest from people across the country to participate in building GMC. They will work under expert coordinators to clean and clear areas identified for parks, install benches, water points and toilets, and beautify various parts of the GMC. His Majesty thanked the volunteers for their service in helping to build GMC, which represents the collective aspiration of the people of Bhutan to create a lasting legacy that will benefit generations into the future. +4",
+      "content": "Kuensel 4 September 2025: His Majesty The King joined 7,050 volunteers contributing zhabtog (community service) to develop public spaces and parks across Gelephu Mindfulness City A total of 7,050 volunteers are taking part in the program, including residents of Gelephu and nearby areas, Gyalsups and Desuups. Volunteers from outside Gelephu include Members of Parliament, various agencies, DHI and its companies, Bhutan Red Cross, Judiciary, NGOs, and community groups from Tsirang, Dagana, Pemathang, Phuentsholing, Trong, Mendrelgang, and Nganglam. The mass volunteer program, being held from 4-8 September, was developed following overwhelming interest from people across the country to participate in building GMC. They will work under expert coordinators to clean and clear areas identified for parks, install benches, water points and toilets, and beautify various parts of the GMC. His Majesty thanked the volunteers for their service in helping to build GMC, which represents the collective aspiration of the people of Bhutan to create a lasting legacy that will benefit generations into the future. +4",
+      "categoryID": "event",
+      "authorId": "kuensel",
+      "AuthorName": "Kuensel",
+      "attachment": {
+        "images": [
+          "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/543119419_1186978490132186_10583502962238951_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MBHHo7kxuAcQ7kNvwGgg2mI&_nc_oc=Adk_psax9iab3V0iPoeYGTAHvMzCwDsq26yaQXrfcQE3TiMRPYlGsq76BTwknxcQG58&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=XiMKbIEOLg0038a9TtY1Xg&oh=00_AfYO8pbWSXGi3d9xGlQPLUZDHYodLwnSUIRL106cTtbkRw&oe=68C00FDA",
+          "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/541653557_1186978550132180_6752709002685326684_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eQwczcnO55cQ7kNvwG1Cu8U&_nc_oc=AdnGGR_9QhS5WRxDRSGlEasAfS9H2XAouLRB3B8sSrSaEkTA6fwqnj1HLo4lvpKGyYQ&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=XiMKbIEOLg0038a9TtY1Xg&oh=00_AfYkyEv_0wunUHAh4j7ybkrUhfOVpGf45AMrbqm1GSnBKw&oe=68C01280",
+          "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/543103495_1186978610132174_6520627489347649105_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lHOGsHs_elUQ7kNvwE8mgQt&_nc_oc=AdmcSOJzpVtpfbAlsfwUj4On0geJMXelPkp20a8dVjTjvaCpZ3gp8saHITW8W0unYYI&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=XiMKbIEOLg0038a9TtY1Xg&oh=00_AfZs7mX_lkyFs88khbLjMnSQx_yygKDhJZRdKF4d4lp83A&oe=68C02D8D",
+          "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/542689466_1186978653465503_2831956075385784454_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=29hgrNfXP90Q7kNvwEY3ZTX&_nc_oc=AdnFOSks4IM5q4jKeYZ9VA0vu6gwzb8xPwdRMxIhjpZJYQqWLx6h-52Fo6P6zgI1oPY&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=XiMKbIEOLg0038a9TtY1Xg&oh=00_Afa0d3qFEdwjiJK3CQi36xMBXUhq0vFC7GeNhC0aclHRSA&oe=68C00D73",
+          "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/541751590_1186978733465495_8511594485789170210_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wIGuQnGMtWoQ7kNvwGF6gGY&_nc_oc=AdlXiu6MT5ELPwTnNlYCFN7HUfr9dzISV8eGOKI64EU4XAl2VikbFlBD7ug-Ojz5HUk&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=XiMKbIEOLg0038a9TtY1Xg&oh=00_AfbhP2RKhQ9IE4JTgt4I2jmoyhpS1qJUZlsmkghShTal9Q&oe=68C03807"
+        ],
+        "videos": [],
+        "links": [
+          "https://www.facebook.com/photo/?fbid=1186978480132187&set=pcb.1186978950132140&__cft__[0]=AZVtqa3fdX0AsgLRhOqio7uOP4AwGBU58WYBBpEncIKMb6LVzHJNtwvp78uGdItem8KM7rjtaskGRgTF-tn4-2nrAxamUB4GMgt8CmHczZMc9ec17JOlhWe-381xW4TuW1ZMRgmDBd0iwlqbabRCK96MPK1b2unvLkIMOh1MaSqK1GSOIROmqKDIbt0vrpKuhJI&__tn__=*b0H-R",
+          "https://www.facebook.com/photo/?fbid=1186978540132181&set=pcb.1186978950132140&__cft__[0]=AZVtqa3fdX0AsgLRhOqio7uOP4AwGBU58WYBBpEncIKMb6LVzHJNtwvp78uGdItem8KM7rjtaskGRgTF-tn4-2nrAxamUB4GMgt8CmHczZMc9ec17JOlhWe-381xW4TuW1ZMRgmDBd0iwlqbabRCK96MPK1b2unvLkIMOh1MaSqK1GSOIROmqKDIbt0vrpKuhJI&__tn__=*b1H-R",
+          "https://www.facebook.com/photo/?fbid=1186978606798841&set=pcb.1186978950132140&__cft__[0]=AZVtqa3fdX0AsgLRhOqio7uOP4AwGBU58WYBBpEncIKMb6LVzHJNtwvp78uGdItem8KM7rjtaskGRgTF-tn4-2nrAxamUB4GMgt8CmHczZMc9ec17JOlhWe-381xW4TuW1ZMRgmDBd0iwlqbabRCK96MPK1b2unvLkIMOh1MaSqK1GSOIROmqKDIbt0vrpKuhJI&__tn__=*b2H-R",
+          "https://www.facebook.com/photo/?fbid=1186978646798837&set=pcb.1186978950132140&__cft__[0]=AZVtqa3fdX0AsgLRhOqio7uOP4AwGBU58WYBBpEncIKMb6LVzHJNtwvp78uGdItem8KM7rjtaskGRgTF-tn4-2nrAxamUB4GMgt8CmHczZMc9ec17JOlhWe-381xW4TuW1ZMRgmDBd0iwlqbabRCK96MPK1b2unvLkIMOh1MaSqK1GSOIROmqKDIbt0vrpKuhJI&__tn__=*b3H-R",
+          "https://www.facebook.com/photo/?fbid=1186978700132165&set=pcb.1186978950132140&__cft__[0]=AZVtqa3fdX0AsgLRhOqio7uOP4AwGBU58WYBBpEncIKMb6LVzHJNtwvp78uGdItem8KM7rjtaskGRgTF-tn4-2nrAxamUB4GMgt8CmHczZMc9ec17JOlhWe-381xW4TuW1ZMRgmDBd0iwlqbabRCK96MPK1b2unvLkIMOh1MaSqK1GSOIROmqKDIbt0vrpKuhJI&__tn__=*b4H-R"
+        ]
+      },
+      "createdAt": "2025-09-05T03:13:28.912837",
+      "publishAt": "2025-09-05T03:13:28.912846"
     },
     {
       "id": "744f45d090e294a8",
